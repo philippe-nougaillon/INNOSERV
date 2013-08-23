@@ -53,6 +53,8 @@
     if ([langueCourante isEqualToString:@"fr"]) {
         _items = [[ProjectDataFR alloc] init];
         self.title = @"Vidéos INNOSERV";
+        
+        // Afiche un titre en 2 lignes
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 480, 44)];
         label.backgroundColor = [UIColor clearColor];
         label.numberOfLines = 2;

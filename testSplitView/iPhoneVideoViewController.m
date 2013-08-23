@@ -14,6 +14,7 @@
 
     NSString *langueCourante;
     UIView *myView;
+    NSURL *url;
 
 }
 
@@ -40,23 +41,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-	// Do any additional setup after loading the view.
-    [self prepareView];
-}
 
--(void)prepareView {
+    // subscribe to orientation change
+    
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(orientationChanged:)
                                                  name:UIDeviceOrientationDidChangeNotification
                                                object:nil];
+  
     
     // Language ?
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
     langueCourante = [langues objectAtIndex:0];
-    
     //NSLog(@"langue: %@",langueCourante);
     
     // Prepare video subtitles
@@ -67,9 +65,16 @@
         [self.srtParser parseSrtFileAtPath:srtPath];
     }
     
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+    url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
                                          pathForResource:self.detailItem.videofile ofType:@"mp4"]];
     
+	// setup video view and play
+    [self prepareView];
+}
+
+-(void)prepareView {
+    
+  
     // A place for video player and subtitles
     myView =[[UIView alloc] initWithFrame:self.view.frame];
     
@@ -138,7 +143,6 @@
     [self.subtitleTimer invalidate];
     self.subtitleTimer = nil;
     
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 // Subtitles
@@ -159,20 +163,19 @@
 // Orientation changed notification
 - (void)orientationChanged:(NSNotification *)notification
 {
-        NSLog(@"Orientation changed");
+    NSLog(@"Orientation changed, self.view.bound.width = %f", self.view.bounds.size.width );
+   
+    myView.frame =  self.view.bounds;
+    self.moviePlayer.view.frame = myView.bounds;
     
-        [self.moviePlayer stop];
-
-        //remove previous view
-        [myView removeFromSuperview];
-        myView =nil;
-    
-        // Stop subtitles
-        [self.subtitleTimer invalidate];
-        self.subtitleTimer = nil;
-
-        // call a new view with appropriate format
-        [self prepareView];
+    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+    if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
+        self.subtitleLabel.frame = CGRectMake(0, 240, 480, 40);
+        self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
+    } else {
+        self.subtitleLabel.frame = CGRectMake(0, 350, 320, 60);
+        self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:12];
+    }
     
 }
 

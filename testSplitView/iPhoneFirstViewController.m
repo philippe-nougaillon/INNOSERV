@@ -9,15 +9,17 @@
 #import "iPhoneFirstViewController.h"
 #import "iPhoneDetailViewController.h"
 #import "ProjectData.h"
+#import "ProjectDataFR.h"
 #import "ProjectListItem.h"
 #import "CustomCell.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface iPhoneFirstViewController ()
 {
-    ProjectData *_items;
+    NSArray *_items;
     ProjectListItem *selectedProject;
     MPMoviePlayerViewController *_player;
+    NSString *langueCourante;
 
     __weak IBOutlet UIBarButtonItem *aboutButton;
     __weak IBOutlet UIBarButtonItem *trailerButton;
@@ -37,10 +39,24 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    _items = [[ProjectData alloc] init];
+    //_items = [[ProjectData alloc] init];
     
     aboutButton.title = NSLocalizedString(@"About", @"");
     trailerButton.title = NSLocalizedString(@"Trailer", @"");
+    
+    // Language ?
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
+    langueCourante = [langues objectAtIndex:0];
+    
+    //NSLog(@"langue: %@",langueCourante);
+    
+    // Load items for appropriate language
+    if ([langueCourante isEqualToString:@"fr"]) {
+        _items = [[ProjectDataFR alloc] init];
+    } else {
+        _items = [[ProjectData alloc] init];
+    }
     
 }
 
