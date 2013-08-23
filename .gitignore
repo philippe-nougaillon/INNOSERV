@@ -1,3 +1,5 @@
 # ignore video files
 *.mp4
 
+# ignore user interface change
+Innoserv.xcodeproj/project.xcworkspace/xcuserdata/philnoug.xcuserdatad/UserInterfaceState.xcuserstate
