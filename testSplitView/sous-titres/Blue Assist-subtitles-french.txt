@@ -1,0 +1,272 @@
+﻿1
+00:00:19,160 --> 00:00:23,800
+Ithaka est un centre de coaching pour adultes ayant des difficultés d'apprentissage.
+
+2
+00:00:24,920 --> 00:00:27,280
+En 2007, les employés ont radicalement changé d'approche.
+
+3
+00:00:27,480 --> 00:00:29,360
+Ils se sont tournés vers les nouvelles technologies.
+
+4
+00:00:30,520 --> 00:00:32,800
+BlueAssist et toute une game d'applications pour smartphones
+
+5
+00:00:32,960 --> 00:00:34,960
+ont été développées pour permettre aux clients d'être indépendants.
+
+6
+00:00:40,200 --> 00:00:42,840
+Avant, Ithaka organisait un ensemble d'activités de groupe
+
+7
+00:00:43,040 --> 00:00:45,200
+pour ses clients.
+
+8
+00:00:45,680 --> 00:00:50,680
+Mais cela ne favorisait pas leur autonomie ni leur insertion.
+
+9
+00:00:51,560 --> 00:00:53,800
+Maintenant, tous les employés sont devenus des coaches
+
+10
+00:00:53,960 --> 00:00:58,000
+qui aident les clients à prendre leur place dans la société.
+
+11
+00:00:59,160 --> 00:01:02,160
+Les coaches se servent d'outils de communication adaptés
+
+12
+00:01:02,360 --> 00:01:05,080
+pour explorer les rêves et les ambitions de leurs clients.
+
+13
+00:01:07,800 --> 00:01:11,120
+Kiliaan fait savoir à son coach qu'il aimerait travailler avec les animaux.
+
+14
+00:01:11,360 --> 00:01:16,520
+Une des options pour lui serait un emploi assisté.
+
+15
+00:01:16,840 --> 00:01:20,920
+Avec son coach, ils cherchent des offres d'emploi.
+
+16
+00:01:21,160 --> 00:01:23,960
+Le coach de Kiliaan l'accompagne à l'animalerie la première fois,
+
+17
+00:01:24,240 --> 00:01:28,880
+mais très vite il arrive à se débrouiller tout seul.
+
+18
+00:01:32,800 --> 00:01:37,160
+Mieke aimerait développer son talent pour la peinture.
+
+19
+00:01:40,120 --> 00:01:42,960
+Au lieu d'organiser des cours à Ithaka,
+
+20
+00:01:43,360 --> 00:01:46,600
+les coaches aident leurs clients à trouver des opportunités dans le quartier.
+
+21
+00:01:49,880 --> 00:01:53,080
+Mieke a appris à prendre le bus pour aller à ses cours de peinture.
+
+22
+00:01:54,320 --> 00:01:58,480
+Mais elle a encore du mal à reconnaître son arrêt.
+
+23
+00:01:58,920 --> 00:02:02,040
+Ce genre de problème peut être anticipé.
+
+24
+00:02:02,240 --> 00:02:04,680
+Avec un message BlueAssist pré-programmé sur son téléphone,
+
+25
+00:02:04,880 --> 00:02:06,960
+elle peut poser une question qu'il lui serait
+
+26
+00:02:07,160 --> 00:02:09,160
+difficile d'exprimer toute seule.
+
+27
+00:02:14,760 --> 00:02:18,080
+Vous devez aller à la gare, n'est-ce pas? - Oui
+
+28
+00:02:18,720 --> 00:02:23,440
+Je vous dirai quand appuyer sur le bouton, d'accord?
+
+29
+00:02:26,280 --> 00:02:28,680
+Les messages peuvent être pré-enregistrés par le coach de Mieke
+
+30
+00:02:28,680 --> 00:02:30,920
+ou une autre personne de confiance.
+
+31
+00:02:30,920 --> 00:02:32,840
+Je dois descendre à la gare.
+
+32
+00:02:32,840 --> 00:02:35,920
+Pouvez-vous me faire signe? Merci. Mieke
+
+33
+00:02:36,520 --> 00:02:40,560
+BlueAssist donne à Mieke plus de confiance pour s'adresser aux gens.
+
+34
+00:02:40,560 --> 00:02:43,560
+Cela donne aussi aux passants plus de confiance pour l'aider.
+
+35
+00:02:43,840 --> 00:02:49,160
+En lisant sa question, ils comprennent ce dont Mieke a besoin.
+
+36
+00:02:49,160 --> 00:02:53,600
+Sofie souhaite participer aux tâches administratives d'Ithaka.
+
+37
+00:02:53,800 --> 00:02:55,280
+Sa coach et elle ont décidé
+
+38
+00:02:55,280 --> 00:02:59,440
+qu'elle aurait la responsabilité de retirer de l'argent chaque semaine.
+
+39
+00:02:59,920 --> 00:03:03,840
+Au début, on l'a aidée. Maintenant elle est indépendante.
+
+40
+00:03:04,960 --> 00:03:06,840
+Elle reçoit un message de son smartphone "Cloudina"
+
+41
+00:03:07,040 --> 00:03:09,200
+qui lui indique quand elle doit y aller.
+
+42
+00:03:09,400 --> 00:03:11,320
+Bien sûr il n'est pas toujours possible de prévoir
+
+43
+00:03:11,480 --> 00:03:14,640
+les problèmes qui vont se présenter quand les clients sont seuls.
+
+44
+00:03:15,280 --> 00:03:18,080
+C'est pourquoi chaque client a un message général BlueAssist
+
+45
+00:03:18,280 --> 00:03:22,440
+disant que le coach est joignable en cas de besoin.
+
+46
+00:03:31,160 --> 00:03:32,720
+Il pourrait être difficile pour Sofie d'expliquer le problème 
+
+47
+00:03:32,720 --> 00:03:34,520
+à son coach au téléphone,
+
+48
+00:03:34,840 --> 00:03:37,080
+Je dois appeler votre coach, n'est-ce pas?
+
+49
+00:03:37,320 --> 00:03:38,040
+avec un simple coup de fil,
+
+50
+00:03:38,040 --> 00:03:39,840
+l'assistante peut dire au coach quel est le problème
+
+51
+00:03:39,840 --> 00:03:39,960
+
+
+52
+00:03:40,120 --> 00:03:43,320
+et redonner le téléphone à Sofie pour trouver une solution.
+
+53
+00:03:45,600 --> 00:03:49,800
+Bonjour. Je suis Sabine, d'ING. Sofie est avec moi.
+
+54
+00:03:50,200 --> 00:03:51,920
+Sa carte bleue ne marche pas.
+
+55
+00:03:51,920 --> 00:03:54,440
+Pouvez-vous me passer Sofie s'il-vous-plaît?
+
+56
+00:03:54,440 --> 00:03:57,120
+Un moment. Voilà.
+
+57
+00:03:57,360 --> 00:03:59,800
+Merci. Allo?
+
+58
+00:04:00,000 --> 00:04:02,640
+Avant, les employés utilisaient toute une gamme d'outils
+
+59
+00:04:02,800 --> 00:04:04,280
+pour travailler avec leurs clients à Ithaka.
+
+60
+00:04:05,120 --> 00:04:08,680
+Maintenant, ces outils ont été réunis en une seule application.
+
+61
+00:04:08,920 --> 00:04:10,360
+Grâce à la technologie cloud,
+
+62
+00:04:10,360 --> 00:04:12,800
+les messages et les rappels peuvent être programmés à distance
+
+63
+00:04:13,000 --> 00:04:16,160
+par la personne choisie par le client.
+
+64
+00:04:16,160 --> 00:04:18,520
+BlueAssist est une icône qui facilite la communication entre
+
+65
+00:04:18,600 --> 00:04:21,160
+les personnes handicapées et leurs concitoyens.
+
+66
+00:04:21,280 --> 00:04:24,320
+L'icône peut être chargée sur une gamme d'appareils mobiles
+
+67
+00:04:24,440 --> 00:04:26,360
+facilitant l'aide à distance.
+
+
+68
+00:04:26,560 --> 00:04:31,680
+De cette façon, l''assistance' devient du 'coaching individuel'.

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="14">
+            <objects>
+                <navigationController id="3" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackTranslucent" id="6">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="19" kind="relationship" relationship="rootViewController" id="25"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="-631"/>
+        </scene>
+        <!--I Pad About View Controller-->
+        <scene sceneID="kAD-e6-hzH">
+            <objects>
+                <viewController id="uxD-fJ-xkZ" customClass="iPadAboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qtw-8J-5Y6">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="Vss-Sd-VL7">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <barButtonItem title="Trailer" id="DxY-7N-J03">
+                                        <connections>
+                                            <action selector="openTrailerButtonPressed:" destination="uxD-fJ-xkZ" id="Bue-b0-Hqv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Website" id="O2w-dW-b8G">
+                                        <connections>
+                                            <action selector="openWebsite:" destination="uxD-fJ-xkZ" id="H7y-SK-gkc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gUO-Ov-1Zu"/>
+                                    <barButtonItem title="Close" width="144" id="I6F-JF-VAO">
+                                        <connections>
+                                            <action selector="closeButtonPressed:" destination="uxD-fJ-xkZ" id="9RO-51-fhB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" id="oAy-Q3-2XJ">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="724"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="whiteLarge" id="8fR-aZ-Wc2">
+                                <rect key="frame" x="494" y="3" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="closeButton" destination="I6F-JF-VAO" id="wMB-sr-dhP"/>
+                        <outlet property="myActivityIndicator" destination="8fR-aZ-Wc2" id="c9B-45-6Pr"/>
+                        <outlet property="trailerButton" destination="DxY-7N-J03" id="1ts-Dn-Pxa"/>
+                        <outlet property="webView" destination="oAy-Q3-2XJ" id="dQP-NZ-Ni7"/>
+                        <outlet property="websiteButton" destination="O2w-dW-b8G" id="Qhd-Nr-qf3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ob1-gs-Tdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="-631"/>
+        </scene>
+        <!--Detail View Controller - About INNOSERV project-->
+        <scene sceneID="16">
+            <objects>
+                <viewController storyboardIdentifier="" id="4" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="26">
+                        <rect key="frame" x="0.0" y="20" width="703" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="European selection of innovative social services" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="gmA-ds-ZyL">
+                                <rect key="frame" x="20" y="58" width="663" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="innoserv-logoAndPhotos.png" id="y4l-7A-Lv1">
+                                <rect key="frame" x="20" y="108" width="663" height="361"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" id="Ert-ry-jUq">
+                                <rect key="frame" x="20" y="477" width="663" height="251"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This project is focusing on identifying the future potential of innovative services including the multifaceted activities of different stakeholders as well as the policy frameworks at different levels of governance geared to address the needs of citizens. </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="European selection of innovative social services">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">  These projects are presented in order to stimulate the debate about innovation in social services.  They have been selected in accordance with the criteria framework coming from theoretical approaches. They have been selected principally as examples of innovative ideas in social services, rather than as examples of best practice.</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q9Y-jM-8Xa">
+                                <rect key="frame" x="255" y="216" width="192" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="play.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVideoButtonPushed:" destination="4" eventType="touchUpInside" id="Tac-eF-8MY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901967050000002" green="0.91764712329999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="About INNOSERV project" id="53">
+                        <barButtonItem key="rightBarButtonItem" title="Website" id="cfL-8r-0ni">
+                            <connections>
+                                <segue destination="FPV-0y-mce" kind="modal" identifier="openiPadWebView" id="YjK-38-VM8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="detailImage" destination="y4l-7A-Lv1" id="19a-AP-hYA"/>
+                        <outlet property="detailInformation" destination="Ert-ry-jUq" id="FfA-7U-41w"/>
+                        <outlet property="detailSubtitle" destination="gmA-ds-ZyL" id="gIp-vF-tQE"/>
+                        <outlet property="openWebPageButton" destination="cfL-8r-0ni" id="ljv-qt-bMP"/>
+                        <outlet property="playVideoButton" destination="Q9Y-jM-8Xa" id="ZyB-dE-ash"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="335"/>
+        </scene>
+        <!--I Pad More Page View Controller-->
+        <scene sceneID="tJD-wP-yDi">
+            <objects>
+                <viewController id="FPV-0y-mce" customClass="iPadMorePageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a0b-T3-PBK">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFill" scalesPageToFit="YES" id="ZBt-HH-mwC">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="704"/>
+                                <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="LvE-ke-bye">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <barButtonItem width="922" style="plain" systemItem="fixedSpace" id="RTn-ri-DDj"/>
+                                    <barButtonItem title="Close" width="81" style="done" id="ADf-LI-fon">
+                                        <connections>
+                                            <action selector="okButtonPressed:" destination="FPV-0y-mce" id="7Lp-ar-jLH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="whiteLarge" id="n6D-OJ-Sba">
+                                <rect key="frame" x="494" y="3" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="707-x3-W5o"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="closeButton" destination="ADf-LI-fon" id="gs9-FW-Wzg"/>
+                        <outlet property="myActivityIndicator" destination="n6D-OJ-Sba" id="Ij3-2y-tYA"/>
+                        <outlet property="webView" destination="ZBt-HH-mwC" id="LFx-ez-GIZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="817-Rb-VG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="340"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="18">
+            <objects>
+                <splitViewController id="5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="3" kind="relationship" relationship="masterViewController" id="9"/>
+                        <segue destination="42" kind="relationship" relationship="detailViewController" id="51"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1401" y="-622"/>
+        </scene>
+        <!--Master View Controller - Master-->
+        <scene sceneID="24">
+            <objects>
+                <tableViewController storyboardIdentifier="" title="Master" clearsSelectionOnViewWillAppear="NO" id="19" customClass="MasterViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="165" sectionHeaderHeight="22" sectionFooterHeight="22" id="20">
+                        <rect key="frame" x="0.0" y="20" width="320" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901967050000002" green="0.91764712329999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <color key="separatorColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCustomCell" rowHeight="165" id="ZSw-0O-9Pw" customClass="CustomCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="165"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" id="xBr-RO-K6Q">
+                                            <rect key="frame" x="160" y="53" width="160" height="109"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="deviceRGB"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" none="YES" staticText="YES"/>
+                                            </accessibility>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" id="LlU-Kj-mhM">
+                                            <rect key="frame" x="7" y="3" width="305" height="52"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
+                                            <color key="textColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="highlightedColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="dZj-3q-Cub">
+                                            <rect key="frame" x="7" y="53" width="148" height="109"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="image" destination="dZj-3q-Cub" id="OBV-4m-GaX"/>
+                                    <outlet property="subTitleLabel" destination="xBr-RO-K6Q" id="Oxn-aj-uzR"/>
+                                    <outlet property="titleLabel" destination="LlU-Kj-mhM" id="Juk-it-a8q"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="19" id="22"/>
+                            <outlet property="delegate" destination="19" id="21"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="INNOSERV Videos" id="40">
+                        <barButtonItem key="leftBarButtonItem" title="About" id="uEA-0o-970">
+                            <connections>
+                                <action selector="openPDFLeafletButtonPressed:" destination="19" id="6a3-T6-ej0"/>
+                                <segue destination="uxD-fJ-xkZ" kind="modal" id="uqX-ne-MTn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aboutButton" destination="uEA-0o-970" id="wmY-ux-jL1"/>
+                        <outlet property="trailerButton" destination="DxY-7N-J03" id="AvY-k5-oit"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="-631"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="50">
+            <objects>
+                <navigationController id="42" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackTranslucent" id="43">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4" kind="relationship" relationship="rootViewController" id="52"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="340"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="innoserv-logoAndPhotos.png" width="1202" height="707"/>
+        <image name="play.png" width="63" height="63"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

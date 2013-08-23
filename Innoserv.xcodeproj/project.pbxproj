@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3025B3216D50A8300143DB3 /* Abitare Solidale 4-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3016D50A8300143DB3 /* Abitare Solidale 4-2-big.png */; };
+		B3025B3316D50A8300143DB3 /* Ammerud4-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3116D50A8300143DB3 /* Ammerud4-2-big.png */; };
+		B3025B4816D5118800143DB3 /* vitality2a-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3416D5118800143DB3 /* vitality2a-2-big.png */; };
+		B3025B4916D5118800143DB3 /* KYOH telehealth-1-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3516D5118800143DB3 /* KYOH telehealth-1-big.png */; };
+		B3025B4A16D5118800143DB3 /* Seclin-new3-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3616D5118800143DB3 /* Seclin-new3-big.png */; };
+		B3025B4B16D5118800143DB3 /* res-leg-1-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3716D5118800143DB3 /* res-leg-1-big.png */; };
+		B3025B4C16D5118800143DB3 /* Real Pearl1-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3816D5118800143DB3 /* Real Pearl1-2-big.png */; };
+		B3025B4D16D5118800143DB3 /* placedebleu3a-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3916D5118800143DB3 /* placedebleu3a-2-big.png */; };
+		B3025B4E16D5118800143DB3 /* Nueva1d-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3A16D5118800143DB3 /* Nueva1d-2-big.png */; };
+		B3025B4F16D5118800143DB3 /* Mom'P1-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3B16D5118800143DB3 /* Mom'P1-2-big.png */; };
+		B3025B5016D5118800143DB3 /* Katymar-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3C16D5118800143DB3 /* Katymar-2-big.png */; };
+		B3025B5116D5118800143DB3 /* irre menschlich 4-4-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3D16D5118800143DB3 /* irre menschlich 4-4-big.png */; };
+		B3025B5216D5118800143DB3 /* humanitas4-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3E16D5118800143DB3 /* humanitas4-big.png */; };
+		B3025B5316D5118800143DB3 /* gpe2-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3F16D5118800143DB3 /* gpe2-2-big.png */; };
+		B3025B5416D5118800143DB3 /* ECC-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B4016D5118800143DB3 /* ECC-2-big.png */; };
+		B3025B5516D5118800143DB3 /* ELTERN-AG-3-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B4116D5118800143DB3 /* ELTERN-AG-3-2-big.png */; };
+		B3025B5616D5118800143DB3 /* Early Supported Discharge-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B4216D5118800143DB3 /* Early Supported Discharge-2-big.png */; };
+		B3025B5716D5118800143DB3 /* CIL-personal assistant-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B4316D5118800143DB3 /* CIL-personal assistant-big.png */; };
+		B3025B5816D5118800143DB3 /* mobile health service-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B4416D5118800143DB3 /* mobile health service-big.png */; };
+		B3025B5916D5118800143DB3 /* BlueAssist5b-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B4516D5118800143DB3 /* BlueAssist5b-2-big.png */; };
+		B3025B5A16D5118800143DB3 /* Abitare Solidale 4-2-big-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B4616D5118800143DB3 /* Abitare Solidale 4-2-big-big.png */; };
+		B3025B5B16D5118800143DB3 /* Ammerud4-2-big-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B4716D5118800143DB3 /* Ammerud4-2-big-big.png */; };
+		B304131617C237810032150C /* ProjectData.m in Sources */ = {isa = PBXBuildFile; fileRef = B304131517C237800032150C /* ProjectData.m */; };
+		B304131A17C248CF0032150C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B304131C17C248CF0032150C /* Localizable.strings */; };
+		B30E56DF16D26FFB000821DD /* mobile health service.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56D916D26FFB000821DD /* mobile health service.png */; };
+		B30E56E016D26FFB000821DD /* Ammerud4-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56DA16D26FFB000821DD /* Ammerud4-2.png */; };
+		B30E56E116D26FFB000821DD /* ELTERN-AG-3-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56DB16D26FFB000821DD /* ELTERN-AG-3-2.png */; };
+		B30E56E216D26FFB000821DD /* Real Pearl1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56DC16D26FFB000821DD /* Real Pearl1-2.png */; };
+		B30E56E316D26FFB000821DD /* humanitas4.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56DD16D26FFB000821DD /* humanitas4.png */; };
+		B30E56E416D26FFB000821DD /* Mom'P1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56DE16D26FFB000821DD /* Mom'P1-2.png */; };
+		B30E56E816D283E6000821DD /* Abitare Solidale 4-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56E616D283E5000821DD /* Abitare Solidale 4-2.png */; };
+		B30E56E916D283E6000821DD /* BlueAssist5b-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56E716D283E6000821DD /* BlueAssist5b-2.png */; };
+		B30E56EC16D284B5000821DD /* CIL-personal assistant.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56EA16D284B4000821DD /* CIL-personal assistant.png */; };
+		B30E56ED16D284B5000821DD /* Early Supported Discharge-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56EB16D284B4000821DD /* Early Supported Discharge-2.png */; };
+		B30E56F016D28550000821DD /* ECC-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56EE16D2854F000821DD /* ECC-2.png */; };
+		B30E56F116D28550000821DD /* gpe2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56EF16D2854F000821DD /* gpe2-2.png */; };
+		B30E56F416D2880E000821DD /* irre menschlich 4-4.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56F216D2880C000821DD /* irre menschlich 4-4.png */; };
+		B30E56F516D2880E000821DD /* Katymar-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56F316D2880D000821DD /* Katymar-2.png */; };
+		B30E56FA16D28CEC000821DD /* res-leg-1.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56F616D28CE9000821DD /* res-leg-1.png */; };
+		B30E56FB16D28CEC000821DD /* Seclin-new3.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56F716D28CE9000821DD /* Seclin-new3.png */; };
+		B30E56FC16D28CEC000821DD /* KYOH telehealth-1.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56F816D28CEA000821DD /* KYOH telehealth-1.png */; };
+		B30E56FD16D28CEC000821DD /* vitality2a-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56F916D28CEB000821DD /* vitality2a-2.png */; };
+		B30E570016D28D15000821DD /* Nueva1d-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56FE16D28D13000821DD /* Nueva1d-2.png */; };
+		B30E570116D28D15000821DD /* placedebleu3a-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56FF16D28D14000821DD /* placedebleu3a-2.png */; };
+		B30F62A1171C3DFE0008F4C1 /* AMMERUDHJEMMET.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B30F62A0171C3DFE0008F4C1 /* AMMERUDHJEMMET.mp4 */; };
+		B30F62A3171C3E0C0008F4C1 /* ECC.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B30F62A2171C3E0C0008F4C1 /* ECC.mp4 */; };
+		B319004716F3387E003D479B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B319004616F3387E003D479B /* MediaPlayer.framework */; };
+		B319004A16F35824003D479B /* AbitareSolidale_11.03.2013-iphone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B319004916F35824003D479B /* AbitareSolidale_11.03.2013-iphone.mp4 */; };
+		B319004C16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B319004B16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 */; };
+		B319004E16F36C9F003D479B /* CIL_20032013-iphone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B319004D16F36C9F003D479B /* CIL_20032013-iphone.mp4 */; };
+		B319005016F36EEB003D479B /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B319004F16F36EEB003D479B /* play.png */; };
+		B32E2CD31714A17D00F17039 /* iPhoneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B32E2CD21714A17D00F17039 /* iPhoneDetailViewController.m */; };
+		B32F5AEE17C39D5000D46EE1 /* SrtData.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F5AEB17C39D5000D46EE1 /* SrtData.m */; };
+		B32F5AEF17C39D5000D46EE1 /* SrtParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F5AED17C39D5000D46EE1 /* SrtParser.m */; };
+		B33DDECE17C4B42E005C0D15 /* ProjectDataFR.m in Sources */ = {isa = PBXBuildFile; fileRef = B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */; };
+		B37077621727DA44009946A9 /* Trailer_V4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B37077611727DA44009946A9 /* Trailer_V4.mp4 */; };
+		B37077651727E80A009946A9 /* iPadMorePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37077641727E80A009946A9 /* iPadMorePageViewController.m */; };
+		B370776817280D7F009946A9 /* iPadAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370776717280D7F009946A9 /* iPadAboutViewController.m */; };
+		B37D269C17C6391B0073F49D /* Abitare-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D268817C6391B0073F49D /* Abitare-subtitles - french.txt */; };
+		B37D269D17C6391B0073F49D /* Ammerudhjemmet-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D268917C6391B0073F49D /* Ammerudhjemmet-subtitles - french.txt */; };
+		B37D269E17C6391B0073F49D /* Blue Assist-subtitles-french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D268A17C6391B0073F49D /* Blue Assist-subtitles-french.txt */; };
+		B37D269F17C6391B0073F49D /* CIL - subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D268B17C6391B0073F49D /* CIL - subtitles - french.txt */; };
+		B37D26A017C6391B0073F49D /* ECC-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D268C17C6391B0073F49D /* ECC-subtitles - french.txt */; };
+		B37D26A117C6391B0073F49D /* ElternAg-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D268D17C6391B0073F49D /* ElternAg-subtitles - french.txt */; };
+		B37D26A217C6391B0073F49D /* ESD-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D268E17C6391B0073F49D /* ESD-subtitles - french.txt */; };
+		B37D26A317C6391B0073F49D /* GPE-subtitles- french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D268F17C6391B0073F49D /* GPE-subtitles- french.txt */; };
+		B37D26A417C6391B0073F49D /* Humanitas-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269017C6391B0073F49D /* Humanitas-subtitles - french.txt */; };
+		B37D26A517C6391B0073F49D /* Irre Menschlich-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269117C6391B0073F49D /* Irre Menschlich-subtitles - french.txt */; };
+		B37D26A617C6391B0073F49D /* Katymar-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269217C6391B0073F49D /* Katymar-subtitles - french.txt */; };
+		B37D26A717C6391B0073F49D /* KYOH-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269317C6391B0073F49D /* KYOH-subtitles - french.txt */; };
+		B37D26A817C6391B0073F49D /* Mobile Health-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269417C6391B0073F49D /* Mobile Health-subtitles - french.txt */; };
+		B37D26A917C6391B0073F49D /* Momartre-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269517C6391B0073F49D /* Momartre-subtitles - french.txt */; };
+		B37D26AA17C6391B0073F49D /* Nueva-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269617C6391B0073F49D /* Nueva-subtitles - french.txt */; };
+		B37D26AB17C6391B0073F49D /* Place de bleu-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269717C6391B0073F49D /* Place de bleu-subtitles - french.txt */; };
+		B37D26AC17C6391B0073F49D /* RealPearl-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269817C6391B0073F49D /* RealPearl-subtitles - french.txt */; };
+		B37D26AD17C6391B0073F49D /* Residenzialita-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269917C6391B0073F49D /* Residenzialita-subtitles - french.txt */; };
+		B37D26AE17C6391B0073F49D /* Seclin-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269A17C6391B0073F49D /* Seclin-subtitles - french.txt */; };
+		B37D26AF17C6391B0073F49D /* Vitality-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269B17C6391B0073F49D /* Vitality-subtitles - french.txt */; };
+		B380094616D6418F00506DD5 /* ViewControllerMorePage.m in Sources */ = {isa = PBXBuildFile; fileRef = B380094516D6418F00506DD5 /* ViewControllerMorePage.m */; };
+		B380094816D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B380094716D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf */; };
+		B380094A16D6609000506DD5 /* innoServLogo2forIPADNoRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = B380094916D6609000506DD5 /* innoServLogo2forIPADNoRetina.png */; };
+		B380094C16D6609400506DD5 /* innoServLogo2forIPAD.png in Resources */ = {isa = PBXBuildFile; fileRef = B380094B16D6609400506DD5 /* innoServLogo2forIPAD.png */; };
+		B3849AFF17156D5800A58672 /* iPhoneAboutPDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3849AFE17156D5800A58672 /* iPhoneAboutPDFViewController.m */; };
+		B3849B0E171596EA00A58672 /* ELTERN-AG-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B00171596EA00A58672 /* ELTERN-AG-Final.mp4 */; };
+		B3849B0F171596EA00A58672 /* nueva-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B01171596EA00A58672 /* nueva-Final.mp4 */; };
+		B3849B10171596EA00A58672 /* RealPearl-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B02171596EA00A58672 /* RealPearl-Final.mp4 */; };
+		B3849B11171596EA00A58672 /* Mobile-Health-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B03171596EA00A58672 /* Mobile-Health-Final.mp4 */; };
+		B3849B12171596EA00A58672 /* Katymar-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B04171596EA00A58672 /* Katymar-Final.mp4 */; };
+		B3849B13171596EA00A58672 /* Humanitas-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B05171596EA00A58672 /* Humanitas-Final.mp4 */; };
+		B3849B14171596EA00A58672 /* Seclin-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B06171596EA00A58672 /* Seclin-Final.mp4 */; };
+		B3849B15171596EA00A58672 /* Vitality-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B07171596EA00A58672 /* Vitality-Final.mp4 */; };
+		B3849B16171596EA00A58672 /* Momartre-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B08171596EA00A58672 /* Momartre-Final.mp4 */; };
+		B3849B17171596EA00A58672 /* Residencialita-Leggera-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B09171596EA00A58672 /* Residencialita-Leggera-Final.mp4 */; };
+		B3849B18171596EA00A58672 /* Place-de-Bleu-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B0A171596EA00A58672 /* Place-de-Bleu-Final.mp4 */; };
+		B3849B19171596EA00A58672 /* Early-Supported-Discharge-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B0B171596EA00A58672 /* Early-Supported-Discharge-Final.mp4 */; };
+		B3849B1A171596EA00A58672 /* Irre-Menschlich-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B0C171596EA00A58672 /* Irre-Menschlich-Final.mp4 */; };
+		B3849B1B171596EA00A58672 /* GPE-Mainz-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B0D171596EA00A58672 /* GPE-Mainz-Final.mp4 */; };
+		B3849B1D171599C000A58672 /* KYOH-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B1C171599C000A58672 /* KYOH-Final.mp4 */; };
+		B3996A0C16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3996A0B16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard */; };
+		B3996A0F16DCFD9900BC65DC /* iPhoneFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3996A0E16DCFD9900BC65DC /* iPhoneFirstViewController.m */; };
+		B3B8BBB216C13C8E0019CD28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B8BBB116C13C8E0019CD28 /* UIKit.framework */; };
+		B3B8BBB416C13C8E0019CD28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B8BBB316C13C8E0019CD28 /* Foundation.framework */; };
+		B3B8BBB616C13C8E0019CD28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B8BBB516C13C8E0019CD28 /* CoreGraphics.framework */; };
+		B3B8BBBC16C13C8E0019CD28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3B8BBBA16C13C8E0019CD28 /* InfoPlist.strings */; };
+		B3B8BBBE16C13C8E0019CD28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBBD16C13C8E0019CD28 /* main.m */; };
+		B3B8BBC216C13C8E0019CD28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBC116C13C8E0019CD28 /* AppDelegate.m */; };
+		B3B8BBC416C13C8E0019CD28 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B8BBC316C13C8E0019CD28 /* Default.png */; };
+		B3B8BBC616C13C8E0019CD28 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B8BBC516C13C8E0019CD28 /* Default@2x.png */; };
+		B3B8BBC816C13C8E0019CD28 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B8BBC716C13C8E0019CD28 /* Default-568h@2x.png */; };
+		B3B8BBCB16C13C8E0019CD28 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B8BBC916C13C8E0019CD28 /* iPadStoryboard.storyboard */; };
+		B3B8BBCE16C13C8E0019CD28 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBCD16C13C8E0019CD28 /* MasterViewController.m */; };
+		B3B8BBD116C13C8E0019CD28 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBD016C13C8E0019CD28 /* DetailViewController.m */; };
+		B3B8BBD916C1424A0019CD28 /* ProjectListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBD816C1424A0019CD28 /* ProjectListItem.m */; };
+		B3B8BBDC16C160A70019CD28 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBDB16C160A70019CD28 /* CustomCell.m */; };
+		B3FF4AE416D38DE800C81C9E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3FF4AE316D38DE800C81C9E /* OpenSans-Regular.ttf */; };
+		B3FF4AE616D39EBA00C81C9E /* innoserv-logoAndPhotos.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FF4AE516D39EBA00C81C9E /* innoserv-logoAndPhotos.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B3025B3016D50A8300143DB3 /* Abitare Solidale 4-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Abitare Solidale 4-2-big.png"; sourceTree = "<group>"; };
+		B3025B3116D50A8300143DB3 /* Ammerud4-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ammerud4-2-big.png"; sourceTree = "<group>"; };
+		B3025B3416D5118800143DB3 /* vitality2a-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vitality2a-2-big.png"; sourceTree = "<group>"; };
+		B3025B3516D5118800143DB3 /* KYOH telehealth-1-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KYOH telehealth-1-big.png"; sourceTree = "<group>"; };
+		B3025B3616D5118800143DB3 /* Seclin-new3-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seclin-new3-big.png"; sourceTree = "<group>"; };
+		B3025B3716D5118800143DB3 /* res-leg-1-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "res-leg-1-big.png"; sourceTree = "<group>"; };
+		B3025B3816D5118800143DB3 /* Real Pearl1-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Real Pearl1-2-big.png"; sourceTree = "<group>"; };
+		B3025B3916D5118800143DB3 /* placedebleu3a-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placedebleu3a-2-big.png"; sourceTree = "<group>"; };
+		B3025B3A16D5118800143DB3 /* Nueva1d-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nueva1d-2-big.png"; sourceTree = "<group>"; };
+		B3025B3B16D5118800143DB3 /* Mom'P1-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mom'P1-2-big.png"; sourceTree = "<group>"; };
+		B3025B3C16D5118800143DB3 /* Katymar-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Katymar-2-big.png"; sourceTree = "<group>"; };
+		B3025B3D16D5118800143DB3 /* irre menschlich 4-4-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "irre menschlich 4-4-big.png"; sourceTree = "<group>"; };
+		B3025B3E16D5118800143DB3 /* humanitas4-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "humanitas4-big.png"; sourceTree = "<group>"; };
+		B3025B3F16D5118800143DB3 /* gpe2-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gpe2-2-big.png"; sourceTree = "<group>"; };
+		B3025B4016D5118800143DB3 /* ECC-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ECC-2-big.png"; sourceTree = "<group>"; };
+		B3025B4116D5118800143DB3 /* ELTERN-AG-3-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ELTERN-AG-3-2-big.png"; sourceTree = "<group>"; };
+		B3025B4216D5118800143DB3 /* Early Supported Discharge-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Early Supported Discharge-2-big.png"; sourceTree = "<group>"; };
+		B3025B4316D5118800143DB3 /* CIL-personal assistant-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CIL-personal assistant-big.png"; sourceTree = "<group>"; };
+		B3025B4416D5118800143DB3 /* mobile health service-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile health service-big.png"; sourceTree = "<group>"; };
+		B3025B4516D5118800143DB3 /* BlueAssist5b-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BlueAssist5b-2-big.png"; sourceTree = "<group>"; };
+		B3025B4616D5118800143DB3 /* Abitare Solidale 4-2-big-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Abitare Solidale 4-2-big-big.png"; sourceTree = "<group>"; };
+		B3025B4716D5118800143DB3 /* Ammerud4-2-big-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ammerud4-2-big-big.png"; sourceTree = "<group>"; };
+		B304131417C237800032150C /* ProjectData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectData.h; sourceTree = "<group>"; };
+		B304131517C237800032150C /* ProjectData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectData.m; sourceTree = "<group>"; };
+		B304131B17C248CF0032150C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B304131D17C24C820032150C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B304131E17C24C820032150C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B30E56D916D26FFB000821DD /* mobile health service.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile health service.png"; sourceTree = "<group>"; };
+		B30E56DA16D26FFB000821DD /* Ammerud4-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ammerud4-2.png"; sourceTree = "<group>"; };
+		B30E56DB16D26FFB000821DD /* ELTERN-AG-3-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ELTERN-AG-3-2.png"; sourceTree = "<group>"; };
+		B30E56DC16D26FFB000821DD /* Real Pearl1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Real Pearl1-2.png"; sourceTree = "<group>"; };
+		B30E56DD16D26FFB000821DD /* humanitas4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humanitas4.png; sourceTree = "<group>"; };
+		B30E56DE16D26FFB000821DD /* Mom'P1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mom'P1-2.png"; sourceTree = "<group>"; };
+		B30E56E616D283E5000821DD /* Abitare Solidale 4-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Abitare Solidale 4-2.png"; sourceTree = "<group>"; };
+		B30E56E716D283E6000821DD /* BlueAssist5b-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BlueAssist5b-2.png"; sourceTree = "<group>"; };
+		B30E56EA16D284B4000821DD /* CIL-personal assistant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CIL-personal assistant.png"; sourceTree = "<group>"; };
+		B30E56EB16D284B4000821DD /* Early Supported Discharge-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Early Supported Discharge-2.png"; sourceTree = "<group>"; };
+		B30E56EE16D2854F000821DD /* ECC-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ECC-2.png"; sourceTree = "<group>"; };
+		B30E56EF16D2854F000821DD /* gpe2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gpe2-2.png"; sourceTree = "<group>"; };
+		B30E56F216D2880C000821DD /* irre menschlich 4-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "irre menschlich 4-4.png"; sourceTree = "<group>"; };
+		B30E56F316D2880D000821DD /* Katymar-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Katymar-2.png"; sourceTree = "<group>"; };
+		B30E56F616D28CE9000821DD /* res-leg-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "res-leg-1.png"; sourceTree = "<group>"; };
+		B30E56F716D28CE9000821DD /* Seclin-new3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seclin-new3.png"; sourceTree = "<group>"; };
+		B30E56F816D28CEA000821DD /* KYOH telehealth-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KYOH telehealth-1.png"; sourceTree = "<group>"; };
+		B30E56F916D28CEB000821DD /* vitality2a-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vitality2a-2.png"; sourceTree = "<group>"; };
+		B30E56FE16D28D13000821DD /* Nueva1d-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nueva1d-2.png"; sourceTree = "<group>"; };
+		B30E56FF16D28D14000821DD /* placedebleu3a-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placedebleu3a-2.png"; sourceTree = "<group>"; };
+		B30F62A0171C3DFE0008F4C1 /* AMMERUDHJEMMET.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AMMERUDHJEMMET.mp4; sourceTree = "<group>"; };
+		B30F62A2171C3E0C0008F4C1 /* ECC.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ECC.mp4; sourceTree = "<group>"; };
+		B319004616F3387E003D479B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B319004916F35824003D479B /* AbitareSolidale_11.03.2013-iphone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AbitareSolidale_11.03.2013-iphone.mp4"; sourceTree = "<group>"; };
+		B319004B16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BlueAssist_06.03.2013-iphone.mp4"; sourceTree = "<group>"; };
+		B319004D16F36C9F003D479B /* CIL_20032013-iphone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CIL_20032013-iphone.mp4"; sourceTree = "<group>"; };
+		B319004F16F36EEB003D479B /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		B32E2CD11714A17D00F17039 /* iPhoneDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneDetailViewController.h; sourceTree = "<group>"; };
+		B32E2CD21714A17D00F17039 /* iPhoneDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneDetailViewController.m; sourceTree = "<group>"; };
+		B32F5AEA17C39D5000D46EE1 /* SrtData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SrtData.h; sourceTree = "<group>"; };
+		B32F5AEB17C39D5000D46EE1 /* SrtData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SrtData.m; sourceTree = "<group>"; };
+		B32F5AEC17C39D5000D46EE1 /* SrtParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SrtParser.h; sourceTree = "<group>"; };
+		B32F5AED17C39D5000D46EE1 /* SrtParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SrtParser.m; sourceTree = "<group>"; };
+		B33DDECC17C4B42E005C0D15 /* ProjectDataFR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataFR.h; sourceTree = "<group>"; };
+		B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataFR.m; sourceTree = "<group>"; };
+		B37077611727DA44009946A9 /* Trailer_V4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trailer_V4.mp4; sourceTree = "<group>"; };
+		B37077631727E80A009946A9 /* iPadMorePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadMorePageViewController.h; sourceTree = "<group>"; };
+		B37077641727E80A009946A9 /* iPadMorePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadMorePageViewController.m; sourceTree = "<group>"; };
+		B370776617280D7F009946A9 /* iPadAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadAboutViewController.h; sourceTree = "<group>"; };
+		B370776717280D7F009946A9 /* iPadAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadAboutViewController.m; sourceTree = "<group>"; };
+		B37D268817C6391B0073F49D /* Abitare-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Abitare-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D268917C6391B0073F49D /* Ammerudhjemmet-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Ammerudhjemmet-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D268A17C6391B0073F49D /* Blue Assist-subtitles-french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Blue Assist-subtitles-french.txt"; sourceTree = "<group>"; };
+		B37D268B17C6391B0073F49D /* CIL - subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CIL - subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D268C17C6391B0073F49D /* ECC-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ECC-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D268D17C6391B0073F49D /* ElternAg-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ElternAg-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D268E17C6391B0073F49D /* ESD-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ESD-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D268F17C6391B0073F49D /* GPE-subtitles- french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GPE-subtitles- french.txt"; sourceTree = "<group>"; };
+		B37D269017C6391B0073F49D /* Humanitas-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Humanitas-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D269117C6391B0073F49D /* Irre Menschlich-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Irre Menschlich-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D269217C6391B0073F49D /* Katymar-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Katymar-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D269317C6391B0073F49D /* KYOH-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "KYOH-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D269417C6391B0073F49D /* Mobile Health-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Mobile Health-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D269517C6391B0073F49D /* Momartre-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Momartre-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D269617C6391B0073F49D /* Nueva-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Nueva-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D269717C6391B0073F49D /* Place de bleu-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Place de bleu-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D269817C6391B0073F49D /* RealPearl-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "RealPearl-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D269917C6391B0073F49D /* Residenzialita-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Residenzialita-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D269A17C6391B0073F49D /* Seclin-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Seclin-subtitles - french.txt"; sourceTree = "<group>"; };
+		B37D269B17C6391B0073F49D /* Vitality-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Vitality-subtitles - french.txt"; sourceTree = "<group>"; };
+		B380094416D6418F00506DD5 /* ViewControllerMorePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerMorePage.h; sourceTree = "<group>"; };
+		B380094516D6418F00506DD5 /* ViewControllerMorePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMorePage.m; sourceTree = "<group>"; };
+		B380094716D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = INNOSERV_Flyer_2013.pdf; sourceTree = "<group>"; };
+		B380094916D6609000506DD5 /* innoServLogo2forIPADNoRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = innoServLogo2forIPADNoRetina.png; sourceTree = "<group>"; };
+		B380094B16D6609400506DD5 /* innoServLogo2forIPAD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = innoServLogo2forIPAD.png; sourceTree = "<group>"; };
+		B3849AFD17156D5800A58672 /* iPhoneAboutPDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneAboutPDFViewController.h; sourceTree = "<group>"; };
+		B3849AFE17156D5800A58672 /* iPhoneAboutPDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneAboutPDFViewController.m; sourceTree = "<group>"; };
+		B3849B00171596EA00A58672 /* ELTERN-AG-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ELTERN-AG-Final.mp4"; sourceTree = "<group>"; };
+		B3849B01171596EA00A58672 /* nueva-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nueva-Final.mp4"; sourceTree = "<group>"; };
+		B3849B02171596EA00A58672 /* RealPearl-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RealPearl-Final.mp4"; sourceTree = "<group>"; };
+		B3849B03171596EA00A58672 /* Mobile-Health-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mobile-Health-Final.mp4"; sourceTree = "<group>"; };
+		B3849B04171596EA00A58672 /* Katymar-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Katymar-Final.mp4"; sourceTree = "<group>"; };
+		B3849B05171596EA00A58672 /* Humanitas-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Humanitas-Final.mp4"; sourceTree = "<group>"; };
+		B3849B06171596EA00A58672 /* Seclin-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seclin-Final.mp4"; sourceTree = "<group>"; };
+		B3849B07171596EA00A58672 /* Vitality-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vitality-Final.mp4"; sourceTree = "<group>"; };
+		B3849B08171596EA00A58672 /* Momartre-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Momartre-Final.mp4"; sourceTree = "<group>"; };
+		B3849B09171596EA00A58672 /* Residencialita-Leggera-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Residencialita-Leggera-Final.mp4"; sourceTree = "<group>"; };
+		B3849B0A171596EA00A58672 /* Place-de-Bleu-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Place-de-Bleu-Final.mp4"; sourceTree = "<group>"; };
+		B3849B0B171596EA00A58672 /* Early-Supported-Discharge-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Early-Supported-Discharge-Final.mp4"; sourceTree = "<group>"; };
+		B3849B0C171596EA00A58672 /* Irre-Menschlich-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Irre-Menschlich-Final.mp4"; sourceTree = "<group>"; };
+		B3849B0D171596EA00A58672 /* GPE-Mainz-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GPE-Mainz-Final.mp4"; sourceTree = "<group>"; };
+		B3849B1C171599C000A58672 /* KYOH-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KYOH-Final.mp4"; sourceTree = "<group>"; };
+		B3996A0B16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
+		B3996A0D16DCFD9900BC65DC /* iPhoneFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneFirstViewController.h; sourceTree = "<group>"; };
+		B3996A0E16DCFD9900BC65DC /* iPhoneFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneFirstViewController.m; sourceTree = "<group>"; };
+		B3B8BBAD16C13C8E0019CD28 /* INNOSERV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INNOSERV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B8BBB116C13C8E0019CD28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B3B8BBB316C13C8E0019CD28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B3B8BBB516C13C8E0019CD28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B3B8BBB916C13C8E0019CD28 /* Innoserv-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Innoserv-Info.plist"; sourceTree = "<group>"; };
+		B3B8BBBB16C13C8E0019CD28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3B8BBBD16C13C8E0019CD28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3B8BBBF16C13C8E0019CD28 /* Innoserv-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Innoserv-Prefix.pch"; sourceTree = "<group>"; };
+		B3B8BBC016C13C8E0019CD28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3B8BBC116C13C8E0019CD28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3B8BBC316C13C8E0019CD28 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B3B8BBC516C13C8E0019CD28 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B3B8BBC716C13C8E0019CD28 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B3B8BBCA16C13C8E0019CD28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPadStoryboard.storyboard; sourceTree = "<group>"; };
+		B3B8BBCC16C13C8E0019CD28 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		B3B8BBCD16C13C8E0019CD28 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		B3B8BBCF16C13C8E0019CD28 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B3B8BBD016C13C8E0019CD28 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B3B8BBD716C1424A0019CD28 /* ProjectListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectListItem.h; sourceTree = "<group>"; };
+		B3B8BBD816C1424A0019CD28 /* ProjectListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListItem.m; sourceTree = "<group>"; };
+		B3B8BBDA16C160A70019CD28 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		B3B8BBDB16C160A70019CD28 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		B3FF4AE316D38DE800C81C9E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		B3FF4AE516D39EBA00C81C9E /* innoserv-logoAndPhotos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "innoserv-logoAndPhotos.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3B8BBAA16C13C8E0019CD28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B319004716F3387E003D479B /* MediaPlayer.framework in Frameworks */,
+				B3B8BBB216C13C8E0019CD28 /* UIKit.framework in Frameworks */,
+				B3B8BBB416C13C8E0019CD28 /* Foundation.framework in Frameworks */,
+				B3B8BBB616C13C8E0019CD28 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B304130A17C219330032150C /* Controllers(iPhone) */ = {
+			isa = PBXGroup;
+			children = (
+				B3996A0D16DCFD9900BC65DC /* iPhoneFirstViewController.h */,
+				B3996A0E16DCFD9900BC65DC /* iPhoneFirstViewController.m */,
+				B32E2CD11714A17D00F17039 /* iPhoneDetailViewController.h */,
+				B32E2CD21714A17D00F17039 /* iPhoneDetailViewController.m */,
+				B380094416D6418F00506DD5 /* ViewControllerMorePage.h */,
+				B380094516D6418F00506DD5 /* ViewControllerMorePage.m */,
+				B3849AFD17156D5800A58672 /* iPhoneAboutPDFViewController.h */,
+				B3849AFE17156D5800A58672 /* iPhoneAboutPDFViewController.m */,
+			);
+			name = "Controllers(iPhone)";
+			sourceTree = "<group>";
+		};
+		B304130B17C2195C0032150C /* Controllers(iPad) */ = {
+			isa = PBXGroup;
+			children = (
+				B3B8BBCC16C13C8E0019CD28 /* MasterViewController.h */,
+				B3B8BBCD16C13C8E0019CD28 /* MasterViewController.m */,
+				B3B8BBCF16C13C8E0019CD28 /* DetailViewController.h */,
+				B3B8BBD016C13C8E0019CD28 /* DetailViewController.m */,
+				B3B8BBDA16C160A70019CD28 /* CustomCell.h */,
+				B3B8BBDB16C160A70019CD28 /* CustomCell.m */,
+				B37077631727E80A009946A9 /* iPadMorePageViewController.h */,
+				B37077641727E80A009946A9 /* iPadMorePageViewController.m */,
+				B370776617280D7F009946A9 /* iPadAboutViewController.h */,
+				B370776717280D7F009946A9 /* iPadAboutViewController.m */,
+			);
+			name = "Controllers(iPad)";
+			sourceTree = "<group>";
+		};
+		B304131717C246B60032150C /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				B37D268717C6391B0073F49D /* Sous-titres FR */,
+				B319004816F357F5003D479B /* Videos */,
+				B3A9261616CE8DBA006686A7 /* Images */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		B319004816F357F5003D479B /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				B37077611727DA44009946A9 /* Trailer_V4.mp4 */,
+				B30F62A2171C3E0C0008F4C1 /* ECC.mp4 */,
+				B30F62A0171C3DFE0008F4C1 /* AMMERUDHJEMMET.mp4 */,
+				B3849B1C171599C000A58672 /* KYOH-Final.mp4 */,
+				B3849B00171596EA00A58672 /* ELTERN-AG-Final.mp4 */,
+				B3849B01171596EA00A58672 /* nueva-Final.mp4 */,
+				B3849B02171596EA00A58672 /* RealPearl-Final.mp4 */,
+				B3849B03171596EA00A58672 /* Mobile-Health-Final.mp4 */,
+				B3849B04171596EA00A58672 /* Katymar-Final.mp4 */,
+				B3849B05171596EA00A58672 /* Humanitas-Final.mp4 */,
+				B3849B06171596EA00A58672 /* Seclin-Final.mp4 */,
+				B3849B07171596EA00A58672 /* Vitality-Final.mp4 */,
+				B3849B08171596EA00A58672 /* Momartre-Final.mp4 */,
+				B3849B09171596EA00A58672 /* Residencialita-Leggera-Final.mp4 */,
+				B3849B0A171596EA00A58672 /* Place-de-Bleu-Final.mp4 */,
+				B3849B0B171596EA00A58672 /* Early-Supported-Discharge-Final.mp4 */,
+				B3849B0C171596EA00A58672 /* Irre-Menschlich-Final.mp4 */,
+				B3849B0D171596EA00A58672 /* GPE-Mainz-Final.mp4 */,
+				B319004D16F36C9F003D479B /* CIL_20032013-iphone.mp4 */,
+				B319004B16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 */,
+				B319004916F35824003D479B /* AbitareSolidale_11.03.2013-iphone.mp4 */,
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
+		B32F5AF017C39D7D00D46EE1 /* SrtParser */ = {
+			isa = PBXGroup;
+			children = (
+				B32F5AEA17C39D5000D46EE1 /* SrtData.h */,
+				B32F5AEB17C39D5000D46EE1 /* SrtData.m */,
+				B32F5AEC17C39D5000D46EE1 /* SrtParser.h */,
+				B32F5AED17C39D5000D46EE1 /* SrtParser.m */,
+			);
+			name = SrtParser;
+			sourceTree = "<group>";
+		};
+		B37D268717C6391B0073F49D /* Sous-titres FR */ = {
+			isa = PBXGroup;
+			children = (
+				B37D268817C6391B0073F49D /* Abitare-subtitles - french.txt */,
+				B37D268917C6391B0073F49D /* Ammerudhjemmet-subtitles - french.txt */,
+				B37D268A17C6391B0073F49D /* Blue Assist-subtitles-french.txt */,
+				B37D268B17C6391B0073F49D /* CIL - subtitles - french.txt */,
+				B37D268C17C6391B0073F49D /* ECC-subtitles - french.txt */,
+				B37D268D17C6391B0073F49D /* ElternAg-subtitles - french.txt */,
+				B37D268E17C6391B0073F49D /* ESD-subtitles - french.txt */,
+				B37D268F17C6391B0073F49D /* GPE-subtitles- french.txt */,
+				B37D269017C6391B0073F49D /* Humanitas-subtitles - french.txt */,
+				B37D269117C6391B0073F49D /* Irre Menschlich-subtitles - french.txt */,
+				B37D269217C6391B0073F49D /* Katymar-subtitles - french.txt */,
+				B37D269317C6391B0073F49D /* KYOH-subtitles - french.txt */,
+				B37D269417C6391B0073F49D /* Mobile Health-subtitles - french.txt */,
+				B37D269517C6391B0073F49D /* Momartre-subtitles - french.txt */,
+				B37D269617C6391B0073F49D /* Nueva-subtitles - french.txt */,
+				B37D269717C6391B0073F49D /* Place de bleu-subtitles - french.txt */,
+				B37D269817C6391B0073F49D /* RealPearl-subtitles - french.txt */,
+				B37D269917C6391B0073F49D /* Residenzialita-subtitles - french.txt */,
+				B37D269A17C6391B0073F49D /* Seclin-subtitles - french.txt */,
+				B37D269B17C6391B0073F49D /* Vitality-subtitles - french.txt */,
+			);
+			name = "Sous-titres FR";
+			path = "sous-titres";
+			sourceTree = "<group>";
+		};
+		B3A9261616CE8DBA006686A7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B319004F16F36EEB003D479B /* play.png */,
+				B380094716D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf */,
+				B3025B3416D5118800143DB3 /* vitality2a-2-big.png */,
+				B3025B3516D5118800143DB3 /* KYOH telehealth-1-big.png */,
+				B3025B3616D5118800143DB3 /* Seclin-new3-big.png */,
+				B3025B3716D5118800143DB3 /* res-leg-1-big.png */,
+				B3025B3816D5118800143DB3 /* Real Pearl1-2-big.png */,
+				B3025B3916D5118800143DB3 /* placedebleu3a-2-big.png */,
+				B3025B3A16D5118800143DB3 /* Nueva1d-2-big.png */,
+				B3025B3B16D5118800143DB3 /* Mom'P1-2-big.png */,
+				B3025B3C16D5118800143DB3 /* Katymar-2-big.png */,
+				B3025B3D16D5118800143DB3 /* irre menschlich 4-4-big.png */,
+				B3025B3E16D5118800143DB3 /* humanitas4-big.png */,
+				B3025B3F16D5118800143DB3 /* gpe2-2-big.png */,
+				B3025B4016D5118800143DB3 /* ECC-2-big.png */,
+				B3025B4116D5118800143DB3 /* ELTERN-AG-3-2-big.png */,
+				B3025B4216D5118800143DB3 /* Early Supported Discharge-2-big.png */,
+				B3025B4316D5118800143DB3 /* CIL-personal assistant-big.png */,
+				B3025B4416D5118800143DB3 /* mobile health service-big.png */,
+				B3025B4516D5118800143DB3 /* BlueAssist5b-2-big.png */,
+				B3025B4616D5118800143DB3 /* Abitare Solidale 4-2-big-big.png */,
+				B3025B4716D5118800143DB3 /* Ammerud4-2-big-big.png */,
+				B3025B3016D50A8300143DB3 /* Abitare Solidale 4-2-big.png */,
+				B3025B3116D50A8300143DB3 /* Ammerud4-2-big.png */,
+				B3FF4AE516D39EBA00C81C9E /* innoserv-logoAndPhotos.png */,
+				B30E56FE16D28D13000821DD /* Nueva1d-2.png */,
+				B30E56FF16D28D14000821DD /* placedebleu3a-2.png */,
+				B30E56F616D28CE9000821DD /* res-leg-1.png */,
+				B30E56F716D28CE9000821DD /* Seclin-new3.png */,
+				B30E56F816D28CEA000821DD /* KYOH telehealth-1.png */,
+				B30E56F916D28CEB000821DD /* vitality2a-2.png */,
+				B30E56F216D2880C000821DD /* irre menschlich 4-4.png */,
+				B30E56F316D2880D000821DD /* Katymar-2.png */,
+				B30E56EE16D2854F000821DD /* ECC-2.png */,
+				B30E56EF16D2854F000821DD /* gpe2-2.png */,
+				B30E56EA16D284B4000821DD /* CIL-personal assistant.png */,
+				B30E56EB16D284B4000821DD /* Early Supported Discharge-2.png */,
+				B30E56E616D283E5000821DD /* Abitare Solidale 4-2.png */,
+				B30E56E716D283E6000821DD /* BlueAssist5b-2.png */,
+				B30E56D916D26FFB000821DD /* mobile health service.png */,
+				B30E56DA16D26FFB000821DD /* Ammerud4-2.png */,
+				B30E56DB16D26FFB000821DD /* ELTERN-AG-3-2.png */,
+				B30E56DC16D26FFB000821DD /* Real Pearl1-2.png */,
+				B30E56DD16D26FFB000821DD /* humanitas4.png */,
+				B30E56DE16D26FFB000821DD /* Mom'P1-2.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B3A9261816CE8E00006686A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3B8BBD716C1424A0019CD28 /* ProjectListItem.h */,
+				B3B8BBD816C1424A0019CD28 /* ProjectListItem.m */,
+				B304131417C237800032150C /* ProjectData.h */,
+				B304131517C237800032150C /* ProjectData.m */,
+				B33DDECC17C4B42E005C0D15 /* ProjectDataFR.h */,
+				B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B3B8BBA216C13C8E0019CD28 = {
+			isa = PBXGroup;
+			children = (
+				B380094B16D6609400506DD5 /* innoServLogo2forIPAD.png */,
+				B380094916D6609000506DD5 /* innoServLogo2forIPADNoRetina.png */,
+				B3B8BBB716C13C8E0019CD28 /* testSplitView */,
+				B3B8BBB016C13C8E0019CD28 /* Frameworks */,
+				B3B8BBAE16C13C8E0019CD28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3B8BBAE16C13C8E0019CD28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3B8BBAD16C13C8E0019CD28 /* INNOSERV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3B8BBB016C13C8E0019CD28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B319004616F3387E003D479B /* MediaPlayer.framework */,
+				B3B8BBB116C13C8E0019CD28 /* UIKit.framework */,
+				B3B8BBB316C13C8E0019CD28 /* Foundation.framework */,
+				B3B8BBB516C13C8E0019CD28 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3B8BBB716C13C8E0019CD28 /* testSplitView */ = {
+			isa = PBXGroup;
+			children = (
+				B32F5AF017C39D7D00D46EE1 /* SrtParser */,
+				B3A9261816CE8E00006686A7 /* Model */,
+				B3B8BBC016C13C8E0019CD28 /* AppDelegate.h */,
+				B3B8BBC116C13C8E0019CD28 /* AppDelegate.m */,
+				B3996A0B16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard */,
+				B304130A17C219330032150C /* Controllers(iPhone) */,
+				B3B8BBC916C13C8E0019CD28 /* iPadStoryboard.storyboard */,
+				B304130B17C2195C0032150C /* Controllers(iPad) */,
+				B304131717C246B60032150C /* Ressources */,
+				B3B8BBB816C13C8E0019CD28 /* Supporting Files */,
+			);
+			path = testSplitView;
+			sourceTree = "<group>";
+		};
+		B3B8BBB816C13C8E0019CD28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3FF4AE316D38DE800C81C9E /* OpenSans-Regular.ttf */,
+				B3B8BBB916C13C8E0019CD28 /* Innoserv-Info.plist */,
+				B3B8BBBA16C13C8E0019CD28 /* InfoPlist.strings */,
+				B3B8BBBD16C13C8E0019CD28 /* main.m */,
+				B3B8BBBF16C13C8E0019CD28 /* Innoserv-Prefix.pch */,
+				B3B8BBC316C13C8E0019CD28 /* Default.png */,
+				B3B8BBC516C13C8E0019CD28 /* Default@2x.png */,
+				B3B8BBC716C13C8E0019CD28 /* Default-568h@2x.png */,
+				B304131C17C248CF0032150C /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3B8BBAC16C13C8E0019CD28 /* Innoserv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3B8BBD416C13C8E0019CD28 /* Build configuration list for PBXNativeTarget "Innoserv" */;
+			buildPhases = (
+				B3B8BBA916C13C8E0019CD28 /* Sources */,
+				B3B8BBAA16C13C8E0019CD28 /* Frameworks */,
+				B3B8BBAB16C13C8E0019CD28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Innoserv;
+			productName = testSplitView;
+			productReference = B3B8BBAD16C13C8E0019CD28 /* INNOSERV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3B8BBA416C13C8E0019CD28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "philippe nougaillon";
+			};
+			buildConfigurationList = B3B8BBA716C13C8E0019CD28 /* Build configuration list for PBXProject "Innoserv" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+			);
+			mainGroup = B3B8BBA216C13C8E0019CD28;
+			productRefGroup = B3B8BBAE16C13C8E0019CD28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3B8BBAC16C13C8E0019CD28 /* Innoserv */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3B8BBAB16C13C8E0019CD28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B8BBBC16C13C8E0019CD28 /* InfoPlist.strings in Resources */,
+				B3B8BBC416C13C8E0019CD28 /* Default.png in Resources */,
+				B3B8BBC616C13C8E0019CD28 /* Default@2x.png in Resources */,
+				B3B8BBC816C13C8E0019CD28 /* Default-568h@2x.png in Resources */,
+				B3B8BBCB16C13C8E0019CD28 /* iPadStoryboard.storyboard in Resources */,
+				B30E56DF16D26FFB000821DD /* mobile health service.png in Resources */,
+				B30E56E016D26FFB000821DD /* Ammerud4-2.png in Resources */,
+				B30E56E116D26FFB000821DD /* ELTERN-AG-3-2.png in Resources */,
+				B30E56E216D26FFB000821DD /* Real Pearl1-2.png in Resources */,
+				B30E56E316D26FFB000821DD /* humanitas4.png in Resources */,
+				B30E56E416D26FFB000821DD /* Mom'P1-2.png in Resources */,
+				B30E56E816D283E6000821DD /* Abitare Solidale 4-2.png in Resources */,
+				B30E56E916D283E6000821DD /* BlueAssist5b-2.png in Resources */,
+				B30E56EC16D284B5000821DD /* CIL-personal assistant.png in Resources */,
+				B30E56ED16D284B5000821DD /* Early Supported Discharge-2.png in Resources */,
+				B30E56F016D28550000821DD /* ECC-2.png in Resources */,
+				B30E56F116D28550000821DD /* gpe2-2.png in Resources */,
+				B30E56F416D2880E000821DD /* irre menschlich 4-4.png in Resources */,
+				B30E56F516D2880E000821DD /* Katymar-2.png in Resources */,
+				B30E56FA16D28CEC000821DD /* res-leg-1.png in Resources */,
+				B30E56FB16D28CEC000821DD /* Seclin-new3.png in Resources */,
+				B30E56FC16D28CEC000821DD /* KYOH telehealth-1.png in Resources */,
+				B30E56FD16D28CEC000821DD /* vitality2a-2.png in Resources */,
+				B30E570016D28D15000821DD /* Nueva1d-2.png in Resources */,
+				B30E570116D28D15000821DD /* placedebleu3a-2.png in Resources */,
+				B3FF4AE416D38DE800C81C9E /* OpenSans-Regular.ttf in Resources */,
+				B3FF4AE616D39EBA00C81C9E /* innoserv-logoAndPhotos.png in Resources */,
+				B3025B3216D50A8300143DB3 /* Abitare Solidale 4-2-big.png in Resources */,
+				B3025B3316D50A8300143DB3 /* Ammerud4-2-big.png in Resources */,
+				B3025B4816D5118800143DB3 /* vitality2a-2-big.png in Resources */,
+				B3025B4916D5118800143DB3 /* KYOH telehealth-1-big.png in Resources */,
+				B3025B4A16D5118800143DB3 /* Seclin-new3-big.png in Resources */,
+				B3025B4B16D5118800143DB3 /* res-leg-1-big.png in Resources */,
+				B3025B4C16D5118800143DB3 /* Real Pearl1-2-big.png in Resources */,
+				B3025B4D16D5118800143DB3 /* placedebleu3a-2-big.png in Resources */,
+				B3025B4E16D5118800143DB3 /* Nueva1d-2-big.png in Resources */,
+				B3025B4F16D5118800143DB3 /* Mom'P1-2-big.png in Resources */,
+				B3025B5016D5118800143DB3 /* Katymar-2-big.png in Resources */,
+				B3025B5116D5118800143DB3 /* irre menschlich 4-4-big.png in Resources */,
+				B3025B5216D5118800143DB3 /* humanitas4-big.png in Resources */,
+				B3025B5316D5118800143DB3 /* gpe2-2-big.png in Resources */,
+				B3025B5416D5118800143DB3 /* ECC-2-big.png in Resources */,
+				B3025B5516D5118800143DB3 /* ELTERN-AG-3-2-big.png in Resources */,
+				B3025B5616D5118800143DB3 /* Early Supported Discharge-2-big.png in Resources */,
+				B3025B5716D5118800143DB3 /* CIL-personal assistant-big.png in Resources */,
+				B3025B5816D5118800143DB3 /* mobile health service-big.png in Resources */,
+				B3025B5916D5118800143DB3 /* BlueAssist5b-2-big.png in Resources */,
+				B3025B5A16D5118800143DB3 /* Abitare Solidale 4-2-big-big.png in Resources */,
+				B3025B5B16D5118800143DB3 /* Ammerud4-2-big-big.png in Resources */,
+				B380094816D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf in Resources */,
+				B380094A16D6609000506DD5 /* innoServLogo2forIPADNoRetina.png in Resources */,
+				B380094C16D6609400506DD5 /* innoServLogo2forIPAD.png in Resources */,
+				B3996A0C16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard in Resources */,
+				B319004A16F35824003D479B /* AbitareSolidale_11.03.2013-iphone.mp4 in Resources */,
+				B319004C16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 in Resources */,
+				B319004E16F36C9F003D479B /* CIL_20032013-iphone.mp4 in Resources */,
+				B319005016F36EEB003D479B /* play.png in Resources */,
+				B3849B0E171596EA00A58672 /* ELTERN-AG-Final.mp4 in Resources */,
+				B3849B0F171596EA00A58672 /* nueva-Final.mp4 in Resources */,
+				B3849B10171596EA00A58672 /* RealPearl-Final.mp4 in Resources */,
+				B3849B11171596EA00A58672 /* Mobile-Health-Final.mp4 in Resources */,
+				B3849B12171596EA00A58672 /* Katymar-Final.mp4 in Resources */,
+				B3849B13171596EA00A58672 /* Humanitas-Final.mp4 in Resources */,
+				B3849B14171596EA00A58672 /* Seclin-Final.mp4 in Resources */,
+				B3849B15171596EA00A58672 /* Vitality-Final.mp4 in Resources */,
+				B3849B16171596EA00A58672 /* Momartre-Final.mp4 in Resources */,
+				B3849B17171596EA00A58672 /* Residencialita-Leggera-Final.mp4 in Resources */,
+				B3849B18171596EA00A58672 /* Place-de-Bleu-Final.mp4 in Resources */,
+				B3849B19171596EA00A58672 /* Early-Supported-Discharge-Final.mp4 in Resources */,
+				B3849B1A171596EA00A58672 /* Irre-Menschlich-Final.mp4 in Resources */,
+				B3849B1B171596EA00A58672 /* GPE-Mainz-Final.mp4 in Resources */,
+				B3849B1D171599C000A58672 /* KYOH-Final.mp4 in Resources */,
+				B30F62A1171C3DFE0008F4C1 /* AMMERUDHJEMMET.mp4 in Resources */,
+				B30F62A3171C3E0C0008F4C1 /* ECC.mp4 in Resources */,
+				B37077621727DA44009946A9 /* Trailer_V4.mp4 in Resources */,
+				B304131A17C248CF0032150C /* Localizable.strings in Resources */,
+				B37D269C17C6391B0073F49D /* Abitare-subtitles - french.txt in Resources */,
+				B37D269D17C6391B0073F49D /* Ammerudhjemmet-subtitles - french.txt in Resources */,
+				B37D269E17C6391B0073F49D /* Blue Assist-subtitles-french.txt in Resources */,
+				B37D269F17C6391B0073F49D /* CIL - subtitles - french.txt in Resources */,
+				B37D26A017C6391B0073F49D /* ECC-subtitles - french.txt in Resources */,
+				B37D26A117C6391B0073F49D /* ElternAg-subtitles - french.txt in Resources */,
+				B37D26A217C6391B0073F49D /* ESD-subtitles - french.txt in Resources */,
+				B37D26A317C6391B0073F49D /* GPE-subtitles- french.txt in Resources */,
+				B37D26A417C6391B0073F49D /* Humanitas-subtitles - french.txt in Resources */,
+				B37D26A517C6391B0073F49D /* Irre Menschlich-subtitles - french.txt in Resources */,
+				B37D26A617C6391B0073F49D /* Katymar-subtitles - french.txt in Resources */,
+				B37D26A717C6391B0073F49D /* KYOH-subtitles - french.txt in Resources */,
+				B37D26A817C6391B0073F49D /* Mobile Health-subtitles - french.txt in Resources */,
+				B37D26A917C6391B0073F49D /* Momartre-subtitles - french.txt in Resources */,
+				B37D26AA17C6391B0073F49D /* Nueva-subtitles - french.txt in Resources */,
+				B37D26AB17C6391B0073F49D /* Place de bleu-subtitles - french.txt in Resources */,
+				B37D26AC17C6391B0073F49D /* RealPearl-subtitles - french.txt in Resources */,
+				B37D26AD17C6391B0073F49D /* Residenzialita-subtitles - french.txt in Resources */,
+				B37D26AE17C6391B0073F49D /* Seclin-subtitles - french.txt in Resources */,
+				B37D26AF17C6391B0073F49D /* Vitality-subtitles - french.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3B8BBA916C13C8E0019CD28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B8BBBE16C13C8E0019CD28 /* main.m in Sources */,
+				B3B8BBC216C13C8E0019CD28 /* AppDelegate.m in Sources */,
+				B3B8BBCE16C13C8E0019CD28 /* MasterViewController.m in Sources */,
+				B3B8BBD116C13C8E0019CD28 /* DetailViewController.m in Sources */,
+				B3B8BBD916C1424A0019CD28 /* ProjectListItem.m in Sources */,
+				B3B8BBDC16C160A70019CD28 /* CustomCell.m in Sources */,
+				B380094616D6418F00506DD5 /* ViewControllerMorePage.m in Sources */,
+				B3996A0F16DCFD9900BC65DC /* iPhoneFirstViewController.m in Sources */,
+				B32E2CD31714A17D00F17039 /* iPhoneDetailViewController.m in Sources */,
+				B3849AFF17156D5800A58672 /* iPhoneAboutPDFViewController.m in Sources */,
+				B37077651727E80A009946A9 /* iPadMorePageViewController.m in Sources */,
+				B370776817280D7F009946A9 /* iPadAboutViewController.m in Sources */,
+				B304131617C237810032150C /* ProjectData.m in Sources */,
+				B32F5AEE17C39D5000D46EE1 /* SrtData.m in Sources */,
+				B32F5AEF17C39D5000D46EE1 /* SrtParser.m in Sources */,
+				B33DDECE17C4B42E005C0D15 /* ProjectDataFR.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B304131C17C248CF0032150C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B304131B17C248CF0032150C /* en */,
+				B304131E17C24C820032150C /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B3B8BBBA16C13C8E0019CD28 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3B8BBBB16C13C8E0019CD28 /* en */,
+				B304131D17C24C820032150C /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B3B8BBC916C13C8E0019CD28 /* iPadStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3B8BBCA16C13C8E0019CD28 /* en */,
+			);
+			name = iPadStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3B8BBD216C13C8E0019CD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		B3B8BBD316C13C8E0019CD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3B8BBD516C13C8E0019CD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: RedCom";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: RedCom";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testSplitView/Innoserv-Prefix.pch";
+				INFOPLIST_FILE = "testSplitView/Innoserv-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = INNOSERV;
+				PROVISIONING_PROFILE = "36B04568-0811-44BF-9F80-59ACD5F509CD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "36B04568-0811-44BF-9F80-59ACD5F509CD";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B3B8BBD616C13C8E0019CD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: RedCom";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: RedCom";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testSplitView/Innoserv-Prefix.pch";
+				INFOPLIST_FILE = "testSplitView/Innoserv-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = INNOSERV;
+				PROVISIONING_PROFILE = "36B04568-0811-44BF-9F80-59ACD5F509CD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "36B04568-0811-44BF-9F80-59ACD5F509CD";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3B8BBA716C13C8E0019CD28 /* Build configuration list for PBXProject "Innoserv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B8BBD216C13C8E0019CD28 /* Debug */,
+				B3B8BBD316C13C8E0019CD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3B8BBD416C13C8E0019CD28 /* Build configuration list for PBXNativeTarget "Innoserv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B8BBD516C13C8E0019CD28 /* Debug */,
+				B3B8BBD616C13C8E0019CD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3B8BBA416C13C8E0019CD28 /* Project object */;
+}

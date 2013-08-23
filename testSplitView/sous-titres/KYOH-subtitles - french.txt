@@ -1,0 +1,407 @@
+﻿1
+00:00:18,880 --> 00:00:21,680
+Le Centre de Gestion de la Douleur du Somerset utilise un système digital 
+
+2
+00:00:22,080 --> 00:00:24,880
+pour permettre aux patients de gérer leur douleur chronique.
+
+3
+00:00:25,880 --> 00:00:28,120
+Le système a été développé par 'Know Your Own Health'
+
+4
+00:00:28,320 --> 00:00:31,720
+ou 'KYOH' en abrégé.
+
+5
+00:00:32,240 --> 00:00:34,160
+KYOH est un système d'aide en ligne comprenant :
+
+6
+00:00:35,000 --> 00:00:36,920
+- des informations sur les maladies
+
+7
+00:00:37,240 --> 00:00:39,160
+- une aide personnalisée à l'auto-gestion 
+
+8
+00:00:39,360 --> 00:00:41,480
+- des conseillers téléphoniques et une aide en ligne par les pairs
+
+9
+00:00:44,320 --> 00:00:45,920
+Bonjour à tous.
+
+10
+00:00:45,920 --> 00:00:50,480
+Je souffre de douleurs au dos depuis le 22 avril 2011.
+
+11
+00:00:50,680 --> 00:00:53,800
+Au départ j'étais totalement immobilisé par une forte douleur, 
+
+12
+00:00:54,000 --> 00:00:56,800
+et maintenant je peux aller à la gym, marcher une bonne distance,
+
+13
+00:00:56,800 --> 00:00:57,720
+faire les travaux ménagers,
+
+14
+00:00:58,040 --> 00:00:58,480
+faire les travaux ménagers,
+
+15
+00:00:58,600 --> 00:01:02,720
+bien que passer l'aspirateur soit douloureux et que je laisse ma compagne tondre la pelouse!
+
+16
+00:01:02,720 --> 00:01:05,480
+J'apprends beaucoup en parlant à des gens qui sont le même état que moi
+
+17
+00:01:05,720 --> 00:01:06,960
+la communication est bienvenue.
+
+18
+00:01:06,960 --> 00:01:09,000
+J'apprécie l'optimisme
+
+19
+00:01:09,240 --> 00:01:12,560
+qui se reflète dans une démarche active positive.
+
+20
+00:01:12,760 --> 00:01:16,760
+Je déteste dépendre des médicaments ou des médecins.
+
+21
+00:01:17,000 --> 00:01:20,800
+En Angleterre, il y a plus de 15 millions de gens ayant 
+
+22
+00:01:21,040 --> 00:01:22,480
+une maladie chronique
+
+23
+00:01:22,760 --> 00:01:24,880
+et une bonne partie de ces personnes ont même
+
+24
+00:01:24,880 --> 00:01:27,280
+plusieurs maladies chroniques.
+
+25
+00:01:27,280 --> 00:01:30,920
+Ces personnes n'interagissent avec les services 
+
+26
+00:01:31,120 --> 00:01:33,800
+de santé que 3 à 7h par an en moyenne.
+
+27
+00:01:33,800 --> 00:01:33,840
+Nous avons décidé de devenir
+
+28
+00:01:33,840 --> 00:01:36,440
+Nous avons décidé de devenir
+
+29
+00:01:36,640 --> 00:01:39,880
+un service qui voit les patients pour les aider
+
+30
+00:01:40,080 --> 00:01:43,800
+à gérer leur douleur entre leurs rendez-vous médicaux.
+
+31
+00:01:43,800 --> 00:01:46,920
+A la fin des rendez-vous médicaux pour la gestion de la douleur,
+
+32
+00:01:47,200 --> 00:01:49,280
+s'il n'y avait rien d'autre à faire,
+
+33
+00:01:49,520 --> 00:01:51,120
+"ce sera tout, vous pouvez y aller..."
+
+34
+00:01:51,400 --> 00:01:53,760
+"oui, vous allez souffrir pour le restant de vos jours"
+
+35
+00:01:53,960 --> 00:01:56,840
+"nous n'avons pas les moyens de nous occuper de vous!"
+
+36
+00:01:57,040 --> 00:02:00,440
+Cela aurait été terrible.
+
+37
+00:02:00,840 --> 00:02:02,960
+Le principe de 'Know Your Own Health' 
+
+38
+00:02:03,400 --> 00:02:05,840
+est de regrouper toutes les ressources qui peuvent vous aider
+
+39
+00:02:06,000 --> 00:02:07,840
+à prendre le contrôle
+
+40
+00:02:08,080 --> 00:02:12,080
+et à mettre en place des processus de prise 
+
+41
+00:02:12,360 --> 00:02:16,800
+de décision sensés en lien avec votre professionnel de santé.
+
+42
+00:02:22,240 --> 00:02:25,320
+La première chose qui m'a intéressé sur le site, ce sont 
+
+43
+00:02:25,520 --> 00:02:27,560
+les paramètres à suivre, et les objectifs.
+
+44
+00:02:27,760 --> 00:02:31,000
+J'avais déjà tout un panel de techniques d'auto-gestion
+
+45
+00:02:31,160 --> 00:02:32,880
+mais elles n'étaient pas très structurées.
+
+46
+00:02:33,120 --> 00:02:38,560
+Les paramètres que je suis sont: mon humeur, mes activités, et ma douleur.
+
+47
+00:02:38,840 --> 00:02:43,160
+Dans la section 'activités', cela va des activités quotidiennes ordinaires
+
+48
+00:02:43,440 --> 00:02:46,720
+jusqu'à l'exercice intensif.
+
+49
+00:02:46,920 --> 00:02:48,000
+Cela m'a été très utile
+
+50
+00:02:48,200 --> 00:02:50,760
+pour garder une trace des types d'activités que j'ai
+
+51
+00:02:50,960 --> 00:02:53,280
+et de la douleur qu'elles provoquent.
+
+52
+00:02:53,280 --> 00:02:55,560
+Au départ, je suivais ces paramètres juste pour voir
+
+53
+00:02:55,800 --> 00:03:01,200
+la corrélation entre mes humeurs, activités, etc
+
+54
+00:03:01,440 --> 00:03:03,040
+et la douleur
+
+55
+00:03:03,240 --> 00:03:05,840
+mais rapidement il a été clair que
+
+56
+00:03:06,040 --> 00:03:08,920
+mon humeur jouait un rôle très important.
+
+57
+00:03:08,920 --> 00:03:10,680
+Vous pouvez ajouter des paramètres.
+
+58
+00:03:10,960 --> 00:03:13,080
+Vous pouvez ajouter votre régime alimentaire
+
+59
+00:03:13,440 --> 00:03:15,480
+ou la quantité d'alcool que vous buvez.
+
+60
+00:03:15,720 --> 00:03:17,840
+Cela va-t-il affecter la douleur?
+
+61
+00:03:17,840 --> 00:03:19,800
+A certaines périodes j'ai un peu laissé tomber,
+
+62
+00:03:20,080 --> 00:03:24,040
+si un membre de la communauté va sur le site et le remarque,
+
+63
+00:03:24,280 --> 00:03:27,160
+je peux recevoir un "salut, comment ça va?"
+
+64
+00:03:27,360 --> 00:03:29,120
+"on ne t'a pas vu depuis quelques jours!"
+
+65
+00:03:29,560 --> 00:03:30,560
+et donc je réponds "ouais... je sais..."
+
+66
+00:03:38,000 --> 00:03:41,960
+Quand on souffre de façon chronique, pour moi,
+
+67
+00:03:42,320 --> 00:03:46,760
+le mot qui décrit le mieux ce qu'on ressent est :  'seul'.
+
+68
+00:03:46,760 --> 00:03:51,120
+Vous vous sentez complètement isolé de votre famille, vos collègues...
+
+69
+00:03:51,320 --> 00:03:54,440
+Tout le monde. Personne ne peut vraiment comprendre ce que c'est
+
+70
+00:03:54,440 --> 00:03:58,760
+que de vivre constamment avec la douleur, à moins de le vivre soi-même.
+
+71
+00:03:58,760 --> 00:04:02,040
+Je me suis vraiment senti désespéré...
+
+72
+00:04:02,040 --> 00:04:05,320
+Je me sentirais vraiment bizarre si je me plaignais de ma douleur.
+
+73
+00:04:05,480 --> 00:04:09,480
+"Je suis un homme! Je ne fais pas ce genre de choses, je n'en parle pas!"
+
+74
+00:04:09,680 --> 00:04:13,120
+Mais ce qui est super avec KYOH, c'est la communauté.
+
+75
+00:04:13,120 --> 00:04:16,680
+Que ce soit pour la communication, 
+
+76
+00:04:16,680 --> 00:04:18,840
+le partage d'idées, de tuyaux,
+
+77
+00:04:19,040 --> 00:04:20,720
+mais aussi simplement un
+
+78
+00:04:20,720 --> 00:04:24,160
+"oui, je comprends. Je sais exactement ce que tu vis".
+
+79
+00:04:24,400 --> 00:04:26,680
+Cela n'a pas de prix.
+
+80
+00:04:27,560 --> 00:04:29,480
+Je suis sûr que j'apprécierais le soutien d'autres personnes,
+
+81
+00:04:29,480 --> 00:04:30,960
+comme la plupart d'entre nous.
+
+82
+00:04:31,560 --> 00:04:35,840
+Est-ce que quelqu'un connaît un groupe de soutien pour la douleur à Frome?
+
+83
+00:04:41,280 --> 00:04:44,280
+Ces personnes qui ont collaboré avec nous, qui ont utilisé KYOH
+
+84
+00:04:44,720 --> 00:04:46,800
+deviennent de vrais experts 
+
+85
+00:04:46,800 --> 00:04:50,880
+et beaucoup d'entre eux souhaitent contribuer et aider d'autres personnes,
+
+86
+00:04:50,880 --> 00:04:52,800
+qui parfois n'ont même pas besoin de nous voir.
+
+87
+00:04:53,000 --> 00:04:55,000
+Mais en travaillant avec ces personnes qui ont travaillé avec nous,
+
+88
+00:04:55,000 --> 00:04:57,840
+en travaillant avec eux, par l'intermédiaire de KYOH,
+
+89
+00:04:58,040 --> 00:05:01,160
+nous pouvons commencer à construire la capacité de la communauté
+
+90
+00:05:01,160 --> 00:05:02,480
+pour la gestion de la douleur.
+
+91
+00:05:02,480 --> 00:05:04,880
+Je suis très motivé
+
+92
+00:05:05,120 --> 00:05:07,480
+pour transmettre ce que j'ai appris
+
+93
+00:05:07,680 --> 00:05:09,200
+pour aider d'autres personnes.
+
+94
+00:05:09,200 --> 00:05:12,240
+Je crois qu'on sera moins dépendant par rapport aux médecins
+
+95
+00:05:12,480 --> 00:05:16,000
+qu'on comptera plus sur nous-mêmes, et sur la communauté,
+
+96
+00:05:16,200 --> 00:05:19,800
+ce qui est une bonne chose.
+
+97
+00:05:20,400 --> 00:05:21,160
+ASPECTS INNOVANTS DU PROJET :
+
+98
+00:05:20,360 --> 00:05:23,300
+Utilisation de technologie digitale pour soigner
+
+99
+00:05:23,400 --> 00:05:25,700
+les personnes souffrant de maladie chronique;
+
+100
+00:05:26,000 --> 00:05:29,320
+Les patients gèrent eux-mêmes leur maladie;
+
+101
+00:05:29,700 --> 00:05:31,500
+Intégration des services de santé
+
+102
+00:05:31,600 --> 00:05:33,800
+avec un fournisseur de service digital indépendant.
