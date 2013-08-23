@@ -138,17 +138,13 @@
     self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
     self.moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
     self.moviePlayer.view.frame = myView.bounds;
-    self.moviePlayer.controlStyle = MPMovieControlStyleDefault;
-    self.moviePlayer.shouldAutoplay = YES;
-    self.moviePlayer.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    self.moviePlayer.controlStyle = MPMovieControlStyleFullscreen;
     
     [myView addSubview:self.moviePlayer.view];
     [self.moviePlayer setFullscreen:NO animated:NO];
         
-    if ([langueCourante isEqualToString:@"fr"]) {
+    if ([langueCourante isEqualToString:@"fr"] && self.detailItem.subTitles) {
         // A place for subtitles
-        self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 310, 663, 50)];
+        self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 300, 663, 40)];
         self.subtitleLabel.backgroundColor = [UIColor whiteColor];
         self.subtitleLabel.textAlignment = NSTextAlignmentCenter;
         self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
@@ -178,11 +174,11 @@
 - (void)movieFinishedCallback:(NSNotification*)aNotification
 {
     // Obtain the reason why the movie playback finished
-    NSNumber *finishReason = [[aNotification userInfo] objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
+    //NSNumber *finishReason = [[aNotification userInfo] objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
     
     // Dismiss the view controller ONLY when the reason is not "playback ended"
-    if ([finishReason intValue] != MPMovieFinishReasonPlaybackEnded)
-    {
+    //if ([finishReason intValue] != MPMovieFinishReasonPlaybackEnded)
+    //{
         MPMoviePlayerController *myMoviePlayer = [aNotification object];
         
         // Remove this class from the observers
@@ -197,7 +193,7 @@
     
         [self.subtitleTimer invalidate];
         self.subtitleTimer = nil;
-    }
+    //}
 }
 
 // Subtitles
