@@ -16,6 +16,7 @@
 @interface MasterViewController ()
 {
     NSArray *_items;
+    NSString *langueCourante;
 
     __weak IBOutlet UIBarButtonItem *aboutButton;
 
@@ -44,13 +45,25 @@
     // Language ?
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
-    NSString *langueCourante = [langues objectAtIndex:0];
+    langueCourante = [langues objectAtIndex:0];
     
-    NSLog(@"langue: %@",langueCourante);
+    //NSLog(@"langue: %@",langueCourante);
     
     // Load items for appropriate language
     if ([langueCourante isEqualToString:@"fr"]) {
         _items = [[ProjectDataFR alloc] init];
+        self.title = @"Vidéos INNOSERV";
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 480, 44)];
+        label.backgroundColor = [UIColor clearColor];
+        label.numberOfLines = 2;
+        label.font = [UIFont fontWithName:@"Open Sans" size:14];
+        label.shadowColor = [UIColor colorWithWhite:0.0 alpha:1];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.textColor = [UIColor whiteColor];
+        label.text = @"Une sélection de 20 projets INNOSERV en vidéo";
+        self.navigationItem.titleView = label;
+        self.detailViewController.title = @"Présentation du projet INNOSERV";
+
     }
     else if ([langueCourante isEqualToString:@"de"]) {
         //de

@@ -43,7 +43,7 @@
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC0-Ew-iJa">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC0-Ew-iJa">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="118" id="HnM-2w-4k7"/>
                                             <constraint firstAttribute="width" constant="150" id="Ske-dp-amA"/>
@@ -57,7 +57,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="playVideoButtonPressed:" destination="3E0-co-KQn" eventType="touchUpInside" id="58K-LM-FQF"/>
+                                            <segue destination="MLi-OG-RQM" kind="push" identifier="openVideo" id="ZIT-uQ-9DI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -98,7 +98,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="openWebPageToolBarButton" destination="Iaa-Ss-BnA" id="WSo-uj-E3M"/>
-                        <outlet property="playVideoButton" destination="nC0-Ew-iJa" id="lMI-Da-L9I"/>
                         <outlet property="projectImage" destination="5sH-k3-CZt" id="puP-RD-rFR"/>
                         <outlet property="projectInformation" destination="t4E-ax-dXL" id="3JD-JQ-zwz"/>
                         <outlet property="projectSubTiltle" destination="GZO-ld-sFf" id="zUg-UK-cNH"/>
@@ -107,6 +106,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5P-HP-fcD" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1439" y="-639"/>
+        </scene>
+        <!--I Phone Video View Controller-->
+        <scene sceneID="L8u-kS-n1M">
+            <objects>
+                <viewController id="MLi-OG-RQM" customClass="iPhoneVideoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ki6-YD-SJu">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.94901967050000002" green="0.91764712329999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YMg-NF-2JD"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNS-Wy-AOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="-631"/>
         </scene>
         <!--I Phone AboutPDF View Controller-->
         <scene sceneID="v7R-Al-YYS">
@@ -287,46 +303,6 @@
     <resources>
         <image name="play.png" width="63" height="63"/>
     </resources>
-    <classes>
-        <class className="CustomCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="subTitleLabel" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="iPhoneAboutPDFViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneAboutPDFViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webViewForPDF" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="iPhoneDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="openWebPagePressed:"/>
-                <relationship kind="action" name="playVideoButtonPressed:"/>
-                <relationship kind="outlet" name="openWebPageToolBarButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="playVideoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="projectImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="projectInformation" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="projectSubTiltle" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iPhoneFirstViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneFirstViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="openPdfToolbarButtonPressed:"/>
-                <relationship kind="action" name="openTrailerButtonPressed:"/>
-                <relationship kind="outlet" name="aboutButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="trailerButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

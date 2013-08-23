@@ -113,14 +113,14 @@
 		B3B8BBBC16C13C8E0019CD28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3B8BBBA16C13C8E0019CD28 /* InfoPlist.strings */; };
 		B3B8BBBE16C13C8E0019CD28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBBD16C13C8E0019CD28 /* main.m */; };
 		B3B8BBC216C13C8E0019CD28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBC116C13C8E0019CD28 /* AppDelegate.m */; };
-		B3B8BBC416C13C8E0019CD28 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B8BBC316C13C8E0019CD28 /* Default.png */; };
-		B3B8BBC616C13C8E0019CD28 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B8BBC516C13C8E0019CD28 /* Default@2x.png */; };
 		B3B8BBC816C13C8E0019CD28 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B8BBC716C13C8E0019CD28 /* Default-568h@2x.png */; };
 		B3B8BBCB16C13C8E0019CD28 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B8BBC916C13C8E0019CD28 /* iPadStoryboard.storyboard */; };
 		B3B8BBCE16C13C8E0019CD28 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBCD16C13C8E0019CD28 /* MasterViewController.m */; };
 		B3B8BBD116C13C8E0019CD28 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBD016C13C8E0019CD28 /* DetailViewController.m */; };
 		B3B8BBD916C1424A0019CD28 /* ProjectListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBD816C1424A0019CD28 /* ProjectListItem.m */; };
 		B3B8BBDC16C160A70019CD28 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBDB16C160A70019CD28 /* CustomCell.m */; };
+		B3F249F617C7A29A00213A7D /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F249F517C7A29A00213A7D /* Default-Landscape~ipad.png */; };
+		B3F249F917C7C47D00213A7D /* iPhoneVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F249F817C7C47C00213A7D /* iPhoneVideoViewController.m */; };
 		B3FF4AE416D38DE800C81C9E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3FF4AE316D38DE800C81C9E /* OpenSans-Regular.ttf */; };
 		B3FF4AE616D39EBA00C81C9E /* innoserv-logoAndPhotos.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FF4AE516D39EBA00C81C9E /* innoserv-logoAndPhotos.png */; };
 /* End PBXBuildFile section */
@@ -260,6 +260,9 @@
 		B3B8BBD816C1424A0019CD28 /* ProjectListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListItem.m; sourceTree = "<group>"; };
 		B3B8BBDA16C160A70019CD28 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		B3B8BBDB16C160A70019CD28 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		B3F249F517C7A29A00213A7D /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		B3F249F717C7C47C00213A7D /* iPhoneVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneVideoViewController.h; sourceTree = "<group>"; };
+		B3F249F817C7C47C00213A7D /* iPhoneVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneVideoViewController.m; sourceTree = "<group>"; };
 		B3FF4AE316D38DE800C81C9E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		B3FF4AE516D39EBA00C81C9E /* innoserv-logoAndPhotos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "innoserv-logoAndPhotos.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -290,6 +293,8 @@
 				B380094516D6418F00506DD5 /* ViewControllerMorePage.m */,
 				B3849AFD17156D5800A58672 /* iPhoneAboutPDFViewController.h */,
 				B3849AFE17156D5800A58672 /* iPhoneAboutPDFViewController.m */,
+				B3F249F717C7C47C00213A7D /* iPhoneVideoViewController.h */,
+				B3F249F817C7C47C00213A7D /* iPhoneVideoViewController.m */,
 			);
 			name = "Controllers(iPhone)";
 			sourceTree = "<group>";
@@ -456,6 +461,7 @@
 		B3B8BBA216C13C8E0019CD28 = {
 			isa = PBXGroup;
 			children = (
+				B3F249F517C7A29A00213A7D /* Default-Landscape~ipad.png */,
 				B380094B16D6609400506DD5 /* innoServLogo2forIPAD.png */,
 				B380094916D6609000506DD5 /* innoServLogo2forIPADNoRetina.png */,
 				B3B8BBB716C13C8E0019CD28 /* testSplitView */,
@@ -569,8 +575,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B8BBBC16C13C8E0019CD28 /* InfoPlist.strings in Resources */,
-				B3B8BBC416C13C8E0019CD28 /* Default.png in Resources */,
-				B3B8BBC616C13C8E0019CD28 /* Default@2x.png in Resources */,
 				B3B8BBC816C13C8E0019CD28 /* Default-568h@2x.png in Resources */,
 				B3B8BBCB16C13C8E0019CD28 /* iPadStoryboard.storyboard in Resources */,
 				B30E56DF16D26FFB000821DD /* mobile health service.png in Resources */,
@@ -664,6 +668,7 @@
 				B37D26AD17C6391B0073F49D /* Residenzialita-subtitles - french.txt in Resources */,
 				B37D26AE17C6391B0073F49D /* Seclin-subtitles - french.txt in Resources */,
 				B37D26AF17C6391B0073F49D /* Vitality-subtitles - french.txt in Resources */,
+				B3F249F617C7A29A00213A7D /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,6 +695,7 @@
 				B32F5AEE17C39D5000D46EE1 /* SrtData.m in Sources */,
 				B32F5AEF17C39D5000D46EE1 /* SrtParser.m in Sources */,
 				B33DDECE17C4B42E005C0D15 /* ProjectDataFR.m in Sources */,
+				B3F249F917C7C47D00213A7D /* iPhoneVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
