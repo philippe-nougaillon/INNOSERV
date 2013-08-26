@@ -15,7 +15,6 @@
     NSString *langueCourante;
     UIView *myView;
     NSURL *url;
-
 }
 
 @property (nonatomic, retain) SrtParser *srtParser;
@@ -41,9 +40,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // subscribe to orientation change
     
+    // subscribe to orientation change
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(orientationChanged:)
@@ -87,7 +85,9 @@
     [self.moviePlayer setFullscreen:NO animated:NO];
     
     if ([langueCourante isEqualToString:@"fr"] && self.detailItem.subTitles) {
-        
+
+        self.navigationItem.title = @"Vidéo du projet";
+
         // A place for subtitles
         // Depending of the current orientation
         UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
@@ -179,6 +179,23 @@
     
 }
 
+
+-(void) viewWillDisappear:(BOOL)animated {
+    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+        // back button was pressed.  We know this is true because self is no longer
+        // in the navigation stack.
+        
+        // Stop video and subtitles
+        [self.moviePlayer stop];
+        
+        [myView removeFromSuperview];
+        myView =nil;
+        
+        [self.subtitleTimer invalidate];
+        self.subtitleTimer = nil;
+    }
+    [super viewWillDisappear:animated];
+}
 
 - (void)didReceiveMemoryWarning
 {

@@ -43,6 +43,7 @@
     
     aboutButton.title = NSLocalizedString(@"About", @"");
     trailerButton.title = NSLocalizedString(@"Trailer", @"");
+    self.navigationItem.title = NSLocalizedString(@"20SelectedProjects", @"");
     
     // Language ?
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -57,7 +58,6 @@
     } else {
         _items = [[ProjectData alloc] init];
     }
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -120,6 +120,13 @@
         self.navigationController.navigationBarHidden = NO;
     }
 }
+
+
+- (IBAction)closeButtonTapped:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 
 #pragma mark - Table View

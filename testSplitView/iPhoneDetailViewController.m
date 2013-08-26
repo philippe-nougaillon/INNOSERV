@@ -44,7 +44,6 @@
     
 	// Do any additional setup after loading the view.
     if (self.detailItem) {
-        
         projectSubTiltle.text = self.detailItem.description;
         projectInformation.text = self.detailItem.information;
 
@@ -56,7 +55,6 @@
             openWebPageToolBarButton.enabled = NO;
         else
             openWebPageToolBarButton.enabled = YES;
-
     }
 }
 

@@ -6,13 +6,17 @@
   Copyright (c) 2013 philippe nougaillon. All rights reserved.
 */
 
-// iPhone
+/* iPhone */
 "About"="About";
 "Trailer"="Trailer";
+// Menu
+"about"="About INNOSERV project";
+"20SelectedProjects"="20 Selected projects";
 
+//
 "Website"="Website";
 
-// iPAD
+/* iPAD  */
 "Master"="INNOSERV Selected Projects";
 
 "Close"="Close";

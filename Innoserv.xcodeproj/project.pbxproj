@@ -121,6 +121,12 @@
 		B3B8BBDC16C160A70019CD28 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBDB16C160A70019CD28 /* CustomCell.m */; };
 		B3F249F617C7A29A00213A7D /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F249F517C7A29A00213A7D /* Default-Landscape~ipad.png */; };
 		B3F249F917C7C47D00213A7D /* iPhoneVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F249F817C7C47C00213A7D /* iPhoneVideoViewController.m */; };
+		B3FB6F5A17CB55CD00D22288 /* FirstScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FB6F5917CB55CD00D22288 /* FirstScreenViewController.m */; };
+		B3FB6F5E17CB7DED00D22288 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FB6F5D17CB7DED00D22288 /* Default.png */; };
+		B3FB6F6117CBB4F200D22288 /* AboutPagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FB6F6017CBB4F200D22288 /* AboutPagesViewController.m */; };
+		B3FB6F6417CBB61A00D22288 /* AboutPage1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FB6F6317CBB61A00D22288 /* AboutPage1ViewController.m */; };
+		B3FB6F6717CBB62C00D22288 /* AboutPage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FB6F6617CBB62C00D22288 /* AboutPage2ViewController.m */; };
+		B3FB6F9F17CBE04300D22288 /* aboutPageContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FB6F9E17CBE04300D22288 /* aboutPageContainerViewController.m */; };
 		B3FF4AE416D38DE800C81C9E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3FF4AE316D38DE800C81C9E /* OpenSans-Regular.ttf */; };
 		B3FF4AE616D39EBA00C81C9E /* innoserv-logoAndPhotos.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FF4AE516D39EBA00C81C9E /* innoserv-logoAndPhotos.png */; };
 /* End PBXBuildFile section */
@@ -263,6 +269,18 @@
 		B3F249F517C7A29A00213A7D /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		B3F249F717C7C47C00213A7D /* iPhoneVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneVideoViewController.h; sourceTree = "<group>"; };
 		B3F249F817C7C47C00213A7D /* iPhoneVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneVideoViewController.m; sourceTree = "<group>"; };
+		B3FB6F5817CB55CD00D22288 /* FirstScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstScreenViewController.h; sourceTree = "<group>"; };
+		B3FB6F5917CB55CD00D22288 /* FirstScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstScreenViewController.m; sourceTree = "<group>"; };
+		B3FB6F5B17CB785E00D22288 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		B3FB6F5D17CB7DED00D22288 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B3FB6F5F17CBB4F200D22288 /* AboutPagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutPagesViewController.h; path = ../AboutPagesViewController.h; sourceTree = "<group>"; };
+		B3FB6F6017CBB4F200D22288 /* AboutPagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutPagesViewController.m; path = ../AboutPagesViewController.m; sourceTree = "<group>"; };
+		B3FB6F6217CBB61A00D22288 /* AboutPage1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage1ViewController.h; sourceTree = "<group>"; };
+		B3FB6F6317CBB61A00D22288 /* AboutPage1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPage1ViewController.m; sourceTree = "<group>"; };
+		B3FB6F6517CBB62C00D22288 /* AboutPage2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage2ViewController.h; sourceTree = "<group>"; };
+		B3FB6F6617CBB62C00D22288 /* AboutPage2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPage2ViewController.m; sourceTree = "<group>"; };
+		B3FB6F9D17CBE04300D22288 /* aboutPageContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aboutPageContainerViewController.h; sourceTree = "<group>"; };
+		B3FB6F9E17CBE04300D22288 /* aboutPageContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aboutPageContainerViewController.m; sourceTree = "<group>"; };
 		B3FF4AE316D38DE800C81C9E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		B3FF4AE516D39EBA00C81C9E /* innoserv-logoAndPhotos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "innoserv-logoAndPhotos.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -285,6 +303,16 @@
 		B304130A17C219330032150C /* Controllers(iPhone) */ = {
 			isa = PBXGroup;
 			children = (
+				B3FB6F5817CB55CD00D22288 /* FirstScreenViewController.h */,
+				B3FB6F5917CB55CD00D22288 /* FirstScreenViewController.m */,
+				B3FB6F9D17CBE04300D22288 /* aboutPageContainerViewController.h */,
+				B3FB6F9E17CBE04300D22288 /* aboutPageContainerViewController.m */,
+				B3FB6F5F17CBB4F200D22288 /* AboutPagesViewController.h */,
+				B3FB6F6017CBB4F200D22288 /* AboutPagesViewController.m */,
+				B3FB6F6217CBB61A00D22288 /* AboutPage1ViewController.h */,
+				B3FB6F6317CBB61A00D22288 /* AboutPage1ViewController.m */,
+				B3FB6F6517CBB62C00D22288 /* AboutPage2ViewController.h */,
+				B3FB6F6617CBB62C00D22288 /* AboutPage2ViewController.m */,
 				B3996A0D16DCFD9900BC65DC /* iPhoneFirstViewController.h */,
 				B3996A0E16DCFD9900BC65DC /* iPhoneFirstViewController.m */,
 				B32E2CD11714A17D00F17039 /* iPhoneDetailViewController.h */,
@@ -461,6 +489,8 @@
 		B3B8BBA216C13C8E0019CD28 = {
 			isa = PBXGroup;
 			children = (
+				B3FB6F5D17CB7DED00D22288 /* Default.png */,
+				B3FB6F5B17CB785E00D22288 /* Default-Portrait~ipad.png */,
 				B3F249F517C7A29A00213A7D /* Default-Landscape~ipad.png */,
 				B380094B16D6609400506DD5 /* innoServLogo2forIPAD.png */,
 				B380094916D6609000506DD5 /* innoServLogo2forIPADNoRetina.png */,
@@ -669,6 +699,7 @@
 				B37D26AE17C6391B0073F49D /* Seclin-subtitles - french.txt in Resources */,
 				B37D26AF17C6391B0073F49D /* Vitality-subtitles - french.txt in Resources */,
 				B3F249F617C7A29A00213A7D /* Default-Landscape~ipad.png in Resources */,
+				B3FB6F5E17CB7DED00D22288 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +727,11 @@
 				B32F5AEF17C39D5000D46EE1 /* SrtParser.m in Sources */,
 				B33DDECE17C4B42E005C0D15 /* ProjectDataFR.m in Sources */,
 				B3F249F917C7C47D00213A7D /* iPhoneVideoViewController.m in Sources */,
+				B3FB6F5A17CB55CD00D22288 /* FirstScreenViewController.m in Sources */,
+				B3FB6F6117CBB4F200D22288 /* AboutPagesViewController.m in Sources */,
+				B3FB6F6417CBB61A00D22288 /* AboutPage1ViewController.m in Sources */,
+				B3FB6F6717CBB62C00D22288 /* AboutPage2ViewController.m in Sources */,
+				B3FB6F9F17CBE04300D22288 /* aboutPageContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
