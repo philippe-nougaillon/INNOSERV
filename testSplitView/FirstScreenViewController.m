@@ -11,10 +11,12 @@
 @interface FirstScreenViewController () {
 
     BOOL introAnimationDone;
+
+    __weak IBOutlet UILabel *menuTitle;
     __weak IBOutlet UIButton *button1;
     __weak IBOutlet UIButton *button2;
     __weak IBOutlet UIButton *button3;
-    __weak IBOutlet UILabel *menuTitle;
+    __weak IBOutlet UIButton *button4;
 }
 
 @end
@@ -34,18 +36,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    button1.titleLabel.text = NSLocalizedString(@"About", @"");
   
     [menuTitle setFont:[UIFont fontWithName:@"Open Sans" size:19]];
     
-    [button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:16]];
-    [button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:16]];
-    [button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:16]];
-   
-    [self presentMainMenu];
+    [button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+    [button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+    [button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+    [button4.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+
+    [button1 setTitle:NSLocalizedString(@"menu_About", @"") forState:UIControlStateNormal];
+    [button2 setTitle:NSLocalizedString(@"menu_Trailer", @"") forState:UIControlStateNormal];
+    [button3 setTitle:NSLocalizedString(@"menu_20projects", @"") forState:UIControlStateNormal];
+    [button4 setTitle:NSLocalizedString(@"menu_www", @"") forState:UIControlStateNormal];
     
+    [self presentMainMenu];
+
 }
+
 - (void)presentMainMenu {
         
     if (introAnimationDone) {
@@ -79,6 +86,15 @@
     
     introAnimationDone = YES;
 }
+
+- (IBAction)openInnoservWebSite:(id)sender {
+
+    // ouvre le site dans Safari
+    NSString *webPageLink = NSLocalizedString(@"innoserv-url", @"");
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:webPageLink]];
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {

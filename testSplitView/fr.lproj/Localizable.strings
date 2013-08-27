@@ -7,10 +7,18 @@
 */
 
 // iPhone
-"About"="A propos";
-"Trailer"="Bande-annonce";
-"20SelectedProjects"="20 projets sélectionnés";
+// Menu
 
+"menu_About"="A propos d'INNOSERV";
+"menu_Trailer"="Aperçu du projet en vidéo";
+"menu_20projects"="20 projets sélectionnés en vidéo";
+"menu_www"="WWW.INNO-SERV.EU";
+
+
+"20SelectedProjects"="20 projets sélectionnés";
+"innoserv-url"="http://www.inno-serv.eu/fr";
+
+//
 "Website"="Site internet";
 
 // iPAD

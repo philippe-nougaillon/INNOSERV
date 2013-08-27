@@ -132,19 +132,102 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Page1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX3-C1-1vt">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="hWH-TN-qQd">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="74" id="7ft-7T-ZR5"/>
+                                    <constraint firstAttribute="height" constant="310" id="Mfr-C2-AjW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="About INNOSERV">
+                                        <attributes>
+                                            <color key="NSColor" red="0.61568627450980395" green="0.0" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="23" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">INNOSERV is a project developing an EU wide rese- arch agenda to evaluate innovation in the field of social services (especially for health, education and welfare ser- vices). This will help define future research activities.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">INNOSERV responds to the FP7-Cooperation call FP7- SSH-2011-3 for a ‘support action concerning a social platform on innovative social services.’</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Tb9-6b-28e">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="tgr-rh-qcn"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.67058825489999996" green="0.0078431377190000002" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="9o5-Nc-1Yg">
+                                <items>
+                                    <barButtonItem style="plain" systemItem="done" id="l3m-Zv-oYB">
+                                        <color key="tintColor" red="0.67058825489999996" green="0.0078431377190000002" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <segue destination="pES-9E-EQ0" kind="modal" id="nZG-7k-Fak"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="yX3-C1-1vt" firstAttribute="leading" secondItem="nM9-Cw-fZV" secondAttribute="leading" constant="78" id="90Q-8F-BNk"/>
-                            <constraint firstItem="yX3-C1-1vt" firstAttribute="top" secondItem="nM9-Cw-fZV" secondAttribute="top" constant="168" id="eHE-Vi-mrc"/>
+                            <constraint firstItem="9o5-Nc-1Yg" firstAttribute="trailing" secondItem="nM9-Cw-fZV" secondAttribute="trailing" type="default" id="9s8-6M-FuT"/>
+                            <constraint firstItem="9o5-Nc-1Yg" firstAttribute="leading" secondItem="nM9-Cw-fZV" secondAttribute="leading" type="default" id="C9A-pP-RQp"/>
+                            <constraint firstItem="hWH-TN-qQd" firstAttribute="centerY" secondItem="nM9-Cw-fZV" secondAttribute="centerY" type="default" id="J7J-sn-Q2E"/>
+                            <constraint firstAttribute="trailing" secondItem="hWH-TN-qQd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Jwu-nS-LhT"/>
+                            <constraint firstItem="9o5-Nc-1Yg" firstAttribute="centerX" secondItem="Tb9-6b-28e" secondAttribute="centerX" type="default" id="TPi-2U-lSY"/>
+                            <constraint firstItem="9o5-Nc-1Yg" firstAttribute="top" secondItem="nM9-Cw-fZV" secondAttribute="top" type="default" id="fdq-iW-fUr"/>
+                            <constraint firstItem="Tb9-6b-28e" firstAttribute="bottom" secondItem="nM9-Cw-fZV" secondAttribute="bottom" type="default" id="mWG-Cl-4ve"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -160,25 +243,490 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Page 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cn-yc-MGO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="NYy-jE-JyF">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="24h-2e-B3m"/>
+                                    <constraint firstAttribute="height" constant="420" id="vuh-tJ-qXk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Answering the objectives of the call, the INNOSERV project will:">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Produce ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="short visual examples">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">combined with theoretical case studies of ‘innovative’ practices in the fields of health, education and welfare. These will be used to help inform discussion and debate; </string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+	•	</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Develop a">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="web based ‘social platform’">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="f">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="or continuing dialogue;">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> 
+	•	</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Manage a ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="multi-level discussion">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">involving a wide range of stakeholders from research, policy making and practice communities in the EU to identify priorities for future research and development.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="   Publications will summarize the results of the debate and formulate future research needs. ">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="13" headIndent="36" defaultTabInterval="36">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11"/>
+                                                    <textTab alignment="natural" location="36"/>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="3F7-iG-bvW">
+                                <color key="pageIndicatorTintColor" red="0.67058825489999996" green="0.0078431377190000002" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="8cn-yc-MGO" firstAttribute="leading" secondItem="qIU-lF-FLa" secondAttribute="leading" constant="85" id="a7i-sd-l7i"/>
-                            <constraint firstItem="8cn-yc-MGO" firstAttribute="top" secondItem="qIU-lF-FLa" secondAttribute="top" constant="161" id="bFG-6p-dm0"/>
+                            <constraint firstItem="3F7-iG-bvW" firstAttribute="centerX" secondItem="NYy-jE-JyF" secondAttribute="centerX" type="default" id="DZf-80-RNL"/>
+                            <constraint firstItem="3F7-iG-bvW" firstAttribute="bottom" secondItem="qIU-lF-FLa" secondAttribute="bottom" type="default" id="LkX-Df-urM"/>
+                            <constraint firstItem="NYy-jE-JyF" firstAttribute="top" secondItem="qIU-lF-FLa" secondAttribute="top" constant="14" id="SuJ-uf-ZXg"/>
+                            <constraint firstItem="NYy-jE-JyF" firstAttribute="leading" secondItem="qIU-lF-FLa" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="cNx-Il-hc5"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Xl-68-CpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113" y="-3"/>
+            <point key="canvasLocation" x="1074" y="-4"/>
+        </scene>
+        <!--About Page3 View Controller-->
+        <scene sceneID="y7O-1B-9R9">
+            <objects>
+                <viewController storyboardIdentifier="AboutPageViewController3" id="p3h-QH-4oL" customClass="AboutPage3ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qAb-bg-W0V">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="285" translatesAutoresizingMaskIntoConstraints="NO" id="XYG-1B-OUK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="445" id="zwg-sT-0YJ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="INNOSERV – Social Platform on Innovative Social Services">
+                                        <attributes>
+                                            <color key="NSColor" red="0.61568627450980395" green="0.0" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="19" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="INNOSERV is an integrated project funded by the 7">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="th ">
+                                        <attributes>
+                                            <real key="NSBaselineOffset" value="4"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Framework Programe of the European Commission which deals with innovation in the field of social services.   The project aims to establish a platform bringing together researchers, practitioners and policy-makers working on the planning and conduct of social services. Eleven organizations from nine European countries, both research institutes and membership-based organizations, are involved in the two year project.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+CgoKA
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="FlD-x2-Zyy">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="Ecw-0h-Vxz"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.67058825489999996" green="0.0078431377190000002" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XYG-1B-OUK" firstAttribute="leading" secondItem="qAb-bg-W0V" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="03p-ie-V5P"/>
+                            <constraint firstItem="FlD-x2-Zyy" firstAttribute="bottom" secondItem="qAb-bg-W0V" secondAttribute="bottom" type="default" id="0Rr-gJ-hEO"/>
+                            <constraint firstItem="FlD-x2-Zyy" firstAttribute="centerX" secondItem="XYG-1B-OUK" secondAttribute="centerX" type="default" id="PRL-rY-aKt"/>
+                            <constraint firstItem="XYG-1B-OUK" firstAttribute="top" secondItem="qAb-bg-W0V" secondAttribute="top" constant="7" id="c7q-ff-x7E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMa-TC-SYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437" y="-5"/>
+        </scene>
+        <!--About Page4 View Controller-->
+        <scene sceneID="x6l-L6-nrE">
+            <objects>
+                <viewController storyboardIdentifier="AboutPageViewController4" id="0yw-aU-K4Y" customClass="AboutPage4ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xPt-X9-PmS">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="3" translatesAutoresizingMaskIntoConstraints="NO" id="YOE-Cw-H4C">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="HJh-Zd-A2y"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.67058825489999996" green="0.0078431377190000002" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="cWp-uF-5Ca">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="188" id="bGO-Tt-tGs"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Visit our web site: www.inno-serv.eu Contact: innoserv@dwi.uni-heidelberg.de">
+                                        <attributes>
+                                            <color key="NSColor" red="0.61568627450980395" green="0.0" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Anika Strifler Ruprecht-Karls-Universität Heidelberg Diakoniewissenschaftliches Institut Karlstr. 16 69117 Heidelberg Germany">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Grant agreement no. 290542">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="EU-logos.png" translatesAutoresizingMaskIntoConstraints="NO" id="4B7-9G-51G">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="gtJ-MP-CS6"/>
+                                    <constraint firstAttribute="height" constant="63" id="nSz-wM-OBW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="HFw-uz-qis">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="ysl-7k-wqP"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">“With the new social platform we hope to assess the latest trends in research and practice, identify knowledge gaps and stimulate research inquiry. The idea is to discuss which service offerings in Europe are innovative and what future scenarios should be envisaged.”</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Prof. Dr. Johannes Eurich from Heidelberg University - project coordinator">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HFw-uz-qis" firstAttribute="top" secondItem="xPt-X9-PmS" secondAttribute="top" constant="20" symbolic="YES" type="default" id="2iq-Zp-E4a"/>
+                            <constraint firstAttribute="bottom" secondItem="4B7-9G-51G" secondAttribute="bottom" constant="60" id="3iQ-U0-VOb"/>
+                            <constraint firstItem="cWp-uF-5Ca" firstAttribute="leading" secondItem="xPt-X9-PmS" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DOT-9c-6fr"/>
+                            <constraint firstItem="YOE-Cw-H4C" firstAttribute="bottom" secondItem="xPt-X9-PmS" secondAttribute="bottom" type="default" id="DfF-ID-4pe"/>
+                            <constraint firstItem="YOE-Cw-H4C" firstAttribute="centerX" secondItem="cWp-uF-5Ca" secondAttribute="centerX" type="default" id="GOw-vr-AK0"/>
+                            <constraint firstAttribute="trailing" secondItem="4B7-9G-51G" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SFt-k1-7SQ"/>
+                            <constraint firstItem="cWp-uF-5Ca" firstAttribute="top" secondItem="xPt-X9-PmS" secondAttribute="top" constant="223" id="UCE-Pu-15x"/>
+                            <constraint firstItem="HFw-uz-qis" firstAttribute="leading" secondItem="xPt-X9-PmS" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ohw-ca-nfG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vke-kH-UyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797" y="-4"/>
         </scene>
         <!--About Page Container View Controller-->
         <scene sceneID="qbO-BR-fny">
@@ -187,70 +735,12 @@
                     <view key="view" contentMode="scaleToFill" id="g2E-bS-i2T">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y2G-Lt-ee3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-166" y="-6"/>
-        </scene>
-        <!--I Phone AboutPDF View Controller-->
-        <scene sceneID="v7R-Al-YYS">
-            <objects>
-                <viewController id="dCd-6t-mEJ" customClass="iPhoneAboutPDFViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sib-eG-tTu">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleAspectFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZAK-qW-JyP">
-                                <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="6Jp-af-cUB"/>
-                                </constraints>
-                                <dataDetectorType key="dataDetectorTypes"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHN-Cw-flz">
-                                <constraints>
-                                    <constraint firstAttribute="width" id="86N-Iv-xZh"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem width="922" style="plain" systemItem="fixedSpace" id="9dm-N1-96l"/>
-                                    <barButtonItem title="Close" width="81" style="done" id="PoK-Ko-nKw">
-                                        <connections>
-                                            <action selector="okButtonPressed:" destination="dCd-6t-mEJ" id="AdP-Rx-Kch"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <webView contentMode="scaleAspectFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="adP-PR-azj">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <dataDetectorType key="dataDetectorTypes"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ZAK-qW-JyP" firstAttribute="top" secondItem="sib-eG-tTu" secondAttribute="top" constant="396" id="0ys-xP-bnp"/>
-                            <constraint firstItem="ZAK-qW-JyP" firstAttribute="leading" secondItem="GHN-Cw-flz" secondAttribute="leading" type="default" id="4pA-iM-lfW"/>
-                            <constraint firstItem="adP-PR-azj" firstAttribute="leading" secondItem="sib-eG-tTu" secondAttribute="leading" type="default" id="HmP-f8-Ld1"/>
-                            <constraint firstItem="GHN-Cw-flz" firstAttribute="trailing" secondItem="ZAK-qW-JyP" secondAttribute="trailing" type="default" id="JSE-6F-GGY"/>
-                            <constraint firstItem="adP-PR-azj" firstAttribute="top" secondItem="sib-eG-tTu" secondAttribute="top" type="default" id="NGB-Es-505"/>
-                            <constraint firstItem="adP-PR-azj" firstAttribute="bottom" secondItem="sib-eG-tTu" secondAttribute="bottom" type="default" id="WQi-Ll-rTB"/>
-                            <constraint firstItem="GHN-Cw-flz" firstAttribute="top" secondItem="sib-eG-tTu" secondAttribute="top" type="default" id="fNj-hB-s3x"/>
-                            <constraint firstItem="GHN-Cw-flz" firstAttribute="leading" secondItem="sib-eG-tTu" secondAttribute="leading" constant="512" id="jDr-ZU-CBG"/>
-                            <constraint firstItem="adP-PR-azj" firstAttribute="trailing" secondItem="sib-eG-tTu" secondAttribute="trailing" type="default" id="s7D-99-lyo"/>
-                        </constraints>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="yRI-Od-1jW"/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <outlet property="webViewForPDF" destination="adP-PR-azj" id="4Nc-o3-mGM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wds-ew-Cck" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-166" y="603"/>
+            <point key="canvasLocation" x="320" y="-4"/>
         </scene>
         <!--I Phone First View Controller - Master-->
         <scene sceneID="Jo4-ed-q3c">
@@ -260,7 +750,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94901967050000002" green="0.91764712329999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
-                        <inset key="contentInset" minX="0.0" minY="0.0" maxX="0.0" maxY="44"/>
                         <color key="separatorColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCustomCell" rowHeight="133" id="dgt-Lw-Cl3" customClass="CustomCell">
@@ -361,13 +850,12 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="innoserv-logoAndPhotos.png" translatesAutoresizingMaskIntoConstraints="NO" id="i0u-jz-I12">
-                                <rect key="contentStretch" x="0.49999999999999994" y="0.49999999999999994" width="1" height="0.0"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" image="Inno-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="oyP-YC-2Dp">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="460" id="m8a-Ey-mc5"/>
+                                    <constraint firstAttribute="height" constant="381" id="5Gy-ak-zwg"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" alpha="0.70000000000000007" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSZ-vD-Rq3">
+                            <button opaque="NO" alpha="0.80000000000000004" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dSZ-vD-Rq3">
                                 <color key="backgroundColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="wrx-OD-kS5"/>
@@ -384,13 +872,10 @@
                                     <segue destination="phC-aJ-NkJ" kind="modal" id="drN-JQ-EFM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.70000000000000007" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nB-Ir-rVp">
+                            <button opaque="NO" alpha="0.80000000000000004" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4nB-Ir-rVp">
                                 <color key="backgroundColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="7uP-4M-JLm"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="Watch video our trailer">
+                                <state key="normal" title="Watch our video trailer 123">
                                     <color key="titleColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -398,13 +883,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" alpha="0.70000000000000007" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mC-so-7cY">
+                            <button opaque="NO" alpha="0.80000000000000004" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1mC-so-7cY">
                                 <color key="backgroundColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="kSD-Zg-Lex"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="20 Selected projects in video">
+                                <state key="normal" title="20 Selected projects in video 123">
                                     <color key="titleColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -415,19 +897,19 @@
                                     <segue destination="q0s-gR-xrC" kind="modal" id="FiE-wB-iQ3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.70000000000000007" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQa-B1-kYn">
+                            <button opaque="NO" alpha="0.80000000000000004" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="CQa-B1-kYn">
                                 <color key="backgroundColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="NZS-2b-vR1"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="INNOSERV's website">
+                                <state key="normal" title="INNOSERV's website  ">
                                     <color key="titleColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openInnoservWebSite:" destination="pES-9E-EQ0" eventType="touchUpInside" id="xyg-cf-wqU"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="innoServLogo2forIPADNoRetina.png" translatesAutoresizingMaskIntoConstraints="NO" id="xYP-XQ-Ts3">
                                 <constraints>
@@ -435,50 +917,54 @@
                                     <constraint firstAttribute="height" constant="58" id="p0Y-QN-n9P"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Social platform on Innovative Social Services" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="255" translatesAutoresizingMaskIntoConstraints="NO" id="xUA-NE-xbH">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Social platform on Innovative Social Services" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="245" translatesAutoresizingMaskIntoConstraints="NO" id="xUA-NE-xbH">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="255" id="Zyw-52-olY"/>
+                                    <constraint firstAttribute="width" constant="245" id="sNg-xv-9Ds"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.94901967050000002" green="0.91764712329999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4nB-Ir-rVp" firstAttribute="top" secondItem="dSZ-vD-Rq3" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3B0-Za-yP6"/>
+                            <constraint firstItem="oyP-YC-2Dp" firstAttribute="top" secondItem="xYP-XQ-Ts3" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="4eB-dJ-eBd"/>
                             <constraint firstItem="xYP-XQ-Ts3" firstAttribute="top" secondItem="xUA-NE-xbH" secondAttribute="top" type="default" id="8pV-cc-07e"/>
-                            <constraint firstItem="1mC-so-7cY" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Bvq-0G-vkD"/>
                             <constraint firstItem="1mC-so-7cY" firstAttribute="top" secondItem="4nB-Ir-rVp" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="DOQ-XU-Pjb"/>
                             <constraint firstItem="xUA-NE-xbH" firstAttribute="trailing" secondItem="yMq-9R-UAB" secondAttribute="trailing" type="default" id="ES3-sH-k2d"/>
                             <constraint firstAttribute="trailing" secondItem="4nB-Ir-rVp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="IdK-hU-t7x"/>
-                            <constraint firstItem="i0u-jz-I12" firstAttribute="top" secondItem="yMq-9R-UAB" secondAttribute="top" constant="73" id="LJ6-Di-oKL"/>
-                            <constraint firstAttribute="bottom" secondItem="CQa-B1-kYn" secondAttribute="bottom" constant="5" id="U5w-30-epN"/>
-                            <constraint firstItem="xUA-NE-xbH" firstAttribute="bottom" secondItem="xYP-XQ-Ts3" secondAttribute="bottom" type="default" id="UXN-Ay-Gtr"/>
-                            <constraint firstItem="4nB-Ir-rVp" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gvK-7K-9Rj"/>
-                            <constraint firstItem="xYP-XQ-Ts3" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" constant="-10" id="hbk-s1-lkD"/>
-                            <constraint firstItem="CQa-B1-kYn" firstAttribute="top" secondItem="1mC-so-7cY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="irK-9r-19O"/>
-                            <constraint firstItem="xYP-XQ-Ts3" firstAttribute="top" secondItem="yMq-9R-UAB" secondAttribute="top" constant="8" id="jaW-jX-lvq"/>
-                            <constraint firstItem="dSZ-vD-Rq3" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nse-gp-mhv"/>
+                            <constraint firstItem="4nB-Ir-rVp" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" type="default" id="Pe3-XX-FdJ"/>
+                            <constraint firstItem="CQa-B1-kYn" firstAttribute="height" secondItem="dSZ-vD-Rq3" secondAttribute="height" type="user" id="SLl-1Q-piA"/>
+                            <constraint firstItem="1mC-so-7cY" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" type="default" id="VGh-YB-HHe"/>
+                            <constraint firstItem="CQa-B1-kYn" firstAttribute="height" secondItem="1mC-so-7cY" secondAttribute="height" type="user" id="WQG-CQ-SP6"/>
+                            <constraint firstItem="CQa-B1-kYn" firstAttribute="bottom" secondItem="oyP-YC-2Dp" secondAttribute="bottom" type="default" id="ZVZ-RF-XJI"/>
+                            <constraint firstItem="CQa-B1-kYn" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" type="default" id="cIB-A9-KF5"/>
+                            <constraint firstItem="oyP-YC-2Dp" firstAttribute="top" secondItem="xUA-NE-xbH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="dFG-O9-FlG"/>
+                            <constraint firstItem="dSZ-vD-Rq3" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" type="default" id="gep-Xc-itx"/>
+                            <constraint firstItem="CQa-B1-kYn" firstAttribute="top" secondItem="1mC-so-7cY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="iDO-2T-uRR"/>
+                            <constraint firstItem="oyP-YC-2Dp" firstAttribute="trailing" secondItem="yMq-9R-UAB" secondAttribute="trailing" type="default" id="iee-9x-kOl"/>
+                            <constraint firstItem="oyP-YC-2Dp" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" type="default" id="jeo-6x-Vcu"/>
+                            <constraint firstItem="xYP-XQ-Ts3" firstAttribute="top" secondItem="yMq-9R-UAB" secondAttribute="top" constant="8" id="k04-EA-cTe"/>
                             <constraint firstAttribute="trailing" secondItem="1mC-so-7cY" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="oS6-sr-8le"/>
-                            <constraint firstItem="CQa-B1-kYn" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oTk-hI-NtV"/>
-                            <constraint firstItem="i0u-jz-I12" firstAttribute="trailing" secondItem="yMq-9R-UAB" secondAttribute="trailing" type="default" id="phP-HR-rL0"/>
+                            <constraint firstItem="xYP-XQ-Ts3" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" type="default" id="rWa-na-uEO"/>
                             <constraint firstAttribute="trailing" secondItem="CQa-B1-kYn" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sz2-Ty-een"/>
+                            <constraint firstItem="CQa-B1-kYn" firstAttribute="height" secondItem="4nB-Ir-rVp" secondAttribute="height" type="user" id="wxJ-tI-LL1"/>
                             <constraint firstAttribute="trailing" secondItem="dSZ-vD-Rq3" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="z9e-zS-MC8"/>
-                            <constraint firstItem="i0u-jz-I12" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" type="default" id="zd7-Af-W3d"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button1" destination="dSZ-vD-Rq3" id="YbW-k1-HGl"/>
-                        <outlet property="button2" destination="1mC-so-7cY" id="2Rc-WD-FBg"/>
-                        <outlet property="button3" destination="CQa-B1-kYn" id="51G-Af-2tF"/>
+                        <outlet property="button2" destination="4nB-Ir-rVp" id="EUz-dO-p5E"/>
+                        <outlet property="button3" destination="1mC-so-7cY" id="U7d-Ve-47e"/>
+                        <outlet property="button4" destination="CQa-B1-kYn" id="H1i-iF-HPF"/>
                         <outlet property="menuTitle" destination="xUA-NE-xbH" id="RlW-Lm-uOs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Sa-kl-Ezf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-165" y="-639"/>
+            <point key="canvasLocation" x="-164" y="-631"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W8O-PN-oEV">
@@ -503,9 +989,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="EU-logos.png" width="95" height="46"/>
+        <image name="Inno-background.png" width="241" height="326"/>
         <image name="innoServLogo2forIPAD.png" width="144" height="144"/>
         <image name="innoServLogo2forIPADNoRetina.png" width="72" height="72"/>
-        <image name="innoserv-logoAndPhotos.png" width="1202" height="707"/>
         <image name="play.png" width="63" height="63"/>
     </resources>
     <classes>
@@ -514,6 +1001,12 @@
         </class>
         <class className="AboutPage2ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPage2ViewController.h"/>
+        </class>
+        <class className="AboutPage3ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPage3ViewController.h"/>
+        </class>
+        <class className="AboutPage4ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPage4ViewController.h"/>
         </class>
         <class className="CustomCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
@@ -526,9 +1019,11 @@
         <class className="FirstScreenViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstScreenViewController.h"/>
             <relationships>
+                <relationship kind="action" name="openInnoservWebSite:"/>
                 <relationship kind="outlet" name="button1" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="button2" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="button3" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button4" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="menuTitle" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -538,15 +1033,10 @@
         <class className="aboutPageContainerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/aboutPageContainerViewController.h"/>
         </class>
-        <class className="iPhoneAboutPDFViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneAboutPDFViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webViewForPDF" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
         <class className="iPhoneDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneDetailViewController.h"/>
             <relationships>
+                <relationship kind="action" name="openWebPagePressed:"/>
                 <relationship kind="outlet" name="openWebPageToolBarButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="projectImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="projectInformation" candidateClass="UITextView"/>
@@ -556,6 +1046,7 @@
         <class className="iPhoneFirstViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneFirstViewController.h"/>
             <relationships>
+                <relationship kind="action" name="openPdfToolbarButtonPressed:"/>
                 <relationship kind="outlet" name="aboutButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="trailerButton" candidateClass="UIBarButtonItem"/>
             </relationships>

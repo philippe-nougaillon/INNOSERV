@@ -1,18 +1,18 @@
 //
-//  AboutPage1ViewController.m
+//  AboutPage3ViewController.m
 //  Innoserv
 //
-//  Created by philippe nougaillon on 26/08/13.
+//  Created by philippe nougaillon on 27/08/13.
 //  Copyright (c) 2013 philippe nougaillon. All rights reserved.
 //
 
-#import "AboutPage1ViewController.h"
+#import "AboutPage3ViewController.h"
 
-@interface AboutPage1ViewController ()
+@interface AboutPage3ViewController ()
 
 @end
 
-@implementation AboutPage1ViewController
+@implementation AboutPage3ViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +28,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
-
 
 - (void)didReceiveMemoryWarning
 {
