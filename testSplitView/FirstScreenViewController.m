@@ -68,10 +68,12 @@
 		rect.origin.x = -320 - i * 20;
 		view.frame = rect;
 	}
+    
+    // démarre l'animation, position début
     [UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:0.5];
 	
-    // position de fin
+    // va à la position de fin
     for (NSInteger i = 1; i < 5; i++) {
 		
 		[UIView setAnimationDelay:i * 0.15];
