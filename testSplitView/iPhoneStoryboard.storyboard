@@ -207,26 +207,12 @@ Cg
                                 <color key="pageIndicatorTintColor" red="0.67058825489999996" green="0.0078431377190000002" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="9o5-Nc-1Yg">
-                                <items>
-                                    <barButtonItem style="plain" systemItem="done" id="l3m-Zv-oYB">
-                                        <color key="tintColor" red="0.67058825489999996" green="0.0078431377190000002" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
-                                        <connections>
-                                            <segue destination="pES-9E-EQ0" kind="modal" id="nZG-7k-Fak"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                                <color key="tintColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="9o5-Nc-1Yg" firstAttribute="trailing" secondItem="nM9-Cw-fZV" secondAttribute="trailing" type="default" id="9s8-6M-FuT"/>
-                            <constraint firstItem="9o5-Nc-1Yg" firstAttribute="leading" secondItem="nM9-Cw-fZV" secondAttribute="leading" type="default" id="C9A-pP-RQp"/>
                             <constraint firstItem="hWH-TN-qQd" firstAttribute="centerY" secondItem="nM9-Cw-fZV" secondAttribute="centerY" type="default" id="J7J-sn-Q2E"/>
                             <constraint firstAttribute="trailing" secondItem="hWH-TN-qQd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Jwu-nS-LhT"/>
-                            <constraint firstItem="9o5-Nc-1Yg" firstAttribute="centerX" secondItem="Tb9-6b-28e" secondAttribute="centerX" type="default" id="TPi-2U-lSY"/>
-                            <constraint firstItem="9o5-Nc-1Yg" firstAttribute="top" secondItem="nM9-Cw-fZV" secondAttribute="top" type="default" id="fdq-iW-fUr"/>
+                            <constraint firstItem="Tb9-6b-28e" firstAttribute="centerX" secondItem="nM9-Cw-fZV" secondAttribute="centerX" type="default" id="KVz-vU-m7m"/>
                             <constraint firstItem="Tb9-6b-28e" firstAttribute="bottom" secondItem="nM9-Cw-fZV" secondAttribute="bottom" type="default" id="mWG-Cl-4ve"/>
                         </constraints>
                     </view>
@@ -710,17 +696,32 @@ Cg
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="Xt0-BA-l10">
+                                <items>
+                                    <barButtonItem width="249" style="plain" systemItem="fixedSpace" id="EeC-jv-Xgp"/>
+                                    <barButtonItem style="plain" systemItem="done" id="GI6-nF-F1m">
+                                        <color key="tintColor" red="0.67058825489999996" green="0.0078431377190000002" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <segue destination="pES-9E-EQ0" kind="modal" id="CD8-js-9q6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="HFw-uz-qis" firstAttribute="top" secondItem="xPt-X9-PmS" secondAttribute="top" constant="20" symbolic="YES" type="default" id="2iq-Zp-E4a"/>
-                            <constraint firstAttribute="bottom" secondItem="4B7-9G-51G" secondAttribute="bottom" constant="60" id="3iQ-U0-VOb"/>
+                            <constraint firstAttribute="bottom" secondItem="cWp-uF-5Ca" secondAttribute="bottom" constant="17" id="606-v5-1u6"/>
+                            <constraint firstItem="HFw-uz-qis" firstAttribute="top" secondItem="xPt-X9-PmS" secondAttribute="top" constant="52" id="BGW-sq-AqF"/>
                             <constraint firstItem="cWp-uF-5Ca" firstAttribute="leading" secondItem="xPt-X9-PmS" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DOT-9c-6fr"/>
                             <constraint firstItem="YOE-Cw-H4C" firstAttribute="bottom" secondItem="xPt-X9-PmS" secondAttribute="bottom" type="default" id="DfF-ID-4pe"/>
                             <constraint firstItem="YOE-Cw-H4C" firstAttribute="centerX" secondItem="cWp-uF-5Ca" secondAttribute="centerX" type="default" id="GOw-vr-AK0"/>
                             <constraint firstAttribute="trailing" secondItem="4B7-9G-51G" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SFt-k1-7SQ"/>
-                            <constraint firstItem="cWp-uF-5Ca" firstAttribute="top" secondItem="xPt-X9-PmS" secondAttribute="top" constant="223" id="UCE-Pu-15x"/>
+                            <constraint firstItem="Xt0-BA-l10" firstAttribute="leading" secondItem="xPt-X9-PmS" secondAttribute="leading" type="default" id="V0H-lg-DRV"/>
+                            <constraint firstItem="Xt0-BA-l10" firstAttribute="top" secondItem="xPt-X9-PmS" secondAttribute="top" type="default" id="cuy-Bc-MLh"/>
+                            <constraint firstAttribute="bottom" secondItem="4B7-9G-51G" secondAttribute="bottom" constant="28" id="nPp-Sj-nx2"/>
                             <constraint firstItem="HFw-uz-qis" firstAttribute="leading" secondItem="xPt-X9-PmS" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ohw-ca-nfG"/>
+                            <constraint firstItem="Xt0-BA-l10" firstAttribute="trailing" secondItem="xPt-X9-PmS" secondAttribute="trailing" type="default" id="ozc-8F-Wdw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1036,7 +1037,6 @@ Cg
         <class className="iPhoneDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneDetailViewController.h"/>
             <relationships>
-                <relationship kind="action" name="openWebPagePressed:"/>
                 <relationship kind="outlet" name="openWebPageToolBarButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="projectImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="projectInformation" candidateClass="UITextView"/>
@@ -1046,7 +1046,9 @@ Cg
         <class className="iPhoneFirstViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneFirstViewController.h"/>
             <relationships>
+                <relationship kind="action" name="closeButtonTapped:"/>
                 <relationship kind="action" name="openPdfToolbarButtonPressed:"/>
+                <relationship kind="action" name="openTrailerButtonPressed:"/>
                 <relationship kind="outlet" name="aboutButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="trailerButton" candidateClass="UIBarButtonItem"/>
             </relationships>

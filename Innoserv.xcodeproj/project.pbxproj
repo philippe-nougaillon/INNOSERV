@@ -58,6 +58,7 @@
 		B319004C16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B319004B16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 */; };
 		B319004E16F36C9F003D479B /* CIL_20032013-iphone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B319004D16F36C9F003D479B /* CIL_20032013-iphone.mp4 */; };
 		B319005016F36EEB003D479B /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B319004F16F36EEB003D479B /* play.png */; };
+		B31E335517CDFD5300B61B25 /* ProjectDataDE.m in Sources */ = {isa = PBXBuildFile; fileRef = B31E335417CDFD5300B61B25 /* ProjectDataDE.m */; };
 		B32E2CD31714A17D00F17039 /* iPhoneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B32E2CD21714A17D00F17039 /* iPhoneDetailViewController.m */; };
 		B32F5AEE17C39D5000D46EE1 /* SrtData.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F5AEB17C39D5000D46EE1 /* SrtData.m */; };
 		B32F5AEF17C39D5000D46EE1 /* SrtParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F5AED17C39D5000D46EE1 /* SrtParser.m */; };
@@ -186,6 +187,8 @@
 		B319004B16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BlueAssist_06.03.2013-iphone.mp4"; sourceTree = "<group>"; };
 		B319004D16F36C9F003D479B /* CIL_20032013-iphone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CIL_20032013-iphone.mp4"; sourceTree = "<group>"; };
 		B319004F16F36EEB003D479B /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		B31E335317CDFD5300B61B25 /* ProjectDataDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataDE.h; sourceTree = "<group>"; };
+		B31E335417CDFD5300B61B25 /* ProjectDataDE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataDE.m; sourceTree = "<group>"; };
 		B32E2CD11714A17D00F17039 /* iPhoneDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneDetailViewController.h; sourceTree = "<group>"; };
 		B32E2CD21714A17D00F17039 /* iPhoneDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneDetailViewController.m; sourceTree = "<group>"; };
 		B32F5AEA17C39D5000D46EE1 /* SrtData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SrtData.h; sourceTree = "<group>"; };
@@ -476,6 +479,8 @@
 				B304131517C237800032150C /* ProjectData.m */,
 				B33DDECC17C4B42E005C0D15 /* ProjectDataFR.h */,
 				B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */,
+				B31E335317CDFD5300B61B25 /* ProjectDataDE.h */,
+				B31E335417CDFD5300B61B25 /* ProjectDataDE.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -746,6 +751,7 @@
 				B3FB6F9F17CBE04300D22288 /* aboutPageContainerViewController.m in Sources */,
 				B3F7C4EB17CCD92A00EAEF1E /* AboutPage3ViewController.m in Sources */,
 				B3F7C4EE17CCD94D00EAEF1E /* AboutPage4ViewController.m in Sources */,
+				B31E335517CDFD5300B61B25 /* ProjectDataDE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

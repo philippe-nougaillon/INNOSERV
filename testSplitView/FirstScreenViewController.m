@@ -12,7 +12,7 @@
 
     BOOL introAnimationDone;
 
-    __weak IBOutlet UILabel *menuTitle;
+    __weak IBOutlet UILabel  *menuTitle;
     __weak IBOutlet UIButton *button1;
     __weak IBOutlet UIButton *button2;
     __weak IBOutlet UIButton *button3;
@@ -50,7 +50,6 @@
     [button4 setTitle:NSLocalizedString(@"menu_www", @"") forState:UIControlStateNormal];
     
     [self presentMainMenu];
-
 }
 
 - (void)presentMainMenu {
