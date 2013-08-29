@@ -15,6 +15,7 @@
     NSString *langueCourante;
     UIView *myView;
     NSURL *url;
+    NSString *dataFile;
 }
 
 @property (nonatomic, retain) SrtParser *srtParser;
@@ -53,7 +54,6 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
     langueCourante = [langues objectAtIndex:0];
-    //NSLog(@"langue: %@",langueCourante);
     
     // Prepare video subtitles
     if ([langueCourante isEqualToString:@"fr"] || [langueCourante isEqualToString:@"de"]) {
@@ -63,8 +63,17 @@
         [self.srtParser parseSrtFileAtPath:srtPath];
     }
     
-    url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                         pathForResource:self.detailItem.videofile ofType:@"mp4"]];
+    // video file to play
+    
+    NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docsDir = dirPaths[0];
+    
+    // Build the path to the data file
+    dataFile = [docsDir stringByAppendingPathComponent:
+                [self.detailItem.videofile stringByAppendingString:@".mp4"]];
+
+    
+    url = [NSURL fileURLWithPath:dataFile];
     
 	// setup video view and play
     [self prepareView];

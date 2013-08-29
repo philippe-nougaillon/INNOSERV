@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ProjectListItem.h"
 
-@interface iPhoneDetailViewController : UIViewController
+@interface iPhoneDetailViewController : UIViewController <UIDocumentInteractionControllerDelegate>
 
 @property (strong, nonatomic) ProjectListItem *detailItem;
 

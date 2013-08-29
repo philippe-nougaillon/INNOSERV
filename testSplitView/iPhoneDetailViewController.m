@@ -8,6 +8,7 @@
 
 #import "iPhoneDetailViewController.h"
 
+
 @interface iPhoneDetailViewController ()
 {
     NSString *langueCourante;
@@ -16,6 +17,17 @@
     __weak IBOutlet UILabel *projectSubTiltle;
     __weak IBOutlet UITextView *projectInformation;
     __weak IBOutlet UIImageView *projectImage;
+    __weak IBOutlet UIProgressView *myProgressBar;
+    
+    __weak IBOutlet UILabel *labelDownloadingVideo;
+    
+    NSMutableData *activeDownload;
+    NSURLConnection *imageConnection;
+    NSFileManager *filemgr;
+    NSString *dataFile;
+    float _totalFileSize;
+    float _receivedDataBytes;
+    
 }
 
 @end
@@ -67,6 +79,51 @@
     }
 }
 
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+
+    if ([identifier isEqualToString:@"openVideo"]) {
+        
+        // check if video file exist
+        filemgr = [NSFileManager defaultManager];
+        NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *docsDir = dirPaths[0];
+        
+        // Build the path to the data file
+        dataFile = [docsDir stringByAppendingPathComponent:
+                                    [self.detailItem.videofile stringByAppendingString:@".mp4"]];
+        
+        // Check if the file already exists
+        if (![filemgr fileExistsAtPath: dataFile])
+        {
+            // init file data container
+            activeDownload = [[NSMutableData alloc] init];
+            
+            // if not exist and Wifi enable, download it
+            labelDownloadingVideo.hidden = FALSE;
+            [labelDownloadingVideo setText:NSLocalizedString(@"Downloading video", @"")];
+
+            // the video file to download
+            NSString *fileURL = [@"http://www.inno-serv.eu/sites/default/files/" stringByAppendingString:self.detailItem.videofile];
+            fileURL = [fileURL stringByAppendingString:@".mp4"];
+            
+            // create the web request
+            NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+            NSURL *url = [[NSURL alloc] initWithString:fileURL];
+            [request setURL:url];
+
+            // open Connection
+            NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+
+            return FALSE;
+        } else {
+            return TRUE;        
+        }
+    }
+    return TRUE;
+}
+
+
 // This will get called too before the view appears
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -79,6 +136,33 @@
         vc.detailItem = self.detailItem;
         vc.navigationItem.title = self.detailItem.title;
     }
+}
+
+-(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    _totalFileSize = response.expectedContentLength;
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+
+    _receivedDataBytes += [data length];
+
+    myProgressBar.hidden = FALSE;
+    myProgressBar.progress = _receivedDataBytes / (float)_totalFileSize;
+    
+    [activeDownload appendData:data];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+
+    // write file into app Documents dir
+    [activeDownload writeToFile:dataFile atomically:YES];
+    
+    // update interface
+    myProgressBar.hidden = TRUE;
+    labelDownloadingVideo.hidden = TRUE;
+    
+    activeDownload = nil;
+    imageConnection = nil;
 }
 
 

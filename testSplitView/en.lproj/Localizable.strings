@@ -21,6 +21,9 @@
 
 //
 "Website"="Website";
+"Downloading video"="Downloading video in progress";
+"Saving video"="Saving video file";
+
 
 /* iPAD  */
 "Master"="INNOSERV Selected Projects";

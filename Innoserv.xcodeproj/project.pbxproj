@@ -51,13 +51,9 @@
 		B30E56FD16D28CEC000821DD /* vitality2a-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56F916D28CEB000821DD /* vitality2a-2.png */; };
 		B30E570016D28D15000821DD /* Nueva1d-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56FE16D28D13000821DD /* Nueva1d-2.png */; };
 		B30E570116D28D15000821DD /* placedebleu3a-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56FF16D28D14000821DD /* placedebleu3a-2.png */; };
-		B30F62A1171C3DFE0008F4C1 /* AMMERUDHJEMMET.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B30F62A0171C3DFE0008F4C1 /* AMMERUDHJEMMET.mp4 */; };
-		B30F62A3171C3E0C0008F4C1 /* ECC.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B30F62A2171C3E0C0008F4C1 /* ECC.mp4 */; };
 		B319004716F3387E003D479B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B319004616F3387E003D479B /* MediaPlayer.framework */; };
-		B319004A16F35824003D479B /* AbitareSolidale_11.03.2013-iphone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B319004916F35824003D479B /* AbitareSolidale_11.03.2013-iphone.mp4 */; };
-		B319004C16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B319004B16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 */; };
-		B319004E16F36C9F003D479B /* CIL_20032013-iphone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B319004D16F36C9F003D479B /* CIL_20032013-iphone.mp4 */; };
 		B319005016F36EEB003D479B /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B319004F16F36EEB003D479B /* play.png */; };
+		B31ACB2017CF695800C3265E /* Trailer_V4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B37077611727DA44009946A9 /* Trailer_V4.mp4 */; };
 		B31E335517CDFD5300B61B25 /* ProjectDataDE.m in Sources */ = {isa = PBXBuildFile; fileRef = B31E335417CDFD5300B61B25 /* ProjectDataDE.m */; };
 		B32E2CD31714A17D00F17039 /* iPhoneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B32E2CD21714A17D00F17039 /* iPhoneDetailViewController.m */; };
 		B32F5AEE17C39D5000D46EE1 /* SrtData.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F5AEB17C39D5000D46EE1 /* SrtData.m */; };
@@ -65,7 +61,6 @@
 		B33B373617CCEDE500DA57D9 /* EU-logos.png in Resources */ = {isa = PBXBuildFile; fileRef = B33B373417CCEDE500DA57D9 /* EU-logos.png */; };
 		B33B373717CCEDE500DA57D9 /* Inno-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B33B373517CCEDE500DA57D9 /* Inno-background.png */; };
 		B33DDECE17C4B42E005C0D15 /* ProjectDataFR.m in Sources */ = {isa = PBXBuildFile; fileRef = B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */; };
-		B37077621727DA44009946A9 /* Trailer_V4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B37077611727DA44009946A9 /* Trailer_V4.mp4 */; };
 		B37077651727E80A009946A9 /* iPadMorePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37077641727E80A009946A9 /* iPadMorePageViewController.m */; };
 		B370776817280D7F009946A9 /* iPadAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370776717280D7F009946A9 /* iPadAboutViewController.m */; };
 		B37D269C17C6391B0073F49D /* Abitare-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D268817C6391B0073F49D /* Abitare-subtitles - french.txt */; };
@@ -91,21 +86,6 @@
 		B380094816D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B380094716D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf */; };
 		B380094A16D6609000506DD5 /* innoServLogo2forIPADNoRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = B380094916D6609000506DD5 /* innoServLogo2forIPADNoRetina.png */; };
 		B380094C16D6609400506DD5 /* innoServLogo2forIPAD.png in Resources */ = {isa = PBXBuildFile; fileRef = B380094B16D6609400506DD5 /* innoServLogo2forIPAD.png */; };
-		B3849B0E171596EA00A58672 /* ELTERN-AG-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B00171596EA00A58672 /* ELTERN-AG-Final.mp4 */; };
-		B3849B0F171596EA00A58672 /* nueva-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B01171596EA00A58672 /* nueva-Final.mp4 */; };
-		B3849B10171596EA00A58672 /* RealPearl-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B02171596EA00A58672 /* RealPearl-Final.mp4 */; };
-		B3849B11171596EA00A58672 /* Mobile-Health-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B03171596EA00A58672 /* Mobile-Health-Final.mp4 */; };
-		B3849B12171596EA00A58672 /* Katymar-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B04171596EA00A58672 /* Katymar-Final.mp4 */; };
-		B3849B13171596EA00A58672 /* Humanitas-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B05171596EA00A58672 /* Humanitas-Final.mp4 */; };
-		B3849B14171596EA00A58672 /* Seclin-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B06171596EA00A58672 /* Seclin-Final.mp4 */; };
-		B3849B15171596EA00A58672 /* Vitality-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B07171596EA00A58672 /* Vitality-Final.mp4 */; };
-		B3849B16171596EA00A58672 /* Momartre-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B08171596EA00A58672 /* Momartre-Final.mp4 */; };
-		B3849B17171596EA00A58672 /* Residencialita-Leggera-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B09171596EA00A58672 /* Residencialita-Leggera-Final.mp4 */; };
-		B3849B18171596EA00A58672 /* Place-de-Bleu-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B0A171596EA00A58672 /* Place-de-Bleu-Final.mp4 */; };
-		B3849B19171596EA00A58672 /* Early-Supported-Discharge-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B0B171596EA00A58672 /* Early-Supported-Discharge-Final.mp4 */; };
-		B3849B1A171596EA00A58672 /* Irre-Menschlich-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B0C171596EA00A58672 /* Irre-Menschlich-Final.mp4 */; };
-		B3849B1B171596EA00A58672 /* GPE-Mainz-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B0D171596EA00A58672 /* GPE-Mainz-Final.mp4 */; };
-		B3849B1D171599C000A58672 /* KYOH-Final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3849B1C171599C000A58672 /* KYOH-Final.mp4 */; };
 		B3996A0C16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3996A0B16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard */; };
 		B3996A0F16DCFD9900BC65DC /* iPhoneFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3996A0E16DCFD9900BC65DC /* iPhoneFirstViewController.m */; };
 		B3B8BBB216C13C8E0019CD28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B8BBB116C13C8E0019CD28 /* UIKit.framework */; };
@@ -180,12 +160,7 @@
 		B30E56F916D28CEB000821DD /* vitality2a-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vitality2a-2.png"; sourceTree = "<group>"; };
 		B30E56FE16D28D13000821DD /* Nueva1d-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nueva1d-2.png"; sourceTree = "<group>"; };
 		B30E56FF16D28D14000821DD /* placedebleu3a-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placedebleu3a-2.png"; sourceTree = "<group>"; };
-		B30F62A0171C3DFE0008F4C1 /* AMMERUDHJEMMET.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AMMERUDHJEMMET.mp4; sourceTree = "<group>"; };
-		B30F62A2171C3E0C0008F4C1 /* ECC.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ECC.mp4; sourceTree = "<group>"; };
 		B319004616F3387E003D479B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		B319004916F35824003D479B /* AbitareSolidale_11.03.2013-iphone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AbitareSolidale_11.03.2013-iphone.mp4"; sourceTree = "<group>"; };
-		B319004B16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BlueAssist_06.03.2013-iphone.mp4"; sourceTree = "<group>"; };
-		B319004D16F36C9F003D479B /* CIL_20032013-iphone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CIL_20032013-iphone.mp4"; sourceTree = "<group>"; };
 		B319004F16F36EEB003D479B /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		B31E335317CDFD5300B61B25 /* ProjectDataDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataDE.h; sourceTree = "<group>"; };
 		B31E335417CDFD5300B61B25 /* ProjectDataDE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataDE.m; sourceTree = "<group>"; };
@@ -229,21 +204,6 @@
 		B380094716D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = INNOSERV_Flyer_2013.pdf; sourceTree = "<group>"; };
 		B380094916D6609000506DD5 /* innoServLogo2forIPADNoRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = innoServLogo2forIPADNoRetina.png; sourceTree = "<group>"; };
 		B380094B16D6609400506DD5 /* innoServLogo2forIPAD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = innoServLogo2forIPAD.png; sourceTree = "<group>"; };
-		B3849B00171596EA00A58672 /* ELTERN-AG-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ELTERN-AG-Final.mp4"; sourceTree = "<group>"; };
-		B3849B01171596EA00A58672 /* nueva-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nueva-Final.mp4"; sourceTree = "<group>"; };
-		B3849B02171596EA00A58672 /* RealPearl-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RealPearl-Final.mp4"; sourceTree = "<group>"; };
-		B3849B03171596EA00A58672 /* Mobile-Health-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mobile-Health-Final.mp4"; sourceTree = "<group>"; };
-		B3849B04171596EA00A58672 /* Katymar-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Katymar-Final.mp4"; sourceTree = "<group>"; };
-		B3849B05171596EA00A58672 /* Humanitas-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Humanitas-Final.mp4"; sourceTree = "<group>"; };
-		B3849B06171596EA00A58672 /* Seclin-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seclin-Final.mp4"; sourceTree = "<group>"; };
-		B3849B07171596EA00A58672 /* Vitality-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vitality-Final.mp4"; sourceTree = "<group>"; };
-		B3849B08171596EA00A58672 /* Momartre-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Momartre-Final.mp4"; sourceTree = "<group>"; };
-		B3849B09171596EA00A58672 /* Residencialita-Leggera-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Residencialita-Leggera-Final.mp4"; sourceTree = "<group>"; };
-		B3849B0A171596EA00A58672 /* Place-de-Bleu-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Place-de-Bleu-Final.mp4"; sourceTree = "<group>"; };
-		B3849B0B171596EA00A58672 /* Early-Supported-Discharge-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Early-Supported-Discharge-Final.mp4"; sourceTree = "<group>"; };
-		B3849B0C171596EA00A58672 /* Irre-Menschlich-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Irre-Menschlich-Final.mp4"; sourceTree = "<group>"; };
-		B3849B0D171596EA00A58672 /* GPE-Mainz-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GPE-Mainz-Final.mp4"; sourceTree = "<group>"; };
-		B3849B1C171599C000A58672 /* KYOH-Final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KYOH-Final.mp4"; sourceTree = "<group>"; };
 		B3996A0B16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
 		B3996A0D16DCFD9900BC65DC /* iPhoneFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneFirstViewController.h; sourceTree = "<group>"; };
 		B3996A0E16DCFD9900BC65DC /* iPhoneFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneFirstViewController.m; sourceTree = "<group>"; };
@@ -355,26 +315,6 @@
 			isa = PBXGroup;
 			children = (
 				B37077611727DA44009946A9 /* Trailer_V4.mp4 */,
-				B30F62A2171C3E0C0008F4C1 /* ECC.mp4 */,
-				B30F62A0171C3DFE0008F4C1 /* AMMERUDHJEMMET.mp4 */,
-				B3849B1C171599C000A58672 /* KYOH-Final.mp4 */,
-				B3849B00171596EA00A58672 /* ELTERN-AG-Final.mp4 */,
-				B3849B01171596EA00A58672 /* nueva-Final.mp4 */,
-				B3849B02171596EA00A58672 /* RealPearl-Final.mp4 */,
-				B3849B03171596EA00A58672 /* Mobile-Health-Final.mp4 */,
-				B3849B04171596EA00A58672 /* Katymar-Final.mp4 */,
-				B3849B05171596EA00A58672 /* Humanitas-Final.mp4 */,
-				B3849B06171596EA00A58672 /* Seclin-Final.mp4 */,
-				B3849B07171596EA00A58672 /* Vitality-Final.mp4 */,
-				B3849B08171596EA00A58672 /* Momartre-Final.mp4 */,
-				B3849B09171596EA00A58672 /* Residencialita-Leggera-Final.mp4 */,
-				B3849B0A171596EA00A58672 /* Place-de-Bleu-Final.mp4 */,
-				B3849B0B171596EA00A58672 /* Early-Supported-Discharge-Final.mp4 */,
-				B3849B0C171596EA00A58672 /* Irre-Menschlich-Final.mp4 */,
-				B3849B0D171596EA00A58672 /* GPE-Mainz-Final.mp4 */,
-				B319004D16F36C9F003D479B /* CIL_20032013-iphone.mp4 */,
-				B319004B16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 */,
-				B319004916F35824003D479B /* AbitareSolidale_11.03.2013-iphone.mp4 */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -676,28 +616,7 @@
 				B380094A16D6609000506DD5 /* innoServLogo2forIPADNoRetina.png in Resources */,
 				B380094C16D6609400506DD5 /* innoServLogo2forIPAD.png in Resources */,
 				B3996A0C16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard in Resources */,
-				B319004A16F35824003D479B /* AbitareSolidale_11.03.2013-iphone.mp4 in Resources */,
-				B319004C16F367E3003D479B /* BlueAssist_06.03.2013-iphone.mp4 in Resources */,
-				B319004E16F36C9F003D479B /* CIL_20032013-iphone.mp4 in Resources */,
 				B319005016F36EEB003D479B /* play.png in Resources */,
-				B3849B0E171596EA00A58672 /* ELTERN-AG-Final.mp4 in Resources */,
-				B3849B0F171596EA00A58672 /* nueva-Final.mp4 in Resources */,
-				B3849B10171596EA00A58672 /* RealPearl-Final.mp4 in Resources */,
-				B3849B11171596EA00A58672 /* Mobile-Health-Final.mp4 in Resources */,
-				B3849B12171596EA00A58672 /* Katymar-Final.mp4 in Resources */,
-				B3849B13171596EA00A58672 /* Humanitas-Final.mp4 in Resources */,
-				B3849B14171596EA00A58672 /* Seclin-Final.mp4 in Resources */,
-				B3849B15171596EA00A58672 /* Vitality-Final.mp4 in Resources */,
-				B3849B16171596EA00A58672 /* Momartre-Final.mp4 in Resources */,
-				B3849B17171596EA00A58672 /* Residencialita-Leggera-Final.mp4 in Resources */,
-				B3849B18171596EA00A58672 /* Place-de-Bleu-Final.mp4 in Resources */,
-				B3849B19171596EA00A58672 /* Early-Supported-Discharge-Final.mp4 in Resources */,
-				B3849B1A171596EA00A58672 /* Irre-Menschlich-Final.mp4 in Resources */,
-				B3849B1B171596EA00A58672 /* GPE-Mainz-Final.mp4 in Resources */,
-				B3849B1D171599C000A58672 /* KYOH-Final.mp4 in Resources */,
-				B30F62A1171C3DFE0008F4C1 /* AMMERUDHJEMMET.mp4 in Resources */,
-				B30F62A3171C3E0C0008F4C1 /* ECC.mp4 in Resources */,
-				B37077621727DA44009946A9 /* Trailer_V4.mp4 in Resources */,
 				B304131A17C248CF0032150C /* Localizable.strings in Resources */,
 				B37D269C17C6391B0073F49D /* Abitare-subtitles - french.txt in Resources */,
 				B37D269D17C6391B0073F49D /* Ammerudhjemmet-subtitles - french.txt in Resources */,
@@ -722,6 +641,7 @@
 				B3F7C4E617CCC34C00EAEF1E /* Default-568h@2x.png in Resources */,
 				B33B373617CCEDE500DA57D9 /* EU-logos.png in Resources */,
 				B33B373717CCEDE500DA57D9 /* Inno-background.png in Resources */,
+				B31ACB2017CF695800C3265E /* Trailer_V4.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,8 @@
 
 //
 "Website"="Site internet";
+"Downloading video"="Patientez, chargement de la vidéo...";
+"Saving video"="Sauvegarde du fichier vidéo...";
 
 // iPAD
 "Master"="Projets sélectionnés";
