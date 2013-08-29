@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Innoserv
+
+  Created by philippe nougaillon on 19/08/13.
+  Copyright (c) 2013 philippe nougaillon. All rights reserved.
+*/
+
+/* iPhone */
+
+// Menu
+"menu_About"="About INNOSERV project";
+"menu_Trailer"="Watch our video trailer";
+"menu_20projects"="20 Videos of selected projects";
+"menu_www"="INNOSERV's website";
+
+"about"="About INNOSERV project";
+"20SelectedProjects"="20 Selected projects";
+
+"innoserv-url"="http://www.inno-serv.eu/de";
+
+//
+"Website"="Website";
+
+/* iPAD  */
+"Master"="INNOSERV Selected Projects";
+
+"Close"="Close";

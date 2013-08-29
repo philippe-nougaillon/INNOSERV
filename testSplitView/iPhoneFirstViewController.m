@@ -10,19 +10,15 @@
 #import "iPhoneDetailViewController.h"
 #import "ProjectData.h"
 #import "ProjectDataFR.h"
+#import "ProjectDataDE.h"
 #import "ProjectListItem.h"
 #import "CustomCell.h"
-#import <MediaPlayer/MediaPlayer.h>
 
 @interface iPhoneFirstViewController ()
 {
-    NSArray *_items;
     ProjectListItem *selectedProject;
-    MPMoviePlayerViewController *_player;
+    NSArray *_items;
     NSString *langueCourante;
-
-    __weak IBOutlet UIBarButtonItem *aboutButton;
-    __weak IBOutlet UIBarButtonItem *trailerButton;
 }
 @end
 
@@ -39,10 +35,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    //_items = [[ProjectData alloc] init];
-    
-    aboutButton.title = NSLocalizedString(@"About", @"");
-    trailerButton.title = NSLocalizedString(@"Trailer", @"");
     self.navigationItem.title = NSLocalizedString(@"20SelectedProjects", @"");
     
     // Language ?
@@ -55,6 +47,8 @@
     // Load items for appropriate language
     if ([langueCourante isEqualToString:@"fr"]) {
         _items = [[ProjectDataFR alloc] init];
+    } else if ([langueCourante isEqualToString:@"de"]) {
+        _items = [[ProjectDataDE alloc] init];
     } else {
         _items = [[ProjectData alloc] init];
     }
@@ -66,68 +60,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return ((interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) );
-}
-
-- (IBAction)openPdfToolbarButtonPressed:(id)sender {
-}
-
-- (IBAction)openTrailerButtonPressed:(id)sender {
-
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                         pathForResource:@"Trailer_V4" ofType:@"mp4"]];
-    
-    _player = [[MPMoviePlayerViewController alloc]initWithContentURL:url];
-    _player.moviePlayer.fullscreen = YES;
-    _player.view.frame = self.view.frame;
-    
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:_player
-                                                    name:MPMoviePlayerPlaybackDidFinishNotification
-                                                  object:_player.moviePlayer];
-    
-    // Register this class as an observer instead
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(movieFinishedCallback:)
-                                                 name:MPMoviePlayerPlaybackDidFinishNotification
-                                               object:_player.moviePlayer];
-    
-    [self.view addSubview:_player.view];
-    
-    // self.openWebPageToolBarButton.enabled= NO;
-    self.navigationController.navigationBarHidden = YES;
-}
-
-- (void)movieFinishedCallback:(NSNotification*)aNotification
-{
-    // Obtain the reason why the movie playback finished
-    NSNumber *finishReason = [[aNotification userInfo] objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
-    
-    // Dismiss the view controller ONLY when the reason is not "playback ended"
-    if ([finishReason intValue] != MPMovieFinishReasonPlaybackEnded)
-    {
-        MPMoviePlayerController *moviePlayer = [aNotification object];
-        
-        // Remove this class from the observers
-        [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                        name:MPMoviePlayerPlaybackDidFinishNotification
-                                                      object:moviePlayer];
-        
-        [_player.view removeFromSuperview];
-        self.navigationController.navigationBarHidden = NO;
-    }
-}
-
-
 - (IBAction)closeButtonTapped:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-
 
 #pragma mark - Table View
 
@@ -152,7 +88,7 @@
     cell.image.image = [UIImage imageNamed:[item.image stringByAppendingString:@".png"]];
     
     [cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:16]];
-    [cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:14]];
+    [cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:12]];
      
     return cell;
 }
@@ -178,5 +114,10 @@
         vc.navigationItem.title = selectedProject.title;
     }
 }
+
+-(NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 
 @end

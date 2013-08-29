@@ -7,6 +7,8 @@
 //
 
 #import "FirstScreenViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
+
 
 @interface FirstScreenViewController () {
 
@@ -17,6 +19,9 @@
     __weak IBOutlet UIButton *button2;
     __weak IBOutlet UIButton *button3;
     __weak IBOutlet UIButton *button4;
+    
+    MPMoviePlayerViewController *_player;
+
 }
 
 @end
@@ -96,6 +101,57 @@
     
 }
 
+
+- (IBAction)openTrailerButtonPressed:(id)sender {
+
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         pathForResource:@"Trailer_V4" ofType:@"mp4"]];
+    
+    _player = [[MPMoviePlayerViewController alloc]initWithContentURL:url];
+    _player.moviePlayer.fullscreen = YES;
+    _player.view.frame = self.view.frame;
+    
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:_player
+                                                    name:MPMoviePlayerPlaybackDidFinishNotification
+                                                  object:_player.moviePlayer];
+    
+    // Register this class as an observer instead
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(movieFinishedCallback:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:_player.moviePlayer];
+    
+    [self.view addSubview:_player.view];
+    
+    // self.openWebPageToolBarButton.enabled= NO;
+    self.navigationController.navigationBarHidden = YES;
+
+}
+
+- (void)movieFinishedCallback:(NSNotification*)aNotification
+{
+    // Obtain the reason why the movie playback finished
+    NSNumber *finishReason = [[aNotification userInfo] objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
+    
+    // Dismiss the view controller ONLY when the reason is not "playback ended"
+    if ([finishReason intValue] != MPMovieFinishReasonPlaybackEnded)
+    {
+        MPMoviePlayerController *moviePlayer = [aNotification object];
+        
+        // Remove this class from the observers
+        [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                        name:MPMoviePlayerPlaybackDidFinishNotification
+                                                      object:moviePlayer];
+        
+        [_player.view removeFromSuperview];
+        self.navigationController.navigationBarHidden = NO;
+    }
+}
+
+-(NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
 
 - (void)didReceiveMemoryWarning
 {

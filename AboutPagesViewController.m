@@ -96,6 +96,10 @@
     return view;
 }
 
+-(NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait; // etc
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

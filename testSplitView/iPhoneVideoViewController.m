@@ -56,7 +56,7 @@
     //NSLog(@"langue: %@",langueCourante);
     
     // Prepare video subtitles
-    if ([langueCourante isEqualToString:@"fr"]) {
+    if ([langueCourante isEqualToString:@"fr"] || [langueCourante isEqualToString:@"de"]) {
         // Parse subtitles
         NSString *srtPath = [[NSBundle mainBundle] pathForResource:self.detailItem.subTitles ofType:@"txt"];
         self.srtParser = [[SrtParser alloc] init];
@@ -84,7 +84,7 @@
     [myView addSubview:self.moviePlayer.view];
     [self.moviePlayer setFullscreen:NO animated:NO];
     
-    if ([langueCourante isEqualToString:@"fr"] && self.detailItem.subTitles) {
+    if (([langueCourante isEqualToString:@"fr"] || [langueCourante isEqualToString:@"de"]) && self.detailItem.subTitles) {
 
         self.navigationItem.title = @"Vidéo du projet";
 
