@@ -18,16 +18,14 @@
     __weak IBOutlet UITextView *projectInformation;
     __weak IBOutlet UIImageView *projectImage;
     __weak IBOutlet UIProgressView *myProgressBar;
-    
     __weak IBOutlet UILabel *labelDownloadingVideo;
     
     NSMutableData *activeDownload;
-    NSURLConnection *imageConnection;
+    NSURLConnection *conn;
     NSFileManager *filemgr;
     NSString *dataFile;
     float _totalFileSize;
     float _receivedDataBytes;
-    
 }
 
 @end
@@ -93,7 +91,7 @@
         dataFile = [docsDir stringByAppendingPathComponent:
                                     [self.detailItem.videofile stringByAppendingString:@".mp4"]];
         
-        // Check if the file already exists
+        // Check if the video not exist and then download it
         if (![filemgr fileExistsAtPath: dataFile])
         {
             // init file data container
@@ -113,7 +111,7 @@
             [request setURL:url];
 
             // open Connection
-            NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+            conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 
             return FALSE;
         } else {
@@ -162,7 +160,11 @@
     labelDownloadingVideo.hidden = TRUE;
     
     activeDownload = nil;
-    imageConnection = nil;
+    conn = nil;
+    
+    // run the video
+    [self performSegueWithIdentifier: @"openVideo" sender: self];
+    
 }
 
 

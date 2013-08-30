@@ -172,7 +172,7 @@
 // Orientation changed notification
 - (void)orientationChanged:(NSNotification *)notification
 {
-    NSLog(@"Orientation changed, self.view.bound.width = %f", self.view.bounds.size.width );
+    //NSLog(@"Orientation changed, self.view.bound.width = %f", self.view.bounds.size.width );
    
     myView.frame =  self.view.bounds;
     self.moviePlayer.view.frame = myView.bounds;

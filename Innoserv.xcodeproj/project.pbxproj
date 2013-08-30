@@ -54,6 +54,8 @@
 		B319004716F3387E003D479B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B319004616F3387E003D479B /* MediaPlayer.framework */; };
 		B319005016F36EEB003D479B /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B319004F16F36EEB003D479B /* play.png */; };
 		B31ACB2017CF695800C3265E /* Trailer_V4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B37077611727DA44009946A9 /* Trailer_V4.mp4 */; };
+		B31DAE1017D08C16006D6BE3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FB6F5D17CB7DED00D22288 /* Default.png */; };
+		B31DAE1117D08C1E006D6BE3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F7C4E317CCC33E00EAEF1E /* Default@2x.png */; };
 		B31E335517CDFD5300B61B25 /* ProjectDataDE.m in Sources */ = {isa = PBXBuildFile; fileRef = B31E335417CDFD5300B61B25 /* ProjectDataDE.m */; };
 		B32E2CD31714A17D00F17039 /* iPhoneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B32E2CD21714A17D00F17039 /* iPhoneDetailViewController.m */; };
 		B32F5AEE17C39D5000D46EE1 /* SrtData.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F5AEB17C39D5000D46EE1 /* SrtData.m */; };
@@ -642,6 +644,8 @@
 				B33B373617CCEDE500DA57D9 /* EU-logos.png in Resources */,
 				B33B373717CCEDE500DA57D9 /* Inno-background.png in Resources */,
 				B31ACB2017CF695800C3265E /* Trailer_V4.mp4 in Resources */,
+				B31DAE1017D08C16006D6BE3 /* Default.png in Resources */,
+				B31DAE1117D08C1E006D6BE3 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
