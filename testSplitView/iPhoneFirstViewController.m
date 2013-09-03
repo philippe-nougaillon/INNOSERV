@@ -87,8 +87,8 @@
     
     cell.image.image = [UIImage imageNamed:[item.image stringByAppendingString:@".png"]];
     
-    [cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:16]];
-    [cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:12]];
+    [cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:22]];
+    [cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:18]];
      
     return cell;
 }
