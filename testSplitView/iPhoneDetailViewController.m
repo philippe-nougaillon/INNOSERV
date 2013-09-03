@@ -19,6 +19,8 @@
     __weak IBOutlet UIImageView *projectImage;
     __weak IBOutlet UIProgressView *myProgressBar;
     __weak IBOutlet UILabel *labelDownloadingVideo;
+    __weak IBOutlet UILabel *projectTitle;
+    
     
     NSMutableData *activeDownload;
     NSURLConnection *conn;
@@ -46,14 +48,16 @@
     [super viewDidLoad];
     
     //localize buttons
-    openWebPageToolBarButton.title = NSLocalizedString(@"Website", @"");
+ //   openWebPageToolBarButton.title = NSLocalizedString(@"Website", @"");
     
     //set fonts
+    [projectTitle setFont:[UIFont fontWithName:@"Open Sans" size:22]];
     [projectSubTiltle setFont:[UIFont fontWithName:@"Open Sans" size:18]];
     [projectInformation setFont:[UIFont fontWithName:@"Open Sans" size:14]];
     
 	// Do any additional setup after loading the view.
     if (self.detailItem) {
+        projectTitle.text = self.detailItem.title;
         projectSubTiltle.text = self.detailItem.description;
         projectInformation.text = self.detailItem.information;
 

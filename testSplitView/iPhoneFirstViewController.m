@@ -19,6 +19,7 @@
     ProjectListItem *selectedProject;
     NSArray *_items;
     NSString *langueCourante;
+    IBOutlet UITableView *projectsTableView;
 }
 @end
 
@@ -54,16 +55,16 @@
     }
 }
 
-- (void)didReceiveMemoryWarning
+-(void) showHideNavbar:(id) sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
-- (IBAction)closeButtonTapped:(id)sender {
+- (IBAction)backToMenuButtonTapped:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 
 #pragma mark - Table View
 
@@ -87,8 +88,8 @@
     
     cell.image.image = [UIImage imageNamed:[item.image stringByAppendingString:@".png"]];
     
-    [cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:22]];
-    [cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:18]];
+    [cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:25]];
+    [cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:17]];
      
     return cell;
 }
@@ -98,7 +99,32 @@
     selectedProject = _items[indexPath.row];
     
     [self performSegueWithIdentifier:@"openDetailView" sender:self];
+
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    // test if at top or end of projects list
+    if (indexPath.row == _items.count -1 || indexPath.row == 0)
+    {
+       // if Navigation Bar is already hidden
+        if (self.navigationController.navigationBar.hidden == YES)
+        {
+            // Show the Navigation Bar
+            [self.navigationController setNavigationBarHidden:NO animated:YES];
+        }
+    } else {
+        // check if the Navigation Bar is shown
+        if (self.navigationController.navigationBar.hidden == NO)
+        {
+            // hide the Navigation Bar
+            [self.navigationController setNavigationBarHidden:YES animated:YES];
+        }
+    }
+
 }
 
 // This will get called too before the view appears
@@ -111,12 +137,20 @@
         
         // Pass the information to your destination view
         vc.detailItem = selectedProject;
-        vc.navigationItem.title = selectedProject.title;
+        vc.navigationItem.title = @"";
     }
 }
 
+
+// block orientation to portrait
 -(NSUInteger)supportedInterfaceOrientations{
     return UIInterfaceOrientationMaskPortrait;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 

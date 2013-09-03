@@ -19,6 +19,16 @@
                                             <constraint firstAttribute="height" constant="224" id="oPo-ae-K4Z"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="zYi-Yd-jAC">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="NQA-Pw-HO1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <size key="shadowOffset" width="2" height="-1"/>
+                                    </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="GZO-ld-sFf">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="273" id="eaf-Gy-E7x"/>
@@ -28,7 +38,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
-                                        <size key="shadowOffset" width="2" height="-1"/>
+                                        <size key="shadowOffset" width="2" height="-2"/>
                                     </label>
                                     <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t4E-ax-dXL">
                                         <constraints>
@@ -69,17 +79,19 @@
                                             <constraint firstAttribute="height" constant="21" id="p7b-By-Is4"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <size key="shadowOffset" width="-2" height="2"/>
+                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="-1" height="1"/>
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="zYi-Yd-jAC" firstAttribute="top" secondItem="XlT-gs-wsf" secondAttribute="top" constant="72" id="11J-JP-DrL"/>
+                                    <constraint firstAttribute="trailing" secondItem="zYi-Yd-jAC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="4aQ-Gq-4tf"/>
                                     <constraint firstItem="5sH-k3-CZt" firstAttribute="leading" secondItem="XlT-gs-wsf" secondAttribute="leading" type="default" id="7rQ-hK-t42"/>
                                     <constraint firstAttribute="bottom" secondItem="t4E-ax-dXL" secondAttribute="bottom" constant="43" id="AfR-2L-AsI"/>
-                                    <constraint firstItem="nC0-Ew-iJa" firstAttribute="centerX" secondItem="XlT-gs-wsf" secondAttribute="centerX" type="default" id="I50-A6-scQ"/>
+                                    <constraint firstItem="nC0-Ew-iJa" firstAttribute="centerX" secondItem="XlT-gs-wsf" secondAttribute="centerX" type="default" id="M1k-dU-fCf"/>
                                     <constraint firstItem="nC0-Ew-iJa" firstAttribute="centerY" secondItem="5sH-k3-CZt" secondAttribute="centerY" type="default" id="N53-IE-dtJ"/>
-                                    <constraint firstItem="nC0-Ew-iJa" firstAttribute="centerX" secondItem="Zkr-0S-hhi" secondAttribute="centerX" type="default" id="Ocz-79-zdi"/>
                                     <constraint firstItem="5sH-k3-CZt" firstAttribute="top" secondItem="XlT-gs-wsf" secondAttribute="top" constant="62" id="RdM-wq-0dj"/>
                                     <constraint firstItem="kW0-V6-3uk" firstAttribute="leading" secondItem="GZO-ld-sFf" secondAttribute="leading" type="default" id="YVD-BY-AMu"/>
                                     <constraint firstAttribute="trailing" secondItem="Zkr-0S-hhi" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bzS-Kc-nCy"/>
@@ -91,6 +103,8 @@
                                     <constraint firstItem="Zkr-0S-hhi" firstAttribute="leading" secondItem="XlT-gs-wsf" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="myW-ig-k2g"/>
                                     <constraint firstItem="kW0-V6-3uk" firstAttribute="bottom" secondItem="5sH-k3-CZt" secondAttribute="bottom" type="default" id="niL-5I-5HJ"/>
                                     <constraint firstItem="GZO-ld-sFf" firstAttribute="top" secondItem="XlT-gs-wsf" secondAttribute="top" constant="230" id="q9y-Yl-LON"/>
+                                    <constraint firstItem="zYi-Yd-jAC" firstAttribute="leading" secondItem="XlT-gs-wsf" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="spI-Mq-83a"/>
+                                    <constraint firstItem="nC0-Ew-iJa" firstAttribute="centerX" secondItem="zYi-Yd-jAC" secondAttribute="centerX" type="default" id="xFS-9c-odJ"/>
                                     <constraint firstItem="t4E-ax-dXL" firstAttribute="leading" secondItem="XlT-gs-wsf" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="z1z-Fw-lHQ"/>
                                     <constraint firstItem="t4E-ax-dXL" firstAttribute="top" secondItem="GZO-ld-sFf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="z6e-Dl-rn8"/>
                                 </constraints>
@@ -106,7 +120,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="2Ih-U7-XOW">
-                        <barButtonItem key="rightBarButtonItem" title="Website" id="Iaa-Ss-BnA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Iaa-Ss-BnA">
                             <connections>
                                 <action selector="openWebPagePressed:" destination="3E0-co-KQn" id="Xga-Zi-pav"/>
                             </connections>
@@ -121,6 +135,7 @@
                         <outlet property="projectImage" destination="5sH-k3-CZt" id="puP-RD-rFR"/>
                         <outlet property="projectInformation" destination="t4E-ax-dXL" id="3JD-JQ-zwz"/>
                         <outlet property="projectSubTiltle" destination="GZO-ld-sFf" id="zUg-UK-cNH"/>
+                        <outlet property="projectTitle" destination="zYi-Yd-jAC" id="eIR-zh-6xJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5P-HP-fcD" sceneMemberID="firstResponder"/>
@@ -767,14 +782,14 @@ Cg
         <scene sceneID="Jo4-ed-q3c">
             <objects>
                 <tableViewController storyboardIdentifier="" title="Master" clearsSelectionOnViewWillAppear="NO" id="dCj-Ds-1Z7" customClass="iPhoneFirstViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="172" sectionHeaderHeight="22" sectionFooterHeight="22" id="94u-fJ-ujx">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="175" sectionHeaderHeight="50" sectionFooterHeight="22" id="94u-fJ-ujx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCustomCell" rowHeight="172" id="dgt-Lw-Cl3" customClass="CustomCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="172"/>
+                                <rect key="frame" x="0.0" y="50" width="320" height="172"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
@@ -785,15 +800,15 @@ Cg
                                                 <constraint firstAttribute="height" constant="178" id="mME-sV-DKL"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="305" translatesAutoresizingMaskIntoConstraints="NO" id="b2x-Fj-QH7">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="305" translatesAutoresizingMaskIntoConstraints="NO" id="b2x-Fj-QH7">
                                             <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="7E7-IP-l3Q"/>
                                                 <constraint firstAttribute="width" constant="305" id="gzX-bP-jcp"/>
-                                                <constraint firstAttribute="height" constant="25" id="h7N-ul-QPj"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
-                                            <color key="textColor" red="0.73725491759999995" green="0.0039215688589999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
-                                            <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
                                             <size key="shadowOffset" width="2" height="-1"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="14" preferredMaxLayoutWidth="305" translatesAutoresizingMaskIntoConstraints="NO" id="cQf-2D-kPq">
@@ -803,8 +818,8 @@ Cg
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="shadowColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
-                                            <size key="shadowOffset" width="1" height="0.0"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="2" height="-2"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -834,27 +849,16 @@ Cg
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="20 Selected projets" id="6mm-L7-uxR">
-                        <barButtonItem key="leftBarButtonItem" id="kMT-IW-1fo">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mIJ-S6-aOs">
-                                <rect key="frame" x="5" y="3" width="43" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="innoServLogo2forIPAD.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="closeButtonTapped:" destination="dCj-Ds-1Z7" eventType="touchUpInside" id="PR8-jI-hIi"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="iYv-Vk-1oS">
+                            <connections>
+                                <action selector="backToMenuButtonTapped:" destination="dCj-Ds-1Z7" id="zAG-zy-vNL"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
+                        <outlet property="projectsTableView" destination="94u-fJ-ujx" id="1Lu-Ah-aAI"/>
                         <segue destination="3E0-co-KQn" kind="push" identifier="openDetailView" id="hWW-HG-oY4"/>
                     </connections>
                 </tableViewController>
@@ -1014,7 +1018,6 @@ Cg
     <resources>
         <image name="EU-logos.png" width="95" height="46"/>
         <image name="Inno-background.png" width="241" height="326"/>
-        <image name="innoServLogo2forIPAD.png" width="144" height="144"/>
         <image name="innoServLogo2forIPADNoRetina.png" width="72" height="72"/>
         <image name="play.png" width="63" height="63"/>
     </resources>
@@ -1064,10 +1067,14 @@ Cg
                 <relationship kind="outlet" name="projectImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="projectInformation" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="projectSubTiltle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="projectTitle" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="iPhoneFirstViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneFirstViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="projectsTableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="iPhoneVideoViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneVideoViewController.h"/>
