@@ -75,6 +75,7 @@
                                     </button>
                                     <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkr-0S-hhi"/>
                                     <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Downloading video" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kW0-V6-3uk">
+                                        <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="p7b-By-Is4"/>
                                         </constraints>
@@ -142,7 +143,7 @@
             </objects>
             <point key="canvasLocation" x="1114" y="-631"/>
         </scene>
-        <!--I Phone Video View Controller - Project video-->
+        <!--I Phone Video View Controller-->
         <scene sceneID="L8u-kS-n1M">
             <objects>
                 <viewController id="MLi-OG-RQM" customClass="iPhoneVideoViewController" sceneMemberID="viewController">
@@ -152,7 +153,7 @@
                         <color key="backgroundColor" red="0.94901967050000002" green="0.91764712329999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Project video" id="1BH-zl-gqX"/>
+                    <navigationItem key="navigationItem" id="BBU-VW-x4F"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNS-Wy-AOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -800,10 +801,10 @@ Cg
                                                 <constraint firstAttribute="height" constant="178" id="mME-sV-DKL"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="305" translatesAutoresizingMaskIntoConstraints="NO" id="b2x-Fj-QH7">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="313" translatesAutoresizingMaskIntoConstraints="NO" id="b2x-Fj-QH7">
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="34" id="7E7-IP-l3Q"/>
-                                                <constraint firstAttribute="width" constant="305" id="gzX-bP-jcp"/>
+                                                <constraint firstAttribute="width" constant="313" id="SbV-dU-I9m"/>
+                                                <constraint firstAttribute="height" constant="70" id="geQ-D7-til"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -814,6 +815,7 @@ Cg
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="14" preferredMaxLayoutWidth="305" translatesAutoresizingMaskIntoConstraints="NO" id="cQf-2D-kPq">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="69" id="ais-ae-dCS"/>
+                                                <constraint firstAttribute="width" constant="305" id="shZ-5u-cW5"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -829,11 +831,10 @@ Cg
                                     <constraint firstAttribute="bottom" secondItem="cQf-2D-kPq" secondAttribute="bottom" constant="6" id="A3e-K6-HIg"/>
                                     <constraint firstItem="Qnz-J3-W1D" firstAttribute="trailing" secondItem="dgt-Lw-Cl3" secondAttribute="trailing" type="default" id="AAw-ZL-JUf"/>
                                     <constraint firstItem="Qnz-J3-W1D" firstAttribute="top" secondItem="dgt-Lw-Cl3" secondAttribute="top" constant="-7" id="Dqe-7c-n0q"/>
-                                    <constraint firstItem="cQf-2D-kPq" firstAttribute="trailing" secondItem="b2x-Fj-QH7" secondAttribute="trailing" type="default" id="FWF-kB-UYF"/>
                                     <constraint firstItem="Qnz-J3-W1D" firstAttribute="leading" secondItem="dgt-Lw-Cl3" secondAttribute="leading" type="default" id="Fbt-YA-Fz0"/>
                                     <constraint firstItem="cQf-2D-kPq" firstAttribute="leading" secondItem="b2x-Fj-QH7" secondAttribute="leading" type="default" id="XWZ-La-Aqj"/>
                                     <constraint firstItem="b2x-Fj-QH7" firstAttribute="top" secondItem="dgt-Lw-Cl3" secondAttribute="top" type="default" id="jGL-JR-fF0"/>
-                                    <constraint firstItem="b2x-Fj-QH7" firstAttribute="leading" secondItem="dgt-Lw-Cl3" secondAttribute="leading" constant="7" id="tht-uh-pRq"/>
+                                    <constraint firstItem="b2x-Fj-QH7" firstAttribute="trailing" secondItem="dgt-Lw-Cl3" secondAttribute="trailing" type="default" id="t6u-FV-oei"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="image" destination="Qnz-J3-W1D" id="dMp-iK-1IS"/>

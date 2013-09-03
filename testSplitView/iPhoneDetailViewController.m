@@ -136,7 +136,8 @@
         
         // Pass the information to your destination view
         vc.detailItem = self.detailItem;
-        vc.navigationItem.title = self.detailItem.title;
+        //vc.navigationItem.title = self.detailItem.title;
+        //[vc.navigationController setNavigationBarHidden:NO animated:YES];
     }
 }
 

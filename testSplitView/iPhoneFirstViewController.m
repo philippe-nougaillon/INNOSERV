@@ -137,7 +137,7 @@
         
         // Pass the information to your destination view
         vc.detailItem = selectedProject;
-        vc.navigationItem.title = @"";
+        vc.navigationItem.title = selectedProject.title;
     }
 }
 

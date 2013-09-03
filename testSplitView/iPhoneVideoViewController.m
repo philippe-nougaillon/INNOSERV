@@ -63,8 +63,7 @@
         [self.srtParser parseSrtFileAtPath:srtPath];
     }
     
-    // video file to play
-    
+    // where is video file to play ?
     NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *docsDir = dirPaths[0];
     
@@ -72,7 +71,7 @@
     dataFile = [docsDir stringByAppendingPathComponent:
                 [self.detailItem.videofile stringByAppendingString:@".mp4"]];
 
-    
+    // URL to video to play
     url = [NSURL fileURLWithPath:dataFile];
     
 	// setup video view and play
@@ -81,7 +80,8 @@
 
 -(void)prepareView {
     
-  
+    //[self.navigationController setNavigationBarHidden:NO animated:YES];
+    
     // A place for video player and subtitles
     myView =[[UIView alloc] initWithFrame:self.view.frame];
     
@@ -131,8 +131,6 @@
                                              selector:@selector(movieFinishedCallback:)
                                                  name:MPMoviePlayerPlaybackDidFinishNotification
                                                object:self.moviePlayer];
-
-    
 }
 
 - (void)movieFinishedCallback:(NSNotification*)aNotification
@@ -185,6 +183,14 @@
         self.subtitleLabel.frame = CGRectMake(0, 350, 320, 60);
         self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:12];
     }
+    
+}
+
+
+- (IBAction)doneButtonTapped:(id)sender {
+
+    
+    
     
 }
 
