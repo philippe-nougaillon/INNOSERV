@@ -88,16 +88,35 @@
     cell.subTitleLabel.text = item.description;
     cell.image.image = [UIImage imageNamed:[item.image stringByAppendingString:@".png"]];
 
-    // show Field of service
-    NSString *fos = @"";
-    if (item.fieldOfEducation)
-        fos = [fos stringByAppendingString:@"Education "];
-    if (item.fieldOfWelfare)
-        fos = [fos stringByAppendingString:@"Welfare "];
-    if (item.fieldOfHealth)
-        fos = [fos stringByAppendingString:@"Health "];
+    // set color of Field of services
+    if (item.fieldOfWelfare) {
+        [cell.fieldOfServiceLabel setTextColor:[UIColor greenColor]];
+    } else if (item.fieldOfHealth) {
+        [cell.fieldOfServiceLabel setTextColor:[UIColor redColor]];
+    } else if (item.fieldOfEducation) {
+        [cell.fieldOfServiceLabel setTextColor:[UIColor yellowColor]];
+    }
     
+    // show Field of services
+    NSString *fos = @"";
+    if (item.fieldOfWelfare) {
+        fos = [fos stringByAppendingString:NSLocalizedString(@"Welfare",nil)];
+    }
+    if (item.fieldOfHealth) {
+        if (fos.length > 0)
+            fos = [fos stringByAppendingString:@", "];
+        fos = [fos stringByAppendingString:NSLocalizedString(@"Health",nil)];
+    }
+    if (item.fieldOfEducation) {
+        if (fos.length > 0)
+            fos = [fos stringByAppendingString:@", "];
+        fos = [fos stringByAppendingString:NSLocalizedString(@"Education",nil)];
+    }
     cell.fieldOfServiceLabel.text = fos;
+
+    [cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:25]];
+    [cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:17]];
+    [cell.fieldOfServiceLabel setFont:[UIFont fontWithName:@"Open Sans" size:12]];
     
     return cell;
 }
@@ -105,9 +124,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     selectedProject = _items[indexPath.row];
-    
     [self performSegueWithIdentifier:@"openDetailView" sender:self];
-
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     
 }
@@ -132,7 +149,6 @@
             [self.navigationController setNavigationBarHidden:YES animated:YES];
         }
     }
-
 }
 
 // This will get called too before the view appears

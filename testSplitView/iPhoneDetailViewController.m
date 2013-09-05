@@ -47,11 +47,9 @@
 {
     [super viewDidLoad];
     
-    //localize buttons
- //   openWebPageToolBarButton.title = NSLocalizedString(@"Website", @"");
-    
     //set fonts
-    [projectTitle setFont:[UIFont fontWithName:@"Open Sans" size:22]];
+    [projectTitle setFont:[UIFont fontWithName:@"Open Sans" size:25]];
+    [projectTitle setNumberOfLines:3];
     [projectSubTiltle setFont:[UIFont fontWithName:@"Open Sans" size:18]];
     [projectInformation setFont:[UIFont fontWithName:@"Open Sans" size:14]];
     
@@ -136,8 +134,6 @@
         
         // Pass the information to your destination view
         vc.detailItem = self.detailItem;
-        //vc.navigationItem.title = self.detailItem.title;
-        //[vc.navigationController setNavigationBarHidden:NO animated:YES];
     }
 }
 

@@ -87,7 +87,7 @@
     
     // Movieplayer setup
     self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
-    //self.moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
+    self.moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
     self.moviePlayer.view.frame = myView.bounds;
     
     [myView addSubview:self.moviePlayer.view];
@@ -141,14 +141,14 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:MPMoviePlayerPlaybackDidFinishNotification
                                                   object:myMoviePlayer];
-    
     [self.moviePlayer stop];
     
-    [myView removeFromSuperview];
-    myView =nil;
-    
+    // stop Timer
     [self.subtitleTimer invalidate];
     self.subtitleTimer = nil;
+    
+    // hide subtitles
+    self.subtitleLabel.hidden = YES;
     
 }
 
@@ -170,8 +170,6 @@
 // Orientation changed notification
 - (void)orientationChanged:(NSNotification *)notification
 {
-    //NSLog(@"Orientation changed, self.view.bound.width = %f", self.view.bounds.size.width );
-   
     myView.frame =  self.view.bounds;
     self.moviePlayer.view.frame = myView.bounds;
     
@@ -183,33 +181,6 @@
         self.subtitleLabel.frame = CGRectMake(0, 350, 320, 60);
         self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:12];
     }
-    
-}
-
-
-- (IBAction)doneButtonTapped:(id)sender {
-
-    
-    
-    
-}
-
-
--(void) viewWillDisappear:(BOOL)animated {
-    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
-        // back button was pressed.  We know this is true because self is no longer
-        // in the navigation stack.
-        
-        // Stop video and subtitles
-        [self.moviePlayer stop];
-        
-        [myView removeFromSuperview];
-        myView =nil;
-        
-        [self.subtitleTimer invalidate];
-        self.subtitleTimer = nil;
-    }
-    [super viewWillDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning
