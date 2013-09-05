@@ -8,7 +8,7 @@
 
 #import "AboutPagesViewController.h"
 
-#define nbPages 4
+#define nbPages 5
 
 @interface AboutPagesViewController ()
 
@@ -63,6 +63,9 @@
     controller4 = [storyboard instantiateViewControllerWithIdentifier:@"AboutPageViewController4"];
     [self.pages addObject:controller4];
     
+    UIViewController *controller5;
+    controller5 = [storyboard instantiateViewControllerWithIdentifier:@"AboutPageViewController5"];
+    [self.pages addObject:controller5];
 }
 
 -(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController

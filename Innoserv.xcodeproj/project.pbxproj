@@ -63,6 +63,7 @@
 		B33B373617CCEDE500DA57D9 /* EU-logos.png in Resources */ = {isa = PBXBuildFile; fileRef = B33B373417CCEDE500DA57D9 /* EU-logos.png */; };
 		B33B373717CCEDE500DA57D9 /* Inno-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B33B373517CCEDE500DA57D9 /* Inno-background.png */; };
 		B33DDECE17C4B42E005C0D15 /* ProjectDataFR.m in Sources */ = {isa = PBXBuildFile; fileRef = B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */; };
+		B36C3EEC17D8BDA900C9A003 /* AboutPage5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */; };
 		B37077651727E80A009946A9 /* iPadMorePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37077641727E80A009946A9 /* iPadMorePageViewController.m */; };
 		B370776817280D7F009946A9 /* iPadAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370776717280D7F009946A9 /* iPadAboutViewController.m */; };
 		B37D269C17C6391B0073F49D /* Abitare-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D268817C6391B0073F49D /* Abitare-subtitles - french.txt */; };
@@ -178,6 +179,8 @@
 		B33B373517CCEDE500DA57D9 /* Inno-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inno-background.png"; sourceTree = "<group>"; };
 		B33DDECC17C4B42E005C0D15 /* ProjectDataFR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataFR.h; sourceTree = "<group>"; };
 		B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataFR.m; sourceTree = "<group>"; };
+		B36C3EEA17D8BDA900C9A003 /* AboutPage5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage5ViewController.h; sourceTree = "<group>"; };
+		B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPage5ViewController.m; sourceTree = "<group>"; };
 		B37077611727DA44009946A9 /* Trailer_V4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trailer_V4.mp4; sourceTree = "<group>"; };
 		B37077631727E80A009946A9 /* iPadMorePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadMorePageViewController.h; sourceTree = "<group>"; };
 		B37077641727E80A009946A9 /* iPadMorePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadMorePageViewController.m; sourceTree = "<group>"; };
@@ -511,6 +514,8 @@
 				B3F7C4EA17CCD92A00EAEF1E /* AboutPage3ViewController.m */,
 				B3F7C4EC17CCD94D00EAEF1E /* AboutPage4ViewController.h */,
 				B3F7C4ED17CCD94D00EAEF1E /* AboutPage4ViewController.m */,
+				B36C3EEA17D8BDA900C9A003 /* AboutPage5ViewController.h */,
+				B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */,
 			);
 			name = aboutPages;
 			sourceTree = "<group>";
@@ -679,6 +684,7 @@
 				B3F7C4EB17CCD92A00EAEF1E /* AboutPage3ViewController.m in Sources */,
 				B3F7C4EE17CCD94D00EAEF1E /* AboutPage4ViewController.m in Sources */,
 				B31E335517CDFD5300B61B25 /* ProjectDataDE.m in Sources */,
+				B36C3EEC17D8BDA900C9A003 /* AboutPage5ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
