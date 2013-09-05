@@ -14,9 +14,10 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        [self.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:17]];
+        [self.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:25]];
         [self.titleLabel setNumberOfLines:2];
-        [self.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:13]];
+        [self.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:17]];
+        [self.fieldOfServiceLabel setFont:[UIFont fontWithName:@"Open Sans" size:12]];
     }
     return self;
 }

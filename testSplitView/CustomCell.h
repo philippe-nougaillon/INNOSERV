@@ -10,9 +10,9 @@
 
 @interface CustomCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-//@property (weak, nonatomic) IBOutlet UITextView *subTitleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UILabel *subTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *fieldOfServiceLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;
 

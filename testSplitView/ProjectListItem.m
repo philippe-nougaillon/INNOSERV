@@ -17,8 +17,13 @@
 @synthesize website = _website;
 @synthesize videofile = _videofile;
 @synthesize subTitles = _subTitles;
+@synthesize fieldOfEducation = _fieldOfEducation;
+@synthesize fieldOfWelfare = _fieldOfWelfare;
+@synthesize fieldOfHealth = _fieldOfHealth;
 
-- (ProjectListItem *)initWithValues:(NSString *)title description:(NSString *)description image:(NSString *)image information:(NSString  *)information website:(NSString *)website videofile:(NSString *)videofile subTitles:(NSString *)subTitles
+
+- (ProjectListItem *)initWithValues:(NSString *)title description:(NSString *)description image:(NSString *)image information:(NSString  *)information website:(NSString *)website videofile:(NSString *)videofile subTitles:(NSString *)subTitles fieldOfEducation:(BOOL)fieldOfEducation fieldOfWelfare:(BOOL)fieldOfWelfare fieldOfHealth:(BOOL)fieldOfHealth;
+
 {
     _title = title;
     _description = description;
@@ -27,6 +32,10 @@
     _website = website;
     _videofile = videofile;
     _subTitles = subTitles;
+    _fieldOfEducation = fieldOfEducation;
+    _fieldOfWelfare = fieldOfWelfare;
+    _fieldOfHealth = fieldOfHealth;
+
     
     return self;
 }

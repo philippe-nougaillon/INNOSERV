@@ -17,7 +17,9 @@
 @property (nonatomic, strong) NSString *website;
 @property (nonatomic, strong) NSString *videofile;
 @property (nonatomic, strong) NSString *subTitles;
-
+@property BOOL fieldOfEducation;
+@property BOOL fieldOfWelfare;
+@property BOOL fieldOfHealth;
 
 - (ProjectListItem *)initWithValues:(NSString *)title
                         description:(NSString *)description
@@ -25,7 +27,10 @@
                         information:(NSString *)information
                             website:(NSString *)website
                           videofile:(NSString *)videofile
-                          subTitles:(NSString *)subTitles;
+                          subTitles:(NSString *)subTitles
+                   fieldOfEducation:(BOOL)fieldOfEducation
+                     fieldOfWelfare:(BOOL)fieldOfWelfare
+                      fieldOfHealth:(BOOL)fieldOfHealth;
 
 @end
 

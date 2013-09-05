@@ -20,6 +20,7 @@
     NSArray *_items;
     NSString *langueCourante;
     IBOutlet UITableView *projectsTableView;
+    
 }
 @end
 
@@ -85,12 +86,19 @@
     ProjectListItem *item = _items[indexPath.row];
     cell.titleLabel.text = item.title;
     cell.subTitleLabel.text = item.description;
-    
     cell.image.image = [UIImage imageNamed:[item.image stringByAppendingString:@".png"]];
+
+    // show Field of service
+    NSString *fos = @"";
+    if (item.fieldOfEducation)
+        fos = [fos stringByAppendingString:@"Education "];
+    if (item.fieldOfWelfare)
+        fos = [fos stringByAppendingString:@"Welfare "];
+    if (item.fieldOfHealth)
+        fos = [fos stringByAppendingString:@"Health "];
     
-    [cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:25]];
-    [cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:17]];
-     
+    cell.fieldOfServiceLabel.text = fos;
+    
     return cell;
 }
 
