@@ -641,7 +641,8 @@ CgoKA
                             </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="293" translatesAutoresizingMaskIntoConstraints="NO" id="KMe-Qg-6j2">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="263" id="M5q-Mw-vrp"/>
+                                    <constraint firstAttribute="height" constant="183" id="DYo-Fp-GAB"/>
+                                    <constraint firstAttribute="width" constant="293" id="wt7-yI-hFV"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Discuss with us about innovation !">
@@ -662,30 +663,10 @@ CgoKA
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="Please fill in the questionnaire: your opinion is appreciated">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-BoldItalic"/>
-                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
                                     <fragment content="Give us 10 minutes of your time and help by answering more detailed questions.">
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36" headerLevel="4">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
                                         </attributes>
@@ -693,7 +674,7 @@ Cg
                                     <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36" headerLevel="4">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
                                         </attributes>
@@ -704,7 +685,27 @@ Cg
 </string>
                                         <attributes>
                                             <font key="NSFont" size="11" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36" headerLevel="4">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Please fill in the questionnaire: your opinion is appreciated...">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
                                         </attributes>
@@ -730,9 +731,9 @@ Cg
                         <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="YOE-Cw-H4C" firstAttribute="bottom" secondItem="xPt-X9-PmS" secondAttribute="bottom" type="default" id="DfF-ID-4pe"/>
+                            <constraint firstItem="48R-1f-DYa" firstAttribute="centerY" secondItem="xPt-X9-PmS" secondAttribute="centerY" type="default" id="FDQ-QW-nxX"/>
                             <constraint firstItem="KMe-Qg-6j2" firstAttribute="leading" secondItem="xPt-X9-PmS" secondAttribute="leading" constant="13" id="KFZ-f1-qQI"/>
                             <constraint firstItem="Xt0-BA-l10" firstAttribute="leading" secondItem="xPt-X9-PmS" secondAttribute="leading" type="default" id="V0H-lg-DRV"/>
-                            <constraint firstAttribute="bottom" secondItem="48R-1f-DYa" secondAttribute="bottom" constant="58" id="YBm-Tc-Mjl"/>
                             <constraint firstItem="YOE-Cw-H4C" firstAttribute="leading" secondItem="xPt-X9-PmS" secondAttribute="leading" constant="126" id="YML-rz-eSZ"/>
                             <constraint firstItem="Xt0-BA-l10" firstAttribute="top" secondItem="xPt-X9-PmS" secondAttribute="top" type="default" id="cuy-Bc-MLh"/>
                             <constraint firstItem="48R-1f-DYa" firstAttribute="trailing" secondItem="KMe-Qg-6j2" secondAttribute="trailing" type="default" id="hea-V6-AP7"/>
@@ -744,7 +745,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vke-kH-UyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2158" y="-4"/>
+            <point key="canvasLocation" x="2179" y="-4"/>
         </scene>
         <!--About Page Container View Controller-->
         <scene sceneID="qbO-BR-fny">
@@ -1158,8 +1159,8 @@ Cg
                             <constraint firstItem="yYj-9p-vOS" firstAttribute="bottom" secondItem="EQR-fR-96t" secondAttribute="bottom" type="default" id="5MW-V5-du2"/>
                             <constraint firstItem="AOs-tj-Hwf" firstAttribute="leading" secondItem="EQR-fR-96t" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="6EC-yC-Y0e"/>
                             <constraint firstAttribute="trailing" secondItem="4vI-Lc-afZ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Fq4-36-Bez"/>
+                            <constraint firstItem="yYj-9p-vOS" firstAttribute="top" secondItem="4vI-Lc-afZ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="LOn-6K-KCH"/>
                             <constraint firstItem="yYj-9p-vOS" firstAttribute="leading" secondItem="EQR-fR-96t" secondAttribute="leading" constant="126" id="XBp-U6-sh8"/>
-                            <constraint firstItem="4vI-Lc-afZ" firstAttribute="bottom" secondItem="oHY-W0-cw1" secondAttribute="bottom" type="default" id="gdm-CK-rC5"/>
                             <constraint firstItem="oHY-W0-cw1" firstAttribute="leading" secondItem="EQR-fR-96t" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="iSH-Pp-DEi"/>
                             <constraint firstItem="oHY-W0-cw1" firstAttribute="top" secondItem="EQR-fR-96t" secondAttribute="top" constant="223" id="vRY-e1-cfk"/>
                             <constraint firstItem="AOs-tj-Hwf" firstAttribute="top" secondItem="EQR-fR-96t" secondAttribute="top" constant="20" symbolic="YES" type="default" id="yaM-pw-2qF"/>
