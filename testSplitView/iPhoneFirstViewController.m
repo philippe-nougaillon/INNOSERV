@@ -114,9 +114,9 @@
     }
     cell.fieldOfServiceLabel.text = fos;
 
-    [cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:25]];
-    [cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:17]];
-    [cell.fieldOfServiceLabel setFont:[UIFont fontWithName:@"Open Sans" size:12]];
+    //[cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:25]];
+    //[cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:17]];
+    //[cell.fieldOfServiceLabel setFont:[UIFont fontWithName:@"Open Sans" size:12]];
         
     return cell;
 }

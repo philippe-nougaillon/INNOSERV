@@ -24,6 +24,7 @@
 @property (nonatomic, retain) MPMoviePlayerController *moviePlayer;
 
 -(void)prepareView;
+
 @end
 
 @implementation iPhoneVideoViewController

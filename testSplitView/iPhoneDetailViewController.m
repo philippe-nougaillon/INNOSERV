@@ -55,13 +55,13 @@
         projectInformation.text = self.detailItem.information;
 
         //set fonts
-        [projectTitle setFont:[UIFont fontWithName:@"Open Sans" size:25]];
-        [projectSubTiltle setFont:[UIFont fontWithName:@"Open Sans" size:18]];
-        [projectInformation setFont:[UIFont fontWithName:@"Open Sans" size:14]];
+        //[projectTitle setFont:[UIFont fontWithName:@"Open Sans" size:25]];
+        //[projectSubTiltle setFont:[UIFont fontWithName:@"Open Sans" size:18]];
+        //[projectInformation setFont:[UIFont fontWithName:@"Open Sans" size:14]];
 
         // Adjust Title
-        [projectTitle setNumberOfLines:0];
-        [projectTitle sizeToFit];
+        //[projectTitle setNumberOfLines:0];
+        //[projectTitle sizeToFit];
         
         // project image
         NSString *imageFileName = [self.detailItem.image stringByAppendingString:@"-big.png"];
