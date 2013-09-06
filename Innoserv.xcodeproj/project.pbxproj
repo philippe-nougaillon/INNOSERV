@@ -60,9 +60,10 @@
 		B32E2CD31714A17D00F17039 /* iPhoneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B32E2CD21714A17D00F17039 /* iPhoneDetailViewController.m */; };
 		B32F5AEE17C39D5000D46EE1 /* SrtData.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F5AEB17C39D5000D46EE1 /* SrtData.m */; };
 		B32F5AEF17C39D5000D46EE1 /* SrtParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F5AED17C39D5000D46EE1 /* SrtParser.m */; };
-		B33B373617CCEDE500DA57D9 /* EU-logos.png in Resources */ = {isa = PBXBuildFile; fileRef = B33B373417CCEDE500DA57D9 /* EU-logos.png */; };
 		B33B373717CCEDE500DA57D9 /* Inno-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B33B373517CCEDE500DA57D9 /* Inno-background.png */; };
 		B33DDECE17C4B42E005C0D15 /* ProjectDataFR.m in Sources */ = {isa = PBXBuildFile; fileRef = B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */; };
+		B34921DF17D9E79400E8577B /* logo_fp7.png in Resources */ = {isa = PBXBuildFile; fileRef = B34921DE17D9E79400E8577B /* logo_fp7.png */; };
+		B34921E117D9EC5000E8577B /* flagge_eu_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B34921E017D9EC5000E8577B /* flagge_eu_small.png */; };
 		B36C3EEC17D8BDA900C9A003 /* AboutPage5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */; };
 		B37077651727E80A009946A9 /* iPadMorePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37077641727E80A009946A9 /* iPadMorePageViewController.m */; };
 		B370776817280D7F009946A9 /* iPadAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370776717280D7F009946A9 /* iPadAboutViewController.m */; };
@@ -175,10 +176,11 @@
 		B32F5AEB17C39D5000D46EE1 /* SrtData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SrtData.m; sourceTree = "<group>"; };
 		B32F5AEC17C39D5000D46EE1 /* SrtParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SrtParser.h; sourceTree = "<group>"; };
 		B32F5AED17C39D5000D46EE1 /* SrtParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SrtParser.m; sourceTree = "<group>"; };
-		B33B373417CCEDE500DA57D9 /* EU-logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EU-logos.png"; sourceTree = "<group>"; };
 		B33B373517CCEDE500DA57D9 /* Inno-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inno-background.png"; sourceTree = "<group>"; };
 		B33DDECC17C4B42E005C0D15 /* ProjectDataFR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataFR.h; sourceTree = "<group>"; };
 		B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataFR.m; sourceTree = "<group>"; };
+		B34921DE17D9E79400E8577B /* logo_fp7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_fp7.png; sourceTree = "<group>"; };
+		B34921E017D9EC5000E8577B /* flagge_eu_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagge_eu_small.png; sourceTree = "<group>"; };
 		B36C3EEA17D8BDA900C9A003 /* AboutPage5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage5ViewController.h; sourceTree = "<group>"; };
 		B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPage5ViewController.m; sourceTree = "<group>"; };
 		B37077611727DA44009946A9 /* Trailer_V4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trailer_V4.mp4; sourceTree = "<group>"; };
@@ -366,7 +368,8 @@
 		B3A9261616CE8DBA006686A7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				B33B373417CCEDE500DA57D9 /* EU-logos.png */,
+				B34921E017D9EC5000E8577B /* flagge_eu_small.png */,
+				B34921DE17D9E79400E8577B /* logo_fp7.png */,
 				B33B373517CCEDE500DA57D9 /* Inno-background.png */,
 				B319004F16F36EEB003D479B /* play.png */,
 				B380094716D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf */,
@@ -646,11 +649,12 @@
 				B37D26AE17C6391B0073F49D /* Seclin-subtitles - french.txt in Resources */,
 				B37D26AF17C6391B0073F49D /* Vitality-subtitles - french.txt in Resources */,
 				B3F7C4E617CCC34C00EAEF1E /* Default-568h@2x.png in Resources */,
-				B33B373617CCEDE500DA57D9 /* EU-logos.png in Resources */,
 				B33B373717CCEDE500DA57D9 /* Inno-background.png in Resources */,
 				B31ACB2017CF695800C3265E /* Trailer_V4.mp4 in Resources */,
 				B31DAE1017D08C16006D6BE3 /* Default.png in Resources */,
 				B31DAE1117D08C1E006D6BE3 /* Default@2x.png in Resources */,
+				B34921DF17D9E79400E8577B /* logo_fp7.png in Resources */,
+				B34921E117D9EC5000E8577B /* flagge_eu_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
