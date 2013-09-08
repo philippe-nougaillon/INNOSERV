@@ -20,7 +20,7 @@
     __weak IBOutlet UIProgressView *myProgressBar;
     __weak IBOutlet UILabel *labelDownloadingVideo;
     __weak IBOutlet UILabel *projectTitle;
-    
+    __weak IBOutlet UIButton *playButton;
     
     NSMutableData *activeDownload;
     NSURLConnection *conn;
@@ -104,8 +104,9 @@
             // init file data container
             activeDownload = [[NSMutableData alloc] init];
             
-            // if not exist and Wifi enable, download it
-            labelDownloadingVideo.hidden = FALSE;
+            labelDownloadingVideo.hidden = NO;
+            myProgressBar.hidden = NO;
+            playButton.hidden = YES;
             [labelDownloadingVideo setText:NSLocalizedString(@"Downloading video", @"")];
 
             // the video file to download
@@ -150,7 +151,6 @@
 
     _receivedDataBytes += [data length];
 
-    myProgressBar.hidden = FALSE;
     myProgressBar.progress = _receivedDataBytes / (float)_totalFileSize;
     
     [activeDownload appendData:data];
@@ -162,8 +162,9 @@
     [activeDownload writeToFile:dataFile atomically:YES];
     
     // update interface
-    myProgressBar.hidden = TRUE;
-    labelDownloadingVideo.hidden = TRUE;
+    myProgressBar.hidden = YES;
+    labelDownloadingVideo.hidden = YES;
+    playButton.hidden = NO;
     
     activeDownload = nil;
     conn = nil;

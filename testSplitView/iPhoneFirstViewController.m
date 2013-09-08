@@ -56,14 +56,35 @@
     }
 }
 
--(void) showHideNavbar:(id) sender
-{
-
-}
-
 - (IBAction)backToMenuButtonTapped:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+// This will get called too before the view appears
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"openDetailView"]) {
+        
+        // Get destination view
+        iPhoneDetailViewController *vc = [segue destinationViewController];
+        
+        // Pass the information to your destination view
+        vc.detailItem = selectedProject;
+        vc.navigationItem.title = selectedProject.title;
+    }
+}
+
+// block orientation to portrait
+-(NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 
@@ -149,32 +170,6 @@
             [self.navigationController setNavigationBarHidden:YES animated:YES];
         }
     }
-}
-
-// This will get called too before the view appears
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"openDetailView"]) {
-        
-        // Get destination view
-        iPhoneDetailViewController *vc = [segue destinationViewController];
-        
-        // Pass the information to your destination view
-        vc.detailItem = selectedProject;
-        vc.navigationItem.title = selectedProject.title;
-    }
-}
-
-
-// block orientation to portrait
--(NSUInteger)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskPortrait;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

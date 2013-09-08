@@ -12,7 +12,7 @@
 
 @interface iPhoneVideoViewController () {
 
-    NSString *langueCourante;
+//    NSString *langueCourante;
     UIView *myView;
     NSURL *url;
     NSString *dataFile;
@@ -49,20 +49,19 @@
                                              selector:@selector(orientationChanged:)
                                                  name:UIDeviceOrientationDidChangeNotification
                                                object:nil];
-  
     
     // Language ?
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
-    langueCourante = [langues objectAtIndex:0];
+    //NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    //NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
+    //langueCourante = [langues objectAtIndex:0];
     
     // Prepare video subtitles
-    if ([langueCourante isEqualToString:@"fr"] || [langueCourante isEqualToString:@"de"]) {
+    //if ([langueCourante isEqualToString:@"fr"] || [langueCourante isEqualToString:@"de"]) {
         // Parse subtitles
         NSString *srtPath = [[NSBundle mainBundle] pathForResource:self.detailItem.subTitles ofType:@"txt"];
         self.srtParser = [[SrtParser alloc] init];
         [self.srtParser parseSrtFileAtPath:srtPath];
-    }
+    //}
     
     // where is video file to play ?
     NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -81,8 +80,6 @@
 
 -(void)prepareView {
     
-    //[self.navigationController setNavigationBarHidden:NO animated:YES];
-    
     // A place for video player and subtitles
     myView =[[UIView alloc] initWithFrame:self.view.frame];
     
@@ -94,7 +91,7 @@
     [myView addSubview:self.moviePlayer.view];
     [self.moviePlayer setFullscreen:NO animated:NO];
     
-    if (([langueCourante isEqualToString:@"fr"] || [langueCourante isEqualToString:@"de"]) && self.detailItem.subTitles) {
+    //if (([langueCourante isEqualToString:@"fr"] || [langueCourante isEqualToString:@"de"]) && self.detailItem.subTitles) {
 
         self.navigationItem.title = @"Vidéo du projet";
 
@@ -118,7 +115,7 @@
         // Register for Timer
         [self.subtitleTimer invalidate];
         self.subtitleTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updateSubtitles) userInfo:self repeats:YES];
-    }
+    //}
     
     // Affiche la vue video+subtitles
     [self.view addSubview:myView];
@@ -182,6 +179,11 @@
         self.subtitleLabel.frame = CGRectMake(0, 350, 320, 60);
         self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:12];
     }
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [self.moviePlayer stop];
 }
 
 - (void)didReceiveMemoryWarning

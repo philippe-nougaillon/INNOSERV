@@ -75,36 +75,34 @@
                                     </button>
                                     <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkr-0S-hhi"/>
                                     <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Downloading video" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kW0-V6-3uk">
-                                        <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="p7b-By-Is4"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <size key="shadowOffset" width="-1" height="1"/>
+                                        <size key="shadowOffset" width="1" height="2"/>
                                     </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="zYi-Yd-jAC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="4aQ-Gq-4tf"/>
                                     <constraint firstItem="5sH-k3-CZt" firstAttribute="leading" secondItem="XlT-gs-wsf" secondAttribute="leading" type="default" id="7rQ-hK-t42"/>
-                                    <constraint firstItem="kW0-V6-3uk" firstAttribute="top" secondItem="XlT-gs-wsf" secondAttribute="top" constant="201" id="Eep-Lg-L8V"/>
+                                    <constraint firstAttribute="bottom" secondItem="t4E-ax-dXL" secondAttribute="bottom" constant="43" id="BsF-e6-Au8"/>
+                                    <constraint firstItem="nC0-Ew-iJa" firstAttribute="centerY" secondItem="5sH-k3-CZt" secondAttribute="centerY" type="default" id="Dls-5e-Gh0"/>
                                     <constraint firstItem="zYi-Yd-jAC" firstAttribute="top" secondItem="5sH-k3-CZt" secondAttribute="top" type="default" id="FhW-dJ-jZS"/>
                                     <constraint firstItem="Zkr-0S-hhi" firstAttribute="leading" secondItem="GZO-ld-sFf" secondAttribute="leading" type="default" id="GMM-6U-g9h"/>
-                                    <constraint firstItem="nC0-Ew-iJa" firstAttribute="top" secondItem="XlT-gs-wsf" secondAttribute="top" constant="115" id="JWP-5F-DWV"/>
+                                    <constraint firstItem="5sH-k3-CZt" firstAttribute="centerX" secondItem="XlT-gs-wsf" secondAttribute="centerX" type="default" id="Tla-G6-fCl"/>
                                     <constraint firstItem="t4E-ax-dXL" firstAttribute="top" secondItem="5sH-k3-CZt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UAt-cb-Thd"/>
-                                    <constraint firstItem="Zkr-0S-hhi" firstAttribute="top" secondItem="XlT-gs-wsf" secondAttribute="top" constant="223" id="VWZ-Wa-fYY"/>
-                                    <constraint firstItem="5sH-k3-CZt" firstAttribute="top" secondItem="XlT-gs-wsf" secondAttribute="top" constant="62" id="ZG1-LP-r1j"/>
                                     <constraint firstAttribute="trailing" secondItem="Zkr-0S-hhi" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bzS-Kc-nCy"/>
                                     <constraint firstAttribute="trailing" secondItem="t4E-ax-dXL" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="czf-nI-sbs"/>
-                                    <constraint firstItem="t4E-ax-dXL" firstAttribute="centerX" secondItem="XlT-gs-wsf" secondAttribute="centerX" type="default" id="d1s-e5-SCZ"/>
+                                    <constraint firstItem="Zkr-0S-hhi" firstAttribute="top" secondItem="XlT-gs-wsf" secondAttribute="top" constant="182" id="dZH-ay-DhA"/>
                                     <constraint firstAttribute="trailing" secondItem="kW0-V6-3uk" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="deF-9I-5f3"/>
                                     <constraint firstItem="5sH-k3-CZt" firstAttribute="trailing" secondItem="XlT-gs-wsf" secondAttribute="trailing" type="default" id="fGz-iZ-OTi"/>
-                                    <constraint firstAttribute="bottom" secondItem="t4E-ax-dXL" secondAttribute="bottom" constant="43" id="gaV-iX-f1h"/>
-                                    <constraint firstItem="nC0-Ew-iJa" firstAttribute="centerX" secondItem="5sH-k3-CZt" secondAttribute="centerX" type="default" id="glV-bh-eQf"/>
                                     <constraint firstAttribute="trailing" secondItem="GZO-ld-sFf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="icw-j2-Hhc"/>
+                                    <constraint firstItem="kW0-V6-3uk" firstAttribute="top" secondItem="XlT-gs-wsf" secondAttribute="top" constant="161" id="owS-fL-Kfl"/>
+                                    <constraint firstItem="nC0-Ew-iJa" firstAttribute="centerX" secondItem="5sH-k3-CZt" secondAttribute="centerX" type="default" id="sXB-XC-HF6"/>
                                     <constraint firstItem="Zkr-0S-hhi" firstAttribute="leading" secondItem="kW0-V6-3uk" secondAttribute="leading" type="default" id="t5A-MG-KOD"/>
+                                    <constraint firstItem="5sH-k3-CZt" firstAttribute="top" secondItem="XlT-gs-wsf" secondAttribute="top" constant="62" id="wjV-WM-fUM"/>
                                     <constraint firstItem="kW0-V6-3uk" firstAttribute="leading" secondItem="zYi-Yd-jAC" secondAttribute="leading" type="default" id="xKF-6p-VZz"/>
                                     <constraint firstItem="t4E-ax-dXL" firstAttribute="leading" secondItem="XlT-gs-wsf" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="z1z-Fw-lHQ"/>
                                     <constraint firstItem="t4E-ax-dXL" firstAttribute="top" secondItem="GZO-ld-sFf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="z6e-Dl-rn8"/>
@@ -133,6 +131,7 @@
                         <outlet property="labelDownloadingVideo" destination="kW0-V6-3uk" id="nhY-sk-Lhq"/>
                         <outlet property="myProgressBar" destination="Zkr-0S-hhi" id="qCF-qq-TEz"/>
                         <outlet property="openWebPageToolBarButton" destination="Iaa-Ss-BnA" id="WSo-uj-E3M"/>
+                        <outlet property="playButton" destination="nC0-Ew-iJa" id="Jj1-Rv-HUn"/>
                         <outlet property="projectImage" destination="5sH-k3-CZt" id="puP-RD-rFR"/>
                         <outlet property="projectInformation" destination="t4E-ax-dXL" id="3JD-JQ-zwz"/>
                         <outlet property="projectSubTiltle" destination="GZO-ld-sFf" id="zUg-UK-cNH"/>
@@ -589,7 +588,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">Framework Programe of the European Commission which deals with innovation in the field of social services.   The project aims to establish a platform bringing together researchers, practitioners and policy-makers working on the planning and conduct of social services. Eleven organizations from nine European countries, both research institutes and membership-based organizations, are involved in the two year project.</mutableString>
+                                        <string key="content">Framework Programe of the European Commission which deals with innovation in the field of social services.   The project aims to establish a platform bringing together researchers, practitioners and policy-makers working on the planning and conduct of social services. Eleven organizations from nine European countries, both research institutes and membership-based organizations, are involved in the two year project.</string>
                                         <attributes>
                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
@@ -1115,7 +1114,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">With the new social platform we hope to assess the latest trends in research and practice, identify knowledge gaps and stimulate research inquiry. The idea is to discuss which service offerings in Europe are innovative and what future scenarios should be envisaged.</mutableString>
+                                        <string key="content">With the new social platform we hope to assess the latest trends in research and practice, identify knowledge gaps and stimulate research inquiry. The idea is to discuss which service offerings in Europe are innovative and what future scenarios should be envisaged.</string>
                                         <attributes>
                                             <font key="NSFont" size="15" name="HelveticaNeue-Italic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
@@ -1218,9 +1217,6 @@ Cg
         </class>
         <class className="AboutPage5ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPage5ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="openQuestionnairelink:"/>
-            </relationships>
         </class>
         <class className="CustomCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
@@ -1234,8 +1230,6 @@ Cg
         <class className="FirstScreenViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstScreenViewController.h"/>
             <relationships>
-                <relationship kind="action" name="openInnoservWebSite:"/>
-                <relationship kind="action" name="openTrailerButtonPressed:"/>
                 <relationship kind="outlet" name="button1" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="button2" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="button3" candidateClass="UIButton"/>
@@ -1256,6 +1250,7 @@ Cg
                 <relationship kind="outlet" name="labelDownloadingVideo" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="myProgressBar" candidateClass="UIProgressView"/>
                 <relationship kind="outlet" name="openWebPageToolBarButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="projectImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="projectInformation" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="projectSubTiltle" candidateClass="UILabel"/>
@@ -1265,6 +1260,7 @@ Cg
         <class className="iPhoneFirstViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneFirstViewController.h"/>
             <relationships>
+                <relationship kind="action" name="backToMenuButtonTapped:"/>
                 <relationship kind="outlet" name="projectsTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
