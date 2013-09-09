@@ -93,7 +93,7 @@
     
     //if (([langueCourante isEqualToString:@"fr"] || [langueCourante isEqualToString:@"de"]) && self.detailItem.subTitles) {
 
-        self.navigationItem.title = @"Vidéo du projet";
+        //self.navigationItem.title = @"Vidéo du projet";
 
         // A place for subtitles
         // Depending of the current orientation

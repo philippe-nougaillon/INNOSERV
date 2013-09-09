@@ -110,7 +110,7 @@
             [labelDownloadingVideo setText:NSLocalizedString(@"Downloading video", @"")];
 
             // the video file to download
-            NSString *fileURL = [@"http://www.inno-serv.eu/sites/default/files/" stringByAppendingString:self.detailItem.videofile];
+            NSString *fileURL = [@"http://www.inno-serv.eu/sites/default/files/videos-iphone/" stringByAppendingString:self.detailItem.videofile];
             fileURL = [fileURL stringByAppendingString:@".mp4"];
             
             // create the web request

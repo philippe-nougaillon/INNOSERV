@@ -51,9 +51,9 @@
 		B30E56FD16D28CEC000821DD /* vitality2a-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56F916D28CEB000821DD /* vitality2a-2.png */; };
 		B30E570016D28D15000821DD /* Nueva1d-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56FE16D28D13000821DD /* Nueva1d-2.png */; };
 		B30E570116D28D15000821DD /* placedebleu3a-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56FF16D28D14000821DD /* placedebleu3a-2.png */; };
+		B30FE83617DDBAC700309997 /* Trailer_V4-mono.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B30FE83517DDBAC700309997 /* Trailer_V4-mono.mp4 */; };
 		B319004716F3387E003D479B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B319004616F3387E003D479B /* MediaPlayer.framework */; };
 		B319005016F36EEB003D479B /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B319004F16F36EEB003D479B /* play.png */; };
-		B31ACB2017CF695800C3265E /* Trailer_V4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B37077611727DA44009946A9 /* Trailer_V4.mp4 */; };
 		B31E335517CDFD5300B61B25 /* ProjectDataDE.m in Sources */ = {isa = PBXBuildFile; fileRef = B31E335417CDFD5300B61B25 /* ProjectDataDE.m */; };
 		B32E2CD31714A17D00F17039 /* iPhoneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B32E2CD21714A17D00F17039 /* iPhoneDetailViewController.m */; };
 		B32F5AEE17C39D5000D46EE1 /* SrtData.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F5AEB17C39D5000D46EE1 /* SrtData.m */; };
@@ -184,6 +184,7 @@
 		B30E56F916D28CEB000821DD /* vitality2a-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vitality2a-2.png"; sourceTree = "<group>"; };
 		B30E56FE16D28D13000821DD /* Nueva1d-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nueva1d-2.png"; sourceTree = "<group>"; };
 		B30E56FF16D28D14000821DD /* placedebleu3a-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placedebleu3a-2.png"; sourceTree = "<group>"; };
+		B30FE83517DDBAC700309997 /* Trailer_V4-mono.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trailer_V4-mono.mp4"; sourceTree = "<group>"; };
 		B319004616F3387E003D479B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B319004F16F36EEB003D479B /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		B31E335317CDFD5300B61B25 /* ProjectDataDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataDE.h; sourceTree = "<group>"; };
@@ -203,7 +204,6 @@
 		B34921E017D9EC5000E8577B /* flagge_eu_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagge_eu_small.png; sourceTree = "<group>"; };
 		B36C3EEA17D8BDA900C9A003 /* AboutPage5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage5ViewController.h; sourceTree = "<group>"; };
 		B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPage5ViewController.m; sourceTree = "<group>"; };
-		B37077611727DA44009946A9 /* Trailer_V4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trailer_V4.mp4; sourceTree = "<group>"; };
 		B37077631727E80A009946A9 /* iPadMorePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadMorePageViewController.h; sourceTree = "<group>"; };
 		B37077641727E80A009946A9 /* iPadMorePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadMorePageViewController.m; sourceTree = "<group>"; };
 		B370776617280D7F009946A9 /* iPadAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadAboutViewController.h; sourceTree = "<group>"; };
@@ -360,7 +360,7 @@
 		B319004816F357F5003D479B /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				B37077611727DA44009946A9 /* Trailer_V4.mp4 */,
+				B30FE83517DDBAC700309997 /* Trailer_V4-mono.mp4 */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -724,7 +724,6 @@
 				B37D26AF17C6391B0073F49D /* Vitality-subtitles - french.txt in Resources */,
 				B3F7C4E617CCC34C00EAEF1E /* Default-568h@2x.png in Resources */,
 				B33B373717CCEDE500DA57D9 /* Inno-background.png in Resources */,
-				B31ACB2017CF695800C3265E /* Trailer_V4.mp4 in Resources */,
 				B34921DF17D9E79400E8577B /* logo_fp7.png in Resources */,
 				B34921E117D9EC5000E8577B /* flagge_eu_small.png in Resources */,
 				B34921E217DA296500E8577B /* Default.png in Resources */,
@@ -749,6 +748,7 @@
 				B3FC975017DCF164008E0D7C /* GPE_subtitle_EN.txt in Resources */,
 				B3FC975117DCF164008E0D7C /* mobile-health_subtitle_EN.txt in Resources */,
 				B3FC975217DCF164008E0D7C /* Mom'artre_subtitle_EN.txt in Resources */,
+				B30FE83617DDBAC700309997 /* Trailer_V4-mono.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -105,7 +105,7 @@
 - (IBAction)openTrailerButtonPressed:(id)sender {
 
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                         pathForResource:@"Trailer_V4" ofType:@"mp4"]];
+                                         pathForResource:@"Trailer_V4-mono" ofType:@"mp4"]];
     
     _player = [[MPMoviePlayerViewController alloc]initWithContentURL:url];
     _player.moviePlayer.fullscreen = YES;
@@ -150,7 +150,12 @@
 }
 
 -(NSUInteger)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskPortrait;
+    
+    // allow rotation is video in playing
+    if (_player.isViewLoaded)
+        return UIInterfaceOrientationMaskAll;
+    else
+        return UIInterfaceOrientationMaskPortrait;
 }
 
 - (void)didReceiveMemoryWarning
