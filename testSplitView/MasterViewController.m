@@ -11,7 +11,6 @@
 #import "ProjectData.h"
 #import "ProjectDataFR.h"
 #import "ProjectListItem.h"
-#import "CustomCell.h"
 
 @interface MasterViewController ()
 {
@@ -104,16 +103,81 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /*
     CustomCell *cell = (CustomCell *)[tableView dequeueReusableCellWithIdentifier:@"MyCustomCell"];
+    */
+
     
+    static NSString *CellIdentifier = @"MyCustomCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    // Configure the cell...
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+
+/*
+    // Display recipe in the table cell
+    Recipe *recipe = [recipes objectAtIndex:indexPath.row];
+    UIImageView *recipeImageView = (UIImageView *)[cell viewWithTag:100];
+    recipeImageView.image = [UIImage imageNamed:recipe.imageFile];
+    
+    UILabel *recipeNameLabel = (UILabel *)[cell viewWithTag:101];
+    recipeNameLabel.text = recipe.name;
+    
+    UILabel *recipeDetailLabel = (UILabel *)[cell viewWithTag:102];
+    recipeDetailLabel.text = recipe.detail;
+*/
+    
+
     ProjectListItem *item = _items[indexPath.row];
-    cell.titleLabel.text = item.title;
+    
+    UILabel *projectTitleLabel = (UILabel *)[cell viewWithTag:100];
+    projectTitleLabel.text = item.title;
+    
+    UIImageView *projectImageView = (UIImageView *)[cell viewWithTag:101];
+    projectImageView.image = [UIImage imageNamed:[item.image stringByAppendingString:@".png"]];
+    
+    UILabel *projectSubTitleLabel = (UILabel *)[cell viewWithTag:102];
+    projectSubTitleLabel.text = item.description;
+
+    UILabel *fieldOfServiceLabel = (UILabel *)[cell viewWithTag:103];
+    
+    // set color of Field of services
+    if (item.fieldOfWelfare) {
+        [fieldOfServiceLabel setTextColor:[UIColor greenColor]];
+    } else if (item.fieldOfHealth) {
+        [fieldOfServiceLabel setTextColor:[UIColor redColor]];
+    } else if (item.fieldOfEducation) {
+        [fieldOfServiceLabel setTextColor:[UIColor yellowColor]];
+    }
+    
+    // show Field of services
+    NSString *fos = @"";
+    if (item.fieldOfWelfare) {
+        fos = [fos stringByAppendingString:NSLocalizedString(@"Welfare",nil)];
+    }
+    if (item.fieldOfHealth) {
+        if (fos.length > 0)
+            fos = [fos stringByAppendingString:@", "];
+        fos = [fos stringByAppendingString:NSLocalizedString(@"Health",nil)];
+    }
+    if (item.fieldOfEducation) {
+        if (fos.length > 0)
+            fos = [fos stringByAppendingString:@", "];
+        fos = [fos stringByAppendingString:NSLocalizedString(@"Education",nil)];
+    }
+    fieldOfServiceLabel.text = fos;
+    
+    
+/*
     cell.subTitleLabel.text = item.description;
 
     cell.image.image = [UIImage imageNamed:[item.image stringByAppendingString:@".png"]];
     
     [cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:18]];
     [cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:13]];
+*/
     
     // Change la couleur de la cellule quand selectionnée
     

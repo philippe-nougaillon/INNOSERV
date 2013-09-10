@@ -241,49 +241,50 @@
         <scene sceneID="24">
             <objects>
                 <tableViewController storyboardIdentifier="" title="Master" clearsSelectionOnViewWillAppear="NO" id="19" customClass="MasterViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="165" sectionHeaderHeight="22" sectionFooterHeight="22" id="20">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="196" sectionHeaderHeight="45" sectionFooterHeight="22" id="20">
                         <rect key="frame" x="0.0" y="20" width="320" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.94901967050000002" green="0.91764712329999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <color key="separatorColor" cocoaTouchSystemColor="lightTextColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCustomCell" rowHeight="165" id="ZSw-0O-9Pw" customClass="CustomCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="165"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCustomCell" rowHeight="188" id="ZSw-0O-9Pw" customClass="CustomCell">
+                                <rect key="frame" x="0.0" y="45" width="320" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="187"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" id="xBr-RO-K6Q">
-                                            <rect key="frame" x="160" y="53" width="160" height="109"/>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="deviceRGB"/>
-                                            <accessibility key="accessibilityConfiguration">
-                                                <accessibilityTraits key="traits" none="YES" staticText="YES"/>
-                                            </accessibility>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" id="LlU-Kj-mhM">
-                                            <rect key="frame" x="7" y="3" width="305" height="52"/>
-                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
-                                            <color key="textColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="highlightedColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="dZj-3q-Cub">
-                                            <rect key="frame" x="7" y="53" width="148" height="109"/>
+                                        <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" tag="101" contentMode="scaleAspectFit" id="dZj-3q-Cub">
+                                            <rect key="frame" x="0.0" y="-1" width="320" height="220"/>
                                         </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" id="LlU-Kj-mhM">
+                                            <rect key="frame" x="7" y="78" width="307" height="52"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                            <size key="shadowOffset" width="1" height="2"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6kz-m2-zaR">
+                                            <rect key="frame" x="7" y="125" width="307" height="62"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <size key="shadowOffset" width="2" height="1"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="103" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nLs-fq-Sdz">
+                                            <rect key="frame" x="7" y="195" width="172" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="image" destination="dZj-3q-Cub" id="OBV-4m-GaX"/>
-                                    <outlet property="subTitleLabel" destination="xBr-RO-K6Q" id="Oxn-aj-uzR"/>
-                                    <outlet property="titleLabel" destination="LlU-Kj-mhM" id="Juk-it-a8q"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -292,22 +293,14 @@
                             <outlet property="delegate" destination="19" id="21"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="INNOSERV Videos" id="40">
-                        <barButtonItem key="leftBarButtonItem" title="About" id="uEA-0o-970">
-                            <connections>
-                                <action selector="openPDFLeafletButtonPressed:" destination="19" id="6a3-T6-ej0"/>
-                                <segue destination="uxD-fJ-xkZ" kind="modal" id="uqX-ne-MTn"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="INNOSERV Videos" id="7ir-4f-N24"/>
                     <connections>
-                        <outlet property="aboutButton" destination="uEA-0o-970" id="wmY-ux-jL1"/>
                         <outlet property="trailerButton" destination="DxY-7N-J03" id="AvY-k5-oit"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="-631"/>
+            <point key="canvasLocation" x="388" y="-631"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="50">
@@ -332,52 +325,6 @@
         <image name="innoserv-logoAndPhotos.png" width="1202" height="707"/>
         <image name="play.png" width="63" height="63"/>
     </resources>
-    <classes>
-        <class className="CustomCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="fieldOfServiceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="subTitleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="playVideoButtonPushed:"/>
-                <relationship kind="outlet" name="detailImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="detailInformation" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="detailSubtitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="openWebPageButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="playVideoButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="MasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="aboutButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="iPadAboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPadAboutViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="closeButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="myActivityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="trailerButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-                <relationship kind="outlet" name="websiteButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="iPadMorePageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPadMorePageViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="closeButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="myActivityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

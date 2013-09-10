@@ -20,7 +20,6 @@
     NSArray *_items;
     NSString *langueCourante;
     IBOutlet UITableView *projectsTableView;
-    
 }
 @end
 

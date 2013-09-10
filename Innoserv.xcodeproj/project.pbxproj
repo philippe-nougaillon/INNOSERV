@@ -62,8 +62,6 @@
 		B33DDECE17C4B42E005C0D15 /* ProjectDataFR.m in Sources */ = {isa = PBXBuildFile; fileRef = B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */; };
 		B34921DF17D9E79400E8577B /* logo_fp7.png in Resources */ = {isa = PBXBuildFile; fileRef = B34921DE17D9E79400E8577B /* logo_fp7.png */; };
 		B34921E117D9EC5000E8577B /* flagge_eu_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B34921E017D9EC5000E8577B /* flagge_eu_small.png */; };
-		B34921E217DA296500E8577B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FB6F5D17CB7DED00D22288 /* Default.png */; };
-		B34921E317DA299000E8577B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F7C4E317CCC33E00EAEF1E /* Default@2x.png */; };
 		B36C3EEC17D8BDA900C9A003 /* AboutPage5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */; };
 		B37077651727E80A009946A9 /* iPadMorePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37077641727E80A009946A9 /* iPadMorePageViewController.m */; };
 		B370776817280D7F009946A9 /* iPadAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370776717280D7F009946A9 /* iPadAboutViewController.m */; };
@@ -726,8 +724,6 @@
 				B33B373717CCEDE500DA57D9 /* Inno-background.png in Resources */,
 				B34921DF17D9E79400E8577B /* logo_fp7.png in Resources */,
 				B34921E117D9EC5000E8577B /* flagge_eu_small.png in Resources */,
-				B34921E217DA296500E8577B /* Default.png in Resources */,
-				B34921E317DA299000E8577B /* Default@2x.png in Resources */,
 				B3FC973F17DCF164008E0D7C /* ECC_subtitle_EN.txt in Resources */,
 				B3FC974017DCF164008E0D7C /* ammerud_subtitle_EN.txt in Resources */,
 				B3FC974117DCF164008E0D7C /* Irre Menschlich_subtitle_EN.txt in Resources */,
