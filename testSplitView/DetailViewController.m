@@ -7,32 +7,41 @@
 //
 
 #import "DetailViewController.h"
-#import "iPadMorePageViewController.h"
+#import "iPhoneVideoViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "SrtParser.h"
 
 
 @interface DetailViewController ()
 {
-    
     UIWebView *videoView;
     UIView *myView;
     NSString *langueCourante;
-    
+
+    NSMutableData *activeDownload;
+    NSURLConnection *conn;
+    NSFileManager *filemgr;
+    NSString *dataFile;
+    float _totalFileSize;
+    float _receivedDataBytes;
+
+    __weak IBOutlet UIProgressView *myProgressBar;
     __weak IBOutlet UILabel *detailSubtitle;
     __weak IBOutlet UIImageView *detailImage;
     __weak IBOutlet UITextView *detailInformation;
     __weak IBOutlet UIBarButtonItem *openWebPageButton;
     __weak IBOutlet UIButton *playVideoButton;
-    
+    __weak IBOutlet UIButton *buttonAboutProject;
+    __weak IBOutlet UIButton *buttonWatchTrailer;
+    __weak IBOutlet UIButton *buttonOpenWebsite;
 }
+
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 
 @property (nonatomic, retain) SrtParser *srtParser;
 @property (nonatomic, retain) UILabel *subtitleLabel;
 @property (nonatomic, retain) NSTimer *subtitleTimer;
 @property (nonatomic, retain) MPMoviePlayerController *moviePlayer;
-
 
 - (void)configureView;
 
@@ -58,12 +67,33 @@
     }        
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Localize
+    openWebPageButton.title = NSLocalizedString(@"Website", @"");
+    
+    // Set fonts
+    [detailSubtitle setFont:[UIFont fontWithName:@"Open Sans" size:18]];
+    [detailInformation setFont:[UIFont fontWithName:@"Open Sans" size:14]];
+    
+    // Language ?
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
+    langueCourante = [langues objectAtIndex:0];
+    
+    if ([langueCourante isEqualToString:@"fr"]) {
+        detailInformation.text = @"Plate-forme sur l'innovation dans les services sociaux\n\nLe projet a pour but d’évaluer la capacité future de services sociaux innovants à apporter une réponse pertinente aux besoins des citoyens, en tenant compte des activités multiformes des parties prenantes et des différents niveaux de gouvernance politique.\n\nCes projets ont été sélectionnés pour stimuler le débat sur l'innovation dans les services sociaux. Ils doivent être considérés comme des exemples d’idées innovantes, et non comme des guides de bonnes pratiques à suivre.";
+    }
+}
+
+
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
     if (self.detailItem) {
-
         // remove video
         [myView removeFromSuperview];
         myView =nil;
@@ -83,98 +113,98 @@
         
         // if website > show info button
         openWebPageButton.enabled = !([self.detailItem.website isEqualToString:@""]);
+    }
+}
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    
+    if ([identifier isEqualToString:@"openVideo"]) {
         
-        // Prepare video subtitles
-        if ([langueCourante isEqualToString:@"fr"]) {
-            // Parse subtitles
-            NSString *srtPath = [[NSBundle mainBundle] pathForResource:self.detailItem.subTitles ofType:@"txt"];
-            self.srtParser = [[SrtParser alloc] init];
-            [self.srtParser parseSrtFileAtPath:srtPath];
+        // check if video file exist
+        filemgr = [NSFileManager defaultManager];
+        NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *docsDir = dirPaths[0];
+        
+        // Build the path to the data file
+        dataFile = [docsDir stringByAppendingPathComponent:
+                    [self.detailItem.videofile stringByAppendingString:@".mp4"]];
+        
+        // Check if the video not exist and then download it
+        if (![filemgr fileExistsAtPath: dataFile])
+        {
+            // init file data container
+            activeDownload = [[NSMutableData alloc] init];
+            
+            //labelDownloadingVideo.hidden = NO;
+            myProgressBar.hidden = NO;
+            //playButton.hidden = YES;
+            //[labelDownloadingVideo setText:NSLocalizedString(@"Downloading video", @"")];
+            
+            // the video file to download
+            NSString *fileURL = [@"http://www.inno-serv.eu/sites/default/files/videos-iphone/" stringByAppendingString:self.detailItem.videofile];
+            fileURL = [fileURL stringByAppendingString:@".mp4"];
+            
+            // create the web request
+            NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+            NSURL *url = [[NSURL alloc] initWithString:fileURL];
+            [request setURL:url];
+            
+            // open Connection
+            conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+            
+            return FALSE;
+        } else {
+            return TRUE;
         }
-        
     }
+    return TRUE;
 }
 
-- (void)viewDidLoad
+
+// This will get called too before the view appears
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-
-    // Localize
-    openWebPageButton.title = NSLocalizedString(@"Website", @"");
- 
-    // Set fonts
-    [detailSubtitle setFont:[UIFont fontWithName:@"Open Sans" size:18]];
-    [detailInformation setFont:[UIFont fontWithName:@"Open Sans" size:14]];
-   
-    // Language ?
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
-    langueCourante = [langues objectAtIndex:0];
-    
-    if ([langueCourante isEqualToString:@"fr"]) {
-        detailInformation.text = @"Plate-forme sur l'innovation dans les services sociaux\n\nLe projet a pour but d’évaluer la capacité future de services sociaux innovants à apporter une réponse pertinente aux besoins des citoyens, en tenant compte des activités multiformes des parties prenantes et des différents niveaux de gouvernance politique.\n\nCes projets ont été sélectionnés pour stimuler le débat sur l'innovation dans les services sociaux. Ils doivent être considérés comme des exemples d’idées innovantes, et non comme des guides de bonnes pratiques à suivre.";
+    if ([[segue identifier] isEqualToString:@"openVideo"]) {
+        
+        // Get destination view
+        iPhoneVideoViewController *vc = [segue destinationViewController];
+        
+        // Pass the information to your destination view
+        vc.detailItem = self.detailItem;
     }
 }
 
-- (IBAction)playVideoButtonPushed:(id)sender
-{
-    NSURL *url;
-
-    
-    //NSLog(@"langue: %@",langueCourante);
-    
-    // Load subtitles for appropriate language
-        
-    // Setup video file
-    NSString *videoFileName;
-    // If current Detail page is about page or project page
-    if (self.detailItem.videofile) {
-        videoFileName = self.detailItem.videofile;
-    } else {
-        videoFileName = @"Trailer_V4";
-    }
-    url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:videoFileName ofType:@"mp4"]];
-
-    // A place for video player and subtitles
-    myView =[[UIView alloc] initWithFrame:CGRectMake(20, 108, 663, 380)];
-
-    // Movieplayer setup
-    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
-    self.moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
-    self.moviePlayer.view.frame = myView.bounds;
-    
-    [myView addSubview:self.moviePlayer.view];
-    [self.moviePlayer setFullscreen:NO animated:NO];
-        
-    if ([langueCourante isEqualToString:@"fr"] && self.detailItem.subTitles) {
-        // A place for subtitles
-        self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 300, 663, 40)];
-        self.subtitleLabel.backgroundColor = [UIColor whiteColor];
-        self.subtitleLabel.textAlignment = NSTextAlignmentCenter;
-        self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
-        self.subtitleLabel.textColor = [UIColor blackColor];
-        [myView addSubview:self.subtitleLabel];
-  
-        // Register for Timer
-        [self.subtitleTimer invalidate];
-        self.subtitleTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updateSubtitles) userInfo:self repeats:YES];
-    }
-
-    // Affiche la vue video+subtitles
-    [self.view addSubview:myView];
-    
-    // unsubcribe notification
-    [[NSNotificationCenter defaultCenter] removeObserver:self.moviePlayer
-                                                    name:MPMoviePlayerPlaybackDidFinishNotification
-                                                  object:self.moviePlayer];
-    
-    // Register this class as an observer instead
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(movieFinishedCallback:)
-                                                 name:MPMoviePlayerPlaybackDidFinishNotification
-                                               object:self.moviePlayer];
+-(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    _totalFileSize = response.expectedContentLength;
 }
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    
+    _receivedDataBytes += [data length];
+    myProgressBar.progress = _receivedDataBytes / (float)_totalFileSize;
+
+    [activeDownload appendData:data];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    
+    // write file into app Documents dir
+    [activeDownload writeToFile:dataFile atomically:YES];
+    
+    // update interface
+    myProgressBar.hidden = YES;
+    //labelDownloadingVideo.hidden = YES;
+    //playButton.hidden = NO;
+    
+    activeDownload = nil;
+    conn = nil;
+    
+    // run the video
+    [self performSegueWithIdentifier: @"openVideo" sender: self];
+    
+}
+
 
 - (void)movieFinishedCallback:(NSNotification*)aNotification
 {
@@ -201,34 +231,6 @@
     //}
 }
 
-// Subtitles
-
--(void)updateSubtitles
-{
-    NSString *subTitleText;
-    NSDate *initialDate = [self.srtParser initialTime];
-    NSDate *currentTime = [initialDate dateByAddingTimeInterval:self.moviePlayer.currentPlaybackTime];
- 
-    subTitleText = [self.srtParser textForTime:currentTime];
-    if (![subTitleText isEqualToString:self.subtitleLabel.text]) {
-        self.subtitleLabel.text = subTitleText;
-        //NSLog(@"text: %@", subTitleText);
-    }
-}
-
-
-// This will get called too before the view appears
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"openiPadWebView"]) {
-        
-        // Get destination view
-        iPadMorePageViewController *vc = [segue destinationViewController];
-        
-        // Pass the information to your destination view
-        vc.detailItem = self.detailItem;
-    }
-}
 
 - (void)didReceiveMemoryWarning
 {

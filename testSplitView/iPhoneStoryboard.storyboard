@@ -1217,6 +1217,9 @@ Cg
         </class>
         <class className="AboutPage5ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPage5ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="openQuestionnairelink:"/>
+            </relationships>
         </class>
         <class className="CustomCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>

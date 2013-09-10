@@ -96,8 +96,22 @@
         //self.navigationItem.title = @"Vidéo du projet";
 
         // A place for subtitles
+        // depending od device type
+
+    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+    
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        // iPAD
         // Depending of the current orientation
-        UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+        if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
+            self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, 480, 40)];
+            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
+        } else {
+            self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 660, 700, 70)];
+            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
+        }
+    } else {
+        // iPhone
         if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
             self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, 480, 40)];
             self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
@@ -105,6 +119,8 @@
             self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 350, 320, 60)];
             self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:12];
         }
+    }
+    
         // A place for subtitles
         self.subtitleLabel.numberOfLines = 2;
         self.subtitleLabel.backgroundColor = [UIColor whiteColor];
@@ -172,12 +188,26 @@
     self.moviePlayer.view.frame = myView.bounds;
     
     UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
-    if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
-        self.subtitleLabel.frame = CGRectMake(0, 240, 480, 40);
-        self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
+    
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        // iPAD
+        // Depending of the current orientation
+        if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
+            self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, 480, 40)];
+            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
+        } else {
+            self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 660, 700, 70)];
+            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
+        }
     } else {
-        self.subtitleLabel.frame = CGRectMake(0, 350, 320, 60);
-        self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:12];
+        // iPhone
+        if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
+            self.subtitleLabel.frame = CGRectMake(0, 240, 480, 40);
+            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
+        } else {
+            self.subtitleLabel.frame = CGRectMake(0, 350, 320, 60);
+            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:12];
+        }
     }
 }
 

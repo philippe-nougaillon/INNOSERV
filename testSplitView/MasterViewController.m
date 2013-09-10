@@ -10,6 +10,7 @@
 #import "DetailViewController.h"
 #import "ProjectData.h"
 #import "ProjectDataFR.h"
+#import "ProjectDataDE.h"
 #import "ProjectListItem.h"
 
 @interface MasterViewController ()
@@ -18,7 +19,6 @@
     NSString *langueCourante;
 
     __weak IBOutlet UIBarButtonItem *aboutButton;
-
 }
 @end
 
@@ -51,8 +51,9 @@
     // Load items for appropriate language
     if ([langueCourante isEqualToString:@"fr"]) {
         _items = [[ProjectDataFR alloc] init];
-        self.title = @"Vidéos INNOSERV";
         
+        //self.title = @"Vidéos INNOSERV";
+        /*
         // Afiche un titre en 2 lignes
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 480, 44)];
         label.backgroundColor = [UIColor clearColor];
@@ -64,10 +65,11 @@
         label.text = @"Une sélection de 20 projets INNOSERV en vidéo";
         self.navigationItem.titleView = label;
         self.detailViewController.title = @"Présentation du projet INNOSERV";
-
+         */
     }
     else if ([langueCourante isEqualToString:@"de"]) {
         //de
+        _items = [[ProjectDataDE alloc] init];
     }
     else {
         // load Data for English
@@ -103,32 +105,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-    CustomCell *cell = (CustomCell *)[tableView dequeueReusableCellWithIdentifier:@"MyCustomCell"];
-    */
+    // Configure the cell...
 
-    
     static NSString *CellIdentifier = @"MyCustomCell";
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Configure the cell...
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-
-/*
-    // Display recipe in the table cell
-    Recipe *recipe = [recipes objectAtIndex:indexPath.row];
-    UIImageView *recipeImageView = (UIImageView *)[cell viewWithTag:100];
-    recipeImageView.image = [UIImage imageNamed:recipe.imageFile];
-    
-    UILabel *recipeNameLabel = (UILabel *)[cell viewWithTag:101];
-    recipeNameLabel.text = recipe.name;
-    
-    UILabel *recipeDetailLabel = (UILabel *)[cell viewWithTag:102];
-    recipeDetailLabel.text = recipe.detail;
-*/
-    
 
     ProjectListItem *item = _items[indexPath.row];
     
@@ -169,23 +154,6 @@
     }
     fieldOfServiceLabel.text = fos;
     
-    
-/*
-    cell.subTitleLabel.text = item.description;
-
-    cell.image.image = [UIImage imageNamed:[item.image stringByAppendingString:@".png"]];
-    
-    [cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:18]];
-    [cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:13]];
-*/
-    
-    // Change la couleur de la cellule quand selectionnée
-    
-    //UIView *selectionColor = [[UIView alloc] init];
-    //selectionColor.backgroundColor = [UIColor colorWithRed:(252/255.0) green:(243/255.0) blue:(193/255.0) alpha:1];
-    //cell.selectedBackgroundView = selectionColor;
-    //selectionColor = nil;
-
     return cell;
 }
 
