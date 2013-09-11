@@ -46,10 +46,13 @@
     trailerButton.title = NSLocalizedString(@"Trailer", @"");
     websiteButton.title = NSLocalizedString(@"Website", @"");
     
-    // load pdf
-    NSString *urlAddress = [[NSBundle mainBundle] pathForResource:@"INNOSERV_Flyer_2013" ofType:@"pdf"];
+    NSURL *url;
+
+    if (self.detailItem)
+        url = [NSURL URLWithString:self.detailItem.website];
+    else
+        url = [NSURL URLWithString:@"http://www.inno-serv.eu"];
     
-    NSURL *url = [NSURL fileURLWithPath:urlAddress];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [webView loadRequest:requestObj];
     

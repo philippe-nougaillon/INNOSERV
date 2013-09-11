@@ -30,10 +30,12 @@
     __weak IBOutlet UIImageView *detailImage;
     __weak IBOutlet UITextView *detailInformation;
     __weak IBOutlet UIBarButtonItem *openWebPageButton;
-    __weak IBOutlet UIButton *playVideoButton;
-    __weak IBOutlet UIButton *buttonAboutProject;
-    __weak IBOutlet UIButton *buttonWatchTrailer;
-    __weak IBOutlet UIButton *buttonOpenWebsite;
+
+    __weak IBOutlet UIButton *playButton;
+    __weak IBOutlet UIButton *button1;
+    __weak IBOutlet UIButton *button2;
+    __weak IBOutlet UIButton *button3;
+    
 }
 
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -73,7 +75,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // Localize
-    openWebPageButton.title = NSLocalizedString(@"Website", @"");
+    //openWebPageButton.title = NSLocalizedString(@"Website", @"");
     
     // Set fonts
     [detailSubtitle setFont:[UIFont fontWithName:@"Open Sans" size:18]];
@@ -86,6 +88,15 @@
     
     if ([langueCourante isEqualToString:@"fr"]) {
         detailInformation.text = @"Plate-forme sur l'innovation dans les services sociaux\n\nLe projet a pour but d’évaluer la capacité future de services sociaux innovants à apporter une réponse pertinente aux besoins des citoyens, en tenant compte des activités multiformes des parties prenantes et des différents niveaux de gouvernance politique.\n\nCes projets ont été sélectionnés pour stimuler le débat sur l'innovation dans les services sociaux. Ils doivent être considérés comme des exemples d’idées innovantes, et non comme des guides de bonnes pratiques à suivre.";
+
+        [button1 setTitle:@"Video" forState:UIControlStateNormal  ];
+        [button2 setTitle:@"Site Internet" forState:UIControlStateNormal ];
+        [button3 setTitle:@"A propos d'INNOSERV" forState:UIControlStateNormal ];
+        
+        [button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+        [button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+        [button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+        
     }
 }
 
@@ -94,11 +105,13 @@
 {
     // Update the user interface for the detail item.
     if (self.detailItem) {
+
         // remove video
-        [myView removeFromSuperview];
-        myView =nil;
-        [self.subtitleTimer invalidate];
-        [self.moviePlayer stop];
+        
+//        [myView removeFromSuperview];
+//        myView =nil;
+//        [self.subtitleTimer invalidate];
+//        [self.moviePlayer stop];
 
         // show selected project informations
         self.navigationItem.title = self.detailItem.title;
@@ -113,8 +126,33 @@
         
         // if website > show info button
         openWebPageButton.enabled = !([self.detailItem.website isEqualToString:@""]);
+        
+        // hide buttons
+        button1.hidden = YES;
+        button2.hidden = YES;
+        button3.hidden = YES;
+        
     }
 }
+
+- (IBAction)button1pressed:(id)sender {
+    
+    [self performSegueWithIdentifier: @"openVideo" sender: self];
+}
+
+
+- (IBAction)button2pressed:(id)sender {
+    
+    
+
+}
+
+- (IBAction)button3pressed:(id)sender {
+    
+    
+}
+
+#pragma mark - Segue
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {
@@ -131,14 +169,14 @@
                     [self.detailItem.videofile stringByAppendingString:@".mp4"]];
         
         // Check if the video not exist and then download it
-        if (![filemgr fileExistsAtPath: dataFile])
+        if (![filemgr fileExistsAtPath: dataFile] && self.detailItem)
         {
             // init file data container
             activeDownload = [[NSMutableData alloc] init];
             
             //labelDownloadingVideo.hidden = NO;
             myProgressBar.hidden = NO;
-            //playButton.hidden = YES;
+            playButton.hidden = YES;
             //[labelDownloadingVideo setText:NSLocalizedString(@"Downloading video", @"")];
             
             // the video file to download
@@ -173,7 +211,19 @@
         // Pass the information to your destination view
         vc.detailItem = self.detailItem;
     }
+    
+    if ([[segue identifier] isEqualToString:@"openWebsite"]) {
+        
+        // Get destination view
+        iPhoneVideoViewController *vc = [segue destinationViewController];
+        
+        // Pass the information to your destination view
+        vc.detailItem = self.detailItem;
+    }
 }
+
+
+#pragma mark - connection
 
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
     _totalFileSize = response.expectedContentLength;
@@ -195,7 +245,7 @@
     // update interface
     myProgressBar.hidden = YES;
     //labelDownloadingVideo.hidden = YES;
-    //playButton.hidden = NO;
+    playButton.hidden = NO;
     
     activeDownload = nil;
     conn = nil;
@@ -205,6 +255,7 @@
     
 }
 
+#pragma mark - movie notification
 
 - (void)movieFinishedCallback:(NSNotification*)aNotification
 {
@@ -232,17 +283,7 @@
 }
 
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return ((interfaceOrientation == UIInterfaceOrientationLandscapeLeft) || (interfaceOrientation == UIInterfaceOrientationLandscapeRight));
-}
+#pragma mark - Show/hide View controller
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
 {
@@ -258,7 +299,22 @@
     self.masterPopoverController = nil;
 }
 
+#pragma mark - application events
+
+
 - (void)viewDidUnload {
     [super viewDidUnload];
 }
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return ((interfaceOrientation == UIInterfaceOrientationLandscapeLeft) || (interfaceOrientation == UIInterfaceOrientationLandscapeRight));
+}
+
 @end

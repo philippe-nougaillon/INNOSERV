@@ -63,14 +63,18 @@
         [self.srtParser parseSrtFileAtPath:srtPath];
     //}
     
-    // where is video file to play ?
-    NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docsDir = dirPaths[0];
     
-    // Build the path to the data file
-    dataFile = [docsDir stringByAppendingPathComponent:
-                [self.detailItem.videofile stringByAppendingString:@".mp4"]];
-
+    if (self.detailItem) {
+        // where is video file to play ?
+        NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *docsDir = dirPaths[0];
+        
+        // Build the path to the data file
+        dataFile = [docsDir stringByAppendingPathComponent:
+                    [self.detailItem.videofile stringByAppendingString:@".mp4"]];
+    } else {
+        dataFile = [[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:@"Trailer_V4-mono.mp4"];
+    }
     // URL to video to play
     url = [NSURL fileURLWithPath:dataFile];
     
@@ -86,40 +90,39 @@
     // Movieplayer setup
     self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
     self.moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
+    self.moviePlayer.controlStyle =  MPMovieControlStyleDefault;
     self.moviePlayer.view.frame = myView.bounds;
     
+    [self.moviePlayer prepareToPlay];
+    
     [myView addSubview:self.moviePlayer.view];
-    [self.moviePlayer setFullscreen:NO animated:NO];
+    [self.moviePlayer setFullscreen:YES animated:YES];
     
-    //if (([langueCourante isEqualToString:@"fr"] || [langueCourante isEqualToString:@"de"]) && self.detailItem.subTitles) {
-
-        //self.navigationItem.title = @"Vidéo du projet";
-
-        // A place for subtitles
-        // depending od device type
-
-    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
     
-    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        // iPAD
-        // Depending of the current orientation
-        if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
-            self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, 480, 40)];
-            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
+    if (self.detailItem) {
+
+        UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+        
+        if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+            // iPAD
+            // Depending of the current orientation
+            if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
+                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, 480, 40)];
+                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
+            } else {
+                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 680, 700, 60)];
+                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
+            }
         } else {
-            self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 660, 700, 70)];
-            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
+            // iPhone
+            if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
+                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, 480, 40)];
+                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
+            } else {
+                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 350, 320, 60)];
+                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:12];
+            }
         }
-    } else {
-        // iPhone
-        if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
-            self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, 480, 40)];
-            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
-        } else {
-            self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 350, 320, 60)];
-            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:12];
-        }
-    }
     
         // A place for subtitles
         self.subtitleLabel.numberOfLines = 2;
@@ -131,8 +134,9 @@
         // Register for Timer
         [self.subtitleTimer invalidate];
         self.subtitleTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updateSubtitles) userInfo:self repeats:YES];
-    //}
-    
+    }
+
+        
     // Affiche la vue video+subtitles
     [self.view addSubview:myView];
     

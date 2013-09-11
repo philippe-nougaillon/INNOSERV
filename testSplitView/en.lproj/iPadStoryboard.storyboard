@@ -33,16 +33,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <barButtonItem title="Trailer" width="103" id="DxY-7N-J03">
-                                        <connections>
-                                            <action selector="openTrailerButtonPressed:" destination="uxD-fJ-xkZ" id="Bue-b0-Hqv"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Website" width="108" id="O2w-dW-b8G">
-                                        <connections>
-                                            <action selector="openWebsite:" destination="uxD-fJ-xkZ" id="H7y-SK-gkc"/>
-                                        </connections>
-                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="gUO-Ov-1Zu"/>
                                     <barButtonItem title="Close" width="144" id="I6F-JF-VAO">
                                         <connections>
@@ -70,14 +60,12 @@
                     <connections>
                         <outlet property="closeButton" destination="I6F-JF-VAO" id="wMB-sr-dhP"/>
                         <outlet property="myActivityIndicator" destination="8fR-aZ-Wc2" id="c9B-45-6Pr"/>
-                        <outlet property="trailerButton" destination="DxY-7N-J03" id="1ts-Dn-Pxa"/>
                         <outlet property="webView" destination="oAy-Q3-2XJ" id="dQP-NZ-Ni7"/>
-                        <outlet property="websiteButton" destination="O2w-dW-b8G" id="Qhd-Nr-qf3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ob1-gs-Tdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797" y="-631"/>
+            <point key="canvasLocation" x="1818" y="-436"/>
         </scene>
         <!--Detail View Controller - About INNOSERV project-->
         <scene sceneID="16">
@@ -87,19 +75,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="European selection of innovative social services" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="gmA-ds-ZyL">
-                                <rect key="frame" x="20" y="49" width="663" height="43"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="innoserv-logoAndPhotos.png" id="y4l-7A-Lv1">
-                                <rect key="frame" x="20" y="100" width="663" height="381"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" id="Ert-ry-jUq">
-                                <rect key="frame" x="20" y="489" width="663" height="257"/>
+                                <rect key="frame" x="20" y="456" width="663" height="292"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -135,8 +112,19 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="European selection of innovative social services" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="gmA-ds-ZyL">
+                                <rect key="frame" x="20" y="47" width="663" height="43"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="innoserv-logoAndPhotos.png" id="y4l-7A-Lv1">
+                                <rect key="frame" x="20" y="98" width="663" height="350"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q9Y-jM-8Xa">
-                                <rect key="frame" x="255" y="218" width="192" height="145"/>
+                                <rect key="frame" x="255" y="201" width="192" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="play.png">
@@ -151,7 +139,38 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" id="bqY-A4-RDF">
-                                <rect key="frame" x="20" y="702" width="219" height="44"/>
+                                <rect key="frame" x="20" y="709" width="214" height="39"/>
+                                <color key="backgroundColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Watch our video trailer">
+                                    <color key="titleColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button1pressed:" destination="4" eventType="touchUpInside" id="jew-v3-ckK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000001192092896" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" id="UUl-Fh-wnb">
+                                <rect key="frame" x="245" y="709" width="214" height="39"/>
+                                <color key="backgroundColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Website">
+                                    <color key="titleColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button2pressed:" destination="4" eventType="touchUpInside" id="SF9-gS-9tp"/>
+                                    <segue destination="uxD-fJ-xkZ" kind="modal" identifier="openWebsite" id="8gm-jG-ds1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000001192092896" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" id="Vdi-WZ-mTs">
+                                <rect key="frame" x="469" y="709" width="214" height="39"/>
                                 <color key="backgroundColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="About INNOSERV project">
@@ -161,52 +180,37 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="button3pressed:" destination="4" eventType="touchUpInside" id="Q6U-Mv-Jzv"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" id="UUl-Fh-wnb">
-                                <rect key="frame" x="242" y="702" width="219" height="44"/>
-                                <color key="backgroundColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="Watch our video trailer 123">
-                                    <color key="titleColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" alpha="0.80000001192092896" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" id="Vdi-WZ-mTs">
-                                <rect key="frame" x="464" y="702" width="219" height="44"/>
-                                <color key="backgroundColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="INNOSERV's website  ">
-                                    <color key="titleColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" progress="0.5" id="00G-9w-FSJ">
+                                <rect key="frame" x="204" y="269" width="295" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="0.94901967050000002" green="0.91764712329999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="About INNOSERV project" id="53">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Website" id="cfL-8r-0ni">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="cfL-8r-0ni">
                             <connections>
-                                <segue destination="FPV-0y-mce" kind="modal" identifier="openiPadWebView" id="YjK-38-VM8"/>
+                                <segue destination="uxD-fJ-xkZ" kind="modal" identifier="openWebsite" modalTransitionStyle="coverVertical" id="FuL-SO-b2D"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="buttonAboutProject" destination="bqY-A4-RDF" id="DRz-tX-E2I"/>
-                        <outlet property="buttonOpenWebsite" destination="Vdi-WZ-mTs" id="qop-op-Vcp"/>
-                        <outlet property="buttonWatchTrailer" destination="UUl-Fh-wnb" id="rkS-xb-5bn"/>
+                        <outlet property="button1" destination="bqY-A4-RDF" id="GIC-t1-g5X"/>
+                        <outlet property="button2" destination="UUl-Fh-wnb" id="xEi-LU-t4i"/>
+                        <outlet property="button3" destination="Vdi-WZ-mTs" id="Ceg-oJ-Ss0"/>
                         <outlet property="detailImage" destination="y4l-7A-Lv1" id="19a-AP-hYA"/>
                         <outlet property="detailInformation" destination="Ert-ry-jUq" id="FfA-7U-41w"/>
                         <outlet property="detailSubtitle" destination="gmA-ds-ZyL" id="gIp-vF-tQE"/>
+                        <outlet property="myProgressBar" destination="00G-9w-FSJ" id="f2Z-oX-Ubi"/>
                         <outlet property="openWebPageButton" destination="cfL-8r-0ni" id="ljv-qt-bMP"/>
+                        <outlet property="playButton" destination="Q9Y-jM-8Xa" id="I2P-SQ-W44"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
@@ -216,19 +220,10 @@
         <!--I Phone Video View Controller-->
         <scene sceneID="GnO-7m-gVg">
             <objects>
-                <viewController id="KMQ-MW-drv" customClass="iPhoneVideoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="videoViewController" id="KMQ-MW-drv" customClass="iPhoneVideoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Myb-pW-TSf">
                         <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZsY-R8-mn4">
-                                <rect key="frame" x="463" y="122" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -236,53 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zZ-Mq-gfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="678" y="1194"/>
-        </scene>
-        <!--I Pad More Page View Controller-->
-        <scene sceneID="tJD-wP-yDi">
-            <objects>
-                <viewController id="FPV-0y-mce" customClass="iPadMorePageViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a0b-T3-PBK">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleAspectFill" scalesPageToFit="YES" id="ZBt-HH-mwC">
-                                <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
-                                <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <dataDetectorType key="dataDetectorTypes"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="LvE-ke-bye">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <barButtonItem width="922" style="plain" systemItem="fixedSpace" id="RTn-ri-DDj"/>
-                                    <barButtonItem title="Close" width="81" style="done" id="ADf-LI-fon">
-                                        <connections>
-                                            <action selector="okButtonPressed:" destination="FPV-0y-mce" id="7Lp-ar-jLH"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="white" id="n6D-OJ-Sba">
-                                <rect key="frame" x="503" y="11" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="707-x3-W5o"/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <outlet property="closeButton" destination="ADf-LI-fon" id="gs9-FW-Wzg"/>
-                        <outlet property="myActivityIndicator" destination="n6D-OJ-Sba" id="Ij3-2y-tYA"/>
-                        <outlet property="webView" destination="ZBt-HH-mwC" id="LFx-ez-GIZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="817-Rb-VG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1515" y="340"/>
+            <point key="canvasLocation" x="1808" y="428"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="18">
@@ -317,7 +266,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" tag="101" contentMode="scaleAspectFit" id="dZj-3q-Cub">
+                                        <imageView userInteractionEnabled="NO" alpha="0.70000000000000007" tag="101" contentMode="scaleAspectFit" id="dZj-3q-Cub">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" id="LlU-Kj-mhM">
@@ -359,9 +308,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="INNOSERV Videos" id="7ir-4f-N24"/>
-                    <connections>
-                        <outlet property="trailerButton" destination="DxY-7N-J03" id="AvY-k5-oit"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
             </objects>
@@ -390,61 +336,12 @@
         <image name="innoserv-logoAndPhotos.png" width="1202" height="707"/>
         <image name="play.png" width="63" height="63"/>
     </resources>
-    <classes>
-        <class className="CustomCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="fieldOfServiceLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="subTitleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="buttonAboutProject" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="buttonOpenWebsite" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="buttonWatchTrailer" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="detailImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="detailInformation" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="detailSubtitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myProgressBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="openWebPageButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="playVideoButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="MasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="aboutButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="iPadAboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPadAboutViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="closeButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="myActivityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="trailerButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-                <relationship kind="outlet" name="websiteButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="iPadMorePageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPadMorePageViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="closeButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="myActivityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="iPhoneVideoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneVideoViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="8gm-jG-ds1"/>
+    </inferredMetricsTieBreakers>
 </document>

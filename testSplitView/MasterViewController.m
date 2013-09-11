@@ -50,9 +50,8 @@
     
     // Load items for appropriate language
     if ([langueCourante isEqualToString:@"fr"]) {
-        _items = [[ProjectDataFR alloc] init];
         
-        //self.title = @"Vidéos INNOSERV";
+        self.title = @"20 projets INNOSERV";
         /*
         // Afiche un titre en 2 lignes
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 480, 44)];
@@ -66,6 +65,8 @@
         self.navigationItem.titleView = label;
         self.detailViewController.title = @"Présentation du projet INNOSERV";
          */
+        
+        _items = [[ProjectDataFR alloc] init];
     }
     else if ([langueCourante isEqualToString:@"de"]) {
         //de
@@ -161,6 +162,16 @@
 {
     ProjectListItem *object = _items[indexPath.row];
     self.detailViewController.detailItem = object;
+    
+    //stop the video
+    // if videoView in the stack ?
+    int navControllers = [[self.detailViewController.navigationController viewControllers] count];
+
+    if (navControllers == 2){
+        [self.detailViewController.navigationController popViewControllerAnimated:YES];
+        NSLog(@"%d", navControllers);
+    }
+    
 }
 
 @end
