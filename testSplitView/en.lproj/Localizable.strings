@@ -11,7 +11,7 @@
 // Menu
 "menu_About"="About INNOSERV project";
 "menu_Trailer"="Watch our video trailer";
-"menu_20projects"="20 Videos of selected projects";
+"menu_20projects"="20 selected projects";
 "menu_www"="INNOSERV's website";
 
 "about"="About INNOSERV project";
@@ -19,7 +19,6 @@
 
 "innoserv-url"="http://www.inno-serv.eu";
 "innoserv-survey-url"="http://inno-serv.eu/content/please-fill-questionnaire-your-opinion-appreciated";
-
 
 //
 "Website"="Website";

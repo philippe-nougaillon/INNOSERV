@@ -75,6 +75,7 @@
 		B35E289A17E1E87900D4E2B0 /* AboutPagesContainerIPADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E289917E1E87900D4E2B0 /* AboutPagesContainerIPADViewController.m */; };
 		B35E289D17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P2.png in Resources */ = {isa = PBXBuildFile; fileRef = B35E289B17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P2.png */; };
 		B35E289E17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P1.png in Resources */ = {isa = PBXBuildFile; fileRef = B35E289C17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P1.png */; };
+		B35E28A017E2057F00D4E2B0 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B35E289F17E2057F00D4E2B0 /* Default-Landscape~ipad.png */; };
 		B36C3EEC17D8BDA900C9A003 /* AboutPage5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */; };
 		B37077651727E80A009946A9 /* iPadMorePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37077641727E80A009946A9 /* iPadMorePageViewController.m */; };
 		B370776817280D7F009946A9 /* iPadAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370776717280D7F009946A9 /* iPadAboutViewController.m */; };
@@ -229,6 +230,7 @@
 		B35E289917E1E87900D4E2B0 /* AboutPagesContainerIPADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPagesContainerIPADViewController.m; sourceTree = "<group>"; };
 		B35E289B17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = INNOSERV_Flyer_2013_P2.png; sourceTree = "<group>"; };
 		B35E289C17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = INNOSERV_Flyer_2013_P1.png; sourceTree = "<group>"; };
+		B35E289F17E2057F00D4E2B0 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		B36C3EEA17D8BDA900C9A003 /* AboutPage5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage5ViewController.h; sourceTree = "<group>"; };
 		B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPage5ViewController.m; sourceTree = "<group>"; };
 		B37077631727E80A009946A9 /* iPadMorePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadMorePageViewController.h; sourceTree = "<group>"; };
@@ -509,6 +511,7 @@
 		B3B8BBA216C13C8E0019CD28 = {
 			isa = PBXGroup;
 			children = (
+				B35E289F17E2057F00D4E2B0 /* Default-Landscape~ipad.png */,
 				B3F7C4E517CCC34C00EAEF1E /* Default-568h@2x.png */,
 				B3F7C4E317CCC33E00EAEF1E /* Default@2x.png */,
 				B3FB6F5D17CB7DED00D22288 /* Default.png */,
@@ -805,6 +808,7 @@
 				B35E288D17E1CACF00D4E2B0 /* Momartre_german.txt in Resources */,
 				B35E289D17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P2.png in Resources */,
 				B35E289E17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P1.png in Resources */,
+				B35E28A017E2057F00D4E2B0 /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

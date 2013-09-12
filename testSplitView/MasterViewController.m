@@ -12,13 +12,12 @@
 #import "ProjectDataFR.h"
 #import "ProjectDataDE.h"
 #import "ProjectListItem.h"
+#import "AboutPagesContainerIPADViewController.h"
 
 @interface MasterViewController ()
 {
     NSArray *_items;
     NSString *langueCourante;
-
-    __weak IBOutlet UIBarButtonItem *aboutButton;
 }
 @end
 
@@ -33,11 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    // localize view
-    aboutButton.title = NSLocalizedString(@"About", @"");
-    
+	
     // allocate detailViewController
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 
@@ -50,22 +45,6 @@
     
     // Load items for appropriate language
     if ([langueCourante isEqualToString:@"fr"]) {
-        
-        self.title = @"20 projets INNOSERV";
-        /*
-        // Afiche un titre en 2 lignes
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 480, 44)];
-        label.backgroundColor = [UIColor clearColor];
-        label.numberOfLines = 2;
-        label.font = [UIFont fontWithName:@"Open Sans" size:14];
-        label.shadowColor = [UIColor colorWithWhite:0.0 alpha:1];
-        label.textAlignment = NSTextAlignmentCenter;
-        label.textColor = [UIColor whiteColor];
-        label.text = @"Une sélection de 20 projets INNOSERV en vidéo";
-        self.navigationItem.titleView = label;
-        self.detailViewController.title = @"Présentation du projet INNOSERV";
-         */
-        
         _items = [[ProjectDataFR alloc] init];
     }
     else if ([langueCourante isEqualToString:@"de"]) {
@@ -76,7 +55,16 @@
         // load Data for English
         _items = [[ProjectData alloc] init];
     }
+    [self setTitle:NSLocalizedString(@"menu_20projects", @"")];
     
+}
+
+- (IBAction)openPDF:(UIButton *)sender {
+        
+    // load about pages controller
+    AboutPagesContainerIPADViewController *controller = [[AboutPagesContainerIPADViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -163,8 +151,7 @@
     ProjectListItem *object = _items[indexPath.row];
     self.detailViewController.detailItem = object;
     
-    //stop the video
-    // if videoView in the stack ?
+    // stop the video if videoView in the stack ?
     int navControllers = [[self.detailViewController.navigationController viewControllers] count];
 
     if (navControllers == 2){

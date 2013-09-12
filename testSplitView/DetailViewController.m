@@ -29,13 +29,13 @@
     __weak IBOutlet UILabel *detailSubtitle;
     __weak IBOutlet UIImageView *detailImage;
     __weak IBOutlet UITextView *detailInformation;
-    __weak IBOutlet UIBarButtonItem *openWebPageButton;
 
     __weak IBOutlet UIButton *playButton;
     __weak IBOutlet UIButton *button1;
     __weak IBOutlet UIButton *button2;
     __weak IBOutlet UIButton *button3;
     
+    __weak IBOutlet UIButton *infoButton;
 }
 
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -118,7 +118,7 @@
         [detailInformation setContentOffset:CGPointMake(0.0, 0.0) animated:TRUE];
         
         // if website > show info button
-        openWebPageButton.enabled = !([self.detailItem.website isEqualToString:@""]);
+        infoButton.hidden = ([self.detailItem.website isEqualToString:@""]);
         
         // hide buttons
         button1.hidden = YES;
@@ -142,9 +142,21 @@
 
 - (IBAction)button3pressed:(id)sender {
    
+    // load about pages controller
     AboutPagesContainerIPADViewController *controller = [[AboutPagesContainerIPADViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
     [self presentViewController:controller animated:YES completion:nil];
+    
+}
+- (IBAction)openWebsite:(id)sender {
+
+    [self performSegueWithIdentifier: @"openWebsite" sender: self];
+
+}
+
+- (IBAction)openWebsiteFromInfoButton:(UIButton *)sender {
+
+    [self performSegueWithIdentifier: @"openWebsite" sender: self];
     
 }
 
@@ -216,6 +228,15 @@
         // Pass the information to your destination view
         vc.detailItem = self.detailItem;
     }
+    
+    // openInfos
+    if ([[segue identifier] isEqualToString:@"openInfos"]) {
+        AboutPagesContainerIPADViewController *controller = [[AboutPagesContainerIPADViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+        
+        [self presentViewController:controller animated:YES completion:nil];
+    }
+    
+    
 }
 
 
