@@ -10,7 +10,7 @@
 #import "iPhoneVideoViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "SrtParser.h"
-
+#import "AboutPagesContainerIPADViewController.h"
 
 @interface DetailViewController ()
 {
@@ -141,7 +141,10 @@
 }
 
 - (IBAction)button3pressed:(id)sender {
+   
+    AboutPagesContainerIPADViewController *controller = [[AboutPagesContainerIPADViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
+    [self presentViewController:controller animated:YES completion:nil];
     
 }
 

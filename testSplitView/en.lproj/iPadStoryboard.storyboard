@@ -24,7 +24,7 @@
         <!--I Pad About View Controller-->
         <scene sceneID="kAD-e6-hzH">
             <objects>
-                <viewController id="uxD-fJ-xkZ" customClass="iPadAboutViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" id="uxD-fJ-xkZ" customClass="iPadAboutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qtw-8J-5Y6">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -213,6 +213,85 @@
             </objects>
             <point key="canvasLocation" x="806" y="315"/>
         </scene>
+        <!--About PagesIPAD1 View Controller-->
+        <scene sceneID="ZXD-te-j4q">
+            <objects>
+                <viewController storyboardIdentifier="AboutPagesIPAD1ViewController" id="VvB-Qi-gpp" customClass="AboutPagesIPAD1ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FYi-T7-L4c">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="INNOSERV_Flyer_2013_P1.png" id="fdH-PZ-pWM">
+                                <rect key="frame" x="20" y="63" width="984" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" id="fh9-3n-Thk">
+                                <rect key="frame" x="493" y="712" width="38" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                            </pageControl>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hLR-fA-07V">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Na5-KK-35N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1762" y="1923"/>
+        </scene>
+        <!--About PagesIPAD2 View Controller-->
+        <scene sceneID="8Yx-XW-C6v">
+            <objects>
+                <viewController storyboardIdentifier="AboutPagesIPAD2ViewController" id="rRk-IG-b6R" customClass="AboutPagesIPAD2ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="moX-ca-P8G">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" currentPage="1" id="ofn-Gp-AgZ">
+                                <rect key="frame" x="493" y="712" width="38" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                            </pageControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="INNOSERV_Flyer_2013_P2.png" id="WRZ-1p-Ngw">
+                                <rect key="frame" x="20" y="62" width="984" height="642"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Wfj-qI-wNR">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5zg-0a-1b9"/>
+                                    <barButtonItem style="plain" systemItem="done" id="BRv-bB-VUl">
+                                        <connections>
+                                            <action selector="doneButton:" destination="rRk-IG-b6R" id="Shv-aV-J1J"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLT-eC-4rI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2855" y="1923"/>
+        </scene>
         <!--I Phone Video View Controller-->
         <scene sceneID="GnO-7m-gVg">
             <objects>
@@ -330,10 +409,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="INNOSERV_Flyer_2013_P1.png" width="1227" height="885"/>
+        <image name="INNOSERV_Flyer_2013_P2.png" width="1227" height="885"/>
         <image name="innoserv-logoAndPhotos.png" width="1202" height="707"/>
         <image name="play.png" width="63" height="63"/>
     </resources>
     <classes>
+        <class className="AboutPagesIPAD1ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPagesIPAD1ViewController.h"/>
+        </class>
+        <class className="AboutPagesIPAD2ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPagesIPAD2ViewController.h"/>
+        </class>
         <class className="CustomCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
             <relationships>

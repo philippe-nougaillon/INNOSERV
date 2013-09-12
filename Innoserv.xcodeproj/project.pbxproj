@@ -69,6 +69,12 @@
 		B35E288B17E1CACF00D4E2B0 /* ESD_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288417E1CACF00D4E2B0 /* ESD_german.txt */; };
 		B35E288C17E1CACF00D4E2B0 /* blue assist_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288517E1CACF00D4E2B0 /* blue assist_german.txt */; };
 		B35E288D17E1CACF00D4E2B0 /* Momartre_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288617E1CACF00D4E2B0 /* Momartre_german.txt */; };
+		B35E289117E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E289017E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.m */; };
+		B35E289417E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E289317E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.m */; };
+		B35E289717E1E79000D4E2B0 /* AboutPagesIPAD0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E289617E1E79000D4E2B0 /* AboutPagesIPAD0ViewController.m */; };
+		B35E289A17E1E87900D4E2B0 /* AboutPagesContainerIPADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E289917E1E87900D4E2B0 /* AboutPagesContainerIPADViewController.m */; };
+		B35E289D17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P2.png in Resources */ = {isa = PBXBuildFile; fileRef = B35E289B17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P2.png */; };
+		B35E289E17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P1.png in Resources */ = {isa = PBXBuildFile; fileRef = B35E289C17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P1.png */; };
 		B36C3EEC17D8BDA900C9A003 /* AboutPage5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */; };
 		B37077651727E80A009946A9 /* iPadMorePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37077641727E80A009946A9 /* iPadMorePageViewController.m */; };
 		B370776817280D7F009946A9 /* iPadAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370776717280D7F009946A9 /* iPadAboutViewController.m */; };
@@ -92,7 +98,6 @@
 		B37D26AD17C6391B0073F49D /* Residenzialita-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269917C6391B0073F49D /* Residenzialita-subtitles - french.txt */; };
 		B37D26AE17C6391B0073F49D /* Seclin-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269A17C6391B0073F49D /* Seclin-subtitles - french.txt */; };
 		B37D26AF17C6391B0073F49D /* Vitality-subtitles - french.txt in Resources */ = {isa = PBXBuildFile; fileRef = B37D269B17C6391B0073F49D /* Vitality-subtitles - french.txt */; };
-		B380094816D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B380094716D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf */; };
 		B380094A16D6609000506DD5 /* innoServLogo2forIPADNoRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = B380094916D6609000506DD5 /* innoServLogo2forIPADNoRetina.png */; };
 		B380094C16D6609400506DD5 /* innoServLogo2forIPAD.png in Resources */ = {isa = PBXBuildFile; fileRef = B380094B16D6609400506DD5 /* innoServLogo2forIPAD.png */; };
 		B3996A0C16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3996A0B16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard */; };
@@ -214,6 +219,16 @@
 		B35E288417E1CACF00D4E2B0 /* ESD_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = ESD_german.txt; sourceTree = "<group>"; };
 		B35E288517E1CACF00D4E2B0 /* blue assist_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "blue assist_german.txt"; sourceTree = "<group>"; };
 		B35E288617E1CACF00D4E2B0 /* Momartre_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = Momartre_german.txt; sourceTree = "<group>"; };
+		B35E288F17E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPagesIPAD1ViewController.h; sourceTree = "<group>"; };
+		B35E289017E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPagesIPAD1ViewController.m; sourceTree = "<group>"; };
+		B35E289217E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPagesIPAD2ViewController.h; sourceTree = "<group>"; };
+		B35E289317E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPagesIPAD2ViewController.m; sourceTree = "<group>"; };
+		B35E289517E1E79000D4E2B0 /* AboutPagesIPAD0ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPagesIPAD0ViewController.h; sourceTree = "<group>"; };
+		B35E289617E1E79000D4E2B0 /* AboutPagesIPAD0ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPagesIPAD0ViewController.m; sourceTree = "<group>"; };
+		B35E289817E1E87800D4E2B0 /* AboutPagesContainerIPADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPagesContainerIPADViewController.h; sourceTree = "<group>"; };
+		B35E289917E1E87900D4E2B0 /* AboutPagesContainerIPADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPagesContainerIPADViewController.m; sourceTree = "<group>"; };
+		B35E289B17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = INNOSERV_Flyer_2013_P2.png; sourceTree = "<group>"; };
+		B35E289C17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = INNOSERV_Flyer_2013_P1.png; sourceTree = "<group>"; };
 		B36C3EEA17D8BDA900C9A003 /* AboutPage5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage5ViewController.h; sourceTree = "<group>"; };
 		B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPage5ViewController.m; sourceTree = "<group>"; };
 		B37077631727E80A009946A9 /* iPadMorePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadMorePageViewController.h; sourceTree = "<group>"; };
@@ -240,7 +255,6 @@
 		B37D269917C6391B0073F49D /* Residenzialita-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "Residenzialita-subtitles - french.txt"; sourceTree = "<group>"; };
 		B37D269A17C6391B0073F49D /* Seclin-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "Seclin-subtitles - french.txt"; sourceTree = "<group>"; };
 		B37D269B17C6391B0073F49D /* Vitality-subtitles - french.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "Vitality-subtitles - french.txt"; sourceTree = "<group>"; };
-		B380094716D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = INNOSERV_Flyer_2013.pdf; sourceTree = "<group>"; };
 		B380094916D6609000506DD5 /* innoServLogo2forIPADNoRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = innoServLogo2forIPADNoRetina.png; sourceTree = "<group>"; };
 		B380094B16D6609400506DD5 /* innoServLogo2forIPAD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = innoServLogo2forIPAD.png; sourceTree = "<group>"; };
 		B3996A0B16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
@@ -355,6 +369,14 @@
 				B37077641727E80A009946A9 /* iPadMorePageViewController.m */,
 				B370776617280D7F009946A9 /* iPadAboutViewController.h */,
 				B370776717280D7F009946A9 /* iPadAboutViewController.m */,
+				B35E289817E1E87800D4E2B0 /* AboutPagesContainerIPADViewController.h */,
+				B35E289917E1E87900D4E2B0 /* AboutPagesContainerIPADViewController.m */,
+				B35E289517E1E79000D4E2B0 /* AboutPagesIPAD0ViewController.h */,
+				B35E289617E1E79000D4E2B0 /* AboutPagesIPAD0ViewController.m */,
+				B35E288F17E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.h */,
+				B35E289017E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.m */,
+				B35E289217E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.h */,
+				B35E289317E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.m */,
 			);
 			name = "Controllers(iPad)";
 			sourceTree = "<group>";
@@ -416,11 +438,12 @@
 		B3A9261616CE8DBA006686A7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B35E289B17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P2.png */,
+				B35E289C17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P1.png */,
 				B34921E017D9EC5000E8577B /* flagge_eu_small.png */,
 				B34921DE17D9E79400E8577B /* logo_fp7.png */,
 				B33B373517CCEDE500DA57D9 /* Inno-background.png */,
 				B319004F16F36EEB003D479B /* play.png */,
-				B380094716D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf */,
 				B3025B3416D5118800143DB3 /* vitality2a-2-big.png */,
 				B3025B3516D5118800143DB3 /* KYOH telehealth-1-big.png */,
 				B3025B3616D5118800143DB3 /* Seclin-new3-big.png */,
@@ -723,7 +746,6 @@
 				B3025B5916D5118800143DB3 /* BlueAssist5b-2-big.png in Resources */,
 				B3025B5A16D5118800143DB3 /* Abitare Solidale 4-2-big-big.png in Resources */,
 				B3025B5B16D5118800143DB3 /* Ammerud4-2-big-big.png in Resources */,
-				B380094816D6435C00506DD5 /* INNOSERV_Flyer_2013.pdf in Resources */,
 				B380094A16D6609000506DD5 /* innoServLogo2forIPADNoRetina.png in Resources */,
 				B380094C16D6609400506DD5 /* innoServLogo2forIPAD.png in Resources */,
 				B3996A0C16DCF7DD00BC65DC /* iPhoneStoryboard.storyboard in Resources */,
@@ -781,6 +803,8 @@
 				B35E288B17E1CACF00D4E2B0 /* ESD_german.txt in Resources */,
 				B35E288C17E1CACF00D4E2B0 /* blue assist_german.txt in Resources */,
 				B35E288D17E1CACF00D4E2B0 /* Momartre_german.txt in Resources */,
+				B35E289D17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P2.png in Resources */,
+				B35E289E17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -815,6 +839,10 @@
 				B3F7C4EE17CCD94D00EAEF1E /* AboutPage4ViewController.m in Sources */,
 				B31E335517CDFD5300B61B25 /* ProjectDataDE.m in Sources */,
 				B36C3EEC17D8BDA900C9A003 /* AboutPage5ViewController.m in Sources */,
+				B35E289117E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.m in Sources */,
+				B35E289417E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.m in Sources */,
+				B35E289717E1E79000D4E2B0 /* AboutPagesIPAD0ViewController.m in Sources */,
+				B35E289A17E1E87900D4E2B0 /* AboutPagesContainerIPADViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
