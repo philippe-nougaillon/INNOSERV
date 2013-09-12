@@ -7,17 +7,13 @@
 //
 
 #import "iPadAboutViewController.h"
-#import <MediaPlayer/MediaPlayer.h>
 
 @interface iPadAboutViewController ()
 {
     __weak IBOutlet UIWebView *webView;
     __weak IBOutlet UIBarButtonItem *closeButton;
-    __weak IBOutlet UIBarButtonItem *trailerButton;
-    __weak IBOutlet UIBarButtonItem *websiteButton;
     __weak IBOutlet UIActivityIndicatorView *myActivityIndicator;
     
-    MPMoviePlayerViewController *_player;
 }
 @end
 
@@ -41,11 +37,6 @@
     webView.delegate = self;
     [myActivityIndicator startAnimating];
     
-    // Localize button title
-    closeButton.title = NSLocalizedString(@"Close", @"");
-    trailerButton.title = NSLocalizedString(@"Trailer", @"");
-    websiteButton.title = NSLocalizedString(@"Website", @"");
-    
     NSURL *url;
 
     if (self.detailItem)
@@ -63,58 +54,7 @@
 
 }
 
-- (IBAction)openTrailerButtonPressed:(id)sender {
-    
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                         pathForResource:@"Trailer_V4" ofType:@"mp4"]];
-    
-    _player = [[MPMoviePlayerViewController alloc] initWithContentURL:url];
-    _player.view.frame = CGRectMake(100, 200, 200, 200);
-   
-    [self.view addSubview:_player.view];
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:_player
-                                                    name:MPMoviePlayerPlaybackDidFinishNotification
-                                                  object:_player.moviePlayer];
-    
-    // Register this class as an observer instead
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(movieFinishedCallback:)
-                                                 name:MPMoviePlayerPlaybackDidFinishNotification
-                                               object:_player.moviePlayer];
-    
-}
-
-- (void)movieFinishedCallback:(NSNotification*)aNotification
-{
-    // Obtain the reason why the movie playback finished
-    NSNumber *finishReason = [[aNotification userInfo] objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
-    
-    // Dismiss the view controller ONLY when the reason is not "playback ended"
-    if ([finishReason intValue] != MPMovieFinishReasonPlaybackEnded)
-    {
-        MPMoviePlayerController *moviePlayer = [aNotification object];
-        
-        // Remove this class from the observers
-        [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                        name:MPMoviePlayerPlaybackDidFinishNotification
-                                                      object:moviePlayer];
-        
-        [_player.view removeFromSuperview];
-    }
-}
-
-- (IBAction)openWebsite:(id)sender {
- 
-    webView.delegate = self;
-    
-    myActivityIndicator.hidden = NO;
-    [myActivityIndicator startAnimating];
-    
-    NSURL *url = [NSURL URLWithString:@"http://www.inno-serv.eu"];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    [webView loadRequest:requestObj];
-}
+# pragma mark <UIWebViewDelegate>
 
 - (BOOL)webView:(UIWebView *)wv shouldStartLoadWithRequest:(NSURLRequest *)rq navigationType:(UIWebViewNavigationType)navigationType
 {
@@ -135,8 +75,7 @@
     [myActivityIndicator stopAnimating];
 }
 
-
-
+# pragma mark app delegate
 
 - (void)didReceiveMemoryWarning
 {

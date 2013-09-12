@@ -12,7 +12,6 @@
 
 @interface iPhoneVideoViewController () {
 
-//    NSString *langueCourante;
     UIView *myView;
     NSURL *url;
     NSString *dataFile;
@@ -50,19 +49,12 @@
                                                  name:UIDeviceOrientationDidChangeNotification
                                                object:nil];
     
-    // Language ?
-    //NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    //NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
-    //langueCourante = [langues objectAtIndex:0];
-    
     // Prepare video subtitles
-    //if ([langueCourante isEqualToString:@"fr"] || [langueCourante isEqualToString:@"de"]) {
-        // Parse subtitles
-        NSString *srtPath = [[NSBundle mainBundle] pathForResource:self.detailItem.subTitles ofType:@"txt"];
-        self.srtParser = [[SrtParser alloc] init];
-        [self.srtParser parseSrtFileAtPath:srtPath];
-    //}
-    
+
+    NSString *srtPath = [[NSBundle mainBundle] pathForResource:self.detailItem.subTitles ofType:@"txt"];
+    // Parse subtitles
+    self.srtParser = [[SrtParser alloc] init];
+    [self.srtParser parseSrtFileAtPath:srtPath];
     
     if (self.detailItem) {
         // where is video file to play ?
@@ -73,6 +65,7 @@
         dataFile = [docsDir stringByAppendingPathComponent:
                     [self.detailItem.videofile stringByAppendingString:@".mp4"]];
     } else {
+        // show the trailer if no project selected
         dataFile = [[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:@"Trailer_V4-mono.mp4"];
     }
     // URL to video to play
@@ -85,19 +78,20 @@
 -(void)prepareView {
     
     // A place for video player and subtitles
-    myView =[[UIView alloc] initWithFrame:self.view.frame];
     
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        myView =[[UIView alloc] initWithFrame:CGRectMake(0, 200, 700, 400)];
+    else
+        myView =[[UIView alloc] initWithFrame:self.view.frame];
+        
     // Movieplayer setup
     self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
     self.moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
-    self.moviePlayer.controlStyle =  MPMovieControlStyleDefault;
+    self.moviePlayer.controlStyle =  MPMovieControlStyleFullscreen;
     self.moviePlayer.view.frame = myView.bounds;
     
-    [self.moviePlayer prepareToPlay];
-    
     [myView addSubview:self.moviePlayer.view];
-    [self.moviePlayer setFullscreen:YES animated:YES];
-    
+    [self.moviePlayer prepareToPlay];
     
     if (self.detailItem) {
 
@@ -107,10 +101,10 @@
             // iPAD
             // Depending of the current orientation
             if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
-                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, 480, 40)];
+                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 400, 700, 60)];
                 self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
             } else {
-                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 680, 700, 60)];
+                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 400, 700, 60)];
                 self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
             }
         } else {
@@ -135,7 +129,6 @@
         [self.subtitleTimer invalidate];
         self.subtitleTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updateSubtitles) userInfo:self repeats:YES];
     }
-
         
     // Affiche la vue video+subtitles
     [self.view addSubview:myView];
@@ -149,6 +142,22 @@
                                              selector:@selector(movieFinishedCallback:)
                                                  name:MPMoviePlayerPlaybackDidFinishNotification
                                                object:self.moviePlayer];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(movieEventFullscreenHandler:)
+                                                 name:MPMoviePlayerWillEnterFullscreenNotification
+                                               object:nil];
+
+}
+
+#pragma mark Movie Notification
+
+- (void)movieEventFullscreenHandler:(NSNotification*)notification {
+    
+    self.moviePlayer.view.frame = self.view.frame;
+    
+    //[self.moviePlayer setFullscreen:NO animated:NO];
+    //[self.moviePlayer setControlStyle:MPMovieControlStyleEmbedded];
 }
 
 - (void)movieFinishedCallback:(NSNotification*)aNotification
@@ -167,6 +176,9 @@
     
     // hide subtitles
     self.subtitleLabel.hidden = YES;
+    
+    // go back to detail view controller
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 
@@ -188,23 +200,12 @@
 // Orientation changed notification
 - (void)orientationChanged:(NSNotification *)notification
 {
-    myView.frame =  self.view.bounds;
-    self.moviePlayer.view.frame = myView.bounds;
-    
     UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
     
-    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        // iPAD
-        // Depending of the current orientation
-        if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
-            self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, 480, 40)];
-            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
-        } else {
-            self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 660, 700, 70)];
-            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
-        }
-    } else {
-        // iPhone
+    if ( UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad) {
+
+        myView.frame =  self.view.bounds;
+        self.moviePlayer.view.frame = myView.bounds;
         if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
             self.subtitleLabel.frame = CGRectMake(0, 240, 480, 40);
             self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
@@ -218,6 +219,11 @@
 -(void)viewWillDisappear:(BOOL)animated
 {
     [self.moviePlayer stop];
+    
+    // stop Timer
+    [self.subtitleTimer invalidate];
+    self.subtitleTimer = nil;
+
 }
 
 - (void)didReceiveMemoryWarning

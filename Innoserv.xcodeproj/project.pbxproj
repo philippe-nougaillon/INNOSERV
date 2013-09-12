@@ -62,6 +62,13 @@
 		B33DDECE17C4B42E005C0D15 /* ProjectDataFR.m in Sources */ = {isa = PBXBuildFile; fileRef = B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */; };
 		B34921DF17D9E79400E8577B /* logo_fp7.png in Resources */ = {isa = PBXBuildFile; fileRef = B34921DE17D9E79400E8577B /* logo_fp7.png */; };
 		B34921E117D9EC5000E8577B /* flagge_eu_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B34921E017D9EC5000E8577B /* flagge_eu_small.png */; };
+		B35E288717E1CACF00D4E2B0 /* mobile health_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288017E1CACF00D4E2B0 /* mobile health_german.txt */; };
+		B35E288817E1CACF00D4E2B0 /* GPE_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288117E1CACF00D4E2B0 /* GPE_german.txt */; };
+		B35E288917E1CACF00D4E2B0 /* Vitality_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288217E1CACF00D4E2B0 /* Vitality_german.txt */; };
+		B35E288A17E1CACF00D4E2B0 /* Ammerudhjemmet_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288317E1CACF00D4E2B0 /* Ammerudhjemmet_german.txt */; };
+		B35E288B17E1CACF00D4E2B0 /* ESD_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288417E1CACF00D4E2B0 /* ESD_german.txt */; };
+		B35E288C17E1CACF00D4E2B0 /* blue assist_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288517E1CACF00D4E2B0 /* blue assist_german.txt */; };
+		B35E288D17E1CACF00D4E2B0 /* Momartre_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288617E1CACF00D4E2B0 /* Momartre_german.txt */; };
 		B36C3EEC17D8BDA900C9A003 /* AboutPage5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */; };
 		B37077651727E80A009946A9 /* iPadMorePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37077641727E80A009946A9 /* iPadMorePageViewController.m */; };
 		B370776817280D7F009946A9 /* iPadAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B370776717280D7F009946A9 /* iPadAboutViewController.m */; };
@@ -200,6 +207,13 @@
 		B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataFR.m; sourceTree = "<group>"; };
 		B34921DE17D9E79400E8577B /* logo_fp7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_fp7.png; sourceTree = "<group>"; };
 		B34921E017D9EC5000E8577B /* flagge_eu_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagge_eu_small.png; sourceTree = "<group>"; };
+		B35E288017E1CACF00D4E2B0 /* mobile health_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "mobile health_german.txt"; sourceTree = "<group>"; };
+		B35E288117E1CACF00D4E2B0 /* GPE_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = GPE_german.txt; sourceTree = "<group>"; };
+		B35E288217E1CACF00D4E2B0 /* Vitality_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = Vitality_german.txt; sourceTree = "<group>"; };
+		B35E288317E1CACF00D4E2B0 /* Ammerudhjemmet_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = Ammerudhjemmet_german.txt; sourceTree = "<group>"; };
+		B35E288417E1CACF00D4E2B0 /* ESD_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = ESD_german.txt; sourceTree = "<group>"; };
+		B35E288517E1CACF00D4E2B0 /* blue assist_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "blue assist_german.txt"; sourceTree = "<group>"; };
+		B35E288617E1CACF00D4E2B0 /* Momartre_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = Momartre_german.txt; sourceTree = "<group>"; };
 		B36C3EEA17D8BDA900C9A003 /* AboutPage5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage5ViewController.h; sourceTree = "<group>"; };
 		B36C3EEB17D8BDA900C9A003 /* AboutPage5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPage5ViewController.m; sourceTree = "<group>"; };
 		B37077631727E80A009946A9 /* iPadMorePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadMorePageViewController.h; sourceTree = "<group>"; };
@@ -374,9 +388,24 @@
 			name = SrtParser;
 			sourceTree = "<group>";
 		};
+		B35E288E17E1CAE100D4E2B0 /* DE */ = {
+			isa = PBXGroup;
+			children = (
+				B35E288017E1CACF00D4E2B0 /* mobile health_german.txt */,
+				B35E288117E1CACF00D4E2B0 /* GPE_german.txt */,
+				B35E288217E1CACF00D4E2B0 /* Vitality_german.txt */,
+				B35E288317E1CACF00D4E2B0 /* Ammerudhjemmet_german.txt */,
+				B35E288417E1CACF00D4E2B0 /* ESD_german.txt */,
+				B35E288517E1CACF00D4E2B0 /* blue assist_german.txt */,
+				B35E288617E1CACF00D4E2B0 /* Momartre_german.txt */,
+			);
+			name = DE;
+			sourceTree = "<group>";
+		};
 		B37D268717C6391B0073F49D /* Sous-titres */ = {
 			isa = PBXGroup;
 			children = (
+				B35E288E17E1CAE100D4E2B0 /* DE */,
 				B3FC975317DCF16D008E0D7C /* EN */,
 				B3FC972A17DCF151008E0D7C /* FR */,
 			);
@@ -745,6 +774,13 @@
 				B3FC975117DCF164008E0D7C /* mobile-health_subtitle_EN.txt in Resources */,
 				B3FC975217DCF164008E0D7C /* Mom'artre_subtitle_EN.txt in Resources */,
 				B30FE83617DDBAC700309997 /* Trailer_V4-mono.mp4 in Resources */,
+				B35E288717E1CACF00D4E2B0 /* mobile health_german.txt in Resources */,
+				B35E288817E1CACF00D4E2B0 /* GPE_german.txt in Resources */,
+				B35E288917E1CACF00D4E2B0 /* Vitality_german.txt in Resources */,
+				B35E288A17E1CACF00D4E2B0 /* Ammerudhjemmet_german.txt in Resources */,
+				B35E288B17E1CACF00D4E2B0 /* ESD_german.txt in Resources */,
+				B35E288C17E1CACF00D4E2B0 /* blue assist_german.txt in Resources */,
+				B35E288D17E1CACF00D4E2B0 /* Momartre_german.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

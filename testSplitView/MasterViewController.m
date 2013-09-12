@@ -169,7 +169,7 @@
 
     if (navControllers == 2){
         [self.detailViewController.navigationController popViewControllerAnimated:YES];
-        NSLog(@"%d", navControllers);
+        //NSLog(@"%d", navControllers);
     }
     
 }

@@ -1,0 +1,38 @@
+﻿100:00:19,000 --> 00:00:22,360GPE Mainz ist eine soziale Einrichtung zur Integration  
+200:00:22,480 --> 00:00:25,520von Menschen mit Behinderungen und psychischen Problemen.
+300:00:27,080 --> 00:00:29,480GPE bietet eine Auswahl an unterstützten Beschäftigungsmöglichkeiten.
+4
+00:00:29,600 --> 00:00:32,120Die Einrichtung betreibt ein Zentrum für Diagnose und Rehabilitation  
+5
+00:00:32,240 --> 00:00:34,960
+und ein Cafe, in dem junge Menschen beraten werden.
+6
+00:00:36,240 --> 00:00:40,720
+Die Anlage und Dienstleistungen von GPE sind mitten im alltäglichen Leben zu finden.
+87
+00:05:30,320 --> 00:05:33,200
+INNOVATIVE ASPEKTE DES PROJEKTES: 
+88
+00:05:33,360 --> 00:05:35,280
+Die soziale Integration und Autonomie der Menschen mit Behinderungen
+89
+00:05:35,440 --> 00:05:37,080
+oder psychischen Problemen wird gefördert durch:
+90
+00:05:37,280 --> 00:05:40,640
+individuell zugeschnittene Programme zur Integration in den Arbeitsmarkt
+91
+00:05:40,640 --> 00:05:43,520
+und Möglichkeiten unterstützter sowie regulärer Arbeitsplätze;
+
+9200:05:43,760 --> 00:05:46,640Beschäftigung, Training und Support-Service aus einer Quelle, 
+93
+00:05:46,880 --> 00:05:49,760die den Übergang ins Arbeitsleben unterstützt;
+94
+00:05:49,960 --> 00:05:53,240
+eine breite Auswahl von vernetzten sozialen Unternehmen, die Arbeitsplätze untereinander schaffen. 
+95
+00:05:53,320 --> 00:05:56,200
+Dienstleistungen in der Mitte der Gemeinschaft, 
+96
+00:05:56,320 --> 00:05:59,360um Stigmatisierung und Diskriminierung zu vermeiden.
