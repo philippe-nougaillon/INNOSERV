@@ -106,13 +106,6 @@
     // Update the user interface for the detail item.
     if (self.detailItem) {
 
-        // remove video
-        
-//        [myView removeFromSuperview];
-//        myView =nil;
-//        [self.subtitleTimer invalidate];
-//        [self.moviePlayer stop];
-
         // show selected project informations
         self.navigationItem.title = self.detailItem.title;
         detailSubtitle.text = self.detailItem.description;
@@ -143,7 +136,7 @@
 
 - (IBAction)button2pressed:(id)sender {
     
-    
+    [self performSegueWithIdentifier: @"openWebsite" sender: self];
 
 }
 

@@ -154,7 +154,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" id="UUl-Fh-wnb">
-                                <rect key="frame" x="245" y="709" width="214" height="39"/>
+                                <rect key="frame" x="244" y="709" width="214" height="39"/>
                                 <color key="backgroundColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Website">
@@ -194,11 +194,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="About INNOSERV project" id="53">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="cfL-8r-0ni">
-                            <connections>
-                                <segue destination="uxD-fJ-xkZ" kind="modal" identifier="openWebsite" modalTransitionStyle="coverVertical" id="FuL-SO-b2D"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="cfL-8r-0ni"/>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -288,7 +284,7 @@
                                             <size key="shadowOffset" width="2" height="1"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="103" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nLs-fq-Sdz">
-                                            <rect key="frame" x="7" y="163" width="141" height="21"/>
+                                            <rect key="frame" x="7" y="160" width="141" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -350,9 +346,6 @@
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
-                <relationship kind="action" name="button1pressed:"/>
-                <relationship kind="action" name="button2pressed:"/>
-                <relationship kind="action" name="button3pressed:"/>
                 <relationship kind="outlet" name="button1" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="button2" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="button3" candidateClass="UIButton"/>
@@ -387,7 +380,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="8gm-jG-ds1"/>
-    </inferredMetricsTieBreakers>
 </document>
