@@ -42,12 +42,13 @@
     if (self.detailItem)
         url = [NSURL URLWithString:self.detailItem.website];
     else
-        url = [NSURL URLWithString:@"http://www.inno-serv.eu"];
+        url = [NSURL URLWithString:NSLocalizedString(@"innoserv-url", @"")];
     
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [webView loadRequest:requestObj];
     
 }
+
 - (IBAction)closeButtonPressed:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:NULL];

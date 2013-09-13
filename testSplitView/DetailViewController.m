@@ -76,11 +76,17 @@
     
     // Localize
     //openWebPageButton.title = NSLocalizedString(@"Website", @"");
+    [button1 setTitle:NSLocalizedString(@"menu_Trailer", @"") forState:UIControlStateNormal];
+    [button2 setTitle:NSLocalizedString(@"menu_www", @"") forState:UIControlStateNormal];
+    [button3 setTitle:NSLocalizedString(@"menu_About", @"") forState:UIControlStateNormal];
     
     // Set fonts
     [detailSubtitle setFont:[UIFont fontWithName:@"Open Sans" size:18]];
     [detailInformation setFont:[UIFont fontWithName:@"Open Sans" size:14]];
-    
+    [button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+    [button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+    [button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+   
     // Language ?
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
@@ -88,15 +94,6 @@
     
     if ([langueCourante isEqualToString:@"fr"]) {
         detailInformation.text = @"Plate-forme sur l'innovation dans les services sociaux\n\nLe projet a pour but d’évaluer la capacité future de services sociaux innovants à apporter une réponse pertinente aux besoins des citoyens, en tenant compte des activités multiformes des parties prenantes et des différents niveaux de gouvernance politique.\n\nCes projets ont été sélectionnés pour stimuler le débat sur l'innovation dans les services sociaux. Ils doivent être considérés comme des exemples d’idées innovantes, et non comme des guides de bonnes pratiques à suivre.";
-
-        [button1 setTitle:@"Video" forState:UIControlStateNormal  ];
-        [button2 setTitle:@"Site Internet" forState:UIControlStateNormal ];
-        [button3 setTitle:@"A propos d'INNOSERV" forState:UIControlStateNormal ];
-        
-        [button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-        [button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-        [button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-        
     }
 }
 
@@ -124,7 +121,6 @@
         button1.hidden = YES;
         button2.hidden = YES;
         button3.hidden = YES;
-        
     }
 }
 
@@ -137,7 +133,6 @@
 - (IBAction)button2pressed:(id)sender {
     
     [self performSegueWithIdentifier: @"openWebsite" sender: self];
-
 }
 
 - (IBAction)button3pressed:(id)sender {
@@ -148,6 +143,7 @@
     [self presentViewController:controller animated:YES completion:nil];
     
 }
+
 - (IBAction)openWebsite:(id)sender {
 
     [self performSegueWithIdentifier: @"openWebsite" sender: self];
@@ -182,10 +178,8 @@
             // init file data container
             activeDownload = [[NSMutableData alloc] init];
             
-            //labelDownloadingVideo.hidden = NO;
             myProgressBar.hidden = NO;
             playButton.hidden = YES;
-            //[labelDownloadingVideo setText:NSLocalizedString(@"Downloading video", @"")];
             
             // the video file to download
             NSString *fileURL = [@"http://www.inno-serv.eu/sites/default/files/videos-iphone/" stringByAppendingString:self.detailItem.videofile];
@@ -212,7 +206,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"openVideo"]) {
-        
         // Get destination view
         iPhoneVideoViewController *vc = [segue destinationViewController];
         
@@ -221,7 +214,6 @@
     }
     
     if ([[segue identifier] isEqualToString:@"openWebsite"]) {
-        
         // Get destination view
         iPhoneVideoViewController *vc = [segue destinationViewController];
         
@@ -235,15 +227,15 @@
         
         [self presentViewController:controller animated:YES completion:nil];
     }
-    
-    
 }
 
 
 #pragma mark - connection
 
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+
     _totalFileSize = response.expectedContentLength;
+
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
@@ -261,42 +253,33 @@
     
     // update interface
     myProgressBar.hidden = YES;
-    //labelDownloadingVideo.hidden = YES;
     playButton.hidden = NO;
-    
     activeDownload = nil;
     conn = nil;
     
     // run the video
     [self performSegueWithIdentifier: @"openVideo" sender: self];
-    
 }
 
 #pragma mark - movie notification
 
 - (void)movieFinishedCallback:(NSNotification*)aNotification
 {
-    // Obtain the reason why the movie playback finished
-    //NSNumber *finishReason = [[aNotification userInfo] objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
+
+    MPMoviePlayerController *myMoviePlayer = [aNotification object];
     
-    // Dismiss the view controller ONLY when the reason is not "playback ended"
-    //if ([finishReason intValue] != MPMovieFinishReasonPlaybackEnded)
-    //{
-        MPMoviePlayerController *myMoviePlayer = [aNotification object];
-        
-        // Remove this class from the observers
-        [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                        name:MPMoviePlayerPlaybackDidFinishNotification
-                                                      object:myMoviePlayer];
-        
-        [self.moviePlayer stop];
-        
-        [myView removeFromSuperview];
-        myView =nil;
+    // Remove this class from the observers
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:MPMoviePlayerPlaybackDidFinishNotification
+                                                  object:myMoviePlayer];
+    [self.moviePlayer stop];
     
-        [self.subtitleTimer invalidate];
-        self.subtitleTimer = nil;
-    //}
+    [myView removeFromSuperview];
+    myView =nil;
+    
+    [self.subtitleTimer invalidate];
+    self.subtitleTimer = nil;
+
 }
 
 
@@ -320,8 +303,11 @@
 
 
 - (void)viewDidUnload {
+
     [super viewDidUnload];
+
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
