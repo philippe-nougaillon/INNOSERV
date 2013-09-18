@@ -170,7 +170,7 @@
         
         // Build the path to the data file
         dataFile = [docsDir stringByAppendingPathComponent:
-                    [self.detailItem.videofile stringByAppendingString:@".mp4"]];
+                    [self.detailItem.videofile stringByAppendingString:@"-iPad.mp4"]];
         
         // Check if the video not exist and then download it
         if (![filemgr fileExistsAtPath: dataFile] && self.detailItem)
@@ -178,12 +178,9 @@
             // init file data container
             activeDownload = [[NSMutableData alloc] init];
             
-            myProgressBar.hidden = NO;
-            playButton.hidden = YES;
-            
             // the video file to download
-            NSString *fileURL = [@"http://www.inno-serv.eu/sites/default/files/videos-iphone/" stringByAppendingString:self.detailItem.videofile];
-            fileURL = [fileURL stringByAppendingString:@".mp4"];
+            NSString *fileURL = [@"http://innoserv.philnoug.com/videos-iphone/" stringByAppendingString:self.detailItem.videofile];
+            fileURL = [fileURL stringByAppendingString:@"-iPad.mp4"];
             
             // create the web request
             NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -192,7 +189,14 @@
             
             // open Connection
             conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-            
+            if (!conn) {
+                // Inform the user that the connection failed.
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network connection" message:NSLocalizedString(@"networkError", @"") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                [alert show];
+            } else {
+                myProgressBar.hidden = NO;
+                playButton.hidden = YES;
+            }
             return FALSE;
         } else {
             return TRUE;

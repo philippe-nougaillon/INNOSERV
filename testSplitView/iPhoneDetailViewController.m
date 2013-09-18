@@ -53,15 +53,6 @@
         projectTitle.text = self.detailItem.title;
         projectSubTiltle.text = self.detailItem.description;
         projectInformation.text = self.detailItem.information;
-
-        //set fonts
-        //[projectTitle setFont:[UIFont fontWithName:@"Open Sans" size:25]];
-        //[projectSubTiltle setFont:[UIFont fontWithName:@"Open Sans" size:18]];
-        //[projectInformation setFont:[UIFont fontWithName:@"Open Sans" size:14]];
-
-        // Adjust Title
-        //[projectTitle setNumberOfLines:0];
-        //[projectTitle sizeToFit];
         
         // project image
         NSString *imageFileName = [self.detailItem.image stringByAppendingString:@"-big.png"];
@@ -110,7 +101,9 @@
             [labelDownloadingVideo setText:NSLocalizedString(@"Downloading video", @"")];
 
             // the video file to download
-            NSString *fileURL = [@"http://www.inno-serv.eu/sites/default/files/videos-iphone/" stringByAppendingString:self.detailItem.videofile];
+            // http://innoserv.philnoug.com/videos-iphone/
+            // http://www.inno-serv.eu/sites/default/files/videos-iphone/
+            NSString *fileURL = [@"http://innoserv.philnoug.com/videos-iphone/" stringByAppendingString:self.detailItem.videofile];
             fileURL = [fileURL stringByAppendingString:@".mp4"];
             
             // create the web request

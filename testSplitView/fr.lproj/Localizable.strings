@@ -27,6 +27,8 @@
 "Education"="Education";
 "Health"="Santé";
 
+//
+"networkError"="Ne peux télécharger la vidéo, veuillez vérifier votre connexion Wifi";
 
 // iPAD
 "Master"="Projets sélectionnés";

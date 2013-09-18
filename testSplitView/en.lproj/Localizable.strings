@@ -29,6 +29,8 @@
 "Education"="Education";
 "Health"="Health";
 
+//
+"networkError"="No Wifi network, download failed";
 
 /* iPAD  */
 "Master"="INNOSERV Selected Projects";

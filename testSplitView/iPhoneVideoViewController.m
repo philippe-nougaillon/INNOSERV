@@ -61,9 +61,15 @@
         NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *docsDir = dirPaths[0];
         
+        
         // Build the path to the data file
-        dataFile = [docsDir stringByAppendingPathComponent:
+        if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            dataFile = [docsDir stringByAppendingPathComponent:
                     [self.detailItem.videofile stringByAppendingString:@".mp4"]];
+        else
+            dataFile = [docsDir stringByAppendingPathComponent:
+                        [self.detailItem.videofile stringByAppendingString:@"-iPad.mp4"]];
+        
     } else {
         // show the trailer if no project selected
         dataFile = [[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:@"Trailer_V4-mono.mp4"];
@@ -155,9 +161,7 @@
 - (void)movieEventFullscreenHandler:(NSNotification*)notification {
     
     self.moviePlayer.view.frame = self.view.frame;
-    
-    //[self.moviePlayer setFullscreen:NO animated:NO];
-    //[self.moviePlayer setControlStyle:MPMovieControlStyleEmbedded];
+
 }
 
 - (void)movieFinishedCallback:(NSNotification*)aNotification
@@ -176,6 +180,9 @@
     
     // hide subtitles
     self.subtitleLabel.hidden = YES;
+    
+    // ask status bar to hide
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
     
     // go back to detail view controller
     [self.navigationController popViewControllerAnimated:YES];

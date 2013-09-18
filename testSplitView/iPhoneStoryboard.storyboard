@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pES-9E-EQ0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pES-9E-EQ0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -164,7 +164,7 @@
             <objects>
                 <viewController storyboardIdentifier="AboutPageViewController1" modalTransitionStyle="partialCurl" id="UBa-WD-RUp" customClass="AboutPage1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nM9-Cw-fZV">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="hWH-TN-qQd">
@@ -271,6 +271,7 @@ Cg
                             <constraint firstItem="5m4-c0-gyE" firstAttribute="top" secondItem="nM9-Cw-fZV" secondAttribute="top" constant="8" id="rLD-uJ-cv9"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FpV-Jg-Kxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -281,7 +282,7 @@ Cg
             <objects>
                 <viewController storyboardIdentifier="AboutPageViewController2" id="3EO-sF-piK" customClass="AboutPage2ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qIU-lF-FLa">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="NYy-jE-JyF">
@@ -532,6 +533,7 @@ Cg
                             <constraint firstItem="NYy-jE-JyF" firstAttribute="top" secondItem="qIU-lF-FLa" secondAttribute="top" constant="59" id="feq-5f-e3y"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Xl-68-CpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -542,7 +544,7 @@ Cg
             <objects>
                 <viewController storyboardIdentifier="AboutPageViewController3" id="p3h-QH-4oL" customClass="AboutPage3ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qAb-bg-W0V">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="XYG-1B-OUK">
@@ -626,6 +628,7 @@ Cg
                             <constraint firstItem="FlD-x2-Zyy" firstAttribute="leading" secondItem="qAb-bg-W0V" secondAttribute="leading" constant="126" id="rTT-ny-yXW"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMa-TC-SYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -636,7 +639,7 @@ Cg
             <objects>
                 <viewController storyboardIdentifier="AboutPageViewController5" id="0yw-aU-K4Y" customClass="AboutPage5ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xPt-X9-PmS">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="4" translatesAutoresizingMaskIntoConstraints="NO" id="YOE-Cw-H4C">
@@ -815,6 +818,7 @@ Cg
                             <constraint firstItem="KMe-Qg-6j2" firstAttribute="leading" secondItem="48R-1f-DYa" secondAttribute="leading" type="default" id="xyo-y5-G3J"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vke-kH-UyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -825,7 +829,7 @@ Cg
             <objects>
                 <viewController id="phC-aJ-NkJ" customClass="aboutPageContainerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g2E-bS-i2T">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -941,7 +945,7 @@ Cg
             <objects>
                 <viewController id="pES-9E-EQ0" customClass="FirstScreenViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yMq-9R-UAB">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" image="Inno-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="oyP-YC-2Dp">
@@ -1051,6 +1055,7 @@ Cg
                             <constraint firstItem="xYP-XQ-Ts3" firstAttribute="bottom" secondItem="xUA-NE-xbH" secondAttribute="bottom" type="default" id="z9j-DW-2Fd"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="button1" destination="dSZ-vD-Rq3" id="YbW-k1-HGl"/>
                         <outlet property="button2" destination="4nB-Ir-rVp" id="EUz-dO-p5E"/>
@@ -1089,7 +1094,7 @@ Cg
             <objects>
                 <viewController storyboardIdentifier="AboutPageViewController4" id="Gf3-Rz-fEF" customClass="AboutPage4ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EQR-fR-96t">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="3" translatesAutoresizingMaskIntoConstraints="NO" id="yYj-9p-vOS">
@@ -1188,6 +1193,7 @@ Cg
                             <constraint firstItem="4vI-Lc-afZ" firstAttribute="top" secondItem="EQR-fR-96t" secondAttribute="top" constant="362" id="mwo-5n-nU6"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ks-Zk-vaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1201,6 +1207,70 @@ Cg
         <image name="logo_fp7.png" width="300" height="142"/>
         <image name="play.png" width="63" height="63"/>
     </resources>
+    <classes>
+        <class className="AboutPage1ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPage1ViewController.h"/>
+        </class>
+        <class className="AboutPage2ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPage2ViewController.h"/>
+        </class>
+        <class className="AboutPage3ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPage3ViewController.h"/>
+        </class>
+        <class className="AboutPage4ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPage4ViewController.h"/>
+        </class>
+        <class className="AboutPage5ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPage5ViewController.h"/>
+        </class>
+        <class className="CustomCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="fieldOfServiceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="subTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="FirstScreenViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstScreenViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="button1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button3" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button4" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="menuTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="aboutPageContainerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/aboutPageContainerViewController.h"/>
+        </class>
+        <class className="iPhoneDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="labelDownloadingVideo" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myProgressBar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="openWebPageToolBarButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="projectImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="projectInformation" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="projectSubTiltle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="projectTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="iPhoneFirstViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneFirstViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="projectsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="iPhoneVideoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iPhoneVideoViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
