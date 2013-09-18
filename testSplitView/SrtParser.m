@@ -34,7 +34,7 @@
     NSString *string = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
 
     if (error) {
-        NSLog(@"%@", [error description]);
+        //NSLog(@"%@", [error description]);
     }
 
     NSScanner *scanner = [NSScanner scannerWithString:string];

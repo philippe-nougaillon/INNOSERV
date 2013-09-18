@@ -114,6 +114,14 @@
             // open Connection
             conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 
+            if (!conn) {
+                // Inform the user that the connection failed.
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"INNOSERV" message:NSLocalizedString(@"networkError", @"") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                [alert show];
+            } else {
+                myProgressBar.hidden = NO;
+                playButton.hidden = YES;
+            }
             return FALSE;
         } else {
             return TRUE;        

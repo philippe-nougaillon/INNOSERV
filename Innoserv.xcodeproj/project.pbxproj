@@ -945,15 +945,15 @@
 		B3B8BBD516C13C8E0019CD28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: RedCom";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: RedCom";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: philippe nougaillon (CV79DX276R)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: philippe nougaillon (CV79DX276R)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testSplitView/Innoserv-Prefix.pch";
 				INFOPLIST_FILE = "testSplitView/Innoserv-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = INNOSERV;
-				PROVISIONING_PROFILE = "36B04568-0811-44BF-9F80-59ACD5F509CD";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "36B04568-0811-44BF-9F80-59ACD5F509CD";
+				PROVISIONING_PROFILE = "30349546-5FDD-42B8-AC13-96DCB83BE8EA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "30349546-5FDD-42B8-AC13-96DCB83BE8EA";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -962,15 +962,15 @@
 		B3B8BBD616C13C8E0019CD28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: RedCom";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: RedCom";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: philippe nougaillon (CV79DX276R)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: philippe nougaillon (CV79DX276R)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testSplitView/Innoserv-Prefix.pch";
 				INFOPLIST_FILE = "testSplitView/Innoserv-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = INNOSERV;
-				PROVISIONING_PROFILE = "36B04568-0811-44BF-9F80-59ACD5F509CD";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "36B04568-0811-44BF-9F80-59ACD5F509CD";
+				PROVISIONING_PROFILE = "30349546-5FDD-42B8-AC13-96DCB83BE8EA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "30349546-5FDD-42B8-AC13-96DCB83BE8EA";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
