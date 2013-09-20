@@ -50,31 +50,29 @@
                                                object:nil];
     
     // Prepare video subtitles
-
+    //
     NSString *srtPath = [[NSBundle mainBundle] pathForResource:self.detailItem.subTitles ofType:@"txt"];
+
     // Parse subtitles
     self.srtParser = [[SrtParser alloc] init];
     [self.srtParser parseSrtFileAtPath:srtPath];
     
     if (self.detailItem) {
-        // where is video file to play ?
-        NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *docsDir = dirPaths[0];
-        
+        // where is project video file to play ?
+        NSString *docsDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
         
         // Build the path to the data file
         if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
             dataFile = [docsDir stringByAppendingPathComponent:
-                    [self.detailItem.videofile stringByAppendingString:@".mp4"]];
+                    [self.detailItem.videofile stringByAppendingString:@"-iPad.mp4"]];
         else
             dataFile = [docsDir stringByAppendingPathComponent:
-                        [self.detailItem.videofile stringByAppendingString:@"-iPad.mp4"]];
-        
+                        [self.detailItem.videofile stringByAppendingString:@".mp4"]];
     } else {
         // show the trailer if no project selected
         dataFile = [[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:@"Trailer_V4-mono.mp4"];
     }
-    // URL to video to play
+    // URL of the video
     url = [NSURL fileURLWithPath:dataFile];
     
 	// setup video view and play
@@ -140,23 +138,35 @@
     [self.view addSubview:myView];
     
     [[NSNotificationCenter defaultCenter] removeObserver:self.moviePlayer
-                                                    name:MPMoviePlayerPlaybackDidFinishNotification
-                                                  object:self.moviePlayer];
+                                                    name:MPMoviePlayerPlaybackDidFinishNotification object:self.moviePlayer];
     
     // Register this class as an observer instead
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(movieFinishedCallback:)
-                                                 name:MPMoviePlayerPlaybackDidFinishNotification
-                                               object:self.moviePlayer];
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification object:self.moviePlayer];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(movieEventFullscreenHandler:)
-                                                 name:MPMoviePlayerWillEnterFullscreenNotification
-                                               object:nil];
-
+                                                 name:MPMoviePlayerWillEnterFullscreenNotification object:self.moviePlayer];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                            selector:@selector(playMovie:)
+                                                 name:MPMoviePlayerLoadStateDidChangeNotification object:self.moviePlayer];
+    //[self.moviePlayer play];
 }
 
 #pragma mark Movie Notification
+
+- (void)playMovie:(NSNotification *)notification {
+    
+    MPMoviePlayerController *player = notification.object;
+    
+    if (player.loadState & MPMovieLoadStatePlayable)
+    {
+        //NSLog(@"Movie is Ready to Play");
+        [player play];
+    }
+}
 
 - (void)movieEventFullscreenHandler:(NSNotification*)notification {
     
@@ -185,7 +195,7 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
     
     // go back to detail view controller
-    [self.navigationController popViewControllerAnimated:YES];
+    //[self.navigationController popViewControllerAnimated:YES];
     
 }
 

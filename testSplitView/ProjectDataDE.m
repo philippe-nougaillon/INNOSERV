@@ -9,7 +9,7 @@
 #import "ProjectDataDE.h"
 #import "ProjectListItem.h"
 
-@implementation ProjectDataDE : NSArray
+@implementation ProjectDataDE
 
 -(NSArray*)init {
     

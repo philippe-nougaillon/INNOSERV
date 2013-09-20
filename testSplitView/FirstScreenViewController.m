@@ -7,6 +7,7 @@
 //
 
 #import "FirstScreenViewController.h"
+#import "AboutPagesViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 
@@ -91,6 +92,13 @@
     [UIView commitAnimations];
     
     introAnimationDone = YES;
+}
+- (IBAction)openAboutButtonPressed:(id)sender {
+    
+    
+    AboutPagesViewController *controller = [[AboutPagesViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (IBAction)openInnoservWebSite:(id)sender {
