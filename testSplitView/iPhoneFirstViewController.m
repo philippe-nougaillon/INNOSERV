@@ -66,6 +66,12 @@
 {
     if ([[segue identifier] isEqualToString:@"openDetailView"]) {
         
+        // get the index of select item
+        UITableViewCell *cell = (UITableViewCell*)sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+        
+        selectedProject = _items[indexPath.row];
+        
         // Get destination view
         iPhoneDetailViewController *vc = [segue destinationViewController];
         
@@ -137,14 +143,7 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    selectedProject = _items[indexPath.row];
-    [self performSegueWithIdentifier:@"openDetailView" sender:self];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-    
-}
-
+/*
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
@@ -166,6 +165,6 @@
         }
     }
 }
-
+*/
 
 @end

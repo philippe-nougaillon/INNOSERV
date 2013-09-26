@@ -43,12 +43,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
   
-    [menuTitle setFont:[UIFont fontWithName:@"Open Sans" size:19]];
+    //[menuTitle setFont:[UIFont fontWithName:@"Open Sans" size:19]];
     
-    [button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    [button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    [button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    [button4.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+    //[button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+   // [button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+   // [button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+   // [button4.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
 
     [button1 setTitle:NSLocalizedString(@"menu_About", @"") forState:UIControlStateNormal];
     [button2 setTitle:NSLocalizedString(@"menu_Trailer", @"") forState:UIControlStateNormal];
