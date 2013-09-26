@@ -81,11 +81,11 @@
     [button3 setTitle:NSLocalizedString(@"menu_About", @"") forState:UIControlStateNormal];
     
     // Set fonts
-    [detailSubtitle setFont:[UIFont fontWithName:@"Open Sans" size:18]];
+    //[detailSubtitle setFont:[UIFont fontWithName:@"Open Sans" size:20]];
     [detailInformation setFont:[UIFont fontWithName:@"Open Sans" size:14]];
-    [button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    [button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    [button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+    //[button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+    //[button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
+    //[button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
    
     // Language ?
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

@@ -76,6 +76,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="innoserv-logoAndPhotos.png" id="y4l-7A-Lv1">
+                                <rect key="frame" x="20" y="98" width="663" height="350"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" id="Ert-ry-jUq">
                                 <rect key="frame" x="20" y="456" width="663" height="292"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -113,21 +117,17 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="European selection of innovative social services" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="gmA-ds-ZyL">
-                                <rect key="frame" x="20" y="47" width="663" height="43"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="European selection of innovative social services" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gmA-ds-ZyL">
+                                <rect key="frame" x="27" y="363" width="656" height="80"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
+                                <color key="shadowColor" red="0.67058825489999996" green="0.09803922474" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                                <size key="shadowOffset" width="1" height="2"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="innoserv-logoAndPhotos.png" id="y4l-7A-Lv1">
-                                <rect key="frame" x="20" y="98" width="663" height="350"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q9Y-jM-8Xa">
-                                <rect key="frame" x="255" y="201" width="192" height="145"/>
+                                <rect key="frame" x="255" y="200" width="192" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="play.png">
@@ -354,10 +354,10 @@
                         <color key="separatorColor" cocoaTouchSystemColor="lightTextColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCustomCell" rowHeight="190" id="ZSw-0O-9Pw" customClass="CustomCell">
-                                <rect key="frame" x="0.0" y="1" width="320" height="190"/>
+                                <rect key="frame" x="0.0" y="45" width="320" height="190"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZSw-0O-9Pw" id="GSa-Pw-spV">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" alpha="0.70000000000000007" tag="101" contentMode="scaleAspectFit" id="dZj-3q-Cub">
@@ -390,6 +390,7 @@
                                             <size key="shadowOffset" width="1" height="2"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
@@ -403,7 +404,7 @@
                     <navigationItem key="navigationItem" title="INNOSERV Videos" id="7ir-4f-N24">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="Wir-gY-xDF">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="R27-s4-Alc">
-                                <rect key="frame" x="295" y="12" width="22" height="22"/>
+                                <rect key="frame" x="282" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">

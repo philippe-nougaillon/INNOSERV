@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901967050000002" green="0.92549026010000002" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="tuH-yX-MGL">
@@ -60,7 +60,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
                         </subviews>
-                        <color key="backgroundColor" red="0.94901967050000002" green="0.92549026010000002" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.94901967050000002" green="0.91764712329999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="oE2-1J-iyX"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -89,7 +89,6 @@
                     <view key="view" contentMode="scaleToFill" id="ki6-YD-SJu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.94901967050000002" green="0.92549026010000002" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="BBU-VW-x4F"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -600,14 +599,14 @@ Cg
                                 <color key="pageIndicatorTintColor" red="0.67058825489999996" green="0.0078431377190000002" blue="0.22352942819999999" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="innoServLogo2forIPADNoRetina.png" translatesAutoresizingMaskIntoConstraints="NO" id="OLY-WJ-Urv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="innoServLogo2forIPADNoRetina.png" translatesAutoresizingMaskIntoConstraints="NO" id="OLY-WJ-Urv">
                                 <rect key="frame" x="4" y="31" width="92" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="Xtx-hb-E6j"/>
                                     <constraint firstAttribute="width" constant="92" id="xbO-wT-xVg"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Social platform on Innovative Social Services" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="245" translatesAutoresizingMaskIntoConstraints="NO" id="2IF-67-20t">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Social platform on Innovative Social Services" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="245" translatesAutoresizingMaskIntoConstraints="NO" id="2IF-67-20t">
                                 <rect key="frame" x="79" y="31" width="245" height="58"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -625,9 +624,9 @@ Cg
                             <constraint firstItem="OLY-WJ-Urv" firstAttribute="bottom" secondItem="2IF-67-20t" secondAttribute="bottom" id="Deu-GO-zKl"/>
                             <constraint firstItem="XYG-1B-OUK" firstAttribute="top" secondItem="qAb-bg-W0V" secondAttribute="top" constant="97" id="alC-h1-mYY"/>
                             <constraint firstItem="OLY-WJ-Urv" firstAttribute="top" secondItem="2IF-67-20t" secondAttribute="top" id="jAB-dF-D9j"/>
-                            <constraint firstAttribute="trailing" secondItem="2IF-67-20t" secondAttribute="trailing" id="kv3-AM-Fug"/>
+                            <constraint firstAttribute="trailing" secondItem="2IF-67-20t" secondAttribute="trailing" constant="-4" id="kv3-AM-Fug"/>
                             <constraint firstItem="FlD-x2-Zyy" firstAttribute="leading" secondItem="qAb-bg-W0V" secondAttribute="leading" constant="126" id="rTT-ny-yXW"/>
-                            <constraint firstItem="OLY-WJ-Urv" firstAttribute="leading" secondItem="qAb-bg-W0V" secondAttribute="leading" id="t0x-Tz-6wK"/>
+                            <constraint firstItem="OLY-WJ-Urv" firstAttribute="leading" secondItem="qAb-bg-W0V" secondAttribute="leading" constant="4" id="t0x-Tz-6wK"/>
                             <constraint firstItem="XYG-1B-OUK" firstAttribute="top" secondItem="2IF-67-20t" secondAttribute="bottom" constant="8" symbolic="YES" id="u1z-0h-Gvt"/>
                         </constraints>
                     </view>
@@ -662,13 +661,11 @@ Cg
                                 <items>
                                     <barButtonItem width="249" style="plain" systemItem="fixedSpace" id="EeC-jv-Xgp"/>
                                     <barButtonItem style="plain" systemItem="done" id="GI6-nF-F1m">
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="pES-9E-EQ0" kind="modal" id="CD8-js-9q6"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="tintColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="293" translatesAutoresizingMaskIntoConstraints="NO" id="KMe-Qg-6j2">
                                 <rect key="frame" x="13" y="79" width="293" height="165"/>
@@ -954,10 +951,10 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" image="Inno-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="oyP-YC-2Dp">
-                                <rect key="frame" x="0.0" y="56" width="320" height="424"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" image="Inno-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="oyP-YC-2Dp">
+                                <rect key="frame" x="0.0" y="90" width="320" height="390"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="424" id="bsU-VH-BKF"/>
+                                    <constraint firstAttribute="height" constant="390" id="bsU-VH-BKF"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" alpha="0.80000000000000004" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dSZ-vD-Rq3">
@@ -1024,14 +1021,14 @@ Cg
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="innoServLogo2forIPADNoRetina.png" translatesAutoresizingMaskIntoConstraints="NO" id="xYP-XQ-Ts3">
-                                <rect key="frame" x="0.0" y="8" width="92" height="58"/>
+                                <rect key="frame" x="4" y="31" width="92" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="92" id="iuT-jW-V72"/>
                                     <constraint firstAttribute="height" constant="58" id="p0Y-QN-n9P"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Social platform on Innovative Social Services" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="245" translatesAutoresizingMaskIntoConstraints="NO" id="xUA-NE-xbH">
-                                <rect key="frame" x="75" y="8" width="245" height="58"/>
+                                <rect key="frame" x="79" y="31" width="245" height="58"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="245" id="sNg-xv-9Ds"/>
@@ -1041,13 +1038,13 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.94901967050000002" green="0.91764712329999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="xYP-XQ-Ts3" firstAttribute="top" secondItem="yMq-9R-UAB" secondAttribute="top" constant="8" id="1tW-k2-FAW"/>
+                            <constraint firstItem="xYP-XQ-Ts3" firstAttribute="top" secondItem="yMq-9R-UAB" secondAttribute="top" constant="31" id="1tW-k2-FAW"/>
                             <constraint firstItem="oyP-YC-2Dp" firstAttribute="bottom" secondItem="yMq-9R-UAB" secondAttribute="bottom" id="6K1-tY-J3f"/>
                             <constraint firstItem="xYP-XQ-Ts3" firstAttribute="top" secondItem="xUA-NE-xbH" secondAttribute="top" id="8pV-cc-07e"/>
                             <constraint firstItem="1mC-so-7cY" firstAttribute="top" secondItem="4nB-Ir-rVp" secondAttribute="bottom" constant="8" symbolic="YES" id="DOQ-XU-Pjb"/>
-                            <constraint firstItem="xUA-NE-xbH" firstAttribute="trailing" secondItem="yMq-9R-UAB" secondAttribute="trailing" id="ES3-sH-k2d"/>
+                            <constraint firstItem="xUA-NE-xbH" firstAttribute="trailing" secondItem="yMq-9R-UAB" secondAttribute="trailing" constant="4" id="ES3-sH-k2d"/>
                             <constraint firstAttribute="trailing" secondItem="4nB-Ir-rVp" secondAttribute="trailing" constant="20" symbolic="YES" id="IdK-hU-t7x"/>
                             <constraint firstItem="4nB-Ir-rVp" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" id="Pe3-XX-FdJ"/>
                             <constraint firstItem="CQa-B1-kYn" firstAttribute="height" secondItem="dSZ-vD-Rq3" secondAttribute="height" id="SLl-1Q-piA"/>
@@ -1060,7 +1057,7 @@ Cg
                             <constraint firstItem="oyP-YC-2Dp" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" id="jeo-6x-Vcu"/>
                             <constraint firstAttribute="trailing" secondItem="1mC-so-7cY" secondAttribute="trailing" constant="20" symbolic="YES" id="oS6-sr-8le"/>
                             <constraint firstAttribute="bottom" secondItem="dSZ-vD-Rq3" secondAttribute="bottom" constant="160" id="qcf-ZC-Tmb"/>
-                            <constraint firstItem="xYP-XQ-Ts3" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" id="rWa-na-uEO"/>
+                            <constraint firstItem="xYP-XQ-Ts3" firstAttribute="leading" secondItem="yMq-9R-UAB" secondAttribute="leading" constant="4" id="rWa-na-uEO"/>
                             <constraint firstAttribute="trailing" secondItem="CQa-B1-kYn" secondAttribute="trailing" constant="20" symbolic="YES" id="sz2-Ty-een"/>
                             <constraint firstAttribute="bottom" secondItem="CQa-B1-kYn" secondAttribute="bottom" constant="6" id="tTq-MA-El3"/>
                             <constraint firstItem="CQa-B1-kYn" firstAttribute="height" secondItem="4nB-Ir-rVp" secondAttribute="height" id="wxJ-tI-LL1"/>
@@ -1200,14 +1197,14 @@ Cg
                                     <constraint firstAttribute="width" constant="105" id="IrZ-pm-iyw"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="innoServLogo2forIPADNoRetina.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMG-lZ-VGL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="innoServLogo2forIPADNoRetina.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMG-lZ-VGL">
                                 <rect key="frame" x="4" y="31" width="92" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="92" id="Wzw-cy-abU"/>
                                     <constraint firstAttribute="height" constant="58" id="dTm-pV-QJf"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Social platform on Innovative Social Services" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="245" translatesAutoresizingMaskIntoConstraints="NO" id="8eV-SV-hw6">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Social platform on Innovative Social Services" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="245" translatesAutoresizingMaskIntoConstraints="NO" id="8eV-SV-hw6">
                                 <rect key="frame" x="79" y="31" width="245" height="58"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1230,10 +1227,10 @@ Cg
                             <constraint firstItem="AOs-tj-Hwf" firstAttribute="top" secondItem="8eV-SV-hw6" secondAttribute="bottom" constant="8" symbolic="YES" id="O3b-p2-JXU"/>
                             <constraint firstItem="u04-gN-mvI" firstAttribute="leading" secondItem="EQR-fR-96t" secondAttribute="leading" constant="114" id="XSx-Ss-bIZ"/>
                             <constraint firstItem="u04-gN-mvI" firstAttribute="bottom" secondItem="4vI-Lc-afZ" secondAttribute="bottom" id="bQ2-Nr-uHw"/>
-                            <constraint firstAttribute="trailing" secondItem="8eV-SV-hw6" secondAttribute="trailing" id="bjY-T3-Vpd"/>
+                            <constraint firstAttribute="trailing" secondItem="8eV-SV-hw6" secondAttribute="trailing" constant="-4" id="bjY-T3-Vpd"/>
                             <constraint firstItem="AOs-tj-Hwf" firstAttribute="top" secondItem="EQR-fR-96t" secondAttribute="top" constant="97" id="lPo-7v-MIU"/>
                             <constraint firstItem="4vI-Lc-afZ" firstAttribute="top" secondItem="EQR-fR-96t" secondAttribute="top" constant="368" id="mwo-5n-nU6"/>
-                            <constraint firstItem="JMG-lZ-VGL" firstAttribute="leading" secondItem="EQR-fR-96t" secondAttribute="leading" id="q8D-Mr-jLw"/>
+                            <constraint firstItem="JMG-lZ-VGL" firstAttribute="leading" secondItem="EQR-fR-96t" secondAttribute="leading" constant="4" id="q8D-Mr-jLw"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -1246,10 +1243,6 @@ Cg
     <resources>
         <image name="Inno-background.png" width="241" height="326"/>
         <image name="flagge_eu_small.png" width="300" height="200"/>
-        <image name="innoServLogo2forIPADNoRetina.png" width="72" height="72"/>
-        <image name="innoServLogo2forIPADNoRetina.png" width="72" height="72"/>
-        <image name="innoServLogo2forIPADNoRetina.png" width="72" height="72"/>
-        <image name="innoServLogo2forIPADNoRetina.png" width="72" height="72"/>
         <image name="innoServLogo2forIPADNoRetina.png" width="72" height="72"/>
         <image name="logo_fp7.png" width="300" height="142"/>
         <image name="play.png" width="63" height="63"/>
