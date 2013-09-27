@@ -11,11 +11,14 @@
 
 @implementation ProjectDataDE
 
--(NSArray*)init {
+-(NSArray *)init {
     
     self = [super init];
+    
     if (self) {
+        
         self = [NSArray arrayWithObjects:
+                
                 [[ProjectListItem alloc] initWithValues:@"Ammerudhjemmet"
                                             description:@"Das Modell eines offenen Pflegeheims"
                                                   image:@"Ammerud4-2"

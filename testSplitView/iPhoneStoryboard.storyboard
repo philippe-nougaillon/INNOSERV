@@ -1134,7 +1134,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">With the new social platform we hope to assess the latest trends in research and practice, identify knowledge gaps and stimulate research inquiry. The idea is to discuss which service offerings in Europe are innovative and what future scenarios should be envisaged.</mutableString>
+                                        <string key="content">With the new social platform we hope to assess the latest trends in research and practice, identify knowledge gaps and stimulate research inquiry. The idea is to discuss which service offerings in Europe are innovative and what future scenarios should be envisaged.</string>
                                         <attributes>
                                             <font key="NSFont" size="15" name="HelveticaNeue-Italic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">

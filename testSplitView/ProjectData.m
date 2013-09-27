@@ -11,11 +11,12 @@
 
 @implementation ProjectData
 
--(NSArray*)init {
+-(NSArray *)init {
     
     self = [super init];
     if (self) {
         self = [NSArray arrayWithObjects:
+                
             [[ProjectListItem alloc] initWithValues:@"Ammerudhjemmet"
                                         description:@"Care for older people in a community setting"
                                               image:@"Ammerud4-2"

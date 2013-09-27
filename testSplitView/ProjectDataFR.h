@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProjectDataArray.h"
 
-@interface ProjectDataFR : NSArray
+@interface ProjectDataFR : ProjectDataArray
 
 @end

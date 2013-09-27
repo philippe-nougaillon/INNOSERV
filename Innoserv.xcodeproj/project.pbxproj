@@ -114,6 +114,7 @@
 		B3B8BBD116C13C8E0019CD28 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBD016C13C8E0019CD28 /* DetailViewController.m */; };
 		B3B8BBD916C1424A0019CD28 /* ProjectListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBD816C1424A0019CD28 /* ProjectListItem.m */; };
 		B3B8BBDC16C160A70019CD28 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBDB16C160A70019CD28 /* CustomCell.m */; };
+		B3DFA4D417F57FBA00C9D4D7 /* ProjectDataArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DFA4D317F57FBA00C9D4D7 /* ProjectDataArray.m */; };
 		B3F249F917C7C47D00213A7D /* iPhoneVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F249F817C7C47C00213A7D /* iPhoneVideoViewController.m */; };
 		B3F7C4EB17CCD92A00EAEF1E /* AboutPage3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F7C4EA17CCD92A00EAEF1E /* AboutPage3ViewController.m */; };
 		B3F7C4EE17CCD94D00EAEF1E /* AboutPage4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F7C4ED17CCD94D00EAEF1E /* AboutPage4ViewController.m */; };
@@ -280,6 +281,8 @@
 		B3B8BBD816C1424A0019CD28 /* ProjectListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListItem.m; sourceTree = "<group>"; };
 		B3B8BBDA16C160A70019CD28 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		B3B8BBDB16C160A70019CD28 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		B3DFA4D217F57FBA00C9D4D7 /* ProjectDataArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataArray.h; sourceTree = "<group>"; };
+		B3DFA4D317F57FBA00C9D4D7 /* ProjectDataArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataArray.m; sourceTree = "<group>"; };
 		B3F249F717C7C47C00213A7D /* iPhoneVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneVideoViewController.h; sourceTree = "<group>"; };
 		B3F249F817C7C47C00213A7D /* iPhoneVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneVideoViewController.m; sourceTree = "<group>"; };
 		B3F7C4E917CCD92A00EAEF1E /* AboutPage3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage3ViewController.h; sourceTree = "<group>"; };
@@ -497,6 +500,8 @@
 				B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */,
 				B31E335317CDFD5300B61B25 /* ProjectDataDE.h */,
 				B31E335417CDFD5300B61B25 /* ProjectDataDE.m */,
+				B3DFA4D217F57FBA00C9D4D7 /* ProjectDataArray.h */,
+				B3DFA4D317F57FBA00C9D4D7 /* ProjectDataArray.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -814,6 +819,7 @@
 				B3996A0F16DCFD9900BC65DC /* iPhoneFirstViewController.m in Sources */,
 				B32E2CD31714A17D00F17039 /* iPhoneDetailViewController.m in Sources */,
 				B37077651727E80A009946A9 /* iPadMorePageViewController.m in Sources */,
+				B3DFA4D417F57FBA00C9D4D7 /* ProjectDataArray.m in Sources */,
 				B370776817280D7F009946A9 /* iPadAboutViewController.m in Sources */,
 				B304131617C237810032150C /* ProjectData.m in Sources */,
 				B32F5AEE17C39D5000D46EE1 /* SrtData.m in Sources */,
