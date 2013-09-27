@@ -53,12 +53,10 @@
 		B30E570116D28D15000821DD /* placedebleu3a-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E56FF16D28D14000821DD /* placedebleu3a-2.png */; };
 		B319004716F3387E003D479B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B319004616F3387E003D479B /* MediaPlayer.framework */; };
 		B319005016F36EEB003D479B /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B319004F16F36EEB003D479B /* play.png */; };
-		B31E335517CDFD5300B61B25 /* ProjectDataDE.m in Sources */ = {isa = PBXBuildFile; fileRef = B31E335417CDFD5300B61B25 /* ProjectDataDE.m */; };
 		B32E2CD31714A17D00F17039 /* iPhoneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B32E2CD21714A17D00F17039 /* iPhoneDetailViewController.m */; };
 		B32F5AEE17C39D5000D46EE1 /* SrtData.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F5AEB17C39D5000D46EE1 /* SrtData.m */; };
 		B32F5AEF17C39D5000D46EE1 /* SrtParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B32F5AED17C39D5000D46EE1 /* SrtParser.m */; };
 		B33B373717CCEDE500DA57D9 /* Inno-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B33B373517CCEDE500DA57D9 /* Inno-background.png */; };
-		B33DDECE17C4B42E005C0D15 /* ProjectDataFR.m in Sources */ = {isa = PBXBuildFile; fileRef = B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */; };
 		B34921DF17D9E79400E8577B /* logo_fp7.png in Resources */ = {isa = PBXBuildFile; fileRef = B34921DE17D9E79400E8577B /* logo_fp7.png */; };
 		B34921E117D9EC5000E8577B /* flagge_eu_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B34921E017D9EC5000E8577B /* flagge_eu_small.png */; };
 		B3597C5D17E72D8800D429C4 /* Trailer_V4-mono.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3597C5C17E72D8800D429C4 /* Trailer_V4-mono.mp4 */; };
@@ -114,7 +112,6 @@
 		B3B8BBD116C13C8E0019CD28 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBD016C13C8E0019CD28 /* DetailViewController.m */; };
 		B3B8BBD916C1424A0019CD28 /* ProjectListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBD816C1424A0019CD28 /* ProjectListItem.m */; };
 		B3B8BBDC16C160A70019CD28 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8BBDB16C160A70019CD28 /* CustomCell.m */; };
-		B3DFA4D417F57FBA00C9D4D7 /* ProjectDataArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DFA4D317F57FBA00C9D4D7 /* ProjectDataArray.m */; };
 		B3F249F917C7C47D00213A7D /* iPhoneVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F249F817C7C47C00213A7D /* iPhoneVideoViewController.m */; };
 		B3F7C4EB17CCD92A00EAEF1E /* AboutPage3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F7C4EA17CCD92A00EAEF1E /* AboutPage3ViewController.m */; };
 		B3F7C4EE17CCD94D00EAEF1E /* AboutPage4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F7C4ED17CCD94D00EAEF1E /* AboutPage4ViewController.m */; };
@@ -197,8 +194,6 @@
 		B30E56FF16D28D14000821DD /* placedebleu3a-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placedebleu3a-2.png"; sourceTree = "<group>"; };
 		B319004616F3387E003D479B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B319004F16F36EEB003D479B /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		B31E335317CDFD5300B61B25 /* ProjectDataDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataDE.h; sourceTree = "<group>"; };
-		B31E335417CDFD5300B61B25 /* ProjectDataDE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataDE.m; sourceTree = "<group>"; };
 		B31E335617CE21D900B61B25 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B31E335717CE21DA00B61B25 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B32E2CD11714A17D00F17039 /* iPhoneDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneDetailViewController.h; sourceTree = "<group>"; };
@@ -208,8 +203,6 @@
 		B32F5AEC17C39D5000D46EE1 /* SrtParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SrtParser.h; sourceTree = "<group>"; };
 		B32F5AED17C39D5000D46EE1 /* SrtParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SrtParser.m; sourceTree = "<group>"; };
 		B33B373517CCEDE500DA57D9 /* Inno-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inno-background.png"; sourceTree = "<group>"; };
-		B33DDECC17C4B42E005C0D15 /* ProjectDataFR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataFR.h; sourceTree = "<group>"; };
-		B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataFR.m; sourceTree = "<group>"; };
 		B34921DE17D9E79400E8577B /* logo_fp7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_fp7.png; sourceTree = "<group>"; };
 		B34921E017D9EC5000E8577B /* flagge_eu_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagge_eu_small.png; sourceTree = "<group>"; };
 		B3597C5C17E72D8800D429C4 /* Trailer_V4-mono.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trailer_V4-mono.mp4"; sourceTree = "<group>"; };
@@ -281,8 +274,6 @@
 		B3B8BBD816C1424A0019CD28 /* ProjectListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListItem.m; sourceTree = "<group>"; };
 		B3B8BBDA16C160A70019CD28 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		B3B8BBDB16C160A70019CD28 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
-		B3DFA4D217F57FBA00C9D4D7 /* ProjectDataArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataArray.h; sourceTree = "<group>"; };
-		B3DFA4D317F57FBA00C9D4D7 /* ProjectDataArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataArray.m; sourceTree = "<group>"; };
 		B3F249F717C7C47C00213A7D /* iPhoneVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneVideoViewController.h; sourceTree = "<group>"; };
 		B3F249F817C7C47C00213A7D /* iPhoneVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneVideoViewController.m; sourceTree = "<group>"; };
 		B3F7C4E917CCD92A00EAEF1E /* AboutPage3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage3ViewController.h; sourceTree = "<group>"; };
@@ -496,12 +487,6 @@
 				B3B8BBD816C1424A0019CD28 /* ProjectListItem.m */,
 				B304131417C237800032150C /* ProjectData.h */,
 				B304131517C237800032150C /* ProjectData.m */,
-				B33DDECC17C4B42E005C0D15 /* ProjectDataFR.h */,
-				B33DDECD17C4B42E005C0D15 /* ProjectDataFR.m */,
-				B31E335317CDFD5300B61B25 /* ProjectDataDE.h */,
-				B31E335417CDFD5300B61B25 /* ProjectDataDE.m */,
-				B3DFA4D217F57FBA00C9D4D7 /* ProjectDataArray.h */,
-				B3DFA4D317F57FBA00C9D4D7 /* ProjectDataArray.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -819,12 +804,10 @@
 				B3996A0F16DCFD9900BC65DC /* iPhoneFirstViewController.m in Sources */,
 				B32E2CD31714A17D00F17039 /* iPhoneDetailViewController.m in Sources */,
 				B37077651727E80A009946A9 /* iPadMorePageViewController.m in Sources */,
-				B3DFA4D417F57FBA00C9D4D7 /* ProjectDataArray.m in Sources */,
 				B370776817280D7F009946A9 /* iPadAboutViewController.m in Sources */,
 				B304131617C237810032150C /* ProjectData.m in Sources */,
 				B32F5AEE17C39D5000D46EE1 /* SrtData.m in Sources */,
 				B32F5AEF17C39D5000D46EE1 /* SrtParser.m in Sources */,
-				B33DDECE17C4B42E005C0D15 /* ProjectDataFR.m in Sources */,
 				B3F249F917C7C47D00213A7D /* iPhoneVideoViewController.m in Sources */,
 				B3FB6F5A17CB55CD00D22288 /* FirstScreenViewController.m in Sources */,
 				B3FB6F6117CBB4F200D22288 /* AboutPagesViewController.m in Sources */,
@@ -833,7 +816,6 @@
 				B3FB6F9F17CBE04300D22288 /* aboutPageContainerViewController.m in Sources */,
 				B3F7C4EB17CCD92A00EAEF1E /* AboutPage3ViewController.m in Sources */,
 				B3F7C4EE17CCD94D00EAEF1E /* AboutPage4ViewController.m in Sources */,
-				B31E335517CDFD5300B61B25 /* ProjectDataDE.m in Sources */,
 				B36C3EEC17D8BDA900C9A003 /* AboutPage5ViewController.m in Sources */,
 				B35E289117E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.m in Sources */,
 				B35E289417E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.m in Sources */,

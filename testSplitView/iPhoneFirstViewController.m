@@ -9,8 +9,6 @@
 #import "iPhoneFirstViewController.h"
 #import "iPhoneDetailViewController.h"
 #import "ProjectData.h"
-#import "ProjectDataFR.h"
-#import "ProjectDataDE.h"
 #import "ProjectListItem.h"
 #import "CustomCell.h"
 
@@ -43,16 +41,9 @@
     NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
     langueCourante = [langues objectAtIndex:0];
     
-    //NSLog(@"langue: %@",langueCourante);
-    
     // Load items for appropriate language
-    if ([langueCourante isEqualToString:@"fr"]) {
-        _items = [[ProjectDataFR alloc] init];
-    } else if ([langueCourante isEqualToString:@"de"]) {
-        _items = [[ProjectDataDE alloc] init];
-    } else {
-        _items = [[ProjectData alloc] init];
-    }
+    _items = [[[ProjectData alloc] initWithLanguageCode:langueCourante] informations];
+
 }
 
 - (IBAction)backToMenuButtonTapped:(id)sender {

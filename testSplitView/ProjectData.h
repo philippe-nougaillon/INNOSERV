@@ -10,4 +10,8 @@
 
 @interface ProjectData : NSArray
 
+@property (strong, nonatomic) NSArray *informations;
+
+-(ProjectData *)initWithLanguageCode:(NSString *)lang;
+
 @end
