@@ -75,17 +75,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // Localize
-    //openWebPageButton.title = NSLocalizedString(@"Website", @"");
     [button1 setTitle:NSLocalizedString(@"menu_Trailer", @"") forState:UIControlStateNormal];
     [button2 setTitle:NSLocalizedString(@"menu_www", @"") forState:UIControlStateNormal];
     [button3 setTitle:NSLocalizedString(@"menu_About", @"") forState:UIControlStateNormal];
     
     // Set fonts
-    //[detailSubtitle setFont:[UIFont fontWithName:@"Open Sans" size:20]];
     [detailInformation setFont:[UIFont fontWithName:@"Open Sans" size:14]];
-    //[button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    //[button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    //[button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
    
     // Language ?
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -257,6 +252,7 @@
     
     // update interface
     myProgressBar.hidden = YES;
+    myProgressBar.progress = 0;
     playButton.hidden = NO;
     activeDownload = nil;
     conn = nil;

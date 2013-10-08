@@ -329,6 +329,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AE478BE1803FC7E00C8CD7E /* aboutPages */ = {
+			isa = PBXGroup;
+			children = (
+				B35E289817E1E87800D4E2B0 /* AboutPagesContainerIPADViewController.h */,
+				B35E289917E1E87900D4E2B0 /* AboutPagesContainerIPADViewController.m */,
+				B35E289517E1E79000D4E2B0 /* AboutPagesIPAD0ViewController.h */,
+				B35E289617E1E79000D4E2B0 /* AboutPagesIPAD0ViewController.m */,
+				B35E288F17E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.h */,
+				B35E289017E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.m */,
+				B35E289217E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.h */,
+				B35E289317E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.m */,
+			);
+			name = aboutPages;
+			sourceTree = "<group>";
+		};
 		B304130A17C219330032150C /* Controllers(iPhone) */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,14 +373,7 @@
 				B37077641727E80A009946A9 /* iPadMorePageViewController.m */,
 				B370776617280D7F009946A9 /* iPadAboutViewController.h */,
 				B370776717280D7F009946A9 /* iPadAboutViewController.m */,
-				B35E289817E1E87800D4E2B0 /* AboutPagesContainerIPADViewController.h */,
-				B35E289917E1E87900D4E2B0 /* AboutPagesContainerIPADViewController.m */,
-				B35E289517E1E79000D4E2B0 /* AboutPagesIPAD0ViewController.h */,
-				B35E289617E1E79000D4E2B0 /* AboutPagesIPAD0ViewController.m */,
-				B35E288F17E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.h */,
-				B35E289017E1E74700D4E2B0 /* AboutPagesIPAD1ViewController.m */,
-				B35E289217E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.h */,
-				B35E289317E1E76C00D4E2B0 /* AboutPagesIPAD2ViewController.m */,
+				4AE478BE1803FC7E00C8CD7E /* aboutPages */,
 			);
 			name = "Controllers(iPad)";
 			sourceTree = "<group>";
