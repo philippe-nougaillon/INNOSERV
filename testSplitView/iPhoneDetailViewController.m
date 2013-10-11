@@ -13,13 +13,11 @@
 {
     NSString *langueCourante;
     
-    __weak IBOutlet UIBarButtonItem *openWebPageToolBarButton;
     __weak IBOutlet UILabel *projectSubTiltle;
     __weak IBOutlet UITextView *projectInformation;
     __weak IBOutlet UIImageView *projectImage;
     __weak IBOutlet UIProgressView *myProgressBar;
     __weak IBOutlet UILabel *labelDownloadingVideo;
-    __weak IBOutlet UILabel *projectTitle;
     __weak IBOutlet UIButton *playButton;
     
     NSMutableData *activeDownload;
@@ -50,28 +48,12 @@
 	// Do any additional setup after loading the view.
     if (self.detailItem) {
         // set project values
-        projectTitle.text = self.detailItem.title;
         projectSubTiltle.text = self.detailItem.description;
         projectInformation.text = self.detailItem.information;
         
         // project image
         NSString *imageFileName = [self.detailItem.image stringByAppendingString:@"-big.png"];
         projectImage.image = [UIImage imageNamed:imageFileName];
-        
-        // if website > show info button
-        if ([self.detailItem.website isEqualToString:@""])
-            openWebPageToolBarButton.enabled = NO;
-        else
-            openWebPageToolBarButton.enabled = YES;
-    }
-}
-
-- (IBAction)openWebPagePressed:(id)sender {
-    
-    if (self.detailItem) {
-        
-        NSString *webPageLink = self.detailItem.website;
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:webPageLink]];
     }
 }
 
