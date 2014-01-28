@@ -114,7 +114,8 @@
         } else {
             // iPhone
             if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
-                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, 480, 40)];
+                CGSize deviceBounds = [[UIScreen mainScreen] bounds].size;
+                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, deviceBounds.height, 40)];
                 self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
             } else {
                 self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 350, 320, 60)];
@@ -224,7 +225,9 @@
         myView.frame =  self.view.bounds;
         self.moviePlayer.view.frame = myView.bounds;
         if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
-            self.subtitleLabel.frame = CGRectMake(0, 240, 480, 40);
+            // Todo: adjust size for iPhone5
+            CGSize deviceBounds = [[UIScreen mainScreen] bounds].size;
+            self.subtitleLabel.frame = CGRectMake(0, 240, deviceBounds.height, 40);
             self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
         } else {
             self.subtitleLabel.frame = CGRectMake(0, 350, 320, 60);
