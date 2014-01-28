@@ -21,7 +21,7 @@
                                 <rect key="frame" x="20" y="267" width="280" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901967050000002" green="0.92549026010000002" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque </mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque </string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -59,12 +59,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94901967050000002" green="0.91764712329999998" blue="0.7607843876" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oE2-1J-iyX"/>
+                    <navigationItem key="navigationItem" id="oE2-1J-iyX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="E4W-6T-c9b">
+                            <connections>
+                                <action selector="openWebsite:" destination="PTP-Jg-Ixh" id="vKf-bK-EwT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="labelDownloadingVideo" destination="mBw-4Q-4oO" id="kes-j4-ab8"/>
                         <outlet property="myProgressBar" destination="xnR-V3-Kos" id="tLY-NQ-29p"/>
+                        <outlet property="openWebsiteButton" destination="E4W-6T-c9b" id="sOd-BM-DKG"/>
                         <outlet property="playButton" destination="mOf-HT-6Q5" id="lQu-vw-U08"/>
                         <outlet property="projectImage" destination="Rbo-s3-fOo" id="moi-Uk-0bk"/>
                         <outlet property="projectInformation" destination="bC1-Vz-n7q" id="dpC-eI-EGo"/>
@@ -142,8 +149,8 @@ Cg
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qJH-4L-qqr">
                                 <rect key="frame" x="16" y="160" width="284" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">INNOSERV is a project developing an EU wide research agenda to evaluate innovation in the field of social services (especially for health, education and welfare services). This will help define future research activities. 
-INNOSERV responds to the FP7-Cooperation call FP7- SSH-2011-3 for a ‘support action concerning a social platform on innovative social services.’</mutableString>
+                                <string key="text">INNOSERV is a project developing an EU wide research agenda to evaluate innovation in the field of social services (especially for health, education and welfare services). This will help define future research activities. 
+INNOSERV responds to the FP7-Cooperation call FP7- SSH-2011-3 for a ‘support action concerning a social platform on innovative social services.’</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -892,7 +899,7 @@ Anika Strifler Ruprecht-Karls-Universität Heidelberg Diakoniewissenschaftliches
                                 <rect key="frame" x="20" y="97" width="280" height="275"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">“With the new social platform we hope to assess the latest trends in research and practice, identify knowledge gaps and stimulate research inquiry. The idea is to discuss which service offerings in Europe are innovative and what future scenarios should be envisaged.”</mutableString>
+                                        <string key="content">“With the new social platform we hope to assess the latest trends in research and practice, identify knowledge gaps and stimulate research inquiry. The idea is to discuss which service offerings in Europe are innovative and what future scenarios should be envisaged.”</string>
                                         <attributes>
                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">

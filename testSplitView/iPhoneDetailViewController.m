@@ -19,6 +19,7 @@
     __weak IBOutlet UIProgressView *myProgressBar;
     __weak IBOutlet UILabel *labelDownloadingVideo;
     __weak IBOutlet UIButton *playButton;
+    __weak IBOutlet UIBarButtonItem *openWebsiteButton;
     
     NSMutableData *activeDownload;
     NSURLConnection *conn;
@@ -54,6 +55,8 @@
         // project image
         NSString *imageFileName = [self.detailItem.image stringByAppendingString:@"-big.png"];
         projectImage.image = [UIImage imageNamed:imageFileName];
+        [openWebsiteButton setEnabled:![self.detailItem.website isEqualToString:@""]];
+        
     }
 }
 
@@ -112,6 +115,16 @@
     return TRUE;
 }
 
+- (IBAction)openWebsite:(id)sender {
+    
+    NSString* link = self.detailItem.website;
+    
+    if (![link isEqualToString:@""]) {
+        // open webpage
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:link]];
+    }
+    
+}
 
 // This will get called too before the view appears
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
