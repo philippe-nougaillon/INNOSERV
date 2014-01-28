@@ -121,18 +121,18 @@
 		B3FB6F6717CBB62C00D22288 /* AboutPage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FB6F6617CBB62C00D22288 /* AboutPage2ViewController.m */; };
 		B3FB6F9F17CBE04300D22288 /* aboutPageContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FB6F9E17CBE04300D22288 /* aboutPageContainerViewController.m */; };
 		B3FC973F17DCF164008E0D7C /* ECC_subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC972B17DCF164008E0D7C /* ECC_subtitle_EN.txt */; };
-		B3FC974017DCF164008E0D7C /* ammerud_subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC972C17DCF164008E0D7C /* ammerud_subtitle_EN.txt */; };
+		B3FC974017DCF164008E0D7C /* ammerud-subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC972C17DCF164008E0D7C /* ammerud-subtitle_EN.txt */; };
 		B3FC974117DCF164008E0D7C /* Irre Menschlich_subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC972D17DCF164008E0D7C /* Irre Menschlich_subtitle_EN.txt */; };
 		B3FC974217DCF164008E0D7C /* Katymar_subtitle2_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC972E17DCF164008E0D7C /* Katymar_subtitle2_EN.txt */; };
 		B3FC974317DCF164008E0D7C /* ESD-subtitle2_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC972F17DCF164008E0D7C /* ESD-subtitle2_EN.txt */; };
 		B3FC974417DCF164008E0D7C /* residenzialita leg_subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973017DCF164008E0D7C /* residenzialita leg_subtitle_EN.txt */; };
 		B3FC974517DCF164008E0D7C /* Vitality_subtitle2_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973117DCF164008E0D7C /* Vitality_subtitle2_EN.txt */; };
 		B3FC974617DCF164008E0D7C /* Seclin_subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973217DCF164008E0D7C /* Seclin_subtitle_EN.txt */; };
-		B3FC974717DCF164008E0D7C /* Abitare_Subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973317DCF164008E0D7C /* Abitare_Subtitle_EN.txt */; };
+		B3FC974717DCF164008E0D7C /* Abitare-Subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973317DCF164008E0D7C /* Abitare-Subtitle_EN.txt */; };
 		B3FC974817DCF164008E0D7C /* KYOH_subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973417DCF164008E0D7C /* KYOH_subtitle_EN.txt */; };
 		B3FC974917DCF164008E0D7C /* ELTERN-AG_subtitles_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973517DCF164008E0D7C /* ELTERN-AG_subtitles_EN.txt */; };
 		B3FC974A17DCF164008E0D7C /* nueva_subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973617DCF164008E0D7C /* nueva_subtitle_EN.txt */; };
-		B3FC974B17DCF164008E0D7C /* blueassist_subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973717DCF164008E0D7C /* blueassist_subtitle_EN.txt */; };
+		B3FC974B17DCF164008E0D7C /* blueassist-subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973717DCF164008E0D7C /* blueassist-subtitle_EN.txt */; };
 		B3FC974C17DCF164008E0D7C /* Humanitas-subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973817DCF164008E0D7C /* Humanitas-subtitle_EN.txt */; };
 		B3FC974D17DCF164008E0D7C /* place de bleu_subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973917DCF164008E0D7C /* place de bleu_subtitle_EN.txt */; };
 		B3FC974E17DCF164008E0D7C /* real pearl_subtitle_EN.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3FC973A17DCF164008E0D7C /* real pearl_subtitle_EN.txt */; };
@@ -291,18 +291,18 @@
 		B3FB6F9D17CBE04300D22288 /* aboutPageContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aboutPageContainerViewController.h; sourceTree = "<group>"; };
 		B3FB6F9E17CBE04300D22288 /* aboutPageContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aboutPageContainerViewController.m; sourceTree = "<group>"; };
 		B3FC972B17DCF164008E0D7C /* ECC_subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = ECC_subtitle_EN.txt; sourceTree = "<group>"; };
-		B3FC972C17DCF164008E0D7C /* ammerud_subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ammerud_subtitle_EN.txt; sourceTree = "<group>"; };
+		B3FC972C17DCF164008E0D7C /* ammerud-subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "ammerud-subtitle_EN.txt"; sourceTree = "<group>"; };
 		B3FC972D17DCF164008E0D7C /* Irre Menschlich_subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "Irre Menschlich_subtitle_EN.txt"; sourceTree = "<group>"; };
 		B3FC972E17DCF164008E0D7C /* Katymar_subtitle2_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = Katymar_subtitle2_EN.txt; sourceTree = "<group>"; };
 		B3FC972F17DCF164008E0D7C /* ESD-subtitle2_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "ESD-subtitle2_EN.txt"; sourceTree = "<group>"; };
 		B3FC973017DCF164008E0D7C /* residenzialita leg_subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "residenzialita leg_subtitle_EN.txt"; sourceTree = "<group>"; };
 		B3FC973117DCF164008E0D7C /* Vitality_subtitle2_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = Vitality_subtitle2_EN.txt; sourceTree = "<group>"; };
 		B3FC973217DCF164008E0D7C /* Seclin_subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = Seclin_subtitle_EN.txt; sourceTree = "<group>"; };
-		B3FC973317DCF164008E0D7C /* Abitare_Subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = Abitare_Subtitle_EN.txt; sourceTree = "<group>"; };
+		B3FC973317DCF164008E0D7C /* Abitare-Subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "Abitare-Subtitle_EN.txt"; sourceTree = "<group>"; };
 		B3FC973417DCF164008E0D7C /* KYOH_subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = KYOH_subtitle_EN.txt; sourceTree = "<group>"; };
 		B3FC973517DCF164008E0D7C /* ELTERN-AG_subtitles_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "ELTERN-AG_subtitles_EN.txt"; sourceTree = "<group>"; };
 		B3FC973617DCF164008E0D7C /* nueva_subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = nueva_subtitle_EN.txt; sourceTree = "<group>"; };
-		B3FC973717DCF164008E0D7C /* blueassist_subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = blueassist_subtitle_EN.txt; sourceTree = "<group>"; };
+		B3FC973717DCF164008E0D7C /* blueassist-subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "blueassist-subtitle_EN.txt"; sourceTree = "<group>"; };
 		B3FC973817DCF164008E0D7C /* Humanitas-subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "Humanitas-subtitle_EN.txt"; sourceTree = "<group>"; };
 		B3FC973917DCF164008E0D7C /* place de bleu_subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "place de bleu_subtitle_EN.txt"; sourceTree = "<group>"; };
 		B3FC973A17DCF164008E0D7C /* real pearl_subtitle_EN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "real pearl_subtitle_EN.txt"; sourceTree = "<group>"; };
@@ -611,9 +611,9 @@
 		B3FC975317DCF16D008E0D7C /* EN */ = {
 			isa = PBXGroup;
 			children = (
-				B3FC972C17DCF164008E0D7C /* ammerud_subtitle_EN.txt */,
-				B3FC973317DCF164008E0D7C /* Abitare_Subtitle_EN.txt */,
-				B3FC973717DCF164008E0D7C /* blueassist_subtitle_EN.txt */,
+				B3FC972C17DCF164008E0D7C /* ammerud-subtitle_EN.txt */,
+				B3FC973317DCF164008E0D7C /* Abitare-Subtitle_EN.txt */,
+				B3FC973717DCF164008E0D7C /* blueassist-subtitle_EN.txt */,
 				B3FC973D17DCF164008E0D7C /* mobile-health_subtitle_EN.txt */,
 				B3FC973B17DCF164008E0D7C /* CIL_subtitle_EN.txt */,
 				B3FC972F17DCF164008E0D7C /* ESD-subtitle2_EN.txt */,
@@ -769,18 +769,18 @@
 				B34921DF17D9E79400E8577B /* logo_fp7.png in Resources */,
 				B34921E117D9EC5000E8577B /* flagge_eu_small.png in Resources */,
 				B3FC973F17DCF164008E0D7C /* ECC_subtitle_EN.txt in Resources */,
-				B3FC974017DCF164008E0D7C /* ammerud_subtitle_EN.txt in Resources */,
+				B3FC974017DCF164008E0D7C /* ammerud-subtitle_EN.txt in Resources */,
 				B3FC974117DCF164008E0D7C /* Irre Menschlich_subtitle_EN.txt in Resources */,
 				B3FC974217DCF164008E0D7C /* Katymar_subtitle2_EN.txt in Resources */,
 				B3FC974317DCF164008E0D7C /* ESD-subtitle2_EN.txt in Resources */,
 				B3FC974417DCF164008E0D7C /* residenzialita leg_subtitle_EN.txt in Resources */,
 				B3FC974517DCF164008E0D7C /* Vitality_subtitle2_EN.txt in Resources */,
 				B3FC974617DCF164008E0D7C /* Seclin_subtitle_EN.txt in Resources */,
-				B3FC974717DCF164008E0D7C /* Abitare_Subtitle_EN.txt in Resources */,
+				B3FC974717DCF164008E0D7C /* Abitare-Subtitle_EN.txt in Resources */,
 				B3FC974817DCF164008E0D7C /* KYOH_subtitle_EN.txt in Resources */,
 				B3FC974917DCF164008E0D7C /* ELTERN-AG_subtitles_EN.txt in Resources */,
 				B3FC974A17DCF164008E0D7C /* nueva_subtitle_EN.txt in Resources */,
-				B3FC974B17DCF164008E0D7C /* blueassist_subtitle_EN.txt in Resources */,
+				B3FC974B17DCF164008E0D7C /* blueassist-subtitle_EN.txt in Resources */,
 				B3FC974C17DCF164008E0D7C /* Humanitas-subtitle_EN.txt in Resources */,
 				B3FC974D17DCF164008E0D7C /* place de bleu_subtitle_EN.txt in Resources */,
 				B3FC974E17DCF164008E0D7C /* real pearl_subtitle_EN.txt in Resources */,
