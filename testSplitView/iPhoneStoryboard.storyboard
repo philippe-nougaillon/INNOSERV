@@ -15,11 +15,11 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Rbo-s3-fOo">
                                 <rect key="frame" x="0.0" y="42" width="320" height="217"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="bC1-Vz-n7q">
                                 <rect key="frame" x="20" y="267" width="280" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901967050000002" green="0.92549026010000002" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque </string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
@@ -27,7 +27,7 @@
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tuH-yX-MGL">
                                 <rect key="frame" x="20" y="177" width="280" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mOf-HT-6Q5">
                                 <rect key="frame" x="129" y="119" width="63" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Button" image="play.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,6 +107,7 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hWH-TN-qQd">
                                 <rect key="frame" x="16" y="97" width="273" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="About INNOSERV">
                                         <attributes>
@@ -148,13 +149,58 @@ Cg
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qJH-4L-qqr">
                                 <rect key="frame" x="16" y="160" width="284" height="206"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <string key="text">INNOSERV is a project developing an EU wide research agenda to evaluate innovation in the field of social services (especially for health, education and welfare services). This will help define future research activities. 
 INNOSERV responds to the FP7-Cooperation call FP7- SSH-2011-3 for a ‘support action concerning a social platform on innovative social services.’</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dbz-ZO-Evr">
+                                <rect key="frame" x="241" y="388" width="66" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="social-icon-in.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="socialButtonsPressed:" destination="UBa-WD-RUp" eventType="touchUpInside" id="qfC-SD-p83"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cJi-G9-LrE">
+                                <rect key="frame" x="169" y="388" width="66" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="social-icon-yt.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="socialButtonsPressed:" destination="UBa-WD-RUp" eventType="touchUpInside" id="9Z1-8R-nSB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qmO-Ib-jGe">
+                                <rect key="frame" x="14" y="388" width="66" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="social-icon-fb.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="socialButtonsPressed:" destination="UBa-WD-RUp" eventType="touchUpInside" id="ve3-f3-fXt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nc1-WG-9hl">
+                                <rect key="frame" x="84" y="388" width="66" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="social-icon-tw.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="socialButtonsPressed:" destination="UBa-WD-RUp" eventType="touchUpInside" id="emJ-cy-IMJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98981584820000001" green="0.95467087989999999" blue="0.75793429749999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -173,7 +219,8 @@ INNOSERV responds to the FP7-Cooperation call FP7- SSH-2011-3 for a ‘support a
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NYy-jE-JyF">
-                                <rect key="frame" x="20" y="90" width="280" height="349"/>
+                                <rect key="frame" x="20" y="125" width="280" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Answering the objectives of the call, the INNOSERV project will:">
                                         <attributes>
@@ -445,67 +492,12 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XYG-1B-OUK">
-                                <rect key="frame" x="20" y="97" width="280" height="350"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="INNOSERV – Social Platform on Innovative Social Services">
-                                        <attributes>
-                                            <color key="NSColor" red="0.61568627450980395" green="0.0" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="19" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Times-Roman"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="INNOSERV is an integrated project funded by the 7">
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="th ">
-                                        <attributes>
-                                            <real key="NSBaselineOffset" value="4"/>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Framework Programe of the European Commission which deals with innovation in the field of social services.   The project aims to establish a platform bringing together researchers, practitioners and policy-makers working on the planning and conduct of social services. Eleven organizations from nine European countries, both research institutes and membership-based organizations, are involved in the two year project.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Times-Roman"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XYG-1B-OUK">
+                                <rect key="frame" x="20" y="109" width="280" height="294"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <mutableString key="text">INNOSERV is an integrated project funded by the 7th Framework Programe of the European Commission which deals with innovation in the field of social services.   The project aims to establish a platform bringing together researchers, practitioners and policy-makers working on the planning and conduct of social services. Eleven organizations from nine European countries, both research institutes and membership-based organizations, are involved in the two year project.
+</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="2" id="FlD-x2-Zyy">
@@ -557,80 +549,17 @@ Cg
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KMe-Qg-6j2">
-                                <rect key="frame" x="13" y="74" width="293" height="165"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Discuss with us about innovation !">
-                                        <attributes>
-                                            <color key="NSColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue-BoldItalic"/>
-                                            <font key="NSOriginalFont" size="19" name="HelveticaNeue-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Give us 10 minutes of your time and help by answering more detailed questions.">
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KMe-Qg-6j2">
+                                <rect key="frame" x="13" y="101" width="293" height="121"/>
+                                <string key="text">Discuss with us about innovation !  Give us 10 minutes of your time and help by answering more detailed questions. 
+Please fill in the questionnaire: your opinion is appreciated...
 </string>
-                                        <attributes>
-                                            <font key="NSFont" size="11" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Please fill in the questionnaire: your opinion is appreciated...">
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <font key="NSOriginalFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="15" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000001192092896" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" id="48R-1f-DYa">
-                                <rect key="frame" x="13" y="230" width="293" height="33"/>
+                                <rect key="frame" x="13" y="244" width="293" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.74117648599999997" green="0.023529414089999999" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Fill in the online questionnaire">
@@ -644,30 +573,12 @@ Cg
                                     <action selector="openQuestionnairelink:" destination="0yw-aU-K4Y" eventType="touchUpInside" id="o5G-oT-XTp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="63Y-aQ-Mri">
-                                <rect key="frame" x="13" y="309" width="293" height="126"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Contact: innoserv@dwi.uni-heidelberg.de">
-                                        <attributes>
-                                            <color key="NSColor" red="0.61568627450980395" green="0.0" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="63Y-aQ-Mri">
+                                <rect key="frame" x="13" y="285" width="293" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <string key="text">Contact: innoserv@dwi.uni-heidelberg.de 
 Anika Strifler Ruprecht-Karls-Universität Heidelberg Diakoniewissenschaftliches Institut Karlstr. 16 69117 Heidelberg / Germany</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -699,6 +610,7 @@ Anika Strifler Ruprecht-Karls-Universität Heidelberg Diakoniewissenschaftliches
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="scaleAspectFit" id="Qnz-J3-W1D">
                                             <rect key="frame" x="0.0" y="-7" width="320" height="178"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" id="b2x-Fj-QH7">
                                             <rect key="frame" x="7" y="33" width="313" height="50"/>
@@ -896,7 +808,8 @@ Anika Strifler Ruprecht-Karls-Universität Heidelberg Diakoniewissenschaftliches
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AOs-tj-Hwf">
-                                <rect key="frame" x="20" y="97" width="280" height="275"/>
+                                <rect key="frame" x="20" y="103" width="280" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">“With the new social platform we hope to assess the latest trends in research and practice, identify knowledge gaps and stimulate research inquiry. The idea is to discuss which service offerings in Europe are innovative and what future scenarios should be envisaged.”</string>
@@ -982,6 +895,10 @@ Cg
         <image name="innoServLogo2forIPADNoRetina.png" width="72" height="72"/>
         <image name="logo_fp7.png" width="300" height="142"/>
         <image name="play.png" width="63" height="63"/>
+        <image name="social-icon-fb.png" width="52" height="52"/>
+        <image name="social-icon-in.png" width="52" height="52"/>
+        <image name="social-icon-tw.png" width="52" height="52"/>
+        <image name="social-icon-yt.png" width="52" height="52"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

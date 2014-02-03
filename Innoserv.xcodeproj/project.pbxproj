@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AF3642C189F9FB100F65F83 /* social-icon-fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF36428189F9FB100F65F83 /* social-icon-fb.png */; };
+		4AF3642D189F9FB100F65F83 /* social-icon-in.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF36429189F9FB100F65F83 /* social-icon-in.png */; };
+		4AF3642E189F9FB100F65F83 /* social-icon-tw.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF3642A189F9FB100F65F83 /* social-icon-tw.png */; };
+		4AF3642F189F9FB100F65F83 /* social-icon-yt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF3642B189F9FB100F65F83 /* social-icon-yt.png */; };
 		B3025B3216D50A8300143DB3 /* Abitare Solidale 4-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3016D50A8300143DB3 /* Abitare Solidale 4-2-big.png */; };
 		B3025B3316D50A8300143DB3 /* Ammerud4-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3116D50A8300143DB3 /* Ammerud4-2-big.png */; };
 		B3025B4816D5118800143DB3 /* vitality2a-2-big.png in Resources */ = {isa = PBXBuildFile; fileRef = B3025B3416D5118800143DB3 /* vitality2a-2-big.png */; };
@@ -145,6 +149,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AF36428189F9FB100F65F83 /* social-icon-fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-fb.png"; sourceTree = "<group>"; };
+		4AF36429189F9FB100F65F83 /* social-icon-in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-in.png"; sourceTree = "<group>"; };
+		4AF3642A189F9FB100F65F83 /* social-icon-tw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-tw.png"; sourceTree = "<group>"; };
+		4AF3642B189F9FB100F65F83 /* social-icon-yt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon-yt.png"; sourceTree = "<group>"; };
 		B3025B3016D50A8300143DB3 /* Abitare Solidale 4-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Abitare Solidale 4-2-big.png"; sourceTree = "<group>"; };
 		B3025B3116D50A8300143DB3 /* Ammerud4-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ammerud4-2-big.png"; sourceTree = "<group>"; };
 		B3025B3416D5118800143DB3 /* vitality2a-2-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vitality2a-2-big.png"; sourceTree = "<group>"; };
@@ -435,6 +443,10 @@
 		B3A9261616CE8DBA006686A7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4AF36428189F9FB100F65F83 /* social-icon-fb.png */,
+				4AF36429189F9FB100F65F83 /* social-icon-in.png */,
+				4AF3642A189F9FB100F65F83 /* social-icon-tw.png */,
+				4AF3642B189F9FB100F65F83 /* social-icon-yt.png */,
 				B35E289B17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P2.png */,
 				B35E289C17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P1.png */,
 				B34921E017D9EC5000E8577B /* flagge_eu_small.png */,
@@ -724,6 +736,7 @@
 				B3025B4916D5118800143DB3 /* KYOH telehealth-1-big.png in Resources */,
 				B3025B4A16D5118800143DB3 /* Seclin-new3-big.png in Resources */,
 				B3025B4B16D5118800143DB3 /* res-leg-1-big.png in Resources */,
+				4AF3642F189F9FB100F65F83 /* social-icon-yt.png in Resources */,
 				B3025B4C16D5118800143DB3 /* Real Pearl1-2-big.png in Resources */,
 				B3025B4D16D5118800143DB3 /* placedebleu3a-2-big.png in Resources */,
 				B3025B4E16D5118800143DB3 /* Nueva1d-2-big.png in Resources */,
@@ -763,6 +776,7 @@
 				B37D26AB17C6391B0073F49D /* Place de bleu-subtitles - french.txt in Resources */,
 				B37D26AC17C6391B0073F49D /* RealPearl-subtitles - french.txt in Resources */,
 				B37D26AD17C6391B0073F49D /* Residenzialita-subtitles - french.txt in Resources */,
+				4AF3642E189F9FB100F65F83 /* social-icon-tw.png in Resources */,
 				B37D26AE17C6391B0073F49D /* Seclin-subtitles - french.txt in Resources */,
 				B37D26AF17C6391B0073F49D /* Vitality-subtitles - french.txt in Resources */,
 				B33B373717CCEDE500DA57D9 /* Inno-background.png in Resources */,
@@ -777,6 +791,7 @@
 				B3FC974517DCF164008E0D7C /* Vitality_subtitle2_EN.txt in Resources */,
 				B3FC974617DCF164008E0D7C /* Seclin_subtitle_EN.txt in Resources */,
 				B3FC974717DCF164008E0D7C /* Abitare-Subtitle_EN.txt in Resources */,
+				4AF3642D189F9FB100F65F83 /* social-icon-in.png in Resources */,
 				B3FC974817DCF164008E0D7C /* KYOH_subtitle_EN.txt in Resources */,
 				B3FC974917DCF164008E0D7C /* ELTERN-AG_subtitles_EN.txt in Resources */,
 				B3FC974A17DCF164008E0D7C /* nueva_subtitle_EN.txt in Resources */,
@@ -790,6 +805,7 @@
 				B3FC975217DCF164008E0D7C /* Mom'artre_subtitle_EN.txt in Resources */,
 				B35E288717E1CACF00D4E2B0 /* mobile health_german.txt in Resources */,
 				B35E288817E1CACF00D4E2B0 /* GPE_german.txt in Resources */,
+				4AF3642C189F9FB100F65F83 /* social-icon-fb.png in Resources */,
 				B35E288917E1CACF00D4E2B0 /* Vitality_german.txt in Resources */,
 				B35E288A17E1CACF00D4E2B0 /* Ammerudhjemmet_german.txt in Resources */,
 				B35E288B17E1CACF00D4E2B0 /* ESD_german.txt in Resources */,
