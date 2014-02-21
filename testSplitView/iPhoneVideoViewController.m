@@ -105,8 +105,8 @@
             // iPAD
             // Depending of the current orientation
             if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
-                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 400, 700, 60)];
-                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
+                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 400, 700, 100)];
+                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:24];
             } else {
                 self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 400, 700, 60)];
                 self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
@@ -115,19 +115,21 @@
             // iPhone
             if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
                 CGSize deviceBounds = [[UIScreen mainScreen] bounds].size;
-                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 240, deviceBounds.height, 40)];
-                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
+                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 290, deviceBounds.height, 40)];
+                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:24];
             } else {
-                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 350, 320, 60)];
-                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:12];
+                self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 380, 320, 60)];
+                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
             }
         }
     
         // A place for subtitles
         self.subtitleLabel.numberOfLines = 2;
-        self.subtitleLabel.backgroundColor = [UIColor whiteColor];
+        //self.subtitleLabel.backgroundColor = [UIColor whiteColor];
         self.subtitleLabel.textAlignment = NSTextAlignmentCenter;
-        self.subtitleLabel.textColor = [UIColor blackColor];
+        self.subtitleLabel.textColor = [UIColor whiteColor];
+        self.subtitleLabel.shadowColor = [UIColor blackColor];
+        self.subtitleLabel.shadowOffset = CGSizeMake(1, 1);
         [myView addSubview:self.subtitleLabel];
         
         // Register for Timer
@@ -227,12 +229,13 @@
         if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
             // Todo: adjust size for iPhone5
             CGSize deviceBounds = [[UIScreen mainScreen] bounds].size;
-            self.subtitleLabel.frame = CGRectMake(0, 240, deviceBounds.height, 40);
-            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:14];
+            self.subtitleLabel.frame = CGRectMake(0, 240, deviceBounds.height, 80);
+            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:22];
         } else {
-            self.subtitleLabel.frame = CGRectMake(0, 350, 320, 60);
-            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:12];
+            self.subtitleLabel.frame = CGRectMake(0, 380, 320, 60);
+            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
         }
+        
     }
 }
 
