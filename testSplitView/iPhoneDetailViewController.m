@@ -13,14 +13,13 @@
 {
     NSString *langueCourante;
     
-    __weak IBOutlet UIBarButtonItem *openWebPageToolBarButton;
     __weak IBOutlet UILabel *projectSubTiltle;
     __weak IBOutlet UITextView *projectInformation;
     __weak IBOutlet UIImageView *projectImage;
     __weak IBOutlet UIProgressView *myProgressBar;
     __weak IBOutlet UILabel *labelDownloadingVideo;
-    __weak IBOutlet UILabel *projectTitle;
     __weak IBOutlet UIButton *playButton;
+    __weak IBOutlet UIBarButtonItem *openWebsiteButton;
     
     NSMutableData *activeDownload;
     NSURLConnection *conn;
@@ -50,28 +49,14 @@
 	// Do any additional setup after loading the view.
     if (self.detailItem) {
         // set project values
-        projectTitle.text = self.detailItem.title;
         projectSubTiltle.text = self.detailItem.description;
         projectInformation.text = self.detailItem.information;
         
         // project image
         NSString *imageFileName = [self.detailItem.image stringByAppendingString:@"-big.png"];
         projectImage.image = [UIImage imageNamed:imageFileName];
+        [openWebsiteButton setEnabled:![self.detailItem.website isEqualToString:@""]];
         
-        // if website > show info button
-        if ([self.detailItem.website isEqualToString:@""])
-            openWebPageToolBarButton.enabled = NO;
-        else
-            openWebPageToolBarButton.enabled = YES;
-    }
-}
-
-- (IBAction)openWebPagePressed:(id)sender {
-    
-    if (self.detailItem) {
-        
-        NSString *webPageLink = self.detailItem.website;
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:webPageLink]];
     }
 }
 
@@ -90,8 +75,7 @@
                                     [self.detailItem.videofile stringByAppendingString:@".mp4"]];
         
         // Check if the video not exist and then download it
-        if (![filemgr fileExistsAtPath: dataFile])
-        {
+        if (![filemgr fileExistsAtPath: dataFile]) {
             // init file data container
             activeDownload = [[NSMutableData alloc] init];
             
@@ -116,8 +100,16 @@
 
             if (!conn) {
                 // Inform the user that the connection failed.
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"INNOSERV" message:NSLocalizedString(@"networkError", @"") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [alert show];
+                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"INNOSERV"
+                                               message:NSLocalizedString(@"networkError", @"")
+                                               preferredStyle:UIAlertControllerStyleAlert];
+                 
+                UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                   handler:^(UIAlertAction * action) {}];
+                 
+                [alert addAction:defaultAction];
+                [self presentViewController:alert animated:YES completion:nil];
+                
             } else {
                 myProgressBar.hidden = NO;
                 playButton.hidden = YES;
@@ -130,6 +122,16 @@
     return TRUE;
 }
 
+- (IBAction)openWebsite:(id)sender {
+    
+    NSString* link = self.detailItem.website;
+    
+    if (![link isEqualToString:@""]) {
+        // open webpage
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:link]];
+    }
+    
+}
 
 // This will get called too before the view appears
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -181,9 +183,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/*
 - (void)viewDidUnload {
     [self setTitle:nil];
     [super viewDidUnload];
 }
+*/
+ 
 @end

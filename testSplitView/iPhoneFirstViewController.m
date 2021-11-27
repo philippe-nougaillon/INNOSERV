@@ -9,8 +9,6 @@
 #import "iPhoneFirstViewController.h"
 #import "iPhoneDetailViewController.h"
 #import "ProjectData.h"
-#import "ProjectDataFR.h"
-#import "ProjectDataDE.h"
 #import "ProjectListItem.h"
 #import "CustomCell.h"
 
@@ -43,16 +41,9 @@
     NSArray *langues = [defaults objectForKey:@"AppleLanguages"];
     langueCourante = [langues objectAtIndex:0];
     
-    //NSLog(@"langue: %@",langueCourante);
-    
     // Load items for appropriate language
-    if ([langueCourante isEqualToString:@"fr"]) {
-        _items = [[ProjectDataFR alloc] init];
-    } else if ([langueCourante isEqualToString:@"de"]) {
-        _items = [[ProjectDataDE alloc] init];
-    } else {
-        _items = [[ProjectData alloc] init];
-    }
+    _items = [[[ProjectData alloc] initWithLanguageCode:langueCourante] informations];
+
 }
 
 - (IBAction)backToMenuButtonTapped:(id)sender {
@@ -66,6 +57,12 @@
 {
     if ([[segue identifier] isEqualToString:@"openDetailView"]) {
         
+        // get the index of select item
+        UITableViewCell *cell = (UITableViewCell*)sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+        
+        selectedProject = _items[indexPath.row];
+        
         // Get destination view
         iPhoneDetailViewController *vc = [segue destinationViewController];
         
@@ -76,7 +73,7 @@
 }
 
 // block orientation to portrait
--(NSUInteger)supportedInterfaceOrientations{
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations{
     return UIInterfaceOrientationMaskPortrait;
 }
 
@@ -133,22 +130,11 @@
         fos = [fos stringByAppendingString:NSLocalizedString(@"Education",nil)];
     }
     cell.fieldOfServiceLabel.text = fos;
-
-    //[cell.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:25]];
-    //[cell.subTitleLabel setFont:[UIFont fontWithName:@"Open Sans" size:17]];
-    //[cell.fieldOfServiceLabel setFont:[UIFont fontWithName:@"Open Sans" size:12]];
         
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    selectedProject = _items[indexPath.row];
-    [self performSegueWithIdentifier:@"openDetailView" sender:self];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-    
-}
-
+/*
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
@@ -170,6 +156,6 @@
         }
     }
 }
-
+*/
 
 @end

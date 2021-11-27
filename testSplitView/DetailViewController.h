@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 #import "ProjectListItem.h"
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate>

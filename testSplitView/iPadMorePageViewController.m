@@ -11,13 +11,13 @@
 @interface iPadMorePageViewController ()
 {
     __weak IBOutlet UIBarButtonItem *closeButton;
-    __weak IBOutlet UIWebView *webView;
+    __weak IBOutlet WKWebView *webView;
     __weak IBOutlet UIActivityIndicatorView *myActivityIndicator;
 
 }
 @end
 
-@implementation iPadMorePageViewController
+@implementation iPadMorePageViewController 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -53,13 +53,14 @@
         webPageLink = @"http://www.inno-serv.eu";
     }
 
-    webView.delegate = self;
+    webView.UIDelegate = self;
     
     NSURL *url = [NSURL URLWithString:webPageLink];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [webView loadRequest:requestObj];
 }
 
+/*
 - (BOOL)webView:(UIWebView *)wv shouldStartLoadWithRequest:(NSURLRequest *)rq navigationType:(UIWebViewNavigationType)navigationType
 {
     myActivityIndicator.hidden = FALSE;
@@ -80,17 +81,19 @@
 }
 
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
     return ((interfaceOrientation == UIInterfaceOrientationLandscapeLeft) || (interfaceOrientation == UIInterfaceOrientationLandscapeRight));
 }
 
+ */
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 @end

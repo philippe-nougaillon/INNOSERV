@@ -14,7 +14,7 @@
 
 @interface DetailViewController ()
 {
-    UIWebView *videoView;
+    WKWebView *videoView;
     UIView *myView;
     NSString *langueCourante;
 
@@ -75,17 +75,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // Localize
-    //openWebPageButton.title = NSLocalizedString(@"Website", @"");
     [button1 setTitle:NSLocalizedString(@"menu_Trailer", @"") forState:UIControlStateNormal];
     [button2 setTitle:NSLocalizedString(@"menu_www", @"") forState:UIControlStateNormal];
     [button3 setTitle:NSLocalizedString(@"menu_About", @"") forState:UIControlStateNormal];
     
     // Set fonts
-    [detailSubtitle setFont:[UIFont fontWithName:@"Open Sans" size:18]];
     [detailInformation setFont:[UIFont fontWithName:@"Open Sans" size:14]];
-    [button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    [button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    [button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
    
     // Language ?
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -191,8 +186,16 @@
             conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
             if (!conn) {
                 // Inform the user that the connection failed.
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"INNOSERV" message:NSLocalizedString(@"networkError", @"") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [alert show];
+                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"INNOSERV"
+                                                                       message:NSLocalizedString(@"networkError", @"")
+                                                                       preferredStyle:UIAlertControllerStyleAlert];
+                 
+                UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                            handler:^(UIAlertAction * action) {}];
+                 
+                [alert addAction:defaultAction];
+                [self presentViewController:alert animated:YES completion:nil];
+                
             } else {
                 myProgressBar.hidden = NO;
                 playButton.hidden = YES;
@@ -257,6 +260,7 @@
     
     // update interface
     myProgressBar.hidden = YES;
+    myProgressBar.progress = 0;
     playButton.hidden = NO;
     activeDownload = nil;
     conn = nil;

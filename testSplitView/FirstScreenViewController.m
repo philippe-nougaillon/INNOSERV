@@ -7,6 +7,7 @@
 //
 
 #import "FirstScreenViewController.h"
+#import "AboutPagesViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 
@@ -42,13 +43,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
   
-    [menuTitle setFont:[UIFont fontWithName:@"Open Sans" size:19]];
-    
-    [button1.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    [button2.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    [button3.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-    [button4.titleLabel setFont:[UIFont fontWithName:@"Open Sans" size:15]];
-
     [button1 setTitle:NSLocalizedString(@"menu_About", @"") forState:UIControlStateNormal];
     [button2 setTitle:NSLocalizedString(@"menu_Trailer", @"") forState:UIControlStateNormal];
     [button3 setTitle:NSLocalizedString(@"menu_20projects", @"") forState:UIControlStateNormal];
@@ -91,6 +85,13 @@
     [UIView commitAnimations];
     
     introAnimationDone = YES;
+}
+- (IBAction)openAboutButtonPressed:(id)sender {
+    
+    
+    AboutPagesViewController *controller = [[AboutPagesViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (IBAction)openInnoservWebSite:(id)sender {
