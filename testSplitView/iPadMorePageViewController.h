@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ProjectListItem.h"
+#import <WebKit/WebKit.h>
 
-@interface iPadMorePageViewController : UIViewController <UIWebViewDelegate>
+@interface iPadMorePageViewController : UIViewController <WKNavigationDelegate>
 
 @property (strong, nonatomic) ProjectListItem *detailItem;
 

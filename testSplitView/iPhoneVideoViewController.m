@@ -9,6 +9,7 @@
 #import "iPhoneVideoViewController.h"
 #import "SrtParser.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>  
 
 @interface iPhoneVideoViewController () {
 
@@ -20,7 +21,7 @@
 @property (nonatomic, retain) SrtParser *srtParser;
 @property (nonatomic, retain) UILabel *subtitleLabel;
 @property (nonatomic, retain) NSTimer *subtitleTimer;
-@property (nonatomic, retain) MPMoviePlayerController *moviePlayer;
+@property (nonatomic, retain) AVPlayerViewController *moviePlayer;
 
 -(void)prepareView;
 
@@ -89,13 +90,20 @@
         myView =[[UIView alloc] initWithFrame:self.view.frame];
         
     // Movieplayer setup
-    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
-    self.moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
-    self.moviePlayer.controlStyle =  MPMovieControlStyleFullscreen;
-    self.moviePlayer.view.frame = myView.bounds;
+    //self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
+    //self.moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
+    //self.moviePlayer.controlStyle =  MPMovieControlStyleFullscreen;
+    //self.moviePlayer.view.frame = myView.bounds;
     
-    [myView addSubview:self.moviePlayer.view];
-    [self.moviePlayer prepareToPlay];
+    AVPlayerViewController * _moviePlayer1 = [[AVPlayerViewController alloc] init];
+    _moviePlayer1.player = [AVPlayer playerWithURL:url];
+
+    [self presentViewController:_moviePlayer1 animated:YES completion:^{
+        [_moviePlayer1.player play];
+    }];
+    
+    //[myView addSubview:self.moviePlayer.view];
+    //[self.moviePlayer prepareToPlay];
     
     if (self.detailItem) {
 
@@ -106,20 +114,20 @@
             // Depending of the current orientation
             if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
                 self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 400, 700, 100)];
-                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:24];
+                self.subtitleLabel.font = [UIFont fontWithName:@"Open Sans" size:24];
             } else {
                 self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 400, 700, 60)];
-                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
+                self.subtitleLabel.font = [UIFont fontWithName:@"Open Sans" size:16];
             }
         } else {
             // iPhone
             if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
                 CGSize deviceBounds = [[UIScreen mainScreen] bounds].size;
                 self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 290, deviceBounds.height, 40)];
-                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:24];
+                self.subtitleLabel.font = [UIFont fontWithName:@"Open Sans" size:24];
             } else {
                 self.subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 380, 320, 60)];
-                self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
+                self.subtitleLabel.font = [UIFont fontWithName:@"Open Sans" size:16];
             }
         }
     
@@ -162,13 +170,13 @@
 
 - (void)playMovie:(NSNotification *)notification {
     
-    MPMoviePlayerController *player = notification.object;
+    AVPlayer *player = notification.object;
     
-    if (player.loadState & MPMovieLoadStatePlayable)
-    {
+    //if (player.loadState & MPMovieLoadStatePlayable)
+    //{
         //NSLog(@"Movie is Ready to Play");
         [player play];
-    }
+    //}
 }
 
 - (void)movieEventFullscreenHandler:(NSNotification*)notification {
@@ -179,13 +187,13 @@
 
 - (void)movieFinishedCallback:(NSNotification*)aNotification
 {
-    MPMoviePlayerController *myMoviePlayer = [aNotification object];
+    AVPlayerViewController *myMoviePlayer = [aNotification object];
     
     // Remove this class from the observers
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:MPMoviePlayerPlaybackDidFinishNotification
                                                   object:myMoviePlayer];
-    [self.moviePlayer stop];
+    //[self.moviePlayer stop];
     
     // stop Timer
     [self.subtitleTimer invalidate];
@@ -203,7 +211,7 @@
 }
 
 // Subtitles
-
+/*
 -(void)updateSubtitles
 {
     NSString *subTitleText;
@@ -216,7 +224,7 @@
         //NSLog(@"text: %@", subTitleText);
     }
 }
-
+*/
 // Orientation changed notification
 - (void)orientationChanged:(NSNotification *)notification
 {
@@ -230,10 +238,10 @@
             // Todo: adjust size for iPhone5
             CGSize deviceBounds = [[UIScreen mainScreen] bounds].size;
             self.subtitleLabel.frame = CGRectMake(0, 240, deviceBounds.height, 80);
-            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:22];
+            self.subtitleLabel.font = [UIFont fontWithName:@"Open Sans" size:22];
         } else {
             self.subtitleLabel.frame = CGRectMake(0, 380, 320, 60);
-            self.subtitleLabel.Font = [UIFont fontWithName:@"Open Sans" size:16];
+            self.subtitleLabel.font = [UIFont fontWithName:@"Open Sans" size:16];
         }
         
     }
@@ -241,7 +249,7 @@
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-    [self.moviePlayer stop];
+    //[self.moviePlayer stop];
     
     // stop Timer
     [self.subtitleTimer invalidate];

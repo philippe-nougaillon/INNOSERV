@@ -14,7 +14,7 @@
 
 @interface DetailViewController ()
 {
-    UIWebView *videoView;
+    WKWebView *videoView;
     UIView *myView;
     NSString *langueCourante;
 
@@ -186,8 +186,16 @@
             conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
             if (!conn) {
                 // Inform the user that the connection failed.
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"INNOSERV" message:NSLocalizedString(@"networkError", @"") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [alert show];
+                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"INNOSERV"
+                                                                       message:NSLocalizedString(@"networkError", @"")
+                                                                       preferredStyle:UIAlertControllerStyleAlert];
+                 
+                UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                            handler:^(UIAlertAction * action) {}];
+                 
+                [alert addAction:defaultAction];
+                [self presentViewController:alert animated:YES completion:nil];
+                
             } else {
                 myProgressBar.hidden = NO;
                 playButton.hidden = YES;

@@ -75,8 +75,7 @@
                                     [self.detailItem.videofile stringByAppendingString:@".mp4"]];
         
         // Check if the video not exist and then download it
-        if (![filemgr fileExistsAtPath: dataFile])
-        {
+        if (![filemgr fileExistsAtPath: dataFile]) {
             // init file data container
             activeDownload = [[NSMutableData alloc] init];
             
@@ -101,8 +100,16 @@
 
             if (!conn) {
                 // Inform the user that the connection failed.
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"INNOSERV" message:NSLocalizedString(@"networkError", @"") delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [alert show];
+                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"INNOSERV"
+                                               message:NSLocalizedString(@"networkError", @"")
+                                               preferredStyle:UIAlertControllerStyleAlert];
+                 
+                UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                   handler:^(UIAlertAction * action) {}];
+                 
+                [alert addAction:defaultAction];
+                [self presentViewController:alert animated:YES completion:nil];
+                
             } else {
                 myProgressBar.hidden = NO;
                 playButton.hidden = YES;
@@ -176,9 +183,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/*
 - (void)viewDidUnload {
     [self setTitle:nil];
     [super viewDidUnload];
 }
+*/
+ 
 @end

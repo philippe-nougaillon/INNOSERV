@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 #import "ProjectListItem.h"
 
-@interface iPadAboutViewController : UIViewController <UIWebViewDelegate>
+@interface iPadAboutViewController : UIViewController <WKUIDelegate>
 
 @property (strong, nonatomic) ProjectListItem *detailItem;
 

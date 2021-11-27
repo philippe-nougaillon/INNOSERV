@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVKit/AVKit.h>
 #import "ProjectListItem.h"
 
 @interface iPhoneVideoViewController : UIViewController

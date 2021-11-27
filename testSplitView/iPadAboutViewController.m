@@ -10,7 +10,7 @@
 
 @interface iPadAboutViewController ()
 {
-    __weak IBOutlet UIWebView *webView;
+    __weak IBOutlet WKWebView *webView;
     __weak IBOutlet UIBarButtonItem *closeButton;
     __weak IBOutlet UIActivityIndicatorView *myActivityIndicator;
     
@@ -34,7 +34,7 @@
 	// Do any additional setup after loading the view.
 
     myActivityIndicator.hidden = YES;
-    webView.delegate = self;
+    webView.UIDelegate = self;
     [myActivityIndicator startAnimating];
     
     NSURL *url;
@@ -56,7 +56,7 @@
 }
 
 # pragma mark <UIWebViewDelegate>
-
+/*
 - (BOOL)webView:(UIWebView *)wv shouldStartLoadWithRequest:(NSURLRequest *)rq navigationType:(UIWebViewNavigationType)navigationType
 {
     myActivityIndicator.hidden = FALSE;
@@ -75,6 +75,7 @@
 {
     [myActivityIndicator stopAnimating];
 }
+*/
 
 # pragma mark app delegate
 
