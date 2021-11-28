@@ -139,7 +139,7 @@
     self.detailViewController.detailItem = object;
     
     // stop the video if videoView in the stack ?
-    int navControllers = [[self.detailViewController.navigationController viewControllers] count];
+    long navControllers = [[self.detailViewController.navigationController viewControllers] count];
 
     if (navControllers == 2){
         [self.detailViewController.navigationController popViewControllerAnimated:YES];

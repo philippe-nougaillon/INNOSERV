@@ -44,7 +44,7 @@
     if (buttonTag == 4)
         url = [NSURL URLWithString:@"https://twitter.com/INNOSERVproject"];
     
-    [[UIApplication sharedApplication] openURL:url];
+    [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:^(BOOL success) {}];
     
 }
 

@@ -522,7 +522,7 @@
 				B36515EA17F47944000F0A9A /* Images.xcassets */,
 				B380094B16D6609400506DD5 /* innoServLogo2forIPAD.png */,
 				B380094916D6609000506DD5 /* innoServLogo2forIPADNoRetina.png */,
-				B3B8BBB716C13C8E0019CD28 /* testSplitView */,
+				B3B8BBB716C13C8E0019CD28 /* App */,
 				B3B8BBB016C13C8E0019CD28 /* Frameworks */,
 				B3B8BBAE16C13C8E0019CD28 /* Products */,
 			);
@@ -549,7 +549,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B3B8BBB716C13C8E0019CD28 /* testSplitView */ = {
+		B3B8BBB716C13C8E0019CD28 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				B32F5AF017C39D7D00D46EE1 /* SrtParser */,
@@ -563,7 +563,7 @@
 				B304131717C246B60032150C /* Ressources */,
 				B3B8BBB816C13C8E0019CD28 /* Supporting Files */,
 			);
-			path = testSplitView;
+			path = App;
 			sourceTree = "<group>";
 		};
 		B3B8BBB816C13C8E0019CD28 /* Supporting Files */ = {
@@ -1006,8 +1006,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "testSplitView/Innoserv-Prefix.pch";
-				INFOPLIST_FILE = "testSplitView/Innoserv-Info.plist";
+				GCC_PREFIX_HEADER = "App/Innoserv-Prefix.pch";
+				INFOPLIST_FILE = "App/Innoserv-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.inno-serv.innoserv";
@@ -1028,8 +1028,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "testSplitView/Innoserv-Prefix.pch";
-				INFOPLIST_FILE = "testSplitView/Innoserv-Info.plist";
+				GCC_PREFIX_HEADER = "App/Innoserv-Prefix.pch";
+				INFOPLIST_FILE = "App/Innoserv-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.inno-serv.innoserv";

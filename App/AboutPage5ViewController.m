@@ -38,7 +38,7 @@
     
     // ouvre le site dans Safari
     NSString *webPageLink = NSLocalizedString(@"innoserv-survey-url", @"");
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:webPageLink]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:webPageLink] options:@{} completionHandler:^(BOOL success) {}];
     
 }
 

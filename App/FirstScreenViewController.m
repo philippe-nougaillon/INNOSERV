@@ -98,7 +98,7 @@
 
     // ouvre le site dans Safari
     NSString *webPageLink = NSLocalizedString(@"innoserv-url", @"");
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:webPageLink]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:webPageLink] options:@{} completionHandler:^(BOOL success) {}];
     
 }
 
