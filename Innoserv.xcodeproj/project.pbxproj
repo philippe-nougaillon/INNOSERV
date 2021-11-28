@@ -63,7 +63,8 @@
 		B33B373717CCEDE500DA57D9 /* Inno-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B33B373517CCEDE500DA57D9 /* Inno-background.png */; };
 		B34921DF17D9E79400E8577B /* logo_fp7.png in Resources */ = {isa = PBXBuildFile; fileRef = B34921DE17D9E79400E8577B /* logo_fp7.png */; };
 		B34921E117D9EC5000E8577B /* flagge_eu_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B34921E017D9EC5000E8577B /* flagge_eu_small.png */; };
-		B3597C5D17E72D8800D429C4 /* Trailer_V4-mono.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B3597C5C17E72D8800D429C4 /* Trailer_V4-mono.mp4 */; };
+		B349FE21275413C40091CFE5 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B349FE1F275413C40091CFE5 /* AVKit.framework */; };
+		B349FE22275413C40091CFE5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B349FE20275413C40091CFE5 /* AVFoundation.framework */; };
 		B35E288717E1CACF00D4E2B0 /* mobile health_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288017E1CACF00D4E2B0 /* mobile health_german.txt */; };
 		B35E288817E1CACF00D4E2B0 /* GPE_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288117E1CACF00D4E2B0 /* GPE_german.txt */; };
 		B35E288917E1CACF00D4E2B0 /* Vitality_german.txt in Resources */ = {isa = PBXBuildFile; fileRef = B35E288217E1CACF00D4E2B0 /* Vitality_german.txt */; };
@@ -213,6 +214,8 @@
 		B33B373517CCEDE500DA57D9 /* Inno-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inno-background.png"; sourceTree = "<group>"; };
 		B34921DE17D9E79400E8577B /* logo_fp7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_fp7.png; sourceTree = "<group>"; };
 		B34921E017D9EC5000E8577B /* flagge_eu_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flagge_eu_small.png; sourceTree = "<group>"; };
+		B349FE1F275413C40091CFE5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		B349FE20275413C40091CFE5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B3597C5C17E72D8800D429C4 /* Trailer_V4-mono.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trailer_V4-mono.mp4"; sourceTree = "<group>"; };
 		B35E288017E1CACF00D4E2B0 /* mobile health_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = "mobile health_german.txt"; sourceTree = "<group>"; };
 		B35E288117E1CACF00D4E2B0 /* GPE_german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = GPE_german.txt; sourceTree = "<group>"; };
@@ -327,6 +330,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B349FE21275413C40091CFE5 /* AVKit.framework in Frameworks */,
+				B349FE22275413C40091CFE5 /* AVFoundation.framework in Frameworks */,
 				B319004716F3387E003D479B /* MediaPlayer.framework in Frameworks */,
 				B3B8BBB216C13C8E0019CD28 /* UIKit.framework in Frameworks */,
 				B3B8BBB416C13C8E0019CD28 /* Foundation.framework in Frameworks */,
@@ -534,6 +539,8 @@
 		B3B8BBB016C13C8E0019CD28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B349FE20275413C40091CFE5 /* AVFoundation.framework */,
+				B349FE1F275413C40091CFE5 /* AVKit.framework */,
 				B319004616F3387E003D479B /* MediaPlayer.framework */,
 				B3B8BBB116C13C8E0019CD28 /* UIKit.framework */,
 				B3B8BBB316C13C8E0019CD28 /* Foundation.framework */,
@@ -814,7 +821,6 @@
 				B35E288D17E1CACF00D4E2B0 /* Momartre_german.txt in Resources */,
 				B35E289D17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P2.png in Resources */,
 				B35E289E17E1EFDD00D4E2B0 /* INNOSERV_Flyer_2013_P1.png in Resources */,
-				B3597C5D17E72D8800D429C4 /* Trailer_V4-mono.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -998,10 +1004,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testSplitView/Innoserv-Prefix.pch";
 				INFOPLIST_FILE = "testSplitView/Innoserv-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.inno-serv.innoserv";
 				PRODUCT_NAME = INNOSERV;
 				PROVISIONING_PROFILE = "";
@@ -1018,10 +1026,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testSplitView/Innoserv-Prefix.pch";
 				INFOPLIST_FILE = "testSplitView/Innoserv-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.inno-serv.innoserv";
 				PRODUCT_NAME = INNOSERV;
 				PROVISIONING_PROFILE = "";
